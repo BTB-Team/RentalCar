@@ -1,7 +1,7 @@
 # RentalCar
 A modern website for Kabul Rintal Kar company.
  
-git clone <>
+git clone <https://github.com/BTB-Team/RentalCar.git>
 
 cd kabul-rental-car
 
