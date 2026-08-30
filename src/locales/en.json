@@ -1,0 +1,23 @@
+{
+    "navbar": {
+      "home": "Home",
+      "about": "About Us",
+      "cars": "Vehicles",
+      "services": "Services",
+      "contact": "Contact",
+      "admin": "Admin Panel"
+    },
+    "cta": {
+      "yellow_title": "Ready for your next trip?",
+      "dark_title": "Kabul Rental Car Special Services & Armored Fleet",
+      "btn_request": "Book a Car",
+      "btn_call": "Call Now"
+    },
+    "footer": {
+      "company_desc": "Kabul Rental Car; providing modern car rental services, security escort teams, and professional travel support across Afghanistan.",
+      "quick_links": "Quick Links",
+      "contact_info": "Contact Info",
+      "rights": "© 2026 Kabul Rental Car. All Rights Reserved."
+    }
+  }
+  
