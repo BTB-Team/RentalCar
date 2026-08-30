@@ -3,7 +3,7 @@ name: Frontend CI Check
 # این اکشن به محض اینکه هر کدام از اعضای تیم به سمت شاخه main درخواست Pull Request (PR) بزنند، خودکار اجرا می‌شود.
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ develop ]
 
 jobs:
   build-and-test:
