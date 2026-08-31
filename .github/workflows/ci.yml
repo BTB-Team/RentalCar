@@ -13,26 +13,20 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-          run_install: false # ⬅️ غیرفعال کردن اجرای خودکار و معیوب اکشن
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
+          cache: 'npm' # ⬅️ استفاده از کش استاندارد و بدون باگ npm برای سرور مجازی
 
       - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile # ⬅️ دستور نصب کاملاً ایمن و دستی
+        run: npm install # ⬅️ نصب پکیج‌ها با هسته اصلی npm روی سرور جهت هماهنگی با نود ۲۴
 
       - name: Check Code Quality (Lint)
-        run: pnpm lint
+        run: npm run lint --if-present
 
       - name: Try Building Project
-        run: pnpm build
+        run: npm run build
 
   deploy:
     if: github.event_name == 'push'
@@ -42,23 +36,17 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-          run_install: false # ⬅️ غیرفعال کردن اجرای خودکار و معیوب اکشن
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile # ⬅️ دستور نصب کاملاً ایمن و دستی
+        run: npm install
 
       - name: Build
-        run: pnpm build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -66,3 +54,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./dist
+
