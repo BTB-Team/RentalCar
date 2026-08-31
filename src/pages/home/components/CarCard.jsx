@@ -87,7 +87,7 @@ export const CarCard = ({ car }) => {
             text-[24px]
             leading-[100%]
             text-brand-black
-          "
+          " 
         >
           {carName}
         </h2>
@@ -172,32 +172,54 @@ export const CarCard = ({ car }) => {
         </p>
 
         {/* =========================
-            Bottom Actions
-        ========================== */}
-        <div
-        className="
-            mt-[20px]
-            flex
-            flex-row-reverse
-            items-center
-            justify-between
-            gap-[12px]
-        "
-        >
-          {/* View Details */}
-          {/* View Details */}
+    Bottom Actions
+========================== */}
+<div
+  className="
+    mt-[20px]
+    flex
+    items-center
+    justify-between
+    gap-[12px]
+  "
+>
+  {/* Passenger Capacity */}
+  <span
+    className="
+      inline-flex
+      h-[36px]
+      min-w-[64px]
+      shrink-0
+      items-center
+      justify-center
+      whitespace-nowrap
+      rounded-[20px]
+      border
+      border-brand-yellow
+      px-[12px]
+      font-regular
+      text-[16px]
+      leading-none
+      text-brand-black
+    "
+  >
+    {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
+  </span>
+
+  {/* View Details */}
   <Link
     to={`/cars/${car.id}`}
     className="
       flex
       h-[36px]
-      w-[135px]
+      min-w-[135px]
       shrink-0
       items-center
       justify-center
+      whitespace-nowrap
       rounded-[20px]
       bg-brand-yellow
-      px-[10px]
+      px-[16px]
       font-extrabold
       text-[16px]
       leading-none
@@ -208,30 +230,7 @@ export const CarCard = ({ car }) => {
   >
     {detailLabel}
   </Link>
-
-           {/* Passenger Capacity */}
-  <span
-    className="
-      flex
-      h-[36px]
-      w-[64px]
-      shrink-0
-      items-center
-      justify-center
-      rounded-[20px]
-      border
-      border-brand-yellow
-      px-[4px]
-      font-regular
-      text-[16px]
-      leading-none
-      text-brand-black
-    "
-  >
-    {car.passengerCapacity}{' '}
-    {isDari ? 'نفر' : 'People'}
-  </span>
-        </div>
+</div>
       </div>
     </article>
   );

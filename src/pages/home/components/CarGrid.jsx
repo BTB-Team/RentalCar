@@ -11,6 +11,7 @@ export const CarGrid = () => {
     const fetchCars = async () => {
       try {
         setLoading(true);
+        setError(false);
 
         const response = await axios.get(
           'http://localhost:5000/cars'
@@ -30,8 +31,17 @@ export const CarGrid = () => {
 
   if (loading) {
     return (
-    <div className="grid grid-cols-1 justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[...Array(6)].map((_, index) => (
+      <div
+        className="
+          grid
+          grid-cols-1
+          justify-items-center
+          gap-6
+          md:grid-cols-2
+          lg:grid-cols-3
+        "
+      >
+        {[...Array(6)].map((_, index) => (
           <div
             key={index}
             className="
@@ -57,9 +67,21 @@ export const CarGrid = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div
+      className="
+        grid
+        grid-cols-1
+        justify-items-center
+        gap-6
+        md:grid-cols-2
+        lg:grid-cols-3
+      "
+    >
       {cars.map((car) => (
-        <CarCard key={car.id} car={car} />
+        <CarCard
+          key={car.id}
+          car={car}
+        />
       ))}
     </div>
   );

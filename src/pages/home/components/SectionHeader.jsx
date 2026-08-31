@@ -5,7 +5,8 @@ export const SectionHeader = ({ title, description }) => {
 
   return (
     <div
-      className={`mx-auto flex w-full max-w-[821px] flex-col items-center ${
+      className={`mx-auto flex w-full  mt-[80px]
+       max-w-[821px] flex-col items-center ${
         lang === 'dr' ? 'text-center' : 'text-center'
       }`}
     >
