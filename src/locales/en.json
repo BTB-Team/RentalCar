@@ -18,6 +18,41 @@
       "quick_links": "Quick Links",
       "contact_info": "Contact Info",
       "rights": "© 2026 Kabul Rental Car. All Rights Reserved."
-    }
+    },
+    "about": {
+      "hero_title": "About Us",
+      "hero_desc": "Kabul Rental Car provides car rental services and travel support across Afghanistan for guests, tourists, and business travelers",
+      "btn_request": "Request a Car",
+      "btn_call": "Call Now",
+      "details_title": "About Kabul Rental Car",
+      "details_desc": "Kabul Rental Car is a trusted and reliable company providing dependable travel and transportation services for tourists, guests, business travelers, institutions, and VIP clients. With our in-house technical team, we thoroughly inspect every vehicle before each trip to guarantee a safe, comfortable, and on-time journey.",
+      "trust_1_label": "Your Trust",
+      "trust_1_sub": "Our commitment to quality and time",
+      "trust_2_label": "Safety First",
+      "trust_2_sub": "Your safety is our priority",
+      "trust_3_label": "VIP & Corporate Clients",
+      "trust_3_sub": "Special services for you",
+      "vision_title": "Our Vision",
+      "vision_desc": "To become one of the most trusted and reliable travel and car rental service providers in Afghanistan.",
+      "mission_title": "Our Mission",
+      "mission_desc": "Providing a safe, comfortable, and organized journey through professional and coordinated services tailored to every client's needs.",
+      "services_label": "Our Services",
+      "services_title": "We offer a complete range of travel and transportation services.",
+      "cta_title": "Contact us today to book this car",
+      "cta_sub": "Our team is available 24/7 to respond and provide you the best service.",
+      "cta_btn": "Contact Us",
+      "service_1_title": "Car Rental",
+      "service_1_desc": "Modern and comfortable car rentals, with or without a driver",
+      "service_2_title": "Driver & Security Services",
+      "service_2_desc": "Professional drivers and trusted security services",
+      "service_3_title": "Hotel Booking",
+      "service_3_desc": "Booking trusted hotels locally and abroad",
+      "service_4_title": "Translation & Language Support",
+      "service_4_desc": "Live translation and language support while traveling",
+      "service_5_title": "Airport Transfer",
+      "service_5_desc": "Reliable airport pickup and transfer",
+      "service_6_title": "Tour & Travel Guide",
+      "service_6_desc": "Domestic and international tours with expert guides"
+      }
   }
   
