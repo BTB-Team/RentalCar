@@ -4,7 +4,7 @@ import drTranslations from '../locales/dr.json';
 import enTranslations from '../locales/en.json';
 
 export const useLangStore = create((set) => ({
-  lang: 'dr', 
+  lang: 'en', 
   // 't' به طور خودکار انبار کلمات زبان فعال را در خود نگه می‌دارد
   t: drTranslations, 
 
@@ -12,7 +12,7 @@ export const useLangStore = create((set) => ({
     set({ 
       lang: newLang,
       // سوئیچ آنی و خودکار ترجمه‌ها بر اساس زبان انتخابی کاربر
-      t: newLang === 'dr' ? drTranslations : enTranslations 
+      t: newLang === 'dr' ? drTranslations: enTranslations 
     });
     
     // مدیریت جهت صفحه (RTL / LTR)

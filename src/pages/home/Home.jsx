@@ -1,7 +1,15 @@
-export const Home = ()=>{
-return(
+import HeroSection from "./HeroSection"
+import AboutCompany from "./AboutCompany"
+import MissionVision from "./MissionVision"
+import WhyChooseUs from "./WhyChooseUs"
+
+export const Home = () => {
+  return (
     <>
-        <h1>home page</h1>
+      <HeroSection />
+      <AboutCompany />
+      <MissionVision />
+      <WhyChooseUs />
     </>
-)
+  )
 }
