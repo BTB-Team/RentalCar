@@ -1,7 +1,11 @@
-export const Home = ()=>{
-return(
+import CarSection from './components/CarSection';
+import ServicesSection from './components/ServicesSection';
+
+export const Home = () => {
+  return (
     <>
-        <h1>home page</h1>
+      <CarSection />
+      <ServicesSection />
     </>
-)
-}
+  );
+};

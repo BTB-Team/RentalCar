@@ -7,6 +7,7 @@ import { Navbar } from '../components/header/Navbar';
 export default function MainLayout() {
   return (
     <>
+      <Navbar />
       <main className="flex-grow">
         <Outlet />
       </main>

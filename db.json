@@ -68,33 +68,318 @@
           "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
           "consumption_en": "10.5 Liters per 100 KM"
         }
-      }
+      },
+
+       {
+    "id": "3",
+    "name_dr": "لکسوس LX 600",
+    "name_en": "Lexus LX 600",
+    "type": "luxury",
+    "category": "4WD",
+    "isArmored": false,
+    "passengerCapacity": 5,
+    "tags_dr": ["لوکس", "VIP", "راحتی بالا"],
+    "tags_en": ["Luxury", "VIP", "Premium Comfort"],
+    "shortDesc_dr": "موتر لوکس و مدرن برای سفرهای رسمی، تجاری و VIP با بالاترین سطح راحتی.",
+    "shortDesc_en": "A premium luxury SUV for official, business, and VIP travel with exceptional comfort.",
+    "longDesc_dr": "لکسوس LX 600 ترکیبی از قدرت، تکنولوژی و لوکس بودن است و برای مسافرینی طراحی شده که راحتی و کیفیت را در اولویت قرار می‌دهند.",
+    "longDesc_en": "The Lexus LX 600 combines power, technology, and luxury for passengers who prioritize comfort and premium quality.",
+    "mainImage": "/images/cars/landcruiser-main.jpg",
+    "gallery": [
+      "/images/cars/lexus-lx600-thumb1.jpg",
+      "/images/cars/lexus-lx600-thumb2.jpg"
+    ],
+    "specs": {
+      "fuelType_dr": "پترول",
+      "fuelType_en": "Petrol",
+      "engine_dr": "3.5L V6 Twin Turbo",
+      "engine_en": "3.5L V6 Twin Turbo",
+      "gearbox_dr": "۱۰ سرعته اتوماتیک",
+      "gearbox_en": "10-Speed Automatic",
+      "driveType_dr": "چهار چرخ محرک (4WD)",
+      "driveType_en": "Four-Wheel Drive (4WD)",
+      "security_dr": "سیستم‌های پیشرفته ایمنی",
+      "security_en": "Advanced Safety Systems",
+      "consumption_dr": "۱۲ لیتر در ۱۰۰ کیلومتر",
+      "consumption_en": "12 Liters per 100 KM"
+    }
+  },
+
+  {
+    "id": "4",
+    "name_dr": "تویوتا هایلوکس",
+    "name_en": "Toyota Hilux",
+    "type": "standard",
+    "category": "Pickup",
+    "isArmored": false,
+    "passengerCapacity": 5,
+    "tags_dr": ["مقاوم", "ولایتی", "کاری"],
+    "tags_en": ["Durable", "Provincial", "Utility"],
+    "shortDesc_dr": "موتر مقاوم و قابل اعتماد برای مسیرهای دشوار و سفرهای ولایتی.",
+    "shortDesc_en": "A reliable and durable vehicle designed for difficult roads and provincial travel.",
+    "longDesc_dr": "تویوتا هایلوکس انتخابی مناسب برای مسیرهای دشوار، سفرهای کاری و مناطق دوردست افغانستان است.",
+    "longDesc_en": "The Toyota Hilux is an excellent choice for difficult roads, field work, and remote areas across Afghanistan.",
+    "mainImage": "/images/cars/fortuner-main.jpg",
+    "gallery": [
+      "/images/cars/hilux-thumb1.jpg",
+      "/images/cars/hilux-thumb2.jpg"
+    ],
+    "specs": {
+      "fuelType_dr": "دیزل",
+      "fuelType_en": "Diesel",
+      "engine_dr": "2.8L Turbo Diesel",
+      "engine_en": "2.8L Turbo Diesel",
+      "gearbox_dr": "۶ سرعته اتوماتیک",
+      "gearbox_en": "6-Speed Automatic",
+      "driveType_dr": "چهار چرخ محرک (4WD)",
+      "driveType_en": "Four-Wheel Drive (4WD)",
+      "security_dr": "سیستم ترمز و کنترل پایداری",
+      "security_en": "Brake and Stability Control",
+      "consumption_dr": "۹ لیتر در ۱۰۰ کیلومتر",
+      "consumption_en": "9 Liters per 100 KM"
+    }
+  },
+
+  {
+    "id": "5",
+    "name_dr": "تویوتا پرادو",
+    "name_en": "Toyota Prado",
+    "type": "luxury",
+    "category": "4WD",
+    "isArmored": false,
+    "passengerCapacity": 7,
+    "tags_dr": ["خانوادگی", "لوکس", "آفرود"],
+    "tags_en": ["Family", "Luxury", "Off-Road"],
+    "shortDesc_dr": "شاسی‌بلند لوکس و قدرتمند مناسب سفرهای شهری و مسیرهای خارج از شهر.",
+    "shortDesc_en": "A powerful luxury SUV suitable for both city driving and off-road adventures.",
+    "longDesc_dr": "تویوتا پرادو با فضای مناسب، قدرت بالا و قابلیت آفرود، یکی از گزینه‌های محبوب برای سفرهای طولانی است.",
+    "longDesc_en": "The Toyota Prado offers spacious comfort, strong performance, and excellent off-road capability for long-distance travel.",
+    "mainImage": "/images/cars/landcruiser-main.jpg",
+    "gallery": [
+      "/images/cars/prado-thumb1.jpg",
+      "/images/cars/prado-thumb2.jpg"
+    ],
+    "specs": {
+      "fuelType_dr": "پترول",
+      "fuelType_en": "Petrol",
+      "engine_dr": "4.0L V6",
+      "engine_en": "4.0L V6",
+      "gearbox_dr": "۶ سرعته اتوماتیک",
+      "gearbox_en": "6-Speed Automatic",
+      "driveType_dr": "چهار چرخ محرک (4WD)",
+      "driveType_en": "Four-Wheel Drive (4WD)",
+      "security_dr": "سیستم کنترل کشش و پایداری",
+      "security_en": "Traction and Stability Control",
+      "consumption_dr": "۱۳ لیتر در ۱۰۰ کیلومتر",
+      "consumption_en": "13 Liters per 100 KM"
+    }
+  },
+
+  {
+    "id": "6",
+    "name_dr": "تویوتا راو 4",
+    "name_en": "Toyota RAV4",
+    "type": "standard",
+    "category": "SUV",
+    "isArmored": false,
+    "passengerCapacity": 5,
+    "tags_dr": ["اقتصادی", "شهری", "راحت"],
+    "tags_en": ["Economical", "City", "Comfortable"],
+    "shortDesc_dr": "موتر شهری کم‌مصرف و راحت برای سفرهای روزمره و کاری.",
+    "shortDesc_en": "A comfortable and fuel-efficient SUV for everyday and business travel.",
+    "longDesc_dr": "تویوتا راو 4 گزینه‌ای اقتصادی و راحت برای سفرهای شهری و کاری است و مصرف سوخت مناسبی دارد.",
+    "longDesc_en": "The Toyota RAV4 is an economical and comfortable choice for city and business travel with efficient fuel consumption.",
+    "mainImage": "/images/cars/fortuner-main.jpg",
+    "gallery": [
+      "/images/cars/rav4-thumb1.jpg",
+      "/images/cars/rav4-thumb2.jpg"
+    ],
+    "specs": {
+      "fuelType_dr": "پترول",
+      "fuelType_en": "Petrol",
+      "engine_dr": "2.5L 4-Cylinder",
+      "engine_en": "2.5L 4-Cylinder",
+      "gearbox_dr": "اتوماتیک",
+      "gearbox_en": "Automatic",
+      "driveType_dr": "دو دیفرانسیل",
+      "driveType_en": "All-Wheel Drive",
+      "security_dr": "سیستم‌های پیشرفته ایمنی",
+      "security_en": "Advanced Safety Systems",
+      "consumption_dr": "۸ لیتر در ۱۰۰ کیلومتر",
+      "consumption_en": "8 Liters per 100 KM"
+    }
+  },
+
+  {
+    "id": "7",
+    "name_dr": "مرسدس بنز کلاس S",
+    "name_en": "Mercedes-Benz S-Class",
+    "type": "luxury",
+    "category": "Luxury Sedan",
+    "isArmored": false,
+    "passengerCapacity": 5,
+    "tags_dr": ["VIP", "لوکس", "تشریفاتی"],
+    "tags_en": ["VIP", "Luxury", "Executive"],
+    "shortDesc_dr": "سدان لوکس و تشریفاتی برای جلسات رسمی، تجاری و مهمانان ویژه.",
+    "shortDesc_en": "A premium executive sedan for official meetings, business trips, and VIP guests.",
+    "longDesc_dr": "مرسدس بنز کلاس S با طراحی لوکس، فضای داخلی ممتاز و امکانات پیشرفته، انتخابی ایده‌آل برای سفرهای تشریفاتی است.",
+    "longDesc_en": "The Mercedes-Benz S-Class offers premium luxury, advanced technology, and exceptional comfort for executive travel.",
+    "mainImage": "/images/cars/landcruiser-main.jpg",
+    "gallery": [
+      "/images/cars/mercedes-sclass-thumb1.jpg",
+      "/images/cars/mercedes-sclass-thumb2.jpg"
+    ],
+    "specs": {
+      "fuelType_dr": "پترول",
+      "fuelType_en": "Petrol",
+      "engine_dr": "3.0L Turbo",
+      "engine_en": "3.0L Turbo",
+      "gearbox_dr": "۹ سرعته اتوماتیک",
+      "gearbox_en": "9-Speed Automatic",
+      "driveType_dr": "محور عقب",
+      "driveType_en": "Rear-Wheel Drive",
+      "security_dr": "سیستم کامل کمک‌راننده",
+      "security_en": "Advanced Driver Assistance",
+      "consumption_dr": "۹ لیتر در ۱۰۰ کیلومتر",
+      "consumption_en": "9 Liters per 100 KM"
+    }
+  },
+
+  {
+    "id": "8",
+    "name_dr": "تویوتا لندکروزر 300",
+    "name_en": "Toyota Land Cruiser 300",
+    "type": "luxury",
+    "category": "4WD",
+    "isArmored": false,
+    "passengerCapacity": 7,
+    "tags_dr": ["VIP", "قدرت بالا", "ولایتی"],
+    "tags_en": ["VIP", "Powerful", "Provincial"],
+    "shortDesc_dr": "شاسی‌بلند قدرتمند و لوکس برای سفرهای طولانی و مسیرهای دشوار.",
+    "shortDesc_en": "A powerful and luxurious SUV for long-distance travel and challenging roads.",
+    "longDesc_dr": "لندکروزر 300 با ترکیب قدرت، دوام و امکانات لوکس، انتخابی مطمئن برای سفرهای شهری و ولایتی است.",
+    "longDesc_en": "The Land Cruiser 300 combines power, durability, and luxury for reliable city and provincial travel.",
+    "mainImage": "/images/cars/fortuner-main.jpg",
+    "gallery": [
+      "/images/cars/landcruiser300-thumb1.jpg",
+      "/images/cars/landcruiser300-thumb2.jpg"
+    ],
+    "specs": {
+      "fuelType_dr": "پترول",
+      "fuelType_en": "Petrol",
+      "engine_dr": "3.5L V6 Twin Turbo",
+      "engine_en": "3.5L V6 Twin Turbo",
+      "gearbox_dr": "۱۰ سرعته اتوماتیک",
+      "gearbox_en": "10-Speed Automatic",
+      "driveType_dr": "چهار چرخ محرک (4WD)",
+      "driveType_en": "Four-Wheel Drive (4WD)",
+      "security_dr": "سیستم‌های پیشرفته ایمنی",
+      "security_en": "Advanced Safety Systems",
+      "consumption_dr": "۱۲ لیتر در ۱۰۰ کیلومتر",
+      "consumption_en": "12 Liters per 100 KM"
+    }
+  },
+  {
+  "id": "9",
+  "name_dr": "تویوتا پرادو 250 (مدل 2025)",
+  "name_en": "Toyota Land Cruiser Prado 250 (2025)",
+  "type": "standard",
+  "category": "4WD",
+  "isArmored": false,
+  "passengerCapacity": 7,
+  "tags_dr": ["خانوادگی", "قدرتمند", "مناسب ولایات"],
+  "tags_en": ["Family", "Powerful", "Provincial"],
+  "shortDesc_dr": "شاسی‌بلند مدرن و قدرتمند با فضای جادار، مناسب سفرهای شهری و مسیرهای دشوار ولایتی.",
+  "shortDesc_en": "A modern and powerful SUV with spacious comfort, ideal for city travel and challenging provincial routes.",
+  "longDesc_dr": "تویوتا پرادو 250 با طراحی مدرن، سیستم چهارچرخ محرک و فضای داخلی جادار، گزینه‌ای مطمئن برای سفرهای خانوادگی، تجاری و ولایتی است. این موتر ترکیبی از قدرت، راحتی و قابلیت عبور از مسیرهای دشوار را ارائه می‌کند.",
+  "longDesc_en": "The Toyota Land Cruiser Prado 250 combines modern design, four-wheel-drive capability, and a spacious interior, making it a reliable choice for family, business, and provincial travel. It offers an excellent balance of power, comfort, and off-road capability.",
+  "mainImage": "/images/cars/landcruiser-main.jpg",
+  "gallery": [
+    "/images/cars/prado250-thumb1.jpg",
+    "/images/cars/prado250-thumb2.jpg",
+    "/images/cars/prado250-thumb3.jpg"
+  ],
+  "specs": {
+    "fuelType_dr": "پترول",
+    "fuelType_en": "Petrol",
+    "engine_dr": "2.7L 4-Cylinder",
+    "engine_en": "2.7L 4-Cylinder",
+    "gearbox_dr": "۸ سرعته اتوماتیک",
+    "gearbox_en": "8-Speed Automatic",
+    "driveType_dr": "چهار چرخ محرک (4WD)",
+    "driveType_en": "Four-Wheel Drive (4WD)",
+    "security_dr": "سیستم‌های پیشرفته ایمنی و کنترل پایداری",
+    "security_en": "Advanced Safety & Stability Systems",
+    "consumption_dr": "۱۰ لیتر در ۱۰۰ کیلومتر",
+    "consumption_en": "10 Liters per 100 KM"
+  }
+}
     ],
     "services": [
-      {
-        "id": "s1",
-        "title_dr": "کرایه موترهای زرهی و لوکس",
-        "title_en": "Armored & Luxury Car Rentals",
-        "desc_dr": "دسترسی به مدرن‌ترین ناوگان خودروهای ضدگلوله و لوکس همراه با رانندگان مجرب شهری.",
-        "desc_en": "Access to the most modern fleet of bulletproof and luxury vehicles with experienced city drivers.",
-        "icon": "ShieldCheckIcon"
-      },
-      {
-        "id": "s2",
-        "title_dr": "تیم محافظت و همراهی اسکورت",
-        "title_en": "Security & Escort Teams",
-        "desc_dr": "فراهم‌سازی محافظین مسطح حرفه‌ای جهت تامین امنیت کامل در مسیرهای ولایتی افغانستان.",
-        "desc_en": "Providing professional armed security guards to ensure absolute safety along provincial routes.",
-        "icon": "UsersIcon"
-      },
-      {
-        "id": "s3",
-        "title_dr": "خدمات ریزرف هوتل و مترجم",
-        "title_en": "Hotel Reservations & Translators",
-        "desc_dr": "هماهنگی کامل محل اقامت ایمن در کابل و ولایات به همراه مترجمین مسلط به زبان‌های محلی.",
-        "desc_en": "Full coordination of secure accommodation in Kabul and provinces with translators fluent in local languages.",
-        "icon": "GlobeAltIcon"
-      }
+  {
+    "id": "s1",
+    "title_dr": "تور و راهنمای گردشگری",
+    "title_en": "Tours & Travel Guide",
+    "desc_dr": "برنامه‌ریزی سفر و همراهی راهنمایان محلی و چندزبانه",
+    "desc_en": "Travel planning with local and multilingual guides",
+    "icon": "streamline-block:travel-map"
+  },
+  {
+    "id": "s2",
+    "title_dr": "ریزرف هوتل",
+    "title_en": "Hotel Reservation",
+    "desc_dr": "هماهنگی محل اقامت ایمن و مناسب در کابل و ولایات",
+    "desc_en": "Secure and suitable accommodation coordination in Kabul and provinces",
+    "icon": "fontisto:hotel"
+  },
+  {
+    "id": "s3",
+    "title_dr": "راننده خصوصی",
+    "title_en": "Private Driver",
+    "desc_dr": "رانندگان حرفه‌ای و مجرب برای سفرهای شهری و بین‌شهری",
+    "desc_en": "Professional and experienced drivers for city and intercity travel",
+    "icon": "griddy-icons:private-driver-filled"
+  },
+  {
+    "id": "s4",
+    "title_dr": "کرایه موتر",
+    "title_en": "Car Rental",
+    "desc_dr": "دسترسی به موترهای لوکس، 4WD و زرهی برای مسیرهای مختلف",
+    "desc_en": "Access to luxury, 4WD and armored vehicles for different routes",
+    "icon": "lucide:car"
+  },
+  {
+    "id": "s5",
+    "title_dr": "عکاسی و ثبت خاطرات",
+    "title_en": "Photography",
+    "desc_dr": "ثبت لحظات سفر شما با خدمات حرفه‌ای عکاسی",
+    "desc_en": "Capture your travel moments with professional photography services",
+    "icon": "material-symbols-light:camera-rounded"
+  },
+  {
+    "id": "s6",
+    "title_dr": "خدمات صحی",
+    "title_en": "Healthcare Services",
+    "desc_dr": "هماهنگی خدمات صحی و پشتیبانی لازم در طول سفر",
+    "desc_en": "Healthcare coordination and necessary support throughout your journey",
+    "icon": "iconoir:healthcare"
+  },
+  {
+    "id": "s7",
+    "title_dr": "مترجم چندزبانه",
+    "title_en": "Multilingual Translator",
+    "desc_dr": "مترجمین مسلط به زبان‌های محلی و بین‌المللی",
+    "desc_en": "Translators fluent in local and international languages",
+    "icon": "carbon:ibm-watson-language-translator"
+  },
+  {
+    "id": "s8",
+    "title_dr": "ترانسفر میدان هوایی",
+    "title_en": "Airport Transfer",
+    "desc_dr": "ترانسفر امن و راحت از میدان هوایی به مقصد شما",
+    "desc_en": "Safe and comfortable airport transfers to your destination",
+    "icon": "mdi:local-airport"
+  }
     ],
     "testimonials": [
       {
@@ -135,4 +420,14 @@
       }
     ]
   }
+  
+
+
+
+
+
+
+
+
+
   
