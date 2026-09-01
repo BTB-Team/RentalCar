@@ -31,34 +31,40 @@ const CarSection = () => {
       {/* View More Vehicles */}
       <div className="mt-[48px] flex justify-center">
         <Link
-          to="/cars"
-          className="
-            flex
-            h-[48px]
-            items-center
-            justify-center
-            gap-[8px]
-            rounded-[20px]
-            bg-brand-yellow
-            px-[24px]
-            font-extrabold
-            text-[16px]
-            leading-none
-            text-brand-black
-            transition-opacity
-            hover:opacity-80
-          "
-        >
-          <span>{t.cars?.view_more}</span>
+        to="/cars"
+        className="
+          flex
+          h-[60px]
+          w-[280px]
+          shrink-0
+          items-center
+          justify-center
+          gap-[12px]
+          rounded-[20px]
+          bg-brand-yellow
+          px-[20px]
+          font-[700]
+          text-[20px]
+          leading-[100%]
+          tracking-[0%]
+          text-center
+          text-brand-black
+          transition-opacity
+          hover:opacity-80
+      "
+      >
+        <span className="whitespace-nowrap">
+          {t.cars?.view_more}
+        </span>
 
-          <Icon
+        <Icon
           icon="humbleicons:arrow-up"
           width="32"
           height="32"
-          className={isDari ? '-rotate-90' : 'rotate-90'} 
+          className={`shrink-0 ${isDari ? 'rotate-90' : '-rotate-90'}`}
           aria-hidden="true"
         />
-        </Link>
+      </Link>
       </div>
     </section>
   );

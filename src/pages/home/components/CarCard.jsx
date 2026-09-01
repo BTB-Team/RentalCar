@@ -80,17 +80,18 @@ export const CarCard = ({ car }) => {
         >
         {/* Car Name */}
         <h2
-          className="
-            min-h-[37px]
-            text-start
-            font-extrabold
-            text-[24px]
-            leading-[100%]
-            text-brand-black
-          " 
-        >
-          {carName}
-        </h2>
+  className="
+    min-h-[37px]
+    text-start
+    font-[600]
+    text-[24px]
+    leading-[100%]
+    tracking-[0%]
+    text-brand-black
+  "
+>s
+  {carName}
+</h2>
 
         {/* =========================
             Tags
@@ -129,18 +130,19 @@ export const CarCard = ({ car }) => {
           {/* Category + Security */}
           <span
             className="
-              inline-flex
-              min-h-[26px]
-              items-center
-              justify-center
-              rounded-[20px]
-              bg-brand-yellow
-              px-[12px]
-              font-regular
-              text-[16px]
-              leading-none
-              text-brand-black
-            "
+            inline-flex
+            min-h-[26px]
+            items-center
+            justify-center
+            rounded-[20px]
+            bg-brand-yellow
+            px-[12px]
+            font-[600]
+            text-[16px]
+            leading-[100%]
+            tracking-[0%]
+            text-brand-black
+          "
           >
             {categoryLabel}
             {car.isArmored && (
@@ -158,18 +160,19 @@ export const CarCard = ({ car }) => {
             Description
         ========================== */}
         <p
-          className="
-            mt-[18px]
-            min-h-[57px]
-            text-start
-            font-regular
-            text-[16px]
-            leading-[100%]
-            text-brand-black
-          "
-        >
-          {carDescription}
-        </p>
+        className="
+          mt-[18px]
+          min-h-[57px]
+          text-end
+          font-[600]
+          text-[16px]
+          leading-[100%]
+          tracking-[0%]
+          text-brand-black
+        "
+      >
+        {carDescription}
+      </p>
 
         {/* =========================
     Bottom Actions
@@ -185,51 +188,53 @@ export const CarCard = ({ car }) => {
 >
   {/* Passenger Capacity */}
   <span
-    className="
-      inline-flex
-      h-[36px]
-      min-w-[64px]
-      shrink-0
-      items-center
-      justify-center
-      whitespace-nowrap
-      rounded-[20px]
-      border
-      border-brand-yellow
-      px-[12px]
-      font-regular
-      text-[16px]
-      leading-none
-      text-brand-black
-    "
-  >
-    {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
-  </span>
+  className="
+    flex
+    h-[36px]
+    min-w-[64px]
+    shrink-0
+    items-center
+    justify-center
+    whitespace-nowrap
+    rounded-[20px]
+    border
+    border-brand-yellow
+    px-[4px]
+    font-[600]
+    text-[16px]
+    leading-[100%]
+    tracking-[0%]
+    text-center
+    text-brand-black
+  "
+>
+  {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
+</span>
 
   {/* View Details */}
   <Link
-    to={`/cars/${car.id}`}
-    className="
-      flex
-      h-[36px]
-      min-w-[135px]
-      shrink-0
-      items-center
-      justify-center
-      whitespace-nowrap
-      rounded-[20px]
-      bg-brand-yellow
-      px-[16px]
-      font-extrabold
-      text-[16px]
-      leading-none
-      text-brand-black
-      transition-opacity
-      hover:opacity-80
-    "
-  >
-    {detailLabel}
-  </Link>
+  to={`/cars/${car.id}`}
+  className="
+    flex
+    h-[36px]
+    w-[135px]
+    shrink-0
+    items-center
+    justify-center
+    rounded-[20px]
+    bg-brand-yellow
+    px-[10px]
+    font-[600]
+    text-[16px]
+    leading-[100%]
+    tracking-[0%]
+    text-brand-black
+    transition-opacity
+    hover:opacity-80
+  "
+>
+  {detailLabel}
+</Link>
 </div>
       </div>
     </article>

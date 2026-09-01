@@ -1,33 +1,59 @@
-import { useLangStore } from '../../../store/useLangStore';
-
 export const SectionHeader = ({ title, description }) => {
-  const { lang } = useLangStore();
-
   return (
     <div
-      className={`mx-auto flex w-full  mt-[80px]
-       max-w-[821px] flex-col items-center ${
-        lang === 'dr' ? 'text-center' : 'text-center'
-      }`}
+      className="
+        mx-auto
+        mt-[50px]
+        flex
+        h-[129px]
+        w-full
+        max-w-[821px]
+        flex-col
+        items-center
+        text-center
+      "
     >
+      {/* Section Title */}
       <h2
-  className="
-    text-start
-    font-blackfont
-    text-[40px]
-    leading-[100%]
-    text-brand-black
-  "
->
-  {title}
-</h2>
+        className="
+          h-[62px]
+          font-[900]
+          text-[40px]
+          leading-[100%]
+          tracking-[0%]
+          text-brand-black
+        "
+      >
+        {title}
+      </h2>
 
       {/* Yellow Divider */}
-      <div className="mt-[13px] h-[4px] w-[514px] max-w-full bg-brand-yellow" />
+      <div
+        className="
+          mt-[13px]
+          h-[4px]
+          w-[514px]
+          max-w-full
+          shrink-0
+          bg-brand-yellow
+        "
+      />
 
       {/* Section Description */}
       {description && (
-        <p className="mt-[13px] font-semibold text-[24px] leading-none text-brand-black">
+        <p
+          className="
+            mt-[13px]
+            h-[37px]
+            w-full
+            font-[600]
+            text-[24px]
+            leading-[100%]
+            tracking-[0%]
+            text-center
+            text-brand-black
+          "
+        >
           {description}
         </p>
       )}
