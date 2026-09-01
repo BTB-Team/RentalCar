@@ -1,11 +1,11 @@
 import CarSection from './components/CarSection';
-import ServicesGrid from './components/ServicesGrid';
+import ServicesSection from './components/ServicesSection';
 
 export const Home = () => {
   return (
     <>
       <CarSection />
-      <ServicesGrid />
+      <ServicesSection />
     </>
   );
 };

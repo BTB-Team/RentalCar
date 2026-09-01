@@ -17,7 +17,7 @@ export const CarGrid = () => {
           'http://localhost:5000/cars'
         );
 
-        setCars(response.data.slice(0, 6));
+        setCars(response.data.slice(0, 6)); // Limit to 6 cars
       } catch (error) {
         console.error('Failed to fetch cars:', error);
         setError(true);

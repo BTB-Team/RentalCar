@@ -8,7 +8,7 @@ export const CarCard = ({ car }) => {
 
   const isDari = lang === 'dr';
 
-  const carName = isDari ? car.name_dr : car.name_en;
+  const carName = car.name_en;
   const carDescription = isDari
     ? car.shortDesc_dr
     : car.shortDesc_en;
@@ -28,29 +28,35 @@ export const CarCard = ({ car }) => {
 
   return (
     <article
-      className="
-        w-full
-        max-w-[380px]
-        h-[455px]
-        overflow-hidden
-        rounded-[20px]
-        border
-        border-black/[0.10]
-        bg-white
-      "
+       className="
+    group
+    w-full
+    max-w-[380px]
+    h-[455px]
+    overflow-hidden
+    rounded-[20px]
+    border
+    border-black/[0.10]
+    bg-white
+    transition-all
+    duration-300
+    ease-out
+    hover:-translate-y-[6px]
+    hover:shadow-[0_14px_35px_rgba(0,0,0,0.16)]
+  "
     >
       {/* =========================
           Car Image
       ========================== */}
       <div
-        className="
-          relative
-          h-[200px]
-          w-full
-          overflow-hidden
-          rounded-t-[20px]
-        "
-      >
+  className="
+    relative
+    h-[200px]
+    w-full
+    overflow-hidden
+    rounded-t-[20px]
+  "
+>
         <img
           src={imageSrc}
           alt={carName}
@@ -80,18 +86,20 @@ export const CarCard = ({ car }) => {
         >
         {/* Car Name */}
         <h2
-  className="
-    min-h-[37px]
-    text-start
-    font-[600]
-    text-[24px]
-    leading-[100%]
-    tracking-[0%]
-    text-brand-black
-  "
->s
-  {carName}
-</h2>
+          dir="ltr"
+        className="
+          w-full
+          truncate
+          whitespace-nowrap
+          overflow-hidden
+          font-extrabold
+          text-[24px]
+          leading-[100%]
+          text-brand-black
+        "
+      >
+        {carName}
+      </h2>
 
         {/* =========================
             Tags
@@ -160,11 +168,12 @@ export const CarCard = ({ car }) => {
             Description
         ========================== */}
         <p
+        dir={isDari ? 'rtl' : 'ltr'}
         className="
           mt-[18px]
           min-h-[57px]
-          text-end
-          font-[600]
+          w-full
+          font-semibold
           text-[16px]
           leading-[100%]
           tracking-[0%]
@@ -212,7 +221,7 @@ export const CarCard = ({ car }) => {
 </span>
 
   {/* View Details */}
-  <Link
+ <Link
   to={`/cars/${car.id}`}
   className="
     flex
@@ -229,8 +238,11 @@ export const CarCard = ({ car }) => {
     leading-[100%]
     tracking-[0%]
     text-brand-black
-    transition-opacity
-    hover:opacity-80
+    transition-all
+    duration-300
+    ease-out
+    hover:scale-[1.04]
+    hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)]
   "
 >
   {detailLabel}

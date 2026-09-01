@@ -46,11 +46,14 @@ const CarSection = () => {
           font-[700]
           text-[20px]
           leading-[100%]
+          bg-brand-yellow
           tracking-[0%]
-          text-center
           text-brand-black
-          transition-opacity
-          hover:opacity-80
+          transition-all
+          duration-300
+          ease-out
+          hover:scale-[1.04]
+          hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)]
       "
       >
         <span className="whitespace-nowrap">
@@ -61,7 +64,7 @@ const CarSection = () => {
           icon="humbleicons:arrow-up"
           width="32"
           height="32"
-          className={`shrink-0 ${isDari ? 'rotate-90' : '-rotate-90'}`}
+          className={`shrink-0 ${isDari ? '-rotate-90' : 'rotate-90'}`}
           aria-hidden="true"
         />
       </Link>

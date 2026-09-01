@@ -42,17 +42,18 @@ export const SectionHeader = ({ title, description }) => {
       {/* Section Description */}
       {description && (
         <p
-          className="
-            mt-[13px]
-            h-[37px]
-            w-full
-            font-[600]
-            text-[24px]
-            leading-[100%]
-            tracking-[0%]
-            text-center
-            text-brand-black
-          "
+        
+         className="
+          mt-[13px]
+          w-full
+          whitespace-nowrap
+          font-semibold
+          text-[24px]
+          leading-[100%]
+          tracking-[0%]
+          text-center
+          text-brand-black
+        "
         >
           {description}
         </p>
