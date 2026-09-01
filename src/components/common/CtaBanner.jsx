@@ -6,7 +6,7 @@ export const CtaBanner = () => {
     const { lang } = useLangStore()
 
     return (
-        <section className="max-w-[1200px] mx-auto my-10 px-4">
+        <section className="w-[1200px] mx-auto my-10 px-4">
             <div className="bg-[#EEEEEE] rounded-[20px] h-auto md:h-[210px] flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 px-6 md:px-10 py-8 md:py-0">
 
                 {/* Icon circle — 117x117, 3px yellow border */}
