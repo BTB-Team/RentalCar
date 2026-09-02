@@ -42,11 +42,9 @@ const CarSection = () => {
           gap-[12px]
           rounded-[20px]
           bg-brand-yellow
-          px-[20px]
           font-[700]
           text-[20px]
           leading-[100%]
-          bg-brand-yellow
           tracking-[0%]
           text-brand-black
           transition-all

@@ -3,11 +3,12 @@ export const SectionHeader = ({ title, description }) => {
     <div
       className="
         mx-auto
-        mt-[50px]
         flex
         h-[129px]
         w-full
         max-w-[821px]
+        min-w-0
+        shrink-0
         flex-col
         items-center
         text-center
@@ -16,12 +17,17 @@ export const SectionHeader = ({ title, description }) => {
       {/* Section Title */}
       <h2
         className="
-          h-[62px]
-          font-[900]
-          text-[40px]
-          leading-[100%]
-          tracking-[0%]
-          text-brand-black
+          h-auto
+    w-full
+    max-w-[560px]
+    min-w-0
+    shrink-0
+    font-[900]
+    text-[40px]
+    leading-[100%]
+    tracking-[0%]
+    text-brand-black
+    lg:h-[62px]
         "
       >
         {title}
@@ -33,7 +39,6 @@ export const SectionHeader = ({ title, description }) => {
           mt-[13px]
           h-[4px]
           w-[514px]
-          max-w-full
           shrink-0
           bg-brand-yellow
         "
@@ -42,18 +47,24 @@ export const SectionHeader = ({ title, description }) => {
       {/* Section Description */}
       {description && (
         <p
-        
-         className="
-          mt-[13px]
-          w-full
-          whitespace-nowrap
-          font-semibold
-          text-[24px]
-          leading-[100%]
-          tracking-[0%]
-          text-center
-          text-brand-black
-        "
+          className="
+            mt-[13px]
+    h-auto
+    w-full
+    md:max-w-[821px]
+    sm:max-w-[600px]
+    min-w-
+    shrink-0
+    whitespace-normal
+    break-words
+    text-center
+    font-[600]
+    text-[24px]
+    leading-[100%]
+    tracking-[0%]
+    text-brand-black
+    lg:h-[37px]
+          "
         >
           {description}
         </p>

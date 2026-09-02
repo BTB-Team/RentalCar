@@ -98,9 +98,10 @@ export const CarCard = ({ car }) => {
           mt-0
           h-[222px]
           rounded-[20px]
-          ps-[13px]
-          pe-[13px]
-          py-[16px]
+          ps-[2px]
+          pe-[2px]
+          pt-[20px]
+          pb-[2px]
         "
       >
         {/* Car Name */}
@@ -108,11 +109,12 @@ export const CarCard = ({ car }) => {
         <h2
           dir={isDari ? 'rtl' : 'ltr'}
           className="
-            w-full
+            h-[40px]
+            w-[306px]
             truncate
             whitespace-nowrap
             overflow-hidden
-            font-extrabold
+            font-semibold
             text-[24px]
             leading-[100%]
             text-brand-black
@@ -142,14 +144,15 @@ export const CarCard = ({ car }) => {
               className="
                 inline-flex
                 h-[26px]
+                w-[53px]
+                shrink-0
                 items-center
                 justify-center
                 rounded-[20px]
                 bg-brand-yellow
-                px-[9px]
-                font-regular
+                font-semibold
                 text-[16px]
-                leading-none
+                leading-[100%]
                 text-brand-black
               "
             >
@@ -161,13 +164,15 @@ export const CarCard = ({ car }) => {
 
           <span
             className="
-              inline-flex
-              min-h-[26px]
+              flex
+              min-h-[20px]
               items-center
               justify-center
+              
               rounded-[20px]
               bg-brand-yellow
-              px-[12px]
+              px-[10px]
+              pt-[6px]
               font-[600]
               text-[16px]
               leading-[100%]
@@ -196,14 +201,17 @@ export const CarCard = ({ car }) => {
         <p
           dir={isDari ? 'rtl' : 'ltr'}
           className="
-            mt-[18px]
-            min-h-[57px]
-            w-full
-            font-semibold
-            text-[16px]
-            leading-[100%]
-            tracking-[0%]
-            text-brand-black
+          mt-[20px]
+          h-[57px]
+          w-full
+          overflow-hidden
+          text-ellipsis
+          font-semibold
+          text-[16px]
+          leading-[28.5px]
+          tracking-[0%]
+          text-brand-black
+          line-clamp-2
           "
         >
           {carDescription}
@@ -215,7 +223,7 @@ export const CarCard = ({ car }) => {
 
         <div
           className="
-            mt-[20px]
+            mt-[26px]
             flex
             items-center
             justify-between
@@ -227,8 +235,8 @@ export const CarCard = ({ car }) => {
           <span
             className="
               flex
+              w-fit
               h-[36px]
-              min-w-[64px]
               shrink-0
               items-center
               justify-center
@@ -236,7 +244,7 @@ export const CarCard = ({ car }) => {
               rounded-[20px]
               border
               border-brand-yellow
-              px-[4px]
+              px-[14px]
               font-[600]
               text-[16px]
               leading-[100%]

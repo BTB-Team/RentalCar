@@ -29,9 +29,9 @@ const ServicesSection = () => {
             whitespace-nowrap
             w-[610px]
             max-w-full
-            font-blackfont
+            font-black
             text-[40px]
-            leading-[100%]
+            leading-[60px]
             text-brand-black
           "
         >

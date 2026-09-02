@@ -1,0 +1,14 @@
+*[33m-[m[33m.[m   [33m5e78fc6[m[33m ([m[1;35mrefs/stash[m[33m)[m On (no branch): backup before switching to feature/landing-middle
+[31m|[m[32m\[m [33m\[m  
+[31m|[m [32m|[m * [33ma3c7ab1[m untracked files on (no branch): 98197f4 About Us Page copmpleted, and modified header and other fonts
+[31m|[m * [33m930b2e4[m index on (no branch): 98197f4 About Us Page copmpleted, and modified header and other fonts
+[31m|[m[31m/[m  
+* [33m98197f4[m[33m ([m[1;31morigin/feature/landing-middle[m[33m)[m About Us Page copmpleted, and modified header and other fonts
+*   [33meade878[m Merge branch 'feature/landing-middle' into feature/landing-middle
+[34m|[m[35m\[m  
+* [35m|[m [33m94a7f6a[m Add TrustCard component and update Dari and English translations
+[35m|[m [35m|[m * [33mf489e08[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/landing-middle[m[33m)[m eat: implement dynamic car details page
+[35m|[m [35m|[m[35m/[m  
+[35m|[m * [33m61b2685[m feat: improve home services and car cards
+[35m|[m * [33m3811394[m refactor(home): refine section header typography and spacing
+[35m|[m * [33m89b7953[m feat(home): complete car section with API integration and responsive UI

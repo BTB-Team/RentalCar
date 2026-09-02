@@ -79,10 +79,10 @@ export const ServiceCard = ({ service }) => {
             min-h-[37px]
             font-extrabold
             text-[24px]
-            leading-[100%]
+            leading-[38px]
             text-brand-black
             break-words
-            ${isDari ? 'font-extrabold text-end' : 'font-bold text-start'}
+            ${isDari ? 'font-extrabold text-start' : 'font-extrabold text-start'}
           `}
         >
           {title}
