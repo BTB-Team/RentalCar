@@ -4,25 +4,32 @@ import drTranslations from '../locales/dr.json';
 import enTranslations from '../locales/en.json';
 
 export const useLangStore = create((set) => ({
-  lang: 'dr', 
+  lang: "dr",
   // 't' به طور خودکار انبار کلمات زبان فعال را در خود نگه می‌دارد
-  t: drTranslations, 
+  t: drTranslations,
+  activeFilter: "all",
 
   setLang: (newLang) => {
-    set({ 
+    set({
       lang: newLang,
       // سوئیچ آنی و خودکار ترجمه‌ها بر اساس زبان انتخابی کاربر
-      t: newLang === 'dr' ? drTranslations : enTranslations 
+      t: newLang === "dr" ? drTranslations : enTranslations,
     });
-    
+
     // مدیریت جهت صفحه (RTL / LTR)
     const htmlElement = document.documentElement;
-    if (newLang === 'dr') {
-      htmlElement.setAttribute('dir', 'rtl');
-      htmlElement.setAttribute('lang', 'fa');
+    if (newLang === "dr") {
+      htmlElement.setAttribute("dir", "rtl");
+      htmlElement.setAttribute("lang", "fa");
     } else {
-      htmlElement.setAttribute('dir', 'ltr');
-      htmlElement.setAttribute('lang', 'en');
+      htmlElement.setAttribute("dir", "ltr");
+      htmlElement.setAttribute("lang", "en");
     }
+  },
+  // Change car filter globally
+  setActiveFilter: (filter) => {
+    set({
+      activeFilter: filter,
+    });
   },
 }));

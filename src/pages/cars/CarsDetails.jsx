@@ -1,8 +1,7 @@
-export const CarsDetails = ()=>{
-    return(
-        <>
-            <h1>CarsDetails page</h1>
-        </>
-    )
-    }
-
+export const CarsDetails = ({ car }) => {
+  return (
+    <>
+      <h1>CarsDetails Page</h1>
+    </>
+  );
+};

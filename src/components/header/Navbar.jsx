@@ -24,7 +24,7 @@ export const Navbar = () => {
         setLang(lang === 'dr' ? 'en' : 'dr');
     };
     return (
-        <header className="absolute top-[39px] inset-x-0 z-50 h-[81px]">
+        <header className="fixed top-[39px] inset-x-0 z-50 h-[81px]">
             <nav className="max-w-7xl mx-auto flex items-center px-6 gap-x-12">
                 {/* Box 1: Logo */}
                 <NavLink to="/" className="flex items-center gap-2 h-[81px]">
