@@ -3,6 +3,7 @@ import './index.css'
 import App from './App.jsx'
 import { HashRouter } from 'react-router-dom';
 
+
 // تنظیم جهت پیش‌فرض سیستم روی راست‌چین (RTL) در اولین لود
 document.documentElement.setAttribute('dir', 'rtl');
 document.documentElement.setAttribute('lang', 'fa');
