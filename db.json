@@ -1,320 +1,431 @@
 {
-    "cars": [
-      {
-        "id": "1",
-        "name_dr": "تویوتا لندکروزر زرهی (V8)",
-        "name_en": "Armored Toyota Land Cruiser (V8)",
-        "type": "luxury",
-        "category": "4WD",
-        "isArmored": true,
-        "passengerCapacity": 6,
-        "tags_dr": ["مشتریان ویژه", "امنیت عالی", "مناسب ولایات"],
-        "tags_en": ["VIP Clients", "High Security", "Provincial Travel"],
-        "shortDesc_dr": "موتر زرهی و بسیار قدرتمند برای سفرهای ویژه شهری و ولایتی با بالاترین سطح امنیت.",
-        "shortDesc_en": "A highly powerful armored vehicle for special city and provincial trips with maximum security.",
-        "longDesc_dr": "تویوتا لندکروزر زرهی نماد امنیت، قدرت و دوام در مسیرهای ناهموار است. این موتر با شیشه‌ها و بدنه ضدگلوله B6، سیستم چهارچرخ محرک، فضای داخلی بسیار وسیع و چرم درجه یک، انتخابی بی‌نظیر برای مسافرین VIP و هیئت‌های دیپلماتیک است.",
-        "longDesc_en": "The Armored Toyota Land Cruiser is the symbol of security, power, and durability on rough terrains. Equipped with B6 ballistic protection, a 4WD system, spacious leather interior, it is an exceptional choice for VIP guests and diplomatic missions.",
-        "mainImage": "/images/cars/landcruiser-main.jpg",
-        "gallery": [
-          "/images/cars/landcruiser-thumb1.jpg",
-          "/images/cars/landcruiser-thumb2.jpg",
-          "/images/cars/landcruiser-thumb3.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "دیزل",
-          "fuelType_en": "Diesel",
-          "engine_dr": "4.5L V8 توربو دیزل",
-          "engine_en": "4.5L V8 Turbo Diesel",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "چهار چرخ محرک (4WD)",
-          "driveType_en": "Four-Wheel Drive (4WD)",
-          "security_dr": "زره کلاس B6، سیستم جرثقیل، ترمز ارتقا یافته",
-          "security_en": "B6 Armoring, Winch System, Upgraded Brakes",
-          "consumption_dr": "۱۳ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "13 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "2",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
+  "cars": [
+    {
+      "id": "1",
+      "name_dr": "تویوتا لندکروزر ۲۰۱۵ VXR",
+      "name_en": "Toyota Land Cruiser 2015 VXR",
+      "type": "luxury",
 
-       {
-    "id": "3",
-    "name_dr": "لکسوس LX 600",
-    "name_en": "Lexus LX 600",
-    "type": "luxury",
-    "category": "4WD",
-    "isArmored": false,
-    "passengerCapacity": 5,
-    "tags_dr": ["لوکس", "VIP", "راحتی بالا"],
-    "tags_en": ["Luxury", "VIP", "Premium Comfort"],
-    "shortDesc_dr": "موتر لوکس و مدرن برای سفرهای رسمی، تجاری و VIP با بالاترین سطح راحتی.",
-    "shortDesc_en": "A premium luxury SUV for official, business, and VIP travel with exceptional comfort.",
-    "longDesc_dr": "لکسوس LX 600 ترکیبی از قدرت، تکنولوژی و لوکس بودن است و برای مسافرینی طراحی شده که راحتی و کیفیت را در اولویت قرار می‌دهند.",
-    "longDesc_en": "The Lexus LX 600 combines power, technology, and luxury for passengers who prioritize comfort and premium quality.",
-    "mainImage": "/images/cars/landcruiser-main.jpg",
-    "gallery": [
-      "/images/cars/lexus-lx600-thumb1.jpg",
-      "/images/cars/lexus-lx600-thumb2.jpg"
-    ],
-    "specs": {
-      "fuelType_dr": "پترول",
-      "fuelType_en": "Petrol",
-      "engine_dr": "3.5L V6 Twin Turbo",
-      "engine_en": "3.5L V6 Twin Turbo",
-      "gearbox_dr": "۱۰ سرعته اتوماتیک",
-      "gearbox_en": "10-Speed Automatic",
-      "driveType_dr": "چهار چرخ محرک (4WD)",
-      "driveType_en": "Four-Wheel Drive (4WD)",
-      "security_dr": "سیستم‌های پیشرفته ایمنی",
-      "security_en": "Advanced Safety Systems",
-      "consumption_dr": "۱۲ لیتر در ۱۰۰ کیلومتر",
-      "consumption_en": "12 Liters per 100 KM"
-    }
-  },
+      "category_dr": "4WD",
+      "category_en": "4WD",
 
-  {
-    "id": "4",
-    "name_dr": "تویوتا هایلوکس",
-    "name_en": "Toyota Hilux",
-    "type": "standard",
-    "category": "Pickup",
-    "isArmored": false,
-    "passengerCapacity": 5,
-    "tags_dr": ["مقاوم", "ولایتی", "کاری"],
-    "tags_en": ["Durable", "Provincial", "Utility"],
-    "shortDesc_dr": "موتر مقاوم و قابل اعتماد برای مسیرهای دشوار و سفرهای ولایتی.",
-    "shortDesc_en": "A reliable and durable vehicle designed for difficult roads and provincial travel.",
-    "longDesc_dr": "تویوتا هایلوکس انتخابی مناسب برای مسیرهای دشوار، سفرهای کاری و مناطق دوردست افغانستان است.",
-    "longDesc_en": "The Toyota Hilux is an excellent choice for difficult roads, field work, and remote areas across Afghanistan.",
-    "mainImage": "/images/cars/fortuner-main.jpg",
-    "gallery": [
-      "/images/cars/hilux-thumb1.jpg",
-      "/images/cars/hilux-thumb2.jpg"
-    ],
-    "specs": {
-      "fuelType_dr": "دیزل",
-      "fuelType_en": "Diesel",
-      "engine_dr": "2.8L Turbo Diesel",
-      "engine_en": "2.8L Turbo Diesel",
-      "gearbox_dr": "۶ سرعته اتوماتیک",
-      "gearbox_en": "6-Speed Automatic",
-      "driveType_dr": "چهار چرخ محرک (4WD)",
-      "driveType_en": "Four-Wheel Drive (4WD)",
-      "security_dr": "سیستم ترمز و کنترل پایداری",
-      "security_en": "Brake and Stability Control",
-      "consumption_dr": "۹ لیتر در ۱۰۰ کیلومتر",
-      "consumption_en": "9 Liters per 100 KM"
-    }
-  },
+      "isArmored": false,
 
-  {
-    "id": "5",
-    "name_dr": "تویوتا پرادو",
-    "name_en": "Toyota Prado",
-    "type": "luxury",
-    "category": "4WD",
-    "isArmored": false,
-    "passengerCapacity": 7,
-    "tags_dr": ["خانوادگی", "لوکس", "آفرود"],
-    "tags_en": ["Family", "Luxury", "Off-Road"],
-    "shortDesc_dr": "شاسی‌بلند لوکس و قدرتمند مناسب سفرهای شهری و مسیرهای خارج از شهر.",
-    "shortDesc_en": "A powerful luxury SUV suitable for both city driving and off-road adventures.",
-    "longDesc_dr": "تویوتا پرادو با فضای مناسب، قدرت بالا و قابلیت آفرود، یکی از گزینه‌های محبوب برای سفرهای طولانی است.",
-    "longDesc_en": "The Toyota Prado offers spacious comfort, strong performance, and excellent off-road capability for long-distance travel.",
-    "mainImage": "/images/cars/landcruiser-main.jpg",
-    "gallery": [
-      "/images/cars/prado-thumb1.jpg",
-      "/images/cars/prado-thumb2.jpg"
-    ],
-    "specs": {
-      "fuelType_dr": "پترول",
-      "fuelType_en": "Petrol",
-      "engine_dr": "4.0L V6",
-      "engine_en": "4.0L V6",
-      "gearbox_dr": "۶ سرعته اتوماتیک",
-      "gearbox_en": "6-Speed Automatic",
-      "driveType_dr": "چهار چرخ محرک (4WD)",
-      "driveType_en": "Four-Wheel Drive (4WD)",
-      "security_dr": "سیستم کنترل کشش و پایداری",
-      "security_en": "Traction and Stability Control",
-      "consumption_dr": "۱۳ لیتر در ۱۰۰ کیلومتر",
-      "consumption_en": "13 Liters per 100 KM"
-    }
-  },
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
 
-  {
-    "id": "6",
-    "name_dr": "تویوتا راو 4",
-    "name_en": "Toyota RAV4",
-    "type": "standard",
-    "category": "SUV",
-    "isArmored": false,
-    "passengerCapacity": 5,
-    "tags_dr": ["اقتصادی", "شهری", "راحت"],
-    "tags_en": ["Economical", "City", "Comfortable"],
-    "shortDesc_dr": "موتر شهری کم‌مصرف و راحت برای سفرهای روزمره و کاری.",
-    "shortDesc_en": "A comfortable and fuel-efficient SUV for everyday and business travel.",
-    "longDesc_dr": "تویوتا راو 4 گزینه‌ای اقتصادی و راحت برای سفرهای شهری و کاری است و مصرف سوخت مناسبی دارد.",
-    "longDesc_en": "The Toyota RAV4 is an economical and comfortable choice for city and business travel with efficient fuel consumption.",
-    "mainImage": "/images/cars/fortuner-main.jpg",
-    "gallery": [
-      "/images/cars/rav4-thumb1.jpg",
-      "/images/cars/rav4-thumb2.jpg"
-    ],
-    "specs": {
-      "fuelType_dr": "پترول",
-      "fuelType_en": "Petrol",
-      "engine_dr": "2.5L 4-Cylinder",
-      "engine_en": "2.5L 4-Cylinder",
-      "gearbox_dr": "اتوماتیک",
-      "gearbox_en": "Automatic",
-      "driveType_dr": "دو دیفرانسیل",
-      "driveType_en": "All-Wheel Drive",
-      "security_dr": "سیستم‌های پیشرفته ایمنی",
-      "security_en": "Advanced Safety Systems",
-      "consumption_dr": "۸ لیتر در ۱۰۰ کیلومتر",
-      "consumption_en": "8 Liters per 100 KM"
-    }
-  },
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
 
-  {
-    "id": "7",
-    "name_dr": "مرسدس بنز کلاس S",
-    "name_en": "Mercedes-Benz S-Class",
-    "type": "luxury",
-    "category": "Luxury Sedan",
-    "isArmored": false,
-    "passengerCapacity": 5,
-    "tags_dr": ["VIP", "لوکس", "تشریفاتی"],
-    "tags_en": ["VIP", "Luxury", "Executive"],
-    "shortDesc_dr": "سدان لوکس و تشریفاتی برای جلسات رسمی، تجاری و مهمانان ویژه.",
-    "shortDesc_en": "A premium executive sedan for official meetings, business trips, and VIP guests.",
-    "longDesc_dr": "مرسدس بنز کلاس S با طراحی لوکس، فضای داخلی ممتاز و امکانات پیشرفته، انتخابی ایده‌آل برای سفرهای تشریفاتی است.",
-    "longDesc_en": "The Mercedes-Benz S-Class offers premium luxury, advanced technology, and exceptional comfort for executive travel.",
-    "mainImage": "/images/cars/landcruiser-main.jpg",
-    "gallery": [
-      "/images/cars/mercedes-sclass-thumb1.jpg",
-      "/images/cars/mercedes-sclass-thumb2.jpg"
-    ],
-    "specs": {
-      "fuelType_dr": "پترول",
-      "fuelType_en": "Petrol",
-      "engine_dr": "3.0L Turbo",
-      "engine_en": "3.0L Turbo",
-      "gearbox_dr": "۹ سرعته اتوماتیک",
-      "gearbox_en": "9-Speed Automatic",
-      "driveType_dr": "محور عقب",
-      "driveType_en": "Rear-Wheel Drive",
-      "security_dr": "سیستم کامل کمک‌راننده",
-      "security_en": "Advanced Driver Assistance",
-      "consumption_dr": "۹ لیتر در ۱۰۰ کیلومتر",
-      "consumption_en": "9 Liters per 100 KM"
-    }
-  },
+      "passengerCapacity": 7,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
 
-  {
-    "id": "8",
-    "name_dr": "تویوتا لندکروزر 300",
-    "name_en": "Toyota Land Cruiser 300",
-    "type": "luxury",
-    "category": "4WD",
-    "isArmored": false,
-    "passengerCapacity": 7,
-    "tags_dr": ["VIP", "قدرت بالا", "ولایتی"],
-    "tags_en": ["VIP", "Powerful", "Provincial"],
-    "shortDesc_dr": "شاسی‌بلند قدرتمند و لوکس برای سفرهای طولانی و مسیرهای دشوار.",
-    "shortDesc_en": "A powerful and luxurious SUV for long-distance travel and challenging roads.",
-    "longDesc_dr": "لندکروزر 300 با ترکیب قدرت، دوام و امکانات لوکس، انتخابی مطمئن برای سفرهای شهری و ولایتی است.",
-    "longDesc_en": "The Land Cruiser 300 combines power, durability, and luxury for reliable city and provincial travel.",
-    "mainImage": "/images/cars/fortuner-main.jpg",
-    "gallery": [
-      "/images/cars/landcruiser300-thumb1.jpg",
-      "/images/cars/landcruiser300-thumb2.jpg"
-    ],
-    "specs": {
-      "fuelType_dr": "پترول",
-      "fuelType_en": "Petrol",
-      "engine_dr": "3.5L V6 Twin Turbo",
-      "engine_en": "3.5L V6 Twin Turbo",
-      "gearbox_dr": "۱۰ سرعته اتوماتیک",
-      "gearbox_en": "10-Speed Automatic",
-      "driveType_dr": "چهار چرخ محرک (4WD)",
-      "driveType_en": "Four-Wheel Drive (4WD)",
-      "security_dr": "سیستم‌های پیشرفته ایمنی",
-      "security_en": "Advanced Safety Systems",
-      "consumption_dr": "۱۲ لیتر در ۱۰۰ کیلومتر",
-      "consumption_en": "12 Liters per 100 KM"
+      "tags_dr": [
+        "VXR",
+        "4WD",
+        "امنیت بالا"
+      ],
+      "tags_en": [
+        "VXR",
+        "4WD",
+        "High Security"
+      ],
+
+      "shortDesc_dr": "تویوتا لندکروزر VXR با قدرت بالا و سیستم چهارچرخ محرک، مناسب سفرهای شهری و مسیرهای دشوار.",
+      "shortDesc_en": "The Toyota Land Cruiser VXR combines powerful performance and 4WD capability for city and challenging road travel.",
+
+      "longDesc_dr": "تویوتا لندکروزر ۲۰۱۵ VXR با موتور V8، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های ایمنی مانند ABS، Airbags، VSC و HAC، گزینه‌ای قدرتمند و قابل اعتماد برای سفرهای شهری و ولایتی است. این موتر ظرفیت ۷ سرنشین دارد و فضای مناسبی برای حمل وسایل سفر فراهم می‌کند.",
+      "longDesc_en": "The 2015 Toyota Land Cruiser VXR features a powerful V8 engine, four-wheel drive, and advanced safety systems including ABS, airbags, VSC, and HAC. With seating for seven passengers and generous luggage capacity, it is a reliable choice for city and provincial travel.",
+
+      "mainImage": "/images/cars/IMG_9321.JPG.jpeg",
+
+      "gallery": [
+        "/images/cars/IMG_9326.JPG.jpeg",
+        "/images/cars/IMG_9327.JPG.jpeg",
+        "/images/cars/IMG_9322.JPG.jpeg",
+        "/images/cars/IMG_9328.JPG.jpeg"
+      ],
+
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+
+        "engine_dr": "V8 – 8 Cylinder",
+        "engine_en": "V8 – 8 Cylinder",
+
+        "gearbox_dr": "اتومات",
+        "gearbox_en": "Automatic",
+
+        "driveType_dr": "چهارچرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+
+        "security_dr": "ABS، Airbags، VSC، HAC و سایر سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags, VSC, HAC and other safety systems",
+
+        "consumption_dr": "حدود ۱۴–۱۶ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 14–16 Liters per 100 KM",
+
+        "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
+        "luggage_en": "3 large bags + 2 hand luggage"
+      }
+    },
+
+    {
+      "id": "2",
+      "name_dr": "تویوتا 4Runner ۲۰۲۵ i-FORCE MAX",
+      "name_en": "Toyota 4Runner 2025 i-FORCE MAX",
+      "type": "standard",
+
+      "category_dr": "4WD",
+      "category_en": "4WD",
+
+      "isArmored": false,
+
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+
+      "passengerCapacity": 7,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+
+      "tags_dr": [
+        "Hybrid",
+        "4WD",
+        "اقتصادی"
+      ],
+      "tags_en": [
+        "Hybrid",
+        "4WD",
+        "Efficient"
+      ],
+
+      "shortDesc_dr": "تویوتا 4Runner مدل ۲۰۲۵ با موتور هیبریدی i-FORCE MAX، مناسب سفرهای شهری و ولایتی.",
+      "shortDesc_en": "The 2025 Toyota 4Runner i-FORCE MAX combines hybrid power and 4WD capability for city and provincial travel.",
+
+      "longDesc_dr": "تویوتا 4Runner مدل ۲۰۲۵ با سیستم i-FORCE MAX هایبرید، موتور توربو و قدرت ۳۲۶ اسب بخار، انتخابی قدرتمند و مدرن برای سفرهای خانوادگی و ولایتی است. این موتر با سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های ایمنی، ظرفیت ۷ سرنشین را فراهم می‌کند.",
+      "longDesc_en": "The 2025 Toyota 4Runner i-FORCE MAX features a turbo hybrid powertrain producing 326 HP, combined with four-wheel drive and advanced safety systems. It offers seating for seven passengers and is well suited for family and provincial travel.",
+
+      "mainImage": "/images/cars/IMG_8917.JPG.jpeg",
+
+      "gallery": [
+        "/images/cars/IMG_8791.JPG.jpeg",
+        "/images/cars/IMG_8794.JPG.jpeg",
+        "/images/cars/IMG_8798.JPG.jpeg",
+        "/images/cars/IMG_8919.JPEG"
+      ],
+
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+
+        "engine_dr": "2.4L Turbo Hybrid – 326 HP",
+        "engine_en": "2.4L Turbo Hybrid – 326 HP",
+
+        "gearbox_dr": "اتومات ۸ سرعته",
+        "gearbox_en": "8-Speed Automatic",
+
+        "driveType_dr": "چهارچرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+
+        "security_dr": "ABS، Airbags، VSC، HAC",
+        "security_en": "ABS, Airbags, VSC, HAC",
+
+        "consumption_dr": "حدود ۱۰–۱۱ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 10–11 Liters per 100 KM",
+
+        "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
+        "luggage_en": "2 large bags + 1 hand luggage"
+      }
+    },
+
+    {
+      "id": "3",
+      "name_dr": "لکسوس LX 600",
+      "name_en": "Lexus LX 600",
+      "type": "luxury",
+
+      "category_dr": "4WD",
+      "category_en": "4WD",
+
+      "isArmored": false,
+
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+
+      "passengerCapacity": 7,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+
+      "tags_dr": [
+        "VIP",
+        "لوکس",
+        "امنیت بالا"
+      ],
+      "tags_en": [
+        "VIP",
+        "Luxury",
+        "High Security"
+      ],
+
+      "shortDesc_dr": "لکسوس LX 600 موتر لوکس و قدرتمند برای سفرهای VIP شهری و بین‌شهری.",
+      "shortDesc_en": "The Lexus LX 600 is a powerful luxury SUV designed for VIP city and intercity travel.",
+
+      "longDesc_dr": "لکسوس LX 600 با موتور ۳.۵ لیتری V6 توین توربو، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های پیشرفته ایمنی، گزینه‌ای ممتاز برای مشتریان VIP و سفرهای رسمی و طولانی است. این موتر ظرفیت ۷ سرنشین و فضای مناسب برای وسایل سفر دارد.",
+      "longDesc_en": "The Lexus LX 600 features a 3.5L V6 twin-turbo engine, four-wheel drive, and advanced safety technologies. It is an excellent choice for VIP guests, official trips, and long-distance travel, with seating for seven passengers.",
+
+      "mainImage": "/images/cars/IMG_9330.JPG.jpeg",
+
+      "gallery": [
+        "/images/cars/IMG_9334.JPG.jpeg",
+        "/images/cars/IMG_9332.JPG.jpeg",
+        "/images/cars/IMG_9333.JPG.jpeg",
+        "/images/cars/IMG_9331.JPG.jpeg"
+      ],
+
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+
+        "engine_dr": "3.5L V6 Twin-Turbo",
+        "engine_en": "3.5L V6 Twin-Turbo",
+
+        "gearbox_dr": "اتومات + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+
+        "driveType_dr": "چهارچرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+
+        "security_dr": "ABS، Airbags، Auto Brake، Radar Cruise و سایر سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags, Auto Brake, Radar Cruise and other safety systems",
+
+        "consumption_dr": "حدود ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 13–15 Liters per 100 KM",
+
+        "luggage_dr": "مناسب برای بکس‌های سفری",
+        "luggage_en": "Suitable for travel luggage"
+      }
+    },
+
+    {
+      "id": "4",
+      "name_dr": "مرسدس بنز G-Class G63",
+      "name_en": "Mercedes-Benz G-Class G63",
+      "type": "luxury",
+
+      "category_dr": "AWD",
+      "category_en": "AWD",
+
+      "isArmored": false,
+
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+
+      "tags_dr": [
+        "VIP",
+        "لوکس",
+        "قدرت بالا"
+      ],
+      "tags_en": [
+        "VIP",
+        "Luxury",
+        "Powerful"
+      ],
+
+      "shortDesc_dr": "مرسدس بنز G63 یک موتر لوکس و قدرتمند برای سفرهای VIP و رسمی است.",
+      "shortDesc_en": "The Mercedes-Benz G63 is a powerful luxury SUV designed for VIP and executive travel.",
+
+      "longDesc_dr": "مرسدس بنز G-Class G63 با موتور V8 توین توربو، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های پیشرفته ایمنی و کمکی، ترکیبی از قدرت، لوکس بودن و عملکرد بالا را ارائه می‌دهد. این موتر ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The Mercedes-Benz G-Class G63 combines a V8 twin-turbo engine, all-wheel drive, advanced safety systems, and premium luxury. With seating for five passengers, it is designed for VIP and executive travel.",
+
+      "mainImage": "/images/cars/IMG_9265.JPG.jpeg",
+
+      "gallery": [
+        "/images/cars/IMG_8181.JPG.jpeg",
+        "/images/cars/IMG_8174.JPG.jpeg",
+        "/images/cars/IMG_8172.JPG.jpeg",
+        "/images/cars/IMG_9336.JPG.jpeg"
+      ],
+
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+
+        "engine_dr": "V8 Twin-Turbo",
+        "engine_en": "V8 Twin-Turbo",
+
+        "gearbox_dr": "اتومات",
+        "gearbox_en": "Automatic",
+
+        "driveType_dr": "چهارچرخ محرک (AWD)",
+        "driveType_en": "All-Wheel Drive (AWD)",
+
+        "security_dr": "Airbags، ABS، سنسورها، Radar و سیستم‌های کمکی",
+        "security_en": "Airbags, ABS, sensors, radar and driver assistance systems",
+
+        "consumption_dr": "حدود ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 13–15 Liters per 100 KM",
+
+        "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
+        "luggage_en": "2 large bags + 1 hand luggage"
+      }
+    },
+
+    {
+      "id": "5",
+      "name_dr": "جیپ رانگلر Unlimited ۲۰۲۱",
+      "name_en": "Jeep Wrangler Unlimited 2021",
+      "type": "standard",
+
+      "category_dr": "4WD",
+      "category_en": "4WD",
+
+      "isArmored": false,
+
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+
+      "tags_dr": [
+        "4WD",
+        "ماجراجویی",
+        "آفرود"
+      ],
+      "tags_en": [
+        "4WD",
+        "Adventure",
+        "Off-Road"
+      ],
+
+      "shortDesc_dr": "جیپ رانگلر Unlimited برای سفرهای ماجراجویانه و مسیرهای دشوار گزینه‌ای قدرتمند است.",
+      "shortDesc_en": "The Jeep Wrangler Unlimited is a capable SUV built for adventure and challenging off-road travel.",
+
+      "longDesc_dr": "جیپ رانگلر Unlimited مدل ۲۰۲۱ با موتور V6 توربو، سیستم چهارچرخ محرک و سیستم‌های ایمنی پیشرفته، برای مسیرهای دشوار و سفرهای ماجراجویانه طراحی شده است. این موتر ظرفیت ۵ سرنشین دارد و فضای مناسبی برای وسایل سفر فراهم می‌کند.",
+      "longDesc_en": "The 2021 Jeep Wrangler Unlimited features a V6 turbo petrol engine, four-wheel drive, and advanced safety systems. It is designed for challenging roads, adventure trips, and off-road travel with seating for five passengers.",
+
+      "mainImage": "/images/cars/IMG_8310.PNG",
+
+      "gallery": [
+        "/images/cars/IMG_8309.JPG.jpeg",
+        "/images/cars/IMG_8308.JPG.jpeg",
+        "/images/cars/IMG_8296.JPG.jpeg",
+        "/images/cars/IMG_8294.JPG.jpeg"
+      ],
+
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+
+        "engine_dr": "V6 Turbo – 6 Cylinder Petrol",
+        "engine_en": "V6 Turbo – 6 Cylinder Petrol",
+
+        "gearbox_dr": "اتومات",
+        "gearbox_en": "Automatic",
+
+        "driveType_dr": "چهارچرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+
+        "security_dr": "Airbags، ABS، Radar System و سایر سیستم‌های ایمنی",
+        "security_en": "Airbags, ABS, Radar System and other safety systems",
+
+        "consumption_dr": "حدود ۱۲–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 12–15 Liters per 100 KM",
+
+        "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
+        "luggage_en": "2 large bags + 1 hand luggage"
+      }
+    },
+
+    {
+      "id": "6",
+      "name_dr": "لکسوس LX 600 مدل ۲۰۲۴",
+      "name_en": "Lexus LX 600 2024 Model",
+      "type": "luxury",
+
+      "category_dr": "4WD",
+      "category_en": "4WD",
+
+      "isArmored": false,
+
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+
+      "passengerCapacity": 7,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+
+      "tags_dr": [
+        "VIP",
+        "لوکس",
+        "مدل ۲۰۲۴"
+      ],
+      "tags_en": [
+        "VIP",
+        "Luxury",
+        "2024 Model"
+      ],
+
+      "shortDesc_dr": "لکسوس LX 600 مدل ۲۰۲۴ با قدرت بالا و امکانات پیشرفته برای سفرهای VIP.",
+      "shortDesc_en": "The 2024 Lexus LX 600 offers powerful performance and advanced features for premium VIP travel.",
+
+      "longDesc_dr": "لکسوس LX 600 مدل ۲۰۲۴ با موتور ۳.۵ لیتری V6 توین توربو، گیربکس ۱۰ سرعته اتوماتیک، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های پیشرفته ایمنی و کمکی، انتخابی ممتاز برای سفرهای VIP و رسمی است. این موتر ظرفیت ۷ سرنشین دارد.",
+      "longDesc_en": "The 2024 Lexus LX 600 features a 3.5L V6 twin-turbo engine, 10-speed automatic transmission, four-wheel drive, and advanced safety and driver-assistance systems. It is an excellent choice for VIP and official travel with seating for seven passengers.",
+
+      "mainImage": "/images/cars/IMG_9338.JPG.jpeg",
+
+      "gallery": [
+        "/images/cars/IMG_9340.JPG.jpeg",
+        "/images/cars/IMG_9342.JPG.jpeg",
+        "/images/cars/IMG_9341.JPG.jpeg",
+        "/images/cars/IMG_9343.JPG.jpeg"
+      ],
+
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+
+        "engine_dr": "3.5L V6 Twin-Turbo",
+        "engine_en": "3.5L V6 Twin-Turbo",
+
+        "gearbox_dr": "اتومات ۱۰ سرعته + حالت دستی",
+        "gearbox_en": "10-Speed Automatic + Manual Mode",
+
+        "driveType_dr": "چهارچرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+
+        "security_dr": "ABS، Airbags، Auto Brake، Radar Cruise Control و سیستم‌های کمکی",
+        "security_en": "ABS, Airbags, Auto Brake, Radar Cruise Control and driver assistance systems",
+
+        "consumption_dr": "حدود ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 13–15 Liters per 100 KM",
+
+        "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
+        "luggage_en": "3 large bags + 2 hand luggage"
+      }
     }
-  },
-  {
-  "id": "9",
-  "name_dr": "تویوتا پرادو 250 (مدل 2025)",
-  "name_en": "Toyota Land Cruiser Prado 250 (2025)",
-  "type": "standard",
-  "category": "4WD",
-  "isArmored": false,
-  "passengerCapacity": 7,
-  "tags_dr": ["خانوادگی", "قدرتمند", "مناسب ولایات"],
-  "tags_en": ["Family", "Powerful", "Provincial"],
-  "shortDesc_dr": "شاسی‌بلند مدرن و قدرتمند با فضای جادار، مناسب سفرهای شهری و مسیرهای دشوار ولایتی.",
-  "shortDesc_en": "A modern and powerful SUV with spacious comfort, ideal for city travel and challenging provincial routes.",
-  "longDesc_dr": "تویوتا پرادو 250 با طراحی مدرن، سیستم چهارچرخ محرک و فضای داخلی جادار، گزینه‌ای مطمئن برای سفرهای خانوادگی، تجاری و ولایتی است. این موتر ترکیبی از قدرت، راحتی و قابلیت عبور از مسیرهای دشوار را ارائه می‌کند.",
-  "longDesc_en": "The Toyota Land Cruiser Prado 250 combines modern design, four-wheel-drive capability, and a spacious interior, making it a reliable choice for family, business, and provincial travel. It offers an excellent balance of power, comfort, and off-road capability.",
-  "mainImage": "/images/cars/landcruiser-main.jpg",
-  "gallery": [
-    "/images/cars/prado250-thumb1.jpg",
-    "/images/cars/prado250-thumb2.jpg",
-    "/images/cars/prado250-thumb3.jpg"
   ],
-  "specs": {
-    "fuelType_dr": "پترول",
-    "fuelType_en": "Petrol",
-    "engine_dr": "2.7L 4-Cylinder",
-    "engine_en": "2.7L 4-Cylinder",
-    "gearbox_dr": "۸ سرعته اتوماتیک",
-    "gearbox_en": "8-Speed Automatic",
-    "driveType_dr": "چهار چرخ محرک (4WD)",
-    "driveType_en": "Four-Wheel Drive (4WD)",
-    "security_dr": "سیستم‌های پیشرفته ایمنی و کنترل پایداری",
-    "security_en": "Advanced Safety & Stability Systems",
-    "consumption_dr": "۱۰ لیتر در ۱۰۰ کیلومتر",
-    "consumption_en": "10 Liters per 100 KM"
-  }
-}
-    ],
     "services": [
   {
     "id": "s1",
