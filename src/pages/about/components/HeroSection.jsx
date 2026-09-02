@@ -23,7 +23,7 @@ export const HeroSection = () => {
                 <h2 className="font-extrabold text-[48px] leading-none tracking-normal text-black mb-6">
                     {t.about.hero_title}
                 </h2>
-                <p className="text-[24px] font-[400] leading-[41px] tracking-normal text-black max-w-[820px]">
+                <p className="text-[24px] font-[400] leading-[41px] tracking-normal text-black w-[820px]">
                     {t.about.hero_desc}
                 </p>
             </div>

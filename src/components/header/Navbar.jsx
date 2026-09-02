@@ -1,6 +1,7 @@
 import { useLangStore } from "../../store/useLangStore"
 import { NavLink } from 'react-router-dom'
 import logoImage from '../../assets/icons/logo-KRC.svg'
+import { Logo } from "../common/Logo";
 
 export const Navbar = () => {
     const { t, lang, setLang } = useLangStore();
@@ -27,7 +28,7 @@ export const Navbar = () => {
         <header className="absolute top-[39px] inset-x-0 z-50 h-[81px]">
             <nav className="max-w-7xl mx-auto flex items-center px-6 gap-x-9">
                 {/* Box 1: Logo */}
-                <NavLink to="/" className="flex items-center gap-1 h-[81px]">
+                {/* <NavLink to="/" className="flex items-center gap-1 h-[81px]">
                     <img
                         src={logoImage}
                         alt={lang === 'dr' ? 'کابل رینتال کار' : 'Kabul Rental Car'}
@@ -37,7 +38,8 @@ export const Navbar = () => {
                     <span className="leading-none tracking-normal text-[24px] font-extrabold text-brand-black">
                         {lang === 'dr' ? 'کابل رینتال کار' : 'Kabul Rental Car'}
                     </span>
-                </NavLink>
+                </NavLink> */}
+                <Logo />
 
                 {/* Box 2: Links */}
                 <ul className="hidden md:flex items-center gap-x-[60px] bg-white rounded-[20px] px-6 py-3 shadow-sm h-[56px]">
@@ -60,7 +62,7 @@ export const Navbar = () => {
 
                 {/* Box 4: Contact button */}
 
-                <a href="tel:+93000000000"
+                <a href="tel:+93 786377417"
                     className="hidden sm:flex items-center gap-2 justify-center bg-white font-[400] text-[18px] px-6 py-3 rounded-[20px] shadow-sm hover:opacity-90 transition-opacity"
                 >
                     <svg

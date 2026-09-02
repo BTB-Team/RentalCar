@@ -35,7 +35,7 @@ export const CtaBanner = () => {
 
                 {/* Contact button — 209x60, rounded-58 */}
                 <a
-                    href="tel:+93000000000"
+                    href="tel:+93 786377417"
                     className="w-full md:w-[209px] h-[60px] shrink-0 bg-brand-black text-white font-sans font-semibold text-[18px] md:text-[20px] rounded-[58px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity order-3"
                 >
                     <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">

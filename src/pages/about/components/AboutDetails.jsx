@@ -6,19 +6,22 @@ export const AboutDetails = () => {
     const { t } = useLangStore();
 
     return (
-        <section className="w-full max-w-[1200px] mx-auto px-4 py-16 font-yekan select-none bg-white">
+        <section className="w-full max-w-[1240px] mx-auto px-4 py-16 font-yekan select-none bg-white">
             <div className="grid grid-cols-2 gap-5 items-center">
 
                 {/* --- RIGHT SIDE: CONTENT AREA --- */}
-                <div className="flex flex-col text-start order-1 gap-5">
+                <div className="flex flex-col text-start gap-7">
 
-                    <h2 className="text-[36px] font-extrabold text-black mb-6 leading-tight">
+                    <h2 className="font-extrabold text-[36px] leading-none tracking-normal text-black mb-6">
                         {t.about.details_title}
                     </h2>
 
-                    <div className="space-y-4 text-[20px] font-semibold leading-[32px] text-zinc-900 max-w-[540px]">
-                        <p>
-                            {t.about.details_desc}
+                    <div className="space-y-2">
+                        <p className="text-[20px] font-[600] leading-relaxed [word-spacing:4px]">
+                            {t.about.details_desc_1}
+                        </p>
+                        <p className="text-[20px] font-[600] leading-relaxed [word-spacing:1px]">
+                            {t.about.details_desc_2}
                         </p>
                     </div>
 
@@ -66,7 +69,7 @@ export const AboutDetails = () => {
                 </div>
 
                 {/* --- LEFT SIDE: HERO FLT MEDIA CONTAINER --- */}
-                <div className="relative order-2 w-full w-[590px] h-[380px] mx-auto rounded-[24px] overflow-hidden shadow-md">
+                <div className="relative order-2 w-full w-[590px] h-[401px] mx-auto rounded-[24px] overflow-hidden shadow-md">
                     <img
                         src={aboutImage}
                         alt="Kabul Rental Car Fleet Lineup"
@@ -75,6 +78,6 @@ export const AboutDetails = () => {
                 </div>
 
             </div>
-        </section>
+        </section >
     );
 }
