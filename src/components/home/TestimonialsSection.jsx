@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
   useEffect(() => {
     const getTestimonials = async () => {
       try {
-        const response = await fetch("/testimonials");
+        const response = await fetch("http://localhost:5000/testimonials");
 
         if (!response.ok) {
           throw new Error("Failed to fetch testimonials");
@@ -29,91 +29,204 @@ const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section className="bg-white px-4 py-10 sm:px-6 lg:px-8" dir="rtl">
-      <div className="mx-auto max-w-7xl">
-        {/* Title */}
-        <div className="mb-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+    <section dir="rtl" className="w-full bg-white px-4 py-10">
+      <div
+        className="
+          mx-auto
+          w-full
+          max-w-[1200px]
+        "
+      >
+        <div className="flex flex-col items-center">
+          <h2 className="m-0 text-center text-[40px] font-black leading-[62px] text-black">
             نظرات مشتریان
           </h2>
-
-          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-yellow-400" />
-
-          <p className="mt-4 text-sm text-gray-600">
+          <div
+            className="
+              mt-[14px]
+              h-[4px]
+              w-full
+              max-w-[514px]
+              bg-[#F7D102]
+            "
+          />
+          <p className="m-0 mt-[25px] w-full max-w-[777px] text-center text-[32px] font-semibold leading-[50px] text-black">
             تجربه مهمانان و مسافرانی که از خدمات ما استفاده کرده‌اند
           </p>
         </div>
 
-        {/* Loading */}
         {loading && (
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          <div className="mt-[22px] grid grid-cols-1 gap-5 px-5 md:grid-cols-3">
             {[1, 2, 3].map((item) => (
               <div
                 key={item}
-                className="h-44 animate-pulse rounded-xl bg-gray-100"
+                className="h-[237px] animate-pulse rounded-[20px] bg-gray-100"
               />
             ))}
           </div>
         )}
 
-        {/* Testimonials */}
         {!loading && (
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          <div
+            className="
+              mt-[22px]
+              grid
+              grid-cols-1
+              gap-5
+              px-5
+              md:grid-cols-3
+            "
+          >
             {testimonials.slice(0, 3).map((testimonial, index) => (
-              <div
+              <article
                 key={testimonial.id || index}
-                className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm"
+                className="
+                  h-[237px]
+                  w-full
+                  rounded-[20px]
+                  border
+                  border-[#D9D9D9]
+                  bg-white
+                  px-[19px]
+                  py-[28px]
+                "
               >
-                {/* Customer information */}
-                <div className="mb-4 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    {/* Avatar */}
-                    {testimonial.avatar ? (
-                      <img
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        className="h-10 w-10 rounded-full object-cover"
-                      />
-                    ) : (
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 font-bold text-gray-600">
-                        {testimonial.name?.charAt(0)}
-                      </div>
-                    )}
-
-                    <div>
-                      <h3 className="text-sm font-bold text-gray-900">
-                        {testimonial.name}
-                      </h3>
-
-                      <p className="text-xs text-gray-500">
-                        {testimonial.role}
-                      </p>
-                    </div>
-                  </div>
-
+                <div className="relative h-[143px] w-full">
                   {/* Quote */}
-                  <span className="text-3xl text-yellow-400">“</span>
+                  <span
+                    className="
+                      absolute
+                      left-0
+                      top-[7px]
+                      flex
+                      h-[29px]
+                      w-[35px]
+                      items-center
+                      justify-center
+                      text-[34px]
+                      font-bold
+                      leading-none
+                      text-[#F7D102]
+                    "
+                  >
+                    “
+                  </span>
+
+                  {/* Avatar */}
+                  {testimonial.avatar ? (
+                    <img
+                      src={testimonial.avatar}
+                      alt={
+                        testimonial.name_dr || testimonial.name || "Customer"
+                      }
+                      className="
+                        absolute
+                        right-0
+                        top-0
+                        h-[45px]
+                        w-[45px]
+                        rounded-full
+                        object-cover
+                      "
+                    />
+                  ) : (
+                    <div
+                      className="
+                        absolute
+                        right-0
+                        top-0
+                        flex
+                        h-[45px]
+                        w-[45px]
+                        items-center
+                        justify-center
+                        rounded-full
+                        bg-gray-200
+                        text-sm
+                        font-bold
+                        text-gray-600
+                      "
+                    >
+                      {(testimonial.name_dr || testimonial.name || "?").charAt(
+                        0,
+                      )}
+                    </div>
+                  )}
+
+                  {/* Name */}
+                  <h3
+                    className="
+                      absolute
+                      right-[71px]
+                      top-[3px]
+                      m-0
+                      w-[111px]
+                      text-right
+                      text-black
+                      text-[16px]
+                      font-semibold
+                      leading-[25px]
+                    "
+                  >
+                    {testimonial.name_dr || testimonial.name}
+                  </h3>
+
+                  {/* Role */}
+                  <p
+                    className="
+                      absolute
+                      right-[71px]
+                      top-[27px]
+                      m-0
+                      w-auto
+                      whitespace-nowrap
+                      text-right
+                      text-black
+                      text-[13px]
+                      font-light
+                      leading-[20px]
+                    "
+                  >
+                    {testimonial.role_dr || testimonial.role}
+                  </p>
+
+                  <p
+                    className="
+                      absolute
+                      bottom-0
+                      right-0
+                      m-0
+                      w-full
+                      text-black
+                      text-[13px]
+                      font-normal
+                      leading-[20px]
+                      text-justify
+                    "
+                  >
+                    {testimonial.comment_dr ||
+                      testimonial.review ||
+                      testimonial.comment}
+                  </p>
                 </div>
 
-                {/* Review */}
-                <p className="min-h-[65px] text-xs leading-6 text-gray-600">
-                  {testimonial.review || testimonial.comment}
-                </p>
-
-                {/* Stars */}
-                <div className="mt-4 border-t border-gray-100 pt-3">
-                  <div className="flex gap-1 text-yellow-400">
-                    {Array.from({ length: 5 }).map((_, starIndex) => (
-                      <span key={starIndex}>
-                        {starIndex < (testimonial.rating || 5) ? "★" : "☆"}
-                      </span>
-                    ))}
-                  </div>
+                <div className="mt-[30px] flex h-[21px] items-center gap-[3px] [direction:ltr]">
+                  {Array.from({ length: 5 }).map((_, starIndex) => (
+                    <span
+                      key={starIndex}
+                      className="text-[20px] leading-[21px] text-[#F7D102]"
+                    >
+                      {starIndex <
+                      (testimonial.stars || testimonial.rating || 5)
+                        ? "★"
+                        : "☆"}
+                    </span>
+                  ))}
                 </div>
-              </div>
+              </article>
             ))}
 
-            {/* If API has no data */}
+            {/* No testimonials */}
             {testimonials.length === 0 && (
               <div className="col-span-full py-8 text-center text-sm text-gray-500">
                 هنوز نظری ثبت نشده است.

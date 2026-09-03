@@ -1,148 +1,150 @@
 {
-    "cars": [
-      {
-        "id": "1",
-        "name_dr": "تویوتا لندکروزر زرهی (V8)",
-        "name_en": "Armored Toyota Land Cruiser (V8)",
-        "type": "luxury",
-        "category": "4WD",
-        "isArmored": true,
-        "passengerCapacity": 6,
-        "tags_dr": ["مشتریان ویژه", "امنیت عالی", "مناسب ولایات"],
-        "tags_en": ["VIP Clients", "High Security", "Provincial Travel"],
-        "shortDesc_dr": "موتر زرهی و بسیار قدرتمند برای سفرهای ویژه شهری و ولایتی با بالاترین سطح امنیت.",
-        "shortDesc_en": "A highly powerful armored vehicle for special city and provincial trips with maximum security.",
-        "longDesc_dr": "تویوتا لندکروزر زرهی نماد امنیت، قدرت و دوام در مسیرهای ناهموار است. این موتر با شیشه‌ها و بدنه ضدگلوله B6، سیستم چهارچرخ محرک، فضای داخلی بسیار وسیع و چرم درجه یک، انتخابی بی‌نظیر برای مسافرین VIP و هیئت‌های دیپلماتیک است.",
-        "longDesc_en": "The Armored Toyota Land Cruiser is the symbol of security, power, and durability on rough terrains. Equipped with B6 ballistic protection, a 4WD system, spacious leather interior, it is an exceptional choice for VIP guests and diplomatic missions.",
-        "mainImage": "/images/cars/landcruiser-main.jpg",
-        "gallery": [
-          "/images/cars/landcruiser-thumb1.jpg",
-          "/images/cars/landcruiser-thumb2.jpg",
-          "/images/cars/landcruiser-thumb3.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "دیزل",
-          "fuelType_en": "Diesel",
-          "engine_dr": "4.5L V8 توربو دیزل",
-          "engine_en": "4.5L V8 Turbo Diesel",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "چهار چرخ محرک (4WD)",
-          "driveType_en": "Four-Wheel Drive (4WD)",
-          "security_dr": "زره کلاس B6، سیستم جرثقیل، ترمز ارتقا یافته",
-          "security_en": "B6 Armoring, Winch System, Upgraded Brakes",
-          "consumption_dr": "۱۳ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "13 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "2",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
+  "cars": [
+    {
+      "id": "1",
+      "name_dr": "تویوتا لندکروزر زرهی (V8)",
+      "name_en": "Armored Toyota Land Cruiser (V8)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": true,
+      "passengerCapacity": 6,
+      "tags_dr": ["مشتریان ویژه", "امنیت عالی", "مناسب ولایات"],
+      "tags_en": ["VIP Clients", "High Security", "Provincial Travel"],
+      "shortDesc_dr": "موتر زرهی و بسیار قدرتمند برای سفرهای ویژه شهری و ولایتی با بالاترین سطح امنیت.",
+      "shortDesc_en": "A highly powerful armored vehicle for special city and provincial trips with maximum security.",
+      "longDesc_dr": "تویوتا لندکروزر زرهی نماد امنیت، قدرت و دوام در مسیرهای ناهموار است. این موتر با شیشه‌ها و بدنه ضدگلوله B6، سیستم چهارچرخ محرک، فضای داخلی بسیار وسیع و چرم درجه یک، انتخابی بی‌نظیر برای مسافرین VIP و هیئت‌های دیپلماتیک است.",
+      "longDesc_en": "The Armored Toyota Land Cruiser is the symbol of security, power, and durability on rough terrains. Equipped with B6 ballistic protection, a 4WD system, spacious leather interior, it is an exceptional choice for VIP guests and diplomatic missions.",
+      "mainImage": "/images/cars/landcruiser-main.jpg",
+      "gallery": [
+        "/images/cars/landcruiser-thumb1.jpg",
+        "/images/cars/landcruiser-thumb2.jpg",
+        "/images/cars/landcruiser-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "دیزل",
+        "fuelType_en": "Diesel",
+        "engine_dr": "4.5L V8 توربو دیزل",
+        "engine_en": "4.5L V8 Turbo Diesel",
+        "gearbox_dr": "۶ سرعته اتوماتیک",
+        "gearbox_en": "6-Speed Automatic",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "زره کلاس B6، سیستم جرثقیل، ترمز ارتقا یافته",
+        "security_en": "B6 Armoring, Winch System, Upgraded Brakes",
+        "consumption_dr": "۱۳ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "13 Liters per 100 KM"
       }
-    ],
-    "services": [
-      {
-        "id": "s1",
-        "title_dr": "کرایه موترهای زرهی و لوکس",
-        "title_en": "Armored & Luxury Car Rentals",
-        "desc_dr": "دسترسی به مدرن‌ترین ناوگان خودروهای ضدگلوله و لوکس همراه با رانندگان مجرب شهری.",
-        "desc_en": "Access to the most modern fleet of bulletproof and luxury vehicles with experienced city drivers.",
-        "icon": "ShieldCheckIcon"
-      },
-      {
-        "id": "s2",
-        "title_dr": "تیم محافظت و همراهی اسکورت",
-        "title_en": "Security & Escort Teams",
-        "desc_dr": "فراهم‌سازی محافظین مسطح حرفه‌ای جهت تامین امنیت کامل در مسیرهای ولایتی افغانستان.",
-        "desc_en": "Providing professional armed security guards to ensure absolute safety along provincial routes.",
-        "icon": "UsersIcon"
-      },
-      {
-        "id": "s3",
-        "title_dr": "خدمات ریزرف هوتل و مترجم",
-        "title_en": "Hotel Reservations & Translators",
-        "desc_dr": "هماهنگی کامل محل اقامت ایمن در کابل و ولایات به همراه مترجمین مسلط به زبان‌های محلی.",
-        "desc_en": "Full coordination of secure accommodation in Kabul and provinces with translators fluent in local languages.",
-        "icon": "GlobeAltIcon"
+    },
+    {
+      "id": "2",
+      "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
+      "name_en": "Toyota Fortuner (2024 Model)",
+      "type": "standard",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 7,
+      "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
+      "tags_en": ["Family Trip", "Economical", "Spacious"],
+      "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
+      "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
+      "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
+      "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
+      "mainImage": "/images/cars/fortuner-main.jpg",
+      "gallery": [
+        "/images/cars/fortuner-thumb1.jpg",
+        "/images/cars/fortuner-thumb2.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "2.7L 4-Cylinder",
+        "engine_en": "2.7L 4-Cylinder",
+        "gearbox_dr": "۶ سرعته اتوماتیک",
+        "gearbox_en": "6-Speed Automatic",
+        "driveType_dr": "دو دیفرانسیل (4WD)",
+        "driveType_en": "Switchable 4WD",
+        "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
+        "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
+        "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "10.5 Liters per 100 KM"
       }
-    ],
-    "testimonials": [
-      {
-        "id": 1,
-        "name_dr": "احمد منصور",
-        "name_en": "Ahmad Mansoor",
-        "role_dr": "مدیر پروژه سازمان بین‌المللی",
-        "role_en": "International NGO Project Manager",
-        "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
-        "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
-        "stars": 5
-      },
-      {
-        "id": 2,
-        "name_dr": "سارا ویلیامز",
-        "name_en": "Sarah Williams",
-        "role_dr": "خبرنگار مستقل",
-        "role_en": "Independent Journalist",
-        "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
-        "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
-        "stars": 5
-      }
-    ],
-    "faqs": [
-      {
-        "id": 1,
-        "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
-        "question_en": "Do your services include a driver and a security team?",
-        "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
-        "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
-      },
-      {
-        "id": 2,
-        "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
-        "question_en": "What is the cancellation policy for car reservations?",
-        "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
-        "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
-      }
-    ]
-  }
-  
-
-
-
-
-
-
-
-
-
-  
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "title_dr": "کرایه موترهای زرهی و لوکس",
+      "title_en": "Armored & Luxury Car Rentals",
+      "desc_dr": "دسترسی به مدرن‌ترین ناوگان خودروهای ضدگلوله و لوکس همراه با رانندگان مجرب شهری.",
+      "desc_en": "Access to the most modern fleet of bulletproof and luxury vehicles with experienced city drivers.",
+      "icon": "ShieldCheckIcon"
+    },
+    {
+      "id": "s2",
+      "title_dr": "تیم محافظت و همراهی اسکورت",
+      "title_en": "Security & Escort Teams",
+      "desc_dr": "فراهم‌سازی محافظین مسطح حرفه‌ای جهت تامین امنیت کامل در مسیرهای ولایتی افغانستان.",
+      "desc_en": "Providing professional armed security guards to ensure absolute safety along provincial routes.",
+      "icon": "UsersIcon"
+    },
+    {
+      "id": "s3",
+      "title_dr": "خدمات ریزرف هوتل و مترجم",
+      "title_en": "Hotel Reservations & Translators",
+      "desc_dr": "هماهنگی کامل محل اقامت ایمن در کابل و ولایات به همراه مترجمین مسلط به زبان‌های محلی.",
+      "desc_en": "Full coordination of secure accommodation in Kabul and provinces with translators fluent in local languages.",
+      "icon": "GlobeAltIcon"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name_dr": "رحمت الله کریمی",
+      "name_en": "Ahmad Mansoor",
+      "role_dr": "توریست",
+      "role_en": "Tourist",
+      "avatar": "src/components/home/images/customer.png",
+      "comment_dr": "به‌عنوان یک گردشگر، خدمات کابل رینتال کار واقعاً عالی بود. تیم پشتیبانی همیشه پاسخ‌گو بود و همه چیز به‌موقع و مطابق برنامه انجام شد. تجربه‌ای بسیار خوب و مطمئن در افغانستان داشتم.",
+      "comment_en": "As a tourist, the services of Kabul Rental Car were truly excellent. The support team was always responsive, and everything was executed on time and as planned. I had a very good and secure experience in Afghanistan.",
+      "stars": 5
+    },
+    {
+      "id": 2,
+      "name_dr": "مریم یوسفی",
+      "name_en": "Maryam Yousufi",
+      "role_dr": "مسافر خانوادگی",
+      "role_en": "Family Traveler",
+      "avatar": "src/components/home/images/customer.png",
+      "comment_dr": "سفر خانوادگی ما بسیار لذت‌بخش بود. موتر تمیز و راحت، راننده باتجربه و برخورد تیم کاملاً حرفه‌ای بود. در تمام مسیر احساس امنیت و آرامش داشتیم.",
+      "comment_en": "Family travel was very enjoyable. The car was clean and comfortable, the driver was experienced and the team's conduct was completely professional. We felt safe and relaxed throughout the journey.",
+      "stars": 5
+    },
+    {
+      "id": 3,
+      "name_dr": "سید احمدی",
+      "name_en": "Sayed Ahmadi",
+      "role_dr": "مسافر تجاری",
+      "role_en": "Business Traveler",
+      "avatar": "src/components/home/images/customer.png",
+      "comment_dr": "خدمات بسیار منظم و حرفه‌ای بود. موتر تمیز و راحت و راننده خوش‌رفتار و وقت‌شناس بود. برای سفرهای کاری در کابل، کابل رینتال کار انتخاب مطمئنی است.",
+      "comment_en": "As a tourist, the services of Kabul Rental Car were truly excellent. The support team was always responsive, and everything was executed on time and as planned. I had a very good and secure experience in Afghanistan.",
+      "stars": 5
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
+      "question_en": "Do your services include a driver and a security team?",
+      "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
+      "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
+    },
+    {
+      "id": 2,
+      "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
+      "question_en": "What is the cancellation policy for car reservations?",
+      "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
+      "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
+    }
+  ]
+}
