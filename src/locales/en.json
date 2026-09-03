@@ -7,6 +7,27 @@
     "contact": "Contact",
     "admin": "Admin Panel"
   },
+
+  "cars": {
+    "title": "Choose the right car for your trip",
+    "description": "A collection of luxury, 4WD and armored vehicles for different needs and routes across Afghanistan",
+
+    "filters": {
+      "all": "All",
+      "luxury": "Luxury",
+      "fourWD": "4WD",
+      "armored": "Armored"
+    },
+
+    "viewMore": "View More Cars →",
+    "viewLess": "View Less →",
+
+    "passengers": "Passengers",
+    "viewDetails": "View Details",
+    "noCars": "No cars found",
+    "loading": "Loading..."
+  },
+
   "cta": {
     "yellow_title": "Ready for your next trip?",
     "dark_title": "Kabul Rental Car Special Services & Armored Fleet",

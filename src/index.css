@@ -7,7 +7,7 @@
   src: url('./assets/fonts/YekanBakh-Regular.woff2') format('woff2');
   font-weight: 400;
 }
-@font-face {
+/* @font-face {
   font-family: 'Yekan';
   src: url('./assets/fonts/YekanBakh-Regular.woff2') format('woff2');
   font-weight: 800;
@@ -16,7 +16,7 @@
   font-family: 'Yekan';
   src: url('./assets/fonts/YekanBakh-Regular.woff2') format('woff2');
   font-weight: 900;
-}
+} */
 
 body {
   font-family: 'Yekan', sans-serif;
