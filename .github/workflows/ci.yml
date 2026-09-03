@@ -29,7 +29,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Check Code Quality (Lint)
-        run: pnpm run lint --if-present
+        run: pnpm run lint
 
       - name: Build Project
         run: pnpm run build
