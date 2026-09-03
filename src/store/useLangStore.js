@@ -1,10 +1,10 @@
-import { create } from 'zustand';
+import { create } from "zustand";
 // وارد کردن فایل‌های ترجمه به بیس پروژه
-import drTranslations from '../locales/dr.json';
-import enTranslations from '../locales/en.json';
+import drTranslations from "../locales/dr.json";
+import enTranslations from "../locales/en.json";
 
 export const useLangStore = create((set) => ({
-  lang: "dr",
+  lang: "en",
   // 't' به طور خودکار انبار کلمات زبان فعال را در خود نگه می‌دارد
   t: drTranslations,
   activeFilter: "all",
