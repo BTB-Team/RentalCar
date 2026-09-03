@@ -16,22 +16,7 @@ export const CarCard = ({ car }) => {
   const carDescription = isDari
     ? car.shortDesc_dr
     : car.shortDesc_en;
-
-  const categoryLabel = isDari
-    ? car.category_dr ?? car.category
-    : car.category_en ?? car.category;
-
-  const securityTag = car.isArmored
-    ? isDari
-      ? car.armoredLabel_dr
-      : car.armoredLabel_en
-    : null;
-
-  const securityLabel = car.isArmored
-    ? isDari
-      ? car.securityLabel_dr
-      : car.securityLabel_en
-    : null;
+    
 
   const passengerLabel = isDari
     ? car.passengerLabel_dr
@@ -80,11 +65,15 @@ export const CarCard = ({ car }) => {
           alt={carName}
           loading="lazy"
           className="
-            h-full
-            w-full
-            object-cover
-          "
-        />
+          h-full
+          w-full
+          object-cover
+          transition-transform
+          duration-500
+          ease-out
+          group-hover:scale-[1.05]
+        "
+      />
       </div>
 
       {/* =========================
@@ -123,77 +112,47 @@ export const CarCard = ({ car }) => {
           {carName}
         </h2>
 
-        {/* =========================
-            Tags
-        ========================== */}
+       {/* =========================
+    Tags
+========================== */}
 
-        <div
-          className="
-            mt-[20px]
-            flex
-            items-center
-            justify-start
-            gap-[7px]
-            flex-wrap
-          "
-        >
-          {/* Security / Armored Tag */}
-
-          {securityTag && (
-            <span
-              className="
-                inline-flex
-                h-[26px]
-                w-[53px]
-                shrink-0
-                items-center
-                justify-center
-                rounded-[20px]
-                bg-brand-yellow
-                font-semibold
-                text-[16px]
-                leading-[100%]
-                text-brand-black
-              "
-            >
-              {securityTag}
-            </span>
-          )}
-
-          {/* Category + Security */}
-
-          <span
-            className="
-              flex
-              min-h-[20px]
-              items-center
-              justify-center
-              
-              rounded-[20px]
-              bg-brand-yellow
-              px-[10px]
-              pt-[6px]
-              font-[600]
-              text-[16px]
-              leading-[100%]
-              tracking-[0%]
-              text-brand-black
-            "
-          >
-            {categoryLabel}
-
-            {securityLabel && (
-              <>
-                <span className="mx-[4px]">|</span>
-
-                <span>
-                  {securityLabel}
-                </span>
-              </>
-            )}
-          </span>
-        </div>
-
+<div
+  className="
+    mt-[20px]
+    flex
+    min-w-0
+    flex-wrap
+    items-center
+    justify-start
+    gap-[7px]
+  "
+>
+  {(isDari ? car.tags_dr : car.tags_en)?.map((tag, index) => (
+    <span
+      key={index}
+      dir={isDari ? 'rtl' : 'ltr'}
+      className="
+        inline-flex
+        h-[26px]
+        max-w-full
+        shrink-0
+        items-center
+        justify-center
+        whitespace-nowrap
+        rounded-[20px]
+        bg-brand-yellow
+        px-[9px]
+        font-[600]
+        text-[16px]
+        leading-[100%]
+        tracking-[0%]
+        text-brand-black
+      "
+    >
+      {tag}
+    </span>
+  ))}
+</div>
         {/* =========================
             Description
         ========================== */}

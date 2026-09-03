@@ -33,7 +33,7 @@ const ServicesSection = () => {
             text-[40px]
             leading-[60px]
             text-brand-black
-          "
+          " 
         >
           {t.services?.services_title}
         </h2>

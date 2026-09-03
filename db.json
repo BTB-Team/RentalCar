@@ -20,17 +20,14 @@
       "passengerCapacity": 7,
       "passengerLabel_dr": "نفر",
       "passengerLabel_en": "People",
-
-      "tags_dr": [
-        "VXR",
-        "4WD",
-        "امنیت بالا"
-      ],
-      "tags_en": [
-        "VXR",
-        "4WD",
-        "High Security"
-      ],
+"tags_dr": [
+  "4WD | زرهی",
+  "امنیت بالا"
+],
+"tags_en": [
+  "4WD | Armored",
+  "High Security"
+],
 
       "shortDesc_dr": "تویوتا لندکروزر VXR با قدرت بالا و سیستم چهارچرخ محرک، مناسب سفرهای شهری و مسیرهای دشوار.",
       "shortDesc_en": "The Toyota Land Cruiser VXR combines powerful performance and 4WD capability for city and challenging road travel.",
@@ -93,14 +90,12 @@
       "passengerLabel_en": "People",
 
       "tags_dr": [
-        "Hybrid",
-        "4WD",
-        "اقتصادی"
+        "لوکس و راحت",
+        "مناسب سفرهای VIP"
       ],
       "tags_en": [
-        "Hybrid",
-        "4WD",
-        "Efficient"
+        "Luxury & Comfortable",
+        "Ideal for VIP Travel"
       ],
 
       "shortDesc_dr": "تویوتا 4Runner مدل ۲۰۲۵ با موتور هیبریدی i-FORCE MAX، مناسب سفرهای شهری و ولایتی.",
@@ -164,14 +159,12 @@
       "passengerLabel_en": "People",
 
       "tags_dr": [
-        "VIP",
-        "لوکس",
-        "امنیت بالا"
+        "4WD | قدرتمند",
+        "سیستم تهویه هوا"
       ],
       "tags_en": [
-        "VIP",
-        "Luxury",
-        "High Security"
+        "4WD | Powerful",
+        "Air Conditioning System"
       ],
 
       "shortDesc_dr": "لکسوس LX 600 موتر لوکس و قدرتمند برای سفرهای VIP شهری و بین‌شهری.",
@@ -235,14 +228,12 @@
       "passengerLabel_en": "People",
 
       "tags_dr": [
-        "VIP",
-        "لوکس",
-        "قدرت بالا"
+        "لوکس و راحت",
+        "مناسب سفرهای VIP"
       ],
       "tags_en": [
-        "VIP",
-        "Luxury",
-        "Powerful"
+        "Luxury & Comfortable",
+        "Ideal for VIP Travel"
       ],
 
       "shortDesc_dr": "مرسدس بنز G63 یک موتر لوکس و قدرتمند برای سفرهای VIP و رسمی است.",
@@ -306,14 +297,12 @@
       "passengerLabel_en": "People",
 
       "tags_dr": [
-        "4WD",
-        "ماجراجویی",
-        "آفرود"
+      "4WD | قدرتمند",
+        "سیستم تهویه هوا"
       ],
       "tags_en": [
-        "4WD",
-        "Adventure",
-        "Off-Road"
+        "4WD | Powerful",
+        "Air Conditioning System"
       ],
 
       "shortDesc_dr": "جیپ رانگلر Unlimited برای سفرهای ماجراجویانه و مسیرهای دشوار گزینه‌ای قدرتمند است.",
