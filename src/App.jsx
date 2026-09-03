@@ -1,6 +1,6 @@
 
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+// import React from 'react';
+import {  Routes, Route, Navigate } from 'react-router-dom';
 
 // وارد کردن لایوت‌ها
 import MainLayout from './layouts/MainLayout';

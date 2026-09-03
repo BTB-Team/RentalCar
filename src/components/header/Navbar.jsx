@@ -1,6 +1,7 @@
 import { useLangStore } from "../../store/useLangStore"
 import { NavLink } from 'react-router-dom'
 import logoImage from '../../assets/icons/logo-KRC.svg'
+import { Logo } from "../common/Logo";
 
 export const Navbar = () => {
     const { t, lang, setLang } = useLangStore();
@@ -13,9 +14,9 @@ export const Navbar = () => {
         { to: '/about', label: t.navbar.about },
     ];
 
-//    The link that is active will have yellow underline
+    //    The link that is active will have yellow underline
     const linkClass = ({ isActive }) =>
-        `font-extrabold text-[15px] pb-1 border-b-2 transition-colors ${isActive
+        `font-[400] text-[18px] pb-1 border-b-2 transition-colors ${isActive
             ? 'text-brand-black border-brand-yellow'
             : 'text-brand-black border-transparent hover:border-gray-200'
         }`;
@@ -24,23 +25,13 @@ export const Navbar = () => {
         setLang(lang === 'dr' ? 'en' : 'dr');
     };
     return (
-        <header className="absolute top-[39px] inset-x-0 z-50 h-[81px]">
-            <nav className="max-w-7xl mx-auto flex items-center px-6 gap-x-12">
+        <header className="fixed top-[39px] inset-x-0 w-full z-50 h-[81px]">
+            <nav className=" max-w-7xl mx-auto flex items-center px-6 gap-x-9">
                 {/* Box 1: Logo */}
-                <NavLink to="/" className="flex items-center gap-2 h-[81px]">
-                    <img
-                        src={logoImage}
-                        alt={lang === 'dr' ? 'کابل رینتال کار' : 'Kabul Rental Car'}
-                        loading="eager"
-                        className="w-[81px] h-[81px] object-contain"
-                    />
-                    <span className="leading-none tracking-normal">
-                        {lang === 'dr' ? 'کابل رینتال کار' : 'Kabul Rental Car'}
-                    </span>
-                </NavLink>
+                <Logo />
 
                 {/* Box 2: Links */}
-                <ul className="hidden md:flex items-center gap-x-[78px] bg-white rounded-[20px] px-6 py-3 shadow-sm h-[56px]">
+                <ul className="hidden md:flex items-center gap-x-[60px] bg-white rounded-[20px] px-6 py-3 shadow-sm h-[56px]">
                     {navLinks.map((link) => (
                         <li key={link.to}>
                             <NavLink to={link.to} className={linkClass} end={link.to === '/'}>
