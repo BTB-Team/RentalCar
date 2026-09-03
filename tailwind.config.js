@@ -22,7 +22,7 @@ export default {
         }
       },
       fontFamily: {
-        sans: ["Yekan", "sans-serif"], 
+        sans: ["Yekan Bakh VF", "sans-serif"], 
       },
       fontWeight: {
         // تعریف وزن‌های دقیق استفاده شده در فیگما
