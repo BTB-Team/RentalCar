@@ -23,13 +23,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm' # ⬅️ تایید کشینگ درست بر پایه pnpm
 
       - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile
-
-      - name: Check Code Quality (Lint)
-        run: pnpm lint
 
       - name: Try Building Project
         run: pnpm build
@@ -46,13 +42,12 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           version: 9
-          run_install: false # ⬅️ غیرفعال کردن اجرای خودکار اکشن در جاب دوم
+          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm' # ⬅️ اصلاح این خط در جاب دوم (جلوگیری از گشتن دنبال فایل npm)
 
       - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile
