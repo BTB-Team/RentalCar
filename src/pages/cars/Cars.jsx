@@ -76,13 +76,13 @@ export const Cars = () => {
 
   // reset visible count when filter changes
   useEffect(() => {
-    setVisibleCount(9);
+    setVisibleCount(6);
   }, [activeFilter]);
 
   return (
     <section className=" min-h-screen bg-white">
       {/* hero */}
-      <div className="relative overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
+      <div className="overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
         <div className="relative z-10 mx-auto max-w-4xl text-center">
           <h1 className="text-3xl font-blackfont text-brand-black md:text-5xl">
             {t.cars.title}
@@ -97,11 +97,11 @@ export const Cars = () => {
         </div>
 
         {/* decorative circle */}
-        <div className="absolute top-0 start-1/2 h-[550px] w-[180%] -translate-x-1/2 rounded-b-[100%] bg-[#FCE268]/20 pointer-events-none" />
+        <div className="absolute top-0 start-0 h-full w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
       </div>
 
       {/* cars */}
-      <div className="mx-auto mt-8  max-w-7xl px-4 pb-16 md:px-8 lg:px-12">
+      <div className="mx-auto  max-w-7xl mt-20 px-4 pb-16 md:px-8 lg:px-12">
         {loading ? (
           <CarSkeleton />
         ) : filteredCars.length === 0 ? (

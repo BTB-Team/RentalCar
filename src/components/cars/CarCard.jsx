@@ -3,35 +3,32 @@ import { useLangStore } from "../../store/useLangStore";
 
 export const CarCard = ({ car }) => {
   const { lang, t } = useLangStore();
-  console.log(car);
   const name = lang === "dr" ? car.name_dr : car.name_en;
-
+  const image = car.image;
   const description = lang === "dr" ? car.shortDesc_dr : car.shortDesc_en;
-
   const tags = lang === "dr" ? car.tags_dr : car.tags_en;
-  console.log(tags)
 
   return (
     <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-      {/* Car Image */}
+      {/* car image */}
       <div className="relative overflow-hidden">
         <img
-          src={car.mainImage}
+          // src="images/product-picture.png"
+          src={image}
           alt={name}
           loading="lazy"
-          className="h-52 w-full object-cover transition duration-500 hover:scale-105"
+          className=" h-52 w-full object-cover transition duration-500 hover:scale-105"
         />
       </div>
-
-      {/* Content */}
+      {/* content */}
       <div className="p-4">
-        {/* Name */}
-        <h2 className="text-center text-lg font-extrabold text-brand-black">
+        {/* name */}
+        <h2 className="text-start text-lg font-extrabold text-brand-black">
           {name}
         </h2>
 
-        {/* Tags */}
-        <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+        {/* tags */}
+        <div className="mt-3 flex flex-wrap items-center justify-start gap-2">
           {tags?.slice(0, 2).map((tag, index) => (
             <span
               key={`${tag}-${index}`}
@@ -42,14 +39,14 @@ export const CarCard = ({ car }) => {
           ))}
         </div>
 
-        {/* Description */}
-        <p className="mt-4 min-h-[72px] text-center text-sm leading-6 font-regular text-gray-700">
+        {/* description */}
+        <p className="mt-4 min-h-[72px] text-start text-sm leading-6 font-regular text-gray-700">
           {description}
         </p>
 
-        {/* Bottom */}
+        {/* bottom */}
         <div className="mt-4 flex items-center justify-between gap-3">
-          <span className="rounded-full border border-gray-200 px-3 py-1 text-xs text-gray-700">
+          <span className="rounded-full border border-brand-yellow px-3 py-1.5 text-xs text-gray-700">
             {car.passengerCapacity} {t.cars.passengers}
           </span>
           <Link

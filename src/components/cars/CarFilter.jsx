@@ -25,7 +25,7 @@ export const CarFilter = () => {
   ];
 
   return (
-    <div className="mt-10 flex flex-wrap items-center justify-center gap-1 sm:gap-4">
+    <div className="mt-10 flex flex-wrap items-center justify-center gap-1.5 sm:gap-4">
       {filters.map((filter) => {
         const isActive = activeFilter === filter.id;
 

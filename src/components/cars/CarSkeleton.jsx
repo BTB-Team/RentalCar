@@ -6,27 +6,27 @@ export const CarSkeleton = () => {
           key={index}
           className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm"
         >
-          {/* Image */}
+          {/* image */}
           <div className="h-52 w-full animate-pulse bg-gray-200" />
 
           <div className="space-y-4 p-4">
-            {/* Title */}
+            {/* title */}
             <div className="h-5 w-3/4 animate-pulse rounded bg-gray-200" />
 
-            {/* Tags */}
+            {/* tags */}
             <div className="flex gap-2">
               <div className="h-5 w-16 animate-pulse rounded-full bg-gray-200" />
               <div className="h-5 w-20 animate-pulse rounded-full bg-gray-200" />
             </div>
 
-            {/* Description */}
+            {/* description */}
             <div className="space-y-2">
               <div className="h-3 w-full animate-pulse rounded bg-gray-200" />
               <div className="h-3 w-5/6 animate-pulse rounded bg-gray-200" />
               <div className="h-3 w-4/6 animate-pulse rounded bg-gray-200" />
             </div>
 
-            {/* Button */}
+            {/* button */}
             <div className="h-8 w-28 animate-pulse rounded-full bg-gray-200" />
           </div>
         </div>
