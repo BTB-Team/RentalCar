@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
+import { useLangStore } from "../../store/useLangStore";
 
 const TestimonialsSection = () => {
+  const { t, lang } = useLangStore();
+  const isDari = lang === "dr";
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -29,7 +32,10 @@ const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section dir="rtl" className="w-full bg-white px-4 py-10">
+    <section
+      dir={isDari ? "rtl" : "ltr"}
+      className="w-full bg-white px-4 py-10"
+    >
       <div
         className="
           mx-auto
@@ -39,7 +45,7 @@ const TestimonialsSection = () => {
       >
         <div className="flex flex-col items-center">
           <h2 className="m-0 text-center text-[40px] font-black leading-[62px] text-black">
-            نظرات مشتریان
+            {t.home.testimonials_title}
           </h2>
           <div
             className="
@@ -51,7 +57,7 @@ const TestimonialsSection = () => {
             "
           />
           <p className="m-0 mt-[25px] w-full max-w-[777px] text-center text-[32px] font-semibold leading-[50px] text-black">
-            تجربه مهمانان و مسافرانی که از خدمات ما استفاده کرده‌اند
+            {t.home.testimonials_description}
           </p>
         </div>
 
@@ -94,9 +100,8 @@ const TestimonialsSection = () => {
                 <div className="relative h-[143px] w-full">
                   {/* Quote */}
                   <span
-                    className="
+                    className={`
                       absolute
-                      left-0
                       top-[7px]
                       flex
                       h-[29px]
@@ -107,7 +112,8 @@ const TestimonialsSection = () => {
                       font-bold
                       leading-none
                       text-[#F7D102]
-                    "
+                      ${isDari ? "left-0" : "right-0"}
+                    `}
                   >
                     “
                   </span>
@@ -117,23 +123,24 @@ const TestimonialsSection = () => {
                     <img
                       src={testimonial.avatar}
                       alt={
-                        testimonial.name_dr || testimonial.name || "Customer"
+                        (isDari ? testimonial.name_dr : testimonial.name_en) ||
+                        testimonial.name ||
+                        "Customer"
                       }
-                      className="
+                      className={`
                         absolute
-                        right-0
                         top-0
                         h-[45px]
                         w-[45px]
                         rounded-full
                         object-cover
-                      "
+                        ${isDari ? "right-0" : "left-0"}
+                      `}
                     />
                   ) : (
                     <div
-                      className="
+                      className={`
                         absolute
-                        right-0
                         top-0
                         flex
                         h-[45px]
@@ -145,49 +152,54 @@ const TestimonialsSection = () => {
                         text-sm
                         font-bold
                         text-gray-600
-                      "
+                        ${isDari ? "right-0" : "left-0"}
+                      `}
                     >
-                      {(testimonial.name_dr || testimonial.name || "?").charAt(
-                        0,
-                      )}
+                      {(
+                        (isDari ? testimonial.name_dr : testimonial.name_en) ||
+                        testimonial.name ||
+                        "?"
+                      ).charAt(0)}
                     </div>
                   )}
 
                   {/* Name */}
                   <h3
-                    className="
+                    className={`
                       absolute
-                      right-[71px]
+                      ${isDari ? "right-[71px]" : "left-[71px]"}
                       top-[3px]
                       m-0
                       w-[111px]
-                      text-right
+                      ${isDari ? "text-right" : "text-left w-[117px]"}
                       text-black
                       text-[16px]
                       font-semibold
                       leading-[25px]
-                    "
+                    `}
                   >
-                    {testimonial.name_dr || testimonial.name}
+                    {(isDari ? testimonial.name_dr : testimonial.name_en) ||
+                      testimonial.name}
                   </h3>
 
                   {/* Role */}
                   <p
-                    className="
+                    className={`
                       absolute
-                      right-[71px]
+                      ${isDari ? "right-[71px]" : "left-[71px]"}
                       top-[27px]
                       m-0
                       w-auto
                       whitespace-nowrap
-                      text-right
+                      ${isDari ? "text-right" : "text-left"}
                       text-black
                       text-[13px]
                       font-light
                       leading-[20px]
-                    "
+                    `}
                   >
-                    {testimonial.role_dr || testimonial.role}
+                    {(isDari ? testimonial.role_dr : testimonial.role_en) ||
+                      testimonial.role}
                   </p>
 
                   <p
@@ -204,7 +216,9 @@ const TestimonialsSection = () => {
                       text-justify
                     "
                   >
-                    {testimonial.comment_dr ||
+                    {(isDari
+                      ? testimonial.comment_dr
+                      : testimonial.comment_en) ||
                       testimonial.review ||
                       testimonial.comment}
                   </p>
@@ -229,7 +243,7 @@ const TestimonialsSection = () => {
             {/* No testimonials */}
             {testimonials.length === 0 && (
               <div className="col-span-full py-8 text-center text-sm text-gray-500">
-                هنوز نظری ثبت نشده است.
+                {t.home.no_testimonials}
               </div>
             )}
           </div>

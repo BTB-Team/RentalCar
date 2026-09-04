@@ -1,5 +1,8 @@
+import { useLangStore } from "../../store/useLangStore";
+
 // eslint-disable-next-line react/prop-types
 const CtaBanner = ({ onRequestService }) => {
+  const { t, lang } = useLangStore();
   const handleClick = () => {
     if (onRequestService) {
       onRequestService();
@@ -7,7 +10,10 @@ const CtaBanner = ({ onRequestService }) => {
   };
 
   return (
-    <section className="px-3 py-8 sm:px-6 lg:px-8" dir="rtl">
+    <section
+      className="px-3 py-8 sm:px-6 lg:px-8"
+      dir={lang === "dr" ? "rtl" : "ltr"}
+    >
       <div className="mx-auto max-w-7xl">
         <div
           className="relative mx-auto flex h-[339px] w-full max-w-[1200px]
@@ -28,7 +34,7 @@ const CtaBanner = ({ onRequestService }) => {
                 sm:text-[32px]
                 md:h-[56px] md:w-[427px] md:text-[36px]"
             >
-              برای سفر بعدی خود آماده‌اید؟
+              {t.cta.yellow_title}
             </h2>
 
             <p
@@ -37,7 +43,7 @@ const CtaBanner = ({ onRequestService }) => {
                 sm:text-[21px]
                 md:h-[37px] md:w-[544px] md:whitespace-nowrap md:text-[24px] md:leading-none"
             >
-              موتور و خدمات مورد نیاز خود را همین امروز تنظیم کنید.
+              {t.cta.description}
             </p>
 
             <button
@@ -54,7 +60,7 @@ const CtaBanner = ({ onRequestService }) => {
                   sm:text-[22px]
                   md:h-[37px] md:w-[171px] md:text-[24px] md:leading-none"
               >
-                درخواست خدمات
+                {t.cta.btn_request}
               </span>
             </button>
           </div>
