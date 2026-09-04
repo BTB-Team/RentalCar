@@ -2,9 +2,54 @@ import { useLangStore } from "../../store/useLangStore"
 import { NavLink } from 'react-router-dom'
 import logoImage from '../../assets/icons/logo-KRC.svg'
 import { Logo } from "../common/Logo";
+import { useEffect, useState, useRef } from "react";
 
 export const Navbar = () => {
     const { t, lang, setLang } = useLangStore();
+    const [isMobileOpen, setIsMobileOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const lastScrollY = useRef(0);   // last scroll position seen
+    const anchorY = useRef(0);       // scroll position where current direction started
+
+    useEffect(() => {
+        // Minimum pixel scroll distance before toggling the navbar state
+        const threshold = 10;
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY <= 10) {
+                setIsVisible(true);
+                anchorY.current = currentScrollY;
+                lastScrollY.current = currentScrollY;
+                return;
+            }
+
+            const scrollingDown = currentScrollY > lastScrollY.current;
+            const scrollingUp = currentScrollY < lastScrollY.current;
+
+            // Reset anchor when direction flips
+            if (scrollingDown && currentScrollY < anchorY.current) {
+                anchorY.current = currentScrollY;
+            }
+            if (scrollingUp && currentScrollY > anchorY.current) {
+                anchorY.current = currentScrollY;
+            }
+
+            const distance = currentScrollY - anchorY.current;
+
+            if (distance > threshold) {
+                setIsVisible(false);   // scrolled down enough
+                anchorY.current = currentScrollY;
+            } else if (distance < -threshold) {
+                setIsVisible(true);    // scrolled up enough
+                anchorY.current = currentScrollY;
+            }
+
+            lastScrollY.current = currentScrollY;
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const navLinks = [
         { to: '/', label: t.navbar.home },
@@ -16,22 +61,21 @@ export const Navbar = () => {
 
     //    The link that is active will have yellow underline
     const linkClass = ({ isActive }) =>
-        `font-[400] text-[18px] pb-1 border-b-2 transition-colors ${isActive
+        `font-[400] text-[18px] pb-1 border-b-2 transition-colors focus:outline-none ${isActive
             ? 'text-brand-black border-brand-yellow'
-            : 'text-brand-black border-transparent hover:border-gray-200'
+            : 'text-brand-black border-transparent'
         }`;
 
     const toggleLang = () => {
         setLang(lang === 'dr' ? 'en' : 'dr');
     };
     return (
-        <header className="fixed top-[39px] inset-x-0 w-full z-50 h-[81px]">
-            <nav className=" max-w-7xl mx-auto flex items-center px-6 gap-x-9">
+        <header className={`fixed top-[15px] left-0 w-full z-50 h-[81px] transition-transform duration-500 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+            <nav className=" max-w-7xl w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
                 {/* Box 1: Logo */}
                 <Logo />
-
                 {/* Box 2: Links */}
-                <ul className="hidden md:flex items-center gap-x-[60px] bg-white rounded-[20px] px-6 py-3 shadow-sm h-[56px]">
+                <ul className="hidden md:flex items-center gap-x-6 lg:gap-x-10 bg-white rounded-[20px] px-4 lg:px-6 py-2 shadow-sm h-[56px]">
                     {navLinks.map((link) => (
                         <li key={link.to}>
                             <NavLink to={link.to} className={linkClass} end={link.to === '/'}>
@@ -40,19 +84,19 @@ export const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-
+                {/* flex items-center gap-x-2 sm:gap-x-3 md:gap-x-4 */}
                 {/* Box 3: Language button */}
                 <button
                     onClick={toggleLang}
-                    className="font-extrabold text-[14px] text-brand-black hover:opacity-70 bg-white rounded-[20px] px-4 py-3 shadow-sm h-[56px]"
+                    className="font-extrabold text-[13px] sm:text-[14px] text-brand-black hover:opacity-70 bg-white rounded-[20px] sm:px-4 px-3 py-3 shadow-sm h-[48px]  sm:h-[56px] focus:outline-none"
                 >
-                    {lang === 'dr' ? 'دری' : 'EN'}
+                    {lang === 'dr' ? 'EN' : 'دری'}
                 </button>
 
                 {/* Box 4: Contact button */}
 
                 <a href="tel:+93000000000"
-                    className="hidden sm:flex items-center gap-2 justify-center bg-white font-[400] text-[18px] px-6 py-3 rounded-[20px] shadow-sm hover:opacity-90 transition-opacity"
+                    className="hidden md:flex items-center gap-2 justify-center bg-white font-[400] text-[16px] lg:text-[18px] px-4 lg:px-6 py-2.5 lg:py-3 rounded-[20px] shadow-sm hover:opacity-90 transition-opacity focus:outline-none"
                 >
                     <svg
                         width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +109,43 @@ export const Navbar = () => {
                     </svg>
                     {t.navbar.contact}
                 </a>
+                {/* Mobile menu toggle */}
+
+                <button
+                    className="md:hidden text-brand-black hover:opacity-70 bg-white rounded-[20px] sm:px-4 px-3 py-3 shadow-sm h-[48px] sm:h-[56px] focus:outline-none"
+
+                    onClick={() => setIsMobileOpen((prev) => !prev)}
+                    aria-label="Toggle menu"
+                >
+                    <svg viewBox="0 0 24 24" fill="none" className="sm:w-6 sm:h-6 w-5 h-5 text-brand-black">
+                        <path d="M3 6H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                        <path d="M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                        <path d="M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                </button>
             </nav>
+
+            {/* md:hidden bg-white shadow-md mx-4 mt-2 rounded-[20px] max-h-[70vh] overflow-y-auto */}
+
+            {/* Mobile menu */}
+            {isMobileOpen && (
+                <div className="md:hidden bg-white shadow-md mx-h-[70vh] overflow-y-auto rounded-[20px]">
+                    <ul className="flex flex-col items-center gap-y-4 py-4">
+                        {navLinks.map((link) => (
+                            <li
+                                key={link.to}
+                                onClick={() => setIsMobileOpen(false)}
+                            >
+                                <NavLink to={link.to} className={linkClass} end={link.to === '/'}>
+                                    {link.label}
+                                </NavLink>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+
+
         </header>
     )
 }
