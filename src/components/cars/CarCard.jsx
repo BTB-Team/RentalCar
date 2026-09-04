@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useLangStore } from "../../store/useLangStore";
 
 export const CarCard = ({ car }) => {
-  const { lang, t } = useLangStore();
+  const { t, lang } = useLangStore();
   const name = lang === "dr" ? car.name_dr : car.name_en;
   const image = car.mainImage;
   const description = lang === "dr" ? car.shortDesc_dr : car.shortDesc_en;
