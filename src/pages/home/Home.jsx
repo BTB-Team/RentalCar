@@ -1,7 +1,7 @@
-import HeroSection from "./HeroSection"
-import AboutCompany from "./AboutCompany"
-import MissionVision from "./MissionVision"
-import WhyChooseUs from "./WhyChooseUs"
+import HeroSection from "./HeroSection";
+import AboutCompany from "./AboutCompany";
+import MissionVision from "./MissionVision";
+import WhyChooseUs from "./WhyChooseUs";
 
 export const Home = () => {
   return (
@@ -11,5 +11,5 @@ export const Home = () => {
       <MissionVision />
       <WhyChooseUs />
     </>
-  )
-}
+  );
+};
