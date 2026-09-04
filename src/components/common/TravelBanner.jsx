@@ -10,10 +10,10 @@ export const TravelBanner = ({ cta }) => {
 
       {/* foreground content container */}
       <div className="relative z-10 max-w-4xl px-6 text-center flex flex-col items-center gap-4 sm:gap-6">
-        <h1 className="text-xl sm:text-4xl font-blackfont text-black tracking-tight leading-tight">
+        <h1 className="text-xl sm:text-2xl font-blackfont text-black tracking-tight leading-tight">
           {lang === "dr" ? t.cta.yellow_title : t.cta.yellow_title}
         </h1>
-        <p className="text-sm sm:text-base font-extrabold text-brand-black leading-relaxed max-w-2xl">
+        <p className="text-sm sm:text-base font-bold text-brand-black leading-relaxed max-w-2xl">
           {lang === "dr" ? t.cta.dark_title : t.cta.dark_title}
         </p>
         <Link

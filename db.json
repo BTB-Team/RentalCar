@@ -1,376 +1,676 @@
 {
-    "cars": [
-      {
-        "id": "1",
-        "name_dr": "تویوتا لندکروزر زرهی (V8)",
-        "name_en": "Armored Toyota Land Cruiser (V8)",
-        "type": "luxury",
-        "category": "4WD",
-        "isArmored": true,
-        "passengerCapacity": 6,
-        "tags_dr": ["مشتریان ویژه", "امنیت عالی", "مناسب ولایات"],
-        "tags_en": ["VIP Clients", "High Security", "Provincial Travel"],
-        "shortDesc_dr": "موتر زرهی و بسیار قدرتمند برای سفرهای ویژه شهری و ولایتی با بالاترین سطح امنیت.",
-        "shortDesc_en": "A highly powerful armored vehicle for special city and provincial trips with maximum security.",
-        "longDesc_dr": "تویوتا لندکروزر زرهی نماد امنیت، قدرت و دوام در مسیرهای ناهموار است. این موتر با شیشه‌ها و بدنه ضدگلوله B6، سیستم چهارچرخ محرک، فضای داخلی بسیار وسیع و چرم درجه یک، انتخابی بی‌نظیر برای مسافرین VIP و هیئت‌های دیپلماتیک است.",
-        "longDesc_en": "The Armored Toyota Land Cruiser is the symbol of security, power, and durability on rough terrains. Equipped with B6 ballistic protection, a 4WD system, spacious leather interior, it is an exceptional choice for VIP guests and diplomatic missions.",
-        "mainImage": "/images/cars/landcruiser-main.jpg",
-        "gallery": [
-          "/images/cars/landcruiser-thumb1.jpg",
-          "/images/cars/landcruiser-thumb2.jpg",
-          "/images/cars/landcruiser-thumb3.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "دیزل",
-          "fuelType_en": "Diesel",
-          "engine_dr": "4.5L V8 توربو دیزل",
-          "engine_en": "4.5L V8 Turbo Diesel",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "چهار چرخ محرک (4WD)",
-          "driveType_en": "Four-Wheel Drive (4WD)",
-          "security_dr": "زره کلاس B6، سیستم جرثقیل، ترمز ارتقا یافته",
-          "security_en": "B6 Armoring, Winch System, Upgraded Brakes",
-          "consumption_dr": "۱۳ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "13 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "2",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "3",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "4",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "5",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "6",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "7",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "8",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
-      },
-      {
-        "id": "9",
-        "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
-        "name_en": "Toyota Fortuner (2024 Model)",
-        "type": "standard",
-        "category": "4WD",
-        "isArmored": false,
-        "passengerCapacity": 7,
-        "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
-        "tags_en": ["Family Trip", "Economical", "Spacious"],
-        "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
-        "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
-        "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
-        "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
-        "mainImage": "/images/cars/fortuner-main.jpg",
-        "gallery": [
-          "/images/cars/fortuner-thumb1.jpg",
-          "/images/cars/fortuner-thumb2.jpg"
-        ],
-        "specs": {
-          "fuelType_dr": "پترول",
-          "fuelType_en": "Petrol",
-          "engine_dr": "2.7L 4-Cylinder",
-          "engine_en": "2.7L 4-Cylinder",
-          "gearbox_dr": "۶ سرعته اتوماتیک",
-          "gearbox_en": "6-Speed Automatic",
-          "driveType_dr": "دو دیفرانسیل (4WD)",
-          "driveType_en": "Switchable 4WD",
-          "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
-          "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
-          "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
-          "consumption_en": "10.5 Liters per 100 KM"
-        }
+  "cars": [
+    {
+      "id": "1",
+      "name_dr": "تویوتا لندکروزر زرهی (V8)",
+      "name_en": "Armored Toyota Land Cruiser (V8)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": true,
+      "passengerCapacity": 6,
+      "tags_dr": ["مشتریان ویژه", "امنیت عالی", "مناسب ولایات"],
+      "tags_en": ["VIP Clients", "High Security", "Provincial Travel"],
+      "shortDesc_dr": "موتر زرهی و بسیار قدرتمند برای سفرهای ویژه شهری و ولایتی با بالاترین سطح امنیت.",
+      "shortDesc_en": "A highly powerful armored vehicle for special city and provincial trips with maximum security.",
+      "longDesc_dr": "تویوتا لندکروزر زرهی نماد امنیت، قدرت و دوام در مسیرهای ناهموار است. این موتر با شیشه‌ها و بدنه ضدگلوله B6، سیستم چهارچرخ محرک، فضای داخلی بسیار وسیع و چرم درجه یک، انتخابی بی‌نظیر برای مسافرین VIP و هیئت‌های دیپلماتیک است.",
+      "longDesc_en": "The Armored Toyota Land Cruiser is the symbol of security, power, and durability on rough terrains. Equipped with B6 ballistic protection, a 4WD system, spacious leather interior, it is an exceptional choice for VIP guests and diplomatic missions.",
+      "mainImage": "/images/cars/landcruiser-main.jpg",
+      "gallery": [
+        "/images/cars/landcruiser-thumb1.jpg",
+        "/images/cars/landcruiser-thumb2.jpg",
+        "/images/cars/landcruiser-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "دیزل",
+        "fuelType_en": "Diesel",
+        "engine_dr": "4.5L V8 توربو دیزل",
+        "engine_en": "4.5L V8 Turbo Diesel",
+        "gearbox_dr": "۶ سرعته اتوماتیک",
+        "gearbox_en": "6-Speed Automatic",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "زره کلاس B6، سیستم جرثقیل، ترمز ارتقا یافته",
+        "security_en": "B6 Armoring, Winch System, Upgraded Brakes",
+        "consumption_dr": "۱۳ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "13 Liters per 100 KM"
       }
-    ],
-    "services": [
-      {
-        "id": "s1",
-        "title_dr": "کرایه موترهای زرهی و لوکس",
-        "title_en": "Armored & Luxury Car Rentals",
-        "desc_dr": "دسترسی به مدرن‌ترین ناوگان خودروهای ضدگلوله و لوکس همراه با رانندگان مجرب شهری.",
-        "desc_en": "Access to the most modern fleet of bulletproof and luxury vehicles with experienced city drivers.",
-        "icon": "ShieldCheckIcon"
-      },
-      {
-        "id": "s2",
-        "title_dr": "تیم محافظت و همراهی اسکورت",
-        "title_en": "Security & Escort Teams",
-        "desc_dr": "فراهم‌سازی محافظین مسطح حرفه‌ای جهت تامین امنیت کامل در مسیرهای ولایتی افغانستان.",
-        "desc_en": "Providing professional armed security guards to ensure absolute safety along provincial routes.",
-        "icon": "UsersIcon"
-      },
-      {
-        "id": "s3",
-        "title_dr": "خدمات ریزرف هوتل و مترجم",
-        "title_en": "Hotel Reservations & Translators",
-        "desc_dr": "هماهنگی کامل محل اقامت ایمن در کابل و ولایات به همراه مترجمین مسلط به زبان‌های محلی.",
-        "desc_en": "Full coordination of secure accommodation in Kabul and provinces with translators fluent in local languages.",
-        "icon": "GlobeAltIcon"
+    },
+    {
+      "id": "2",
+      "name_dr": "تویوتا فورچونر (مدل ۲۰۲۴)",
+      "name_en": "Toyota Fortuner (2024 Model)",
+      "type": "standard",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 7,
+      "tags_dr": ["خانوادگی", "اقتصادی", "فضای بزرگ"],
+      "tags_en": ["Family Trip", "Economical", "Spacious"],
+      "shortDesc_dr": "شاسی‌بلند جادار و مجهز برای سفرهای دسته‌جمعی و تجاری در آسایش کامل.",
+      "shortDesc_en": "A spacious and well-equipped SUV for group and business travel in complete comfort.",
+      "longDesc_dr": "تویوتا فورچونر با ظرفیت ۷ سرنشین، مجهز به سیستم تهویه مطبوع چندگانه و صندلی‌های تاشو، گزینه‌ای عالی برای خانواده‌ها و تیم‌های کاری است که به دنبال تعادلی بین هزینه و کارایی بالا در سفرهای بین‌شهری افغانستان هستند.",
+      "longDesc_en": "Featuring a 7-passenger capacity, multi-zone climate control, and folding seats, the Toyota Fortuner is an excellent choice for families and business teams looking for a balance between cost and high efficiency.",
+      "mainImage": "/images/cars/fortuner-main.jpg",
+      "gallery": [
+        "/images/cars/fortuner-thumb1.jpg",
+        "/images/cars/fortuner-thumb2.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "2.7L 4-Cylinder",
+        "engine_en": "2.7L 4-Cylinder",
+        "gearbox_dr": "۶ سرعته اتوماتیک",
+        "gearbox_en": "6-Speed Automatic",
+        "driveType_dr": "دو دیفرانسیل (4WD)",
+        "driveType_en": "Switchable 4WD",
+        "security_dr": "کیسه‌های هوای کامل، سیستم پایداری کنترل خودرو",
+        "security_en": "Full Airbags, Vehicle Stability Control (VSC)",
+        "consumption_dr": "۱۰.۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "10.5 Liters per 100 KM"
       }
-    ],
-    "testimonials": [
-      {
-        "id": 1,
-        "name_dr": "احمد منصور",
-        "name_en": "Ahmad Mansoor",
-        "role_dr": "مدیر پروژه سازمان بین‌المللی",
-        "role_en": "International NGO Project Manager",
-        "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
-        "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
-        "stars": 5
-      },
-      {
-        "id": 2,
-        "name_dr": "سارا ویلیامز",
-        "name_en": "Sarah Williams",
-        "role_dr": "خبرنگار مستقل",
-        "role_en": "Independent Journalist",
-        "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
-        "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
-        "stars": 5
+    },
+    {
+      "id": "10",
+      "name_dr": "تویوتا فوررانر TRD (مدل ۲۰۲۱)",
+      "name_en": "Toyota 4Runner TRD (2021 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["آفرود", "چهارچرخ محرک", "سفر ولایتی"],
+      "tags_en": ["Off-Road", "4WD", "Provincial Travel"],
+      "shortDesc_dr": "شاسی‌بلند قدرتمند و مجهز برای سفرهای شهری، بین‌شهری و مسیرهای ناهموار.",
+      "shortDesc_en": "A powerful and well-equipped SUV for city, highway, and rough-terrain travel.",
+      "longDesc_dr": "تویوتا فوررانر TRD مدل ۲۰۲۱ با انجین قدرتمند ۴.۰ لیتری V6، سیستم چهارچرخ محرک و تجهیزات ایمنی مناسب، انتخابی عالی برای سفرهای طولانی و مسیرهای ناهموار است.",
+      "longDesc_en": "The 2021 Toyota 4Runner TRD features a powerful 4.0L V6 engine, four-wheel drive, and advanced safety features, making it an excellent choice for long-distance and rough-terrain travel.",
+      "mainImage": "/images/cars/4runner-trd-2021-main.jpg",
+      "gallery": [
+        "/images/cars/4runner-trd-2021-thumb1.jpg",
+        "/images/cars/4runner-trd-2021-thumb2.jpg",
+        "/images/cars/4runner-trd-2021-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.0L V6 – 6 سیلندر",
+        "engine_en": "4.0L V6 – 6 Cylinder",
+        "gearbox_dr": "۵ سرعته اتوماتیک + حالت دستی",
+        "gearbox_en": "5-Speed Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های کمکی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC and Driver Assistance Systems",
+        "consumption_dr": "۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "13–15 Liters per 100 KM"
       }
-    ],
-    "faqs": [
-      {
-        "id": 1,
-        "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
-        "question_en": "Do your services include a driver and a security team?",
-        "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
-        "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
-      },
-      {
-        "id": 2,
-        "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
-        "question_en": "What is the cancellation policy for car reservations?",
-        "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
-        "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
+    },
+
+    {
+      "id": "11",
+      "name_dr": "تویوتا فوررانر Urban (مدل ۲۰۰۷)",
+      "name_en": "Toyota 4Runner Urban (2007 Model)",
+      "type": "standard",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["خانوادگی", "چهارچرخ محرک", "سفر ولایتی"],
+      "tags_en": ["Family", "4WD", "Provincial Travel"],
+      "shortDesc_dr": "شاسی‌بلند قابل اعتماد و جادار برای استفاده خانوادگی و سفرهای بین‌شهری.",
+      "shortDesc_en": "A reliable and spacious SUV for family use and long-distance travel.",
+      "longDesc_dr": "تویوتا فوررانر Urban مدل ۲۰۰۷ با سیستم چهارچرخ محرک، انجین V6 و ظرفیت مناسب سرنشین، گزینه‌ای کاربردی برای سفرهای شهری و ولایتی است.",
+      "longDesc_en": "The 2007 Toyota 4Runner Urban offers four-wheel drive, a V6 engine, and comfortable passenger capacity, making it a practical choice for city and provincial travel.",
+      "mainImage": "/images/cars/4runner-urban-2007-main.jpg",
+      "gallery": [
+        "/images/cars/4runner-urban-2007-thumb1.jpg",
+        "/images/cars/4runner-urban-2007-thumb2.jpg",
+        "/images/cars/4runner-urban-2007-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.0L V6 – 6 سیلندر",
+        "engine_en": "4.0L V6 – 6 Cylinder",
+        "gearbox_dr": "۵ سرعته اتوماتیک + حالت دستی",
+        "gearbox_en": "5-Speed Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های کمکی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC and Driver Assistance Systems",
+        "consumption_dr": "۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "13–15 Liters per 100 KM"
       }
-    ]
-  }
-  
+    },
+
+    {
+      "id": "12",
+      "name_dr": "تویوتا فوررانر Limited (مدل ۲۰۱۷)",
+      "name_en": "Toyota 4Runner Limited (2017 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["لوکس", "چهارچرخ محرک", "سفر خانوادگی"],
+      "tags_en": ["Luxury", "4WD", "Family Travel"],
+      "shortDesc_dr": "شاسی‌بلند لوکس و قدرتمند با قابلیت چهارچرخ محرک برای سفرهای راحت و ایمن.",
+      "shortDesc_en": "A luxurious and powerful 4WD SUV designed for comfortable and safe travel.",
+      "longDesc_dr": "تویوتا فوررانر Limited مدل ۲۰۱۷ ترکیبی از قدرت، راحتی و قابلیت آفرود است و برای سفرهای خانوادگی، شهری و ولایتی گزینه‌ای مناسب محسوب می‌شود.",
+      "longDesc_en": "The 2017 Toyota 4Runner Limited combines power, comfort, and off-road capability, making it a great option for family, city, and provincial travel.",
+      "mainImage": "/images/cars/4runner-limited-2017-main.jpg",
+      "gallery": [
+        "/images/cars/4runner-limited-2017-thumb1.jpg",
+        "/images/cars/4runner-limited-2017-thumb2.jpg",
+        "/images/cars/4runner-limited-2017-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.0L V6 – 6 سیلندر",
+        "engine_en": "4.0L V6 – 6 Cylinder",
+        "gearbox_dr": "۵ سرعته اتوماتیک + حالت دستی",
+        "gearbox_en": "5-Speed Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "13–15 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "13",
+      "name_dr": "تویوتا هایلوکس GR (مدل ۲۰۲۳)",
+      "name_en": "Toyota Hilux GR (2023 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["آفرود", "قدرت بالا", "چهارچرخ محرک"],
+      "tags_en": ["Off-Road", "High Performance", "4WD"],
+      "shortDesc_dr": "پیکاپ قدرتمند و مجهز برای مسیرهای شهری، ولایتی و آفرود.",
+      "shortDesc_en": "A powerful and well-equipped pickup for city, provincial, and off-road travel.",
+      "longDesc_dr": "تویوتا هایلوکس GR مدل ۲۰۲۳ با سیستم چهارچرخ محرک، انجین قدرتمند و تجهیزات ایمنی مناسب، گزینه‌ای عالی برای مسیرهای سخت و سفرهای طولانی است.",
+      "longDesc_en": "The 2023 Toyota Hilux GR combines four-wheel drive, strong performance, and modern safety features, making it ideal for demanding roads and long journeys.",
+      "mainImage": "/images/cars/hilux-gr-2023-main.jpg",
+      "gallery": [
+        "/images/cars/hilux-gr-2023-thumb1.jpg",
+        "/images/cars/hilux-gr-2023-thumb2.jpg",
+        "/images/cars/hilux-gr-2023-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.0L V6 – 6 سیلندر",
+        "engine_en": "4.0L V6 – 6 Cylinder",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC، دوربین و سیستم‌های کمکی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC, Camera and Driver Assistance Systems",
+        "consumption_dr": "۱۲–۱۴ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "12–14 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "14",
+      "name_dr": "لکسس ES Hybrid (مدل ۲۰۲۰)",
+      "name_en": "Lexus ES Hybrid (2020 Model)",
+      "type": "luxury",
+      "category": "Sedan",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["لوکس", "هایبرید", "کم‌مصرف"],
+      "tags_en": ["Luxury", "Hybrid", "Fuel Efficient"],
+      "shortDesc_dr": "سدان لوکس و کم‌مصرف هایبرید برای سفرهای شهری و بین‌شهری.",
+      "shortDesc_en": "A luxurious and fuel-efficient hybrid sedan for city and long-distance travel.",
+      "longDesc_dr": "لکسس ES Hybrid مدل ۲۰۲۰ با انجین هایبرید ۲.۵ لیتری، مصرف پایین و مجموعه‌ای از سیستم‌های پیشرفته ایمنی، گزینه‌ای عالی برای سفرهای راحت و اقتصادی است.",
+      "longDesc_en": "The 2020 Lexus ES Hybrid features a 2.5L hybrid engine, excellent fuel efficiency, and advanced safety systems, making it ideal for comfortable and economical travel.",
+      "mainImage": "/images/cars/lexus-es-hybrid-2020-main.jpg",
+      "gallery": [
+        "/images/cars/lexus-es-hybrid-2020-thumb1.jpg",
+        "/images/cars/lexus-es-hybrid-2020-thumb2.jpg",
+        "/images/cars/lexus-es-hybrid-2020-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول / هایبرید",
+        "fuelType_en": "Petrol / Hybrid",
+        "engine_dr": "2.5L چهار سیلندر هایبرید",
+        "engine_en": "2.5L 4-Cylinder Hybrid",
+        "gearbox_dr": "اتوماتیک E-CVT",
+        "gearbox_en": "E-CVT Automatic",
+        "driveType_dr": "دیفرانسیل جلو (2WD)",
+        "driveType_en": "Front-Wheel Drive (2WD)",
+        "security_dr": "ABS، EBD، ۸ Airbags، Night Vision، ۸ سنسور، Rear Camera، Pre-Collision System",
+        "security_en": "ABS, EBD, 8 Airbags, Night Vision, 8 Sensors, Rear Camera, Pre-Collision System",
+        "consumption_dr": "۵–۶ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "5–6 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "15",
+      "name_dr": "تویوتا کرولا XSE (مدل ۲۰۲۱)",
+      "name_en": "Toyota Corolla XSE (2021 Model)",
+      "type": "standard",
+      "category": "Sedan",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["اقتصادی", "کم‌مصرف", "شهری"],
+      "tags_en": ["Economical", "Fuel Efficient", "City Travel"],
+      "shortDesc_dr": "سدان اقتصادی و کم‌مصرف برای استفاده روزمره و سفرهای شهری.",
+      "shortDesc_en": "An economical and fuel-efficient sedan for daily and city travel.",
+      "longDesc_dr": "تویوتا کرولا XSE مدل ۲۰۲۱ با مصرف مناسب، فضای راحت برای پنج سرنشین و سیستم‌های ایمنی کاربردی، انتخابی مناسب برای استفاده روزمره و سفرهای شهری است.",
+      "longDesc_en": "The 2021 Toyota Corolla XSE offers efficient fuel consumption, comfortable seating for five, and useful safety features, making it a practical choice for daily and city travel.",
+      "mainImage": "/images/cars/corolla-xse-2021-main.jpg",
+      "gallery": [
+        "/images/cars/corolla-xse-2021-thumb1.jpg",
+        "/images/cars/corolla-xse-2021-thumb2.jpg",
+        "/images/cars/corolla-xse-2021-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "1.8L چهار سیلندر – 1800cc",
+        "engine_en": "1.8L 4-Cylinder – 1800cc",
+        "gearbox_dr": "اتوماتیک CVT",
+        "gearbox_en": "CVT Automatic",
+        "driveType_dr": "دیفرانسیل جلو (2WD)",
+        "driveType_en": "Front-Wheel Drive (2WD)",
+        "security_dr": "ABS، EBD، ۸ Airbags، دوربین، سنسورها و سیستم‌های کمکی",
+        "security_en": "ABS, EBD, 8 Airbags, Camera, Sensors and Driver Assistance Systems",
+        "consumption_dr": "۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "6–7 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "16",
+      "name_dr": "تویوتا کرولا S Class (مدل ۲۰۰۷)",
+      "name_en": "Toyota Corolla S Class (2007 Model)",
+      "type": "standard",
+      "category": "Sedan",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["اقتصادی", "قابل اعتماد", "شهری"],
+      "tags_en": ["Economical", "Reliable", "City Travel"],
+      "shortDesc_dr": "سدان اقتصادی و قابل اعتماد برای استفاده روزمره و سفرهای شهری.",
+      "shortDesc_en": "A reliable and economical sedan for daily and city travel.",
+      "longDesc_dr": "تویوتا کرولا S Class مدل ۲۰۰۷ با انجین ۱.۸ لیتری، مصرف مناسب و سیستم‌های ایمنی کاربردی، گزینه‌ای اقتصادی برای استفاده روزمره است.",
+      "longDesc_en": "The 2007 Toyota Corolla S Class features a 1.8L engine, efficient fuel consumption, and practical safety features, making it an economical choice for everyday use.",
+      "mainImage": "/images/cars/corolla-s-2007-main.jpg",
+      "gallery": [
+        "/images/cars/corolla-s-2007-thumb1.jpg",
+        "/images/cars/corolla-s-2007-thumb2.jpg",
+        "/images/cars/corolla-s-2007-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "1.8L چهار سیلندر – 1800cc",
+        "engine_en": "1.8L 4-Cylinder – 1800cc",
+        "gearbox_dr": "اتوماتیک",
+        "gearbox_en": "Automatic",
+        "driveType_dr": "دیفرانسیل جلو (2WD)",
+        "driveType_en": "Front-Wheel Drive (2WD)",
+        "security_dr": "ABS، Airbags و سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags and Safety Systems",
+        "consumption_dr": "۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "6–7 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "17",
+      "name_dr": "تویوتا کراون Executive Hybrid (مدل ۲۰۱۹)",
+      "name_en": "Toyota Crown Executive Hybrid (2019 Model)",
+      "type": "luxury",
+      "category": "Sedan",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["لوکس", "هایبرید", "تجهیزات پیشرفته"],
+      "tags_en": ["Luxury", "Hybrid", "Advanced Features"],
+      "shortDesc_dr": "سدان لوکس هایبرید با امکانات پیشرفته برای سفرهای راحت و تشریفاتی.",
+      "shortDesc_en": "A luxurious hybrid sedan with advanced features for comfortable executive travel.",
+      "longDesc_dr": "تویوتا کراون Executive Hybrid مدل ۲۰۱۹ با انجین قدرتمند V6 هایبرید، سیستم‌های پیشرفته ایمنی، دوربین ۳۶۰ درجه، Night Vision و Radar، انتخابی مناسب برای سفرهای تشریفاتی است.",
+      "longDesc_en": "The 2019 Toyota Crown Executive Hybrid combines a powerful V6 hybrid engine with advanced safety features, 360-degree camera, Night Vision, and Radar systems for executive travel.",
+      "mainImage": "/images/cars/toyota-crown-2019-main.jpg",
+      "gallery": [
+        "/images/cars/toyota-crown-2019-thumb1.jpg",
+        "/images/cars/toyota-crown-2019-thumb2.jpg",
+        "/images/cars/toyota-crown-2019-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "هایبرید (پترول + برقی)",
+        "fuelType_en": "Hybrid (Petrol + Electric)",
+        "engine_dr": "3.5L V6 هایبرید – 6 سیلندر",
+        "engine_en": "3.5L V6 Hybrid – 6 Cylinder",
+        "gearbox_dr": "اتوماتیک E-CVT + حالت دستی",
+        "gearbox_en": "E-CVT Automatic + Manual Mode",
+        "driveType_dr": "دیفرانسیل عقب (2WD)",
+        "driveType_en": "Rear-Wheel Drive (2WD)",
+        "security_dr": "ABS، EBD، ۱۰ Airbags، ۸ سنسور، دوربین ۳۶۰°، Night Vision، Radar و Cruise Control",
+        "security_en": "ABS, EBD, 10 Airbags, 8 Sensors, 360° Camera, Night Vision, Radar and Cruise Control",
+        "consumption_dr": "۵–۶ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "5–6 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "18",
+      "name_dr": "تویوتا پریوس Hybrid (مدل ۲۰۱۶)",
+      "name_en": "Toyota Prius Hybrid (2016 Model)",
+      "type": "standard",
+      "category": "Sedan",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["هایبرید", "کم‌مصرف", "اقتصادی"],
+      "tags_en": ["Hybrid", "Fuel Efficient", "Economical"],
+      "shortDesc_dr": "موتر هایبرید کم‌مصرف و اقتصادی برای سفرهای شهری و روزمره.",
+      "shortDesc_en": "A fuel-efficient and economical hybrid vehicle for daily and city travel.",
+      "longDesc_dr": "تویوتا پریوس Hybrid مدل ۲۰۱۶ با انجین ۱.۸ لیتری هایبرید و مصرف بسیار پایین، انتخابی عالی برای کسانی است که به دنبال کاهش هزینه سوخت هستند.",
+      "longDesc_en": "The 2016 Toyota Prius Hybrid features a 1.8L hybrid engine and excellent fuel efficiency, making it an ideal choice for customers looking to reduce fuel costs.",
+      "mainImage": "/images/cars/toyota-prius-2016-main.jpg",
+      "gallery": [
+        "/images/cars/toyota-prius-2016-thumb1.jpg",
+        "/images/cars/toyota-prius-2016-thumb2.jpg",
+        "/images/cars/toyota-prius-2016-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "هایبرید (پترول + برقی)",
+        "fuelType_en": "Hybrid (Petrol + Electric)",
+        "engine_dr": "1.8L چهار سیلندر هایبرید – 1800cc",
+        "engine_en": "1.8L 4-Cylinder Hybrid – 1800cc",
+        "gearbox_dr": "اتوماتیک E-CVT",
+        "gearbox_en": "E-CVT Automatic",
+        "driveType_dr": "دیفرانسیل جلو (2WD)",
+        "driveType_en": "Front-Wheel Drive (2WD)",
+        "security_dr": "ABS، EBD، ۸ Airbags، VSC و سیستم‌های کمکی",
+        "security_en": "ABS, EBD, 8 Airbags, VSC and Driver Assistance Systems",
+        "consumption_dr": "۴–۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "4–5 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "19",
+      "name_dr": "لکسس پرادو GXR (مدل ۲۰۰۹)",
+      "name_en": "Lexus Prado GXR (2009 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 7,
+      "tags_dr": ["لوکس", "چهارچرخ محرک", "سفر ولایتی"],
+      "tags_en": ["Luxury", "4WD", "Provincial Travel"],
+      "shortDesc_dr": "شاسی‌بلند بزرگ و قدرتمند برای سفرهای خانوادگی و مسیرهای ناهموار.",
+      "shortDesc_en": "A large and powerful SUV for family travel and rough terrain.",
+      "longDesc_dr": "لکسس پرادو GXR مدل ۲۰۰۹ با انجین V8 قدرتمند، سیستم چهارچرخ محرک و ظرفیت ۷ سرنشین، برای سفرهای خانوادگی و مسیرهای سخت گزینه‌ای مناسب است.",
+      "longDesc_en": "The 2009 Lexus Prado GXR features a powerful V8 engine, four-wheel drive, and seating for seven, making it suitable for family travel and challenging roads.",
+      "mainImage": "/images/cars/lexus-prado-gxr-2009-main.jpg",
+      "gallery": [
+        "/images/cars/lexus-prado-gxr-2009-thumb1.jpg",
+        "/images/cars/lexus-prado-gxr-2009-thumb2.jpg",
+        "/images/cars/lexus-prado-gxr-2009-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.7L V8 – 8 سیلندر – 4700cc",
+        "engine_en": "4.7L V8 – 8 Cylinder – 4700cc",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "۱۵–۱۸ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "15–18 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "20",
+      "name_dr": "لکسس پرادو GX (مدل ۲۰۱۶)",
+      "name_en": "Lexus Prado GX (2016 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 7,
+      "tags_dr": ["لوکس", "قدرت بالا", "سفر خانوادگی"],
+      "tags_en": ["Luxury", "Powerful", "Family Travel"],
+      "shortDesc_dr": "شاسی‌بلند لوکس و قدرتمند برای سفرهای خانوادگی و مسیرهای دشوار.",
+      "shortDesc_en": "A luxurious and powerful SUV for family travel and challenging roads.",
+      "longDesc_dr": "لکسس پرادو GX مدل ۲۰۱۶ با انجین ۴.۶ لیتری V8، سیستم چهارچرخ محرک و ظرفیت ۷ سرنشین، ترکیبی از قدرت، راحتی و قابلیت آفرود را ارائه می‌کند.",
+      "longDesc_en": "The 2016 Lexus Prado GX combines a 4.6L V8 engine, four-wheel drive, and seven-passenger capacity, delivering power, comfort, and off-road capability.",
+      "mainImage": "/images/cars/lexus-prado-gx-2016-main.jpg",
+      "gallery": [
+        "/images/cars/lexus-prado-gx-2016-thumb1.jpg",
+        "/images/cars/lexus-prado-gx-2016-thumb2.jpg",
+        "/images/cars/lexus-prado-gx-2016-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.6L V8 – 8 سیلندر",
+        "engine_en": "4.6L V8 – 8 Cylinder",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "۱۴–۱۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "14–17 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "21",
+      "name_dr": "لکسس RX Hybrid (مدل ۲۰۱۸)",
+      "name_en": "Lexus RX Hybrid (2018 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["لوکس", "هایبرید", "چهارچرخ محرک"],
+      "tags_en": ["Luxury", "Hybrid", "AWD"],
+      "shortDesc_dr": "شاسی‌بلند لوکس هایبرید با مصرف مناسب و سیستم چهارچرخ محرک.",
+      "shortDesc_en": "A luxurious hybrid SUV with efficient fuel consumption and all-wheel drive.",
+      "longDesc_dr": "لکسس RX Hybrid مدل ۲۰۱۸ با انجین ۳.۵ لیتری V6 هایبرید، سیستم AWD و تجهیزات ایمنی مناسب، ترکیبی از راحتی، قدرت و مصرف اقتصادی را ارائه می‌دهد.",
+      "longDesc_en": "The 2018 Lexus RX Hybrid combines a 3.5L V6 hybrid engine, AWD capability, and modern safety features for a balance of comfort, performance, and efficiency.",
+      "mainImage": "/images/cars/lexus-rx-hybrid-2018-main.jpg",
+      "gallery": [
+        "/images/cars/lexus-rx-hybrid-2018-thumb1.jpg",
+        "/images/cars/lexus-rx-hybrid-2018-thumb2.jpg",
+        "/images/cars/lexus-rx-hybrid-2018-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "هایبرید (پترول + برقی)",
+        "fuelType_en": "Hybrid (Petrol + Electric)",
+        "engine_dr": "3.5L V6 هایبرید – 6 سیلندر – 3500cc",
+        "engine_en": "3.5L V6 Hybrid – 6 Cylinder – 3500cc",
+        "gearbox_dr": "اتوماتیک E-CVT + حالت دستی",
+        "gearbox_en": "E-CVT Automatic + Manual Mode",
+        "driveType_dr": "چهارچرخ محرک (AWD)",
+        "driveType_en": "All-Wheel Drive (AWD)",
+        "security_dr": "ABS، EBD، ۸ Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, 8 Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "۷–۸ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "7–8 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "22",
+      "name_dr": "لکسس LX 570 (مدل ۲۰۱۱)",
+      "name_en": "Lexus LX 570 (2011 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 8,
+      "tags_dr": ["لوکس", "قدرتمند", "ظرفیت بالا"],
+      "tags_en": ["Luxury", "Powerful", "High Capacity"],
+      "shortDesc_dr": "شاسی‌بلند لوکس و بسیار قدرتمند با ظرفیت ۸ سرنشین برای سفرهای ویژه.",
+      "shortDesc_en": "A luxurious and powerful 8-passenger SUV for premium travel.",
+      "longDesc_dr": "لکسس LX 570 مدل ۲۰۱۱ با انجین قدرتمند ۵.۷ لیتری V8، سیستم چهارچرخ محرک و ظرفیت ۸ سرنشین، برای سفرهای خانوادگی و تشریفاتی گزینه‌ای عالی است.",
+      "longDesc_en": "The 2011 Lexus LX 570 features a powerful 5.7L V8 engine, four-wheel drive, and seating for eight, making it an excellent choice for family and premium travel.",
+      "mainImage": "/images/cars/lexus-lx570-2011-main.jpg",
+      "gallery": [
+        "/images/cars/lexus-lx570-2011-thumb1.jpg",
+        "/images/cars/lexus-lx570-2011-thumb2.jpg",
+        "/images/cars/lexus-lx570-2011-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "5.7L V8 – 8 سیلندر",
+        "engine_en": "5.7L V8 – 8 Cylinder",
+        "gearbox_dr": "۶ سرعته اتوماتیک + حالت دستی",
+        "gearbox_en": "6-Speed Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "۱۵–۱۸ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "15–18 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "23",
+      "name_dr": "تویوتا فوررانر Limited (مدل ۲۰۲۰)",
+      "name_en": "Toyota 4Runner Limited (2020 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 5,
+      "tags_dr": ["لوکس", "چهارچرخ محرک", "آفرود"],
+      "tags_en": ["Luxury", "4WD", "Off-Road"],
+      "shortDesc_dr": "شاسی‌بلند لوکس و قدرتمند برای سفرهای شهری، ولایتی و مسیرهای ناهموار.",
+      "shortDesc_en": "A luxurious and powerful SUV for city, provincial, and rough-terrain travel.",
+      "longDesc_dr": "تویوتا فوررانر Limited مدل ۲۰۲۰ با انجین ۴.۰ لیتری V6، سیستم چهارچرخ محرک و تجهیزات ایمنی مناسب، انتخابی مطمئن برای سفرهای طولانی و مسیرهای دشوار است.",
+      "longDesc_en": "The 2020 Toyota 4Runner Limited features a 4.0L V6 engine, four-wheel drive, and useful safety systems, making it a reliable choice for long-distance and challenging travel.",
+      "mainImage": "/images/cars/4runner-limited-2020-main.jpg",
+      "gallery": [
+        "/images/cars/4runner-limited-2020-thumb1.jpg",
+        "/images/cars/4runner-limited-2020-thumb2.jpg",
+        "/images/cars/4runner-limited-2020-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.0L V6 – 6 سیلندر",
+        "engine_en": "4.0L V6 – 6 Cylinder",
+        "gearbox_dr": "۵ سرعته اتوماتیک + حالت دستی",
+        "gearbox_en": "5-Speed Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "13–15 Liters per 100 KM"
+      }
+    },
+
+    {
+      "id": "24",
+      "name_dr": "لکسس LX 570 (مدل ۲۰۲۰)",
+      "name_en": "Lexus LX 570 (2020 Model)",
+      "type": "luxury",
+      "category": "4WD",
+      "isArmored": false,
+      "passengerCapacity": 8,
+      "tags_dr": ["لوکس", "قدرت بالا", "ظرفیت ۸ نفر"],
+      "tags_en": ["Luxury", "High Performance", "8 Passengers"],
+      "shortDesc_dr": "شاسی‌بلند لوکس و قدرتمند با ظرفیت ۸ سرنشین برای سفرهای ویژه و خانوادگی.",
+      "shortDesc_en": "A luxurious and powerful 8-passenger SUV for premium and family travel.",
+      "longDesc_dr": "لکسس LX 570 مدل ۲۰۲۰ با انجین ۵.۷ لیتری V8، سیستم چهارچرخ محرک، امکانات ایمنی پیشرفته و ظرفیت ۸ سرنشین، گزینه‌ای ممتاز برای سفرهای راحت و تشریفاتی است.",
+      "longDesc_en": "The 2020 Lexus LX 570 features a powerful 5.7L V8 engine, four-wheel drive, advanced safety systems, and seating for eight, making it a premium choice for comfortable executive and family travel.",
+      "mainImage": "/images/cars/lexus-lx570-2020-main.jpg",
+      "gallery": [
+        "/images/cars/lexus-lx570-2020-thumb1.jpg",
+        "/images/cars/lexus-lx570-2020-thumb2.jpg",
+        "/images/cars/lexus-lx570-2020-thumb3.jpg"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "5.7L V8 – 8 سیلندر",
+        "engine_en": "5.7L V8 – 8 Cylinder",
+        "gearbox_dr": "۸ سرعته اتوماتیک + حالت دستی",
+        "gearbox_en": "8-Speed Automatic + Manual Mode",
+        "driveType_dr": "چهار چرخ محرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC، سیستم‌های کمکی و سنسورها",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC, Driver Assistance Systems and Sensors",
+        "consumption_dr": "۱۵–۱۸ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "15–18 Liters per 100 KM"
+      }
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "title_dr": "کرایه موترهای زرهی و لوکس",
+      "title_en": "Armored & Luxury Car Rentals",
+      "desc_dr": "دسترسی به مدرن‌ترین ناوگان خودروهای ضدگلوله و لوکس همراه با رانندگان مجرب شهری.",
+      "desc_en": "Access to the most modern fleet of bulletproof and luxury vehicles with experienced city drivers.",
+      "icon": "ShieldCheckIcon"
+    },
+    {
+      "id": "s2",
+      "title_dr": "تیم محافظت و همراهی اسکورت",
+      "title_en": "Security & Escort Teams",
+      "desc_dr": "فراهم‌سازی محافظین مسطح حرفه‌ای جهت تامین امنیت کامل در مسیرهای ولایتی افغانستان.",
+      "desc_en": "Providing professional armed security guards to ensure absolute safety along provincial routes.",
+      "icon": "UsersIcon"
+    },
+    {
+      "id": "s3",
+      "title_dr": "خدمات ریزرف هوتل و مترجم",
+      "title_en": "Hotel Reservations & Translators",
+      "desc_dr": "هماهنگی کامل محل اقامت ایمن در کابل و ولایات به همراه مترجمین مسلط به زبان‌های محلی.",
+      "desc_en": "Full coordination of secure accommodation in Kabul and provinces with translators fluent in local languages.",
+      "icon": "GlobeAltIcon"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name_dr": "احمد منصور",
+      "name_en": "Ahmad Mansoor",
+      "role_dr": "مدیر پروژه سازمان بین‌المللی",
+      "role_en": "International NGO Project Manager",
+      "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
+      "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
+      "stars": 5
+    },
+    {
+      "id": 2,
+      "name_dr": "سارا ویلیامز",
+      "name_en": "Sarah Williams",
+      "role_dr": "خبرنگار مستقل",
+      "role_en": "Independent Journalist",
+      "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
+      "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
+      "stars": 5
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
+      "question_en": "Do your services include a driver and a security team?",
+      "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
+      "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
+    },
+    {
+      "id": 2,
+      "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
+      "question_en": "What is the cancellation policy for car reservations?",
+      "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
+      "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
+    }
+  ]
+}

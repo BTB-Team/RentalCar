@@ -34,7 +34,7 @@ export const CarFilter = () => {
             key={filter.id}
             type="button"
             onClick={() => setActiveFilter(filter.id)}
-            className={`min-w-20 rounded-2xl  px-5 sm:px-10 py-2 sm:py-3 text-sm font-extrabold transition ${
+            className={`min-w-20 rounded-2xl  px-5 sm:px-10 py-2 sm:py-3 text-sm font-bold transition ${
               isActive
                 ? "bg-brand-yellow text-brand-black"
                 : "bg-white text-brand-black hover:bg-brand-yellow/70"
