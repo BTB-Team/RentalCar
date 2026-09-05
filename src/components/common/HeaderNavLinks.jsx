@@ -1,7 +1,7 @@
 // components/navbar/NavLinks.jsx
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
-export const NavLinks = ({ navLinks }) => {
+export const HeaderNavLinks = ({ navLinks }) => {
     const location = useLocation();
     const navigate = useNavigate();
 

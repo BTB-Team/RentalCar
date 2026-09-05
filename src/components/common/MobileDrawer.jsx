@@ -1,5 +1,5 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { Logo } from '../../common/Logo';
+import { Logo } from './Logo'
 
 export const MobileDrawer = ({ isOpen, onClose, navLinks, lang, contactText }) => {
     const location = useLocation();

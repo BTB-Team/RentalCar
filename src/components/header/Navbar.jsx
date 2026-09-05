@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useLangStore } from '../../store/useLangStore';
 import { Logo } from '../common/Logo';
-import { useScrollVisibility } from './components/useScrollVisibility';
-import { NavLinks } from './components/Navlinks';
-import { MobileDrawer } from './components/MobileDrawer';
-import { ScrollToTopButton } from './components/ScrollToTopButton';
+import { HeaderNavLinks } from '../common/HeaderNavLinks';
+import { MobileDrawer } from '../common/MobileDrawer';
+import { ScrollToTopButton } from '../common/ScrollToTopButton';
+import { useScrollVisibility } from './useScrollVisibility';
 
 export const Navbar = () => {
     const { t, lang, setLang } = useLangStore();
@@ -27,7 +27,7 @@ export const Navbar = () => {
             >
                 <nav className="max-w-7xl w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
                     <Logo />
-                    <NavLinks navLinks={navLinks} />
+                    <HeaderNavLinks navLinks={navLinks} />
 
                     <div className="flex items-center bg-white rounded-[20px] p-1.5 shadow-sm border border-gray-100 h-[48px] sm:h-[56px] gap-1">
                         {/* Language Toggle Button (Shows target language) */}
