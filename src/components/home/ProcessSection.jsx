@@ -1,6 +1,6 @@
 import { useLangStore } from "../../store/useLangStore";
-import firstImage from "./images/first.png";
-import fourImage from "./images/four.png";
+import firstImage from "./images/four-n.jpeg";
+import fourImage from "./images/first-n.jpeg";
 import secondImage from "./images/second.png";
 import thirdImage from "./images/third.png";
 

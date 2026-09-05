@@ -11,8 +11,9 @@ const FaqSection = () => {
 
   return (
     <section
+      id="faq"
       dir={lang === "dr" ? "rtl" : "ltr"}
-      className="w-full bg-white px-4 py-10"
+      className="w-full scroll-mt-8 bg-white px-4 py-10"
     >
       <div className="mx-auto w-full max-w-[857px]">
         <div className="h-[56px] text-center">
