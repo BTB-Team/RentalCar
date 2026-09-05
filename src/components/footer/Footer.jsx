@@ -1,5 +1,7 @@
 import { useLangStore } from "../../store/useLangStore";
+import { NavLink } from 'react-router-dom'
 import { Logo } from "../common/Logo";
+import { FooterLinks } from "../common/FooterLinks";
 
 export const Footer = () => {
 
@@ -12,7 +14,14 @@ export const Footer = () => {
             tagline: 'همراه امن سفر شما',
             subtext: 'ارائه‌دهنده خدمات کرایه موتر و پشتیبانی سفر در افغانستان',
             quickLinksTitle: 'لینک‌های سریع',
-            links: [{ 'label': 'خانه', 'href': '/' }, { 'label': 'درباره ما', 'href': '/about' }, { 'label': 'موتر ما', 'href': '/cars' }, { 'label': 'خدمات', 'href': '/services' }, { 'label': 'تماس با ما', 'href': '/contact' }],
+            // links: [{ 'label': 'خانه', 'href': '/RentalCar/' }, { 'label': 'درباره ما', 'href': '/RentalCar/about' }, { 'label': 'موتر ما', 'href': '/RentalCar/cars' }, { 'label': 'خدمات', 'href': '/RentalCar/services' }, { 'label': 'تماس با ما', 'href': '/RentalCar/contact' }],
+            links: [
+                { label: 'خانه', href: '/' },
+                { label: 'درباره ما', href: '/about' },
+                { label: 'موتر ما', href: '/cars', },
+                { label: 'خدمات', href: '/about#services', isScroll: true },
+                { label: 'تماس با ما', href: '/contact' },
+            ],
             contactTitle: 'ارتباط با ما',
             address: 'شیرپور، سرک ۳، خانه نمبر ۷، کابل افغانستان',
             copyright: '© 2026 Kabul Rental Car Company. All Rights Reserved.',
@@ -22,7 +31,14 @@ export const Footer = () => {
             tagline: 'Your Safe Travel Partner',
             subtext: 'Providing car rental services and travel support in Afghanistan',
             quickLinksTitle: 'Quick Links',
-            links: [{ 'label': 'Home', 'href': '/' }, { 'label': 'About Us', 'href': '/about' }, { 'label': 'Our Fleet', 'href': '/cars' }, { 'label': 'Services', 'href': '/services' }, { 'label': 'Contact Us', 'href': '/contact' }],
+            // links: [{ 'label': 'Home', 'href': '/RentalCar/' }, { 'label': 'About Us', 'href': '/RentalCar/about' }, { 'label': 'Our Fleet', 'href': '/RentalCar/cars' }, { 'label': 'Services', 'href': '/RentalCar/services' }, { 'label': 'Contact Us', 'href': '/RentalCar/contact' }],
+            links: [
+                { label: 'Home', href: '/' },
+                { label: 'About Us', href: '/about' },
+                { label: 'Our Fleet', href: '/cars' },
+                { label: 'Services', href: '/about#services', isScroll: true },
+                { label: 'Contact Us', href: '/contact' },
+            ],
             contactTitle: 'Contact Us',
             address: 'Shirpur, St 3, House #7, Kabul Afghanistan',
             copyright: '© 2026 Kabul Rental Car Company. All Rights Reserved.',
@@ -34,7 +50,7 @@ export const Footer = () => {
             dir={isRtl ? 'rtl' : 'ltr'}
         >
             {/* Top Main Section */}
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-3 items-start">
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 sm:gap-3 gap-5 items-start">
 
                 {/* Column 1: Brand & Bio */}
 
@@ -43,11 +59,11 @@ export const Footer = () => {
                         <Logo />
                     </div>
                     {/* Dynamic accent border switching sides */}
-                    <div className={`${isRtl ? 'border-r-4 pr-3' : 'border-l-4 pl-3'} border-[#FFD000]`}>
-                        <h3 className="text-[24px] font-[800] leading-tight text-black">
+                    <div className={`${isRtl ? 'border-r-[6px] pr-3' : 'border-l-[6px] pl-3'} border-[#FFD000]`}>
+                        <h3 className="sm:text-[24px] text-[20px] font-[800] leading-tight text-black">
                             {content.tagline}
                         </h3>
-                        <p className="text-[20px]  font-[400] mt-1 leading-relaxed">
+                        <p className="sm:text-[20px] text-[11px] font-[400] mt-1 leading-relaxed">
                             {content.subtext}
                         </p>
                     </div>
@@ -75,7 +91,11 @@ export const Footer = () => {
                             </svg>
                         </a>
                         {/* WhatsApp */}
-                        <a href="#" className="w-8 h-8 bg-[#FFD000] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                        <a
+                            href="https://wa.me/93786377417"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 bg-[#FFD000] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25.4001 6.54658C24.1775 5.31205 22.7214 4.3332 21.1167 3.66706C19.5121 3.00092 17.7908 2.66082 16.0534 2.66658C8.7734 2.66658 2.84007 8.59991 2.84007 15.8799C2.84007 18.2132 3.4534 20.4799 4.60007 22.4799L2.7334 29.3332L9.7334 27.4932C11.6667 28.5466 13.8401 29.1066 16.0534 29.1066C23.3334 29.1066 29.2667 23.1732 29.2667 15.8932C29.2667 12.3599 27.8934 9.03991 25.4001 6.54658ZM16.0534 26.8666C14.0801 26.8666 12.1467 26.3332 10.4534 25.3332L10.0534 25.0932L5.8934 26.1866L7.00006 22.1332L6.7334 21.7199C5.6368 19.9693 5.05463 17.9456 5.0534 15.8799C5.0534 9.82658 9.98673 4.89324 16.0401 4.89324C18.9734 4.89324 21.7334 6.03991 23.8001 8.11991C24.8236 9.13839 25.6346 10.35 26.1862 11.6843C26.7378 13.0187 27.019 14.4494 27.0134 15.8932C27.0401 21.9466 22.1067 26.8666 16.0534 26.8666ZM22.0801 18.6532C21.7467 18.4932 20.1201 17.6932 19.8267 17.5732C19.5201 17.4666 19.3067 17.4132 19.0801 17.7332C18.8534 18.0666 18.2267 18.8132 18.0401 19.0266C17.8534 19.2532 17.6534 19.2799 17.3201 19.1066C16.9867 18.9466 15.9201 18.5866 14.6667 17.4666C13.6801 16.5866 13.0267 15.5066 12.8267 15.1732C12.6401 14.8399 12.8001 14.6666 12.9734 14.4932C13.1201 14.3466 13.3067 14.1066 13.4667 13.9199C13.6267 13.7332 13.6934 13.5866 13.8001 13.3732C13.9067 13.1466 13.8534 12.9599 13.7734 12.7999C13.6934 12.6399 13.0267 11.0132 12.7601 10.3466C12.4934 9.70658 12.2134 9.78658 12.0134 9.77324H11.3734C11.1467 9.77324 10.8001 9.85324 10.4934 10.1866C10.2001 10.5199 9.34673 11.3199 9.34673 12.9466C9.34673 14.5732 10.5334 16.1466 10.6934 16.3599C10.8534 16.5866 13.0267 19.9199 16.3334 21.3466C17.1201 21.6932 17.7334 21.8932 18.2134 22.0399C19.0001 22.2932 19.7201 22.2532 20.2934 22.1732C20.9334 22.0799 22.2534 21.3732 22.5201 20.5999C22.8001 19.8266 22.8001 19.1732 22.7067 19.0266C22.6134 18.8799 22.4134 18.8132 22.0801 18.6532Z" fill="black" />
                             </svg>
@@ -85,34 +105,11 @@ export const Footer = () => {
 
                 {/* Column 2: Quick Links */}
                 <div className="flex flex-col items-start">
-                    <h4 className="text-[20px] font-[700] text-black pb-1">
+                    <h4 className="sm:text-[20px] text-[16px] font-[700] text-black pb-1">
                         {content.quickLinksTitle}
                     </h4>
                     <span className="block w-[65px] h-[4px] rounded-[20px] border-b-4 border-[#FFD000] mb-4"></span>
-                    <ul className="space-y-3 text-[15px] font-[600]">
-                        {content.links.map((link, idx) => (
-                            <li key={idx}>
-                                <a href={link.href} className="flex items-center gap-2 hover:text-[#FFD000] transition-colors text-[20px] font-[400]">
-                                    {/* Chevron flips automatically based on LTR/RTL */}
-                                    {
-                                        isRtl ? (
-                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.31729 6.12832L6.44571 -9.26403e-05L7.97754 1.53174L2.61504 6.89424L7.97754 12.2567L6.44571 13.7886L0.31729 7.66016C0.114197 7.457 0.000105005 7.1815 0.00010503 6.89424C0.000105055 6.60698 0.114197 6.33148 0.31729 6.12832Z" fill="#F7D102" />
-                                            </svg>
-                                        ) : (
-                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.68271 6.12832L1.55429 -9.26403e-05L0.02246 1.53174L5.38496 6.89424L0.02246 12.2567L1.55429 13.7886L7.68271 7.66016C7.8858 7.457 7.99989 7.1815 7.99989 6.89424C7.99989 6.60698 7.8858 6.33148 7.68271 6.12832Z" fill="#F7D102" />
-                                            </svg>
-                                        )
-                                    }
-
-
-
-                                    <span>{link.label}</span>
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
+                    <FooterLinks content={content} />
                 </div>
 
                 {/* Column 3: Contact Info */}
@@ -122,14 +119,14 @@ export const Footer = () => {
                     </h4>
                     <span className="block w-[65px] h-[4px] rounded-[20px] border-b-4 border-[#FFD000] mb-4"></span>
 
-                    <div className="space-y-4 text-[20px] font-[400]">
+                    <div className="space-y-4 sm:text-[20px] text-[16px] font-[400]">
                         {/* Address */}
                         <div className="flex items-center gap-3">
                             <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 11.875C8.14752 11.875 7.32995 11.5458 6.72716 10.9597C6.12436 10.3737 5.78571 9.5788 5.78571 8.75C5.78571 7.9212 6.12436 7.12634 6.72716 6.54029C7.32995 5.95424 8.14752 5.625 9 5.625C9.85248 5.625 10.67 5.95424 11.2728 6.54029C11.8756 7.12634 12.2143 7.9212 12.2143 8.75C12.2143 9.16038 12.1311 9.56674 11.9696 9.94589C11.8081 10.325 11.5713 10.6695 11.2728 10.9597C10.9744 11.2499 10.62 11.4801 10.2301 11.6371C9.84008 11.7942 9.42211 11.875 9 11.875ZM9 0C6.61305 0 4.32387 0.921872 2.63604 2.56282C0.948211 4.20376 0 6.42936 0 8.75C0 15.3125 9 25 9 25C9 25 18 15.3125 18 8.75C18 6.42936 17.0518 4.20376 15.364 2.56282C13.6761 0.921872 11.3869 0 9 0Z" fill="#F7D102" />
                             </svg>
 
-                            <span dir="ltr" className="text-start">{content.address}</span>
+                            <span className="text-start whitespace-nowrap">{content.address}</span>
                         </div>
 
                         {/* Email */}
@@ -161,13 +158,13 @@ export const Footer = () => {
             </div>
 
             {/* Copyright Notice */}
-            <div className="text-center text-[20px] font-[400] mb-[60px]" dir="ltr">
+            <div className="text-center sm:text-[20px] text-[14px] font-[400] mb-[60px]">
                 {content.copyright}
             </div>
 
             {/* Bottom Wave Accent */}
             {/* <div className="w-full h-24 bg-[#FFD000] rounded-t-[50%] md:rounded-t-[100%]" /> */}
-            <div className="w-full h-[95px] bg-[#F7D102] rounded-t-full -mt-10 -z-10" />
+            <div className="w-full sm:h-[95px] h-[50px] bg-[#F7D102] rounded-t-full -mt-10 -z-10" />
         </footer>
     )
 }
