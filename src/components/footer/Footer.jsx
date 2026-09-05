@@ -12,7 +12,7 @@ export const Footer = () => {
             tagline: 'همراه امن سفر شما',
             subtext: 'ارائه‌دهنده خدمات کرایه موتر و پشتیبانی سفر در افغانستان',
             quickLinksTitle: 'لینک‌های سریع',
-            links: [{ 'label': 'خانه', 'href': '/' }, { 'label': 'درباره ما', 'href': '/about' }, { 'label': 'موتر ما', 'href': '/cars' }, { 'label': 'خدمات', 'href': '/services' }, { 'label': 'تماس با ما', 'href': '/contact' }],
+            links: [{ 'label': 'خانه', 'href': '/RentalCar/' }, { 'label': 'درباره ما', 'href': '/RentalCar/about' }, { 'label': 'موتر ما', 'href': '/RentalCar/cars' }, { 'label': 'خدمات', 'href': '/RentalCar/services' }, { 'label': 'تماس با ما', 'href': '/RentalCar/contact' }],
             contactTitle: 'ارتباط با ما',
             address: 'شیرپور، سرک ۳، خانه نمبر ۷، کابل افغانستان',
             copyright: '© 2026 Kabul Rental Car Company. All Rights Reserved.',
@@ -22,7 +22,7 @@ export const Footer = () => {
             tagline: 'Your Safe Travel Partner',
             subtext: 'Providing car rental services and travel support in Afghanistan',
             quickLinksTitle: 'Quick Links',
-            links: [{ 'label': 'Home', 'href': '/' }, { 'label': 'About Us', 'href': '/about' }, { 'label': 'Our Fleet', 'href': '/cars' }, { 'label': 'Services', 'href': '/services' }, { 'label': 'Contact Us', 'href': '/contact' }],
+            links: [{ 'label': 'Home', 'href': '/RentalCar/' }, { 'label': 'About Us', 'href': '/RentalCar/about' }, { 'label': 'Our Fleet', 'href': '/RentalCar/cars' }, { 'label': 'Services', 'href': '/RentalCar/services' }, { 'label': 'Contact Us', 'href': '/RentalCar/contact' }],
             contactTitle: 'Contact Us',
             address: 'Shirpur, St 3, House #7, Kabul Afghanistan',
             copyright: '© 2026 Kabul Rental Car Company. All Rights Reserved.',
@@ -34,7 +34,7 @@ export const Footer = () => {
             dir={isRtl ? 'rtl' : 'ltr'}
         >
             {/* Top Main Section */}
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-3 items-start">
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 sm:gap-3 gap-5 items-start">
 
                 {/* Column 1: Brand & Bio */}
 
@@ -43,11 +43,11 @@ export const Footer = () => {
                         <Logo />
                     </div>
                     {/* Dynamic accent border switching sides */}
-                    <div className={`${isRtl ? 'border-r-4 pr-3' : 'border-l-4 pl-3'} border-[#FFD000]`}>
-                        <h3 className="text-[24px] font-[800] leading-tight text-black">
+                    <div className={`${isRtl ? 'border-r-[6px] pr-3' : 'border-l-[6px] pl-3'} border-[#FFD000]`}>
+                        <h3 className="sm:text-[24px] text-[20px] font-[800] leading-tight text-black">
                             {content.tagline}
                         </h3>
-                        <p className="text-[20px]  font-[400] mt-1 leading-relaxed">
+                        <p className="sm:text-[20px] text-[11px] font-[400] mt-1 leading-relaxed">
                             {content.subtext}
                         </p>
                     </div>
@@ -85,7 +85,7 @@ export const Footer = () => {
 
                 {/* Column 2: Quick Links */}
                 <div className="flex flex-col items-start">
-                    <h4 className="text-[20px] font-[700] text-black pb-1">
+                    <h4 className="sm:text-[20px] text-[16px] font-[700] text-black pb-1">
                         {content.quickLinksTitle}
                     </h4>
                     <span className="block w-[65px] h-[4px] rounded-[20px] border-b-4 border-[#FFD000] mb-4"></span>
@@ -122,14 +122,14 @@ export const Footer = () => {
                     </h4>
                     <span className="block w-[65px] h-[4px] rounded-[20px] border-b-4 border-[#FFD000] mb-4"></span>
 
-                    <div className="space-y-4 text-[20px] font-[400]">
+                    <div className="space-y-4 sm:text-[20px] text-[16px] font-[400]">
                         {/* Address */}
                         <div className="flex items-center gap-3">
                             <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 11.875C8.14752 11.875 7.32995 11.5458 6.72716 10.9597C6.12436 10.3737 5.78571 9.5788 5.78571 8.75C5.78571 7.9212 6.12436 7.12634 6.72716 6.54029C7.32995 5.95424 8.14752 5.625 9 5.625C9.85248 5.625 10.67 5.95424 11.2728 6.54029C11.8756 7.12634 12.2143 7.9212 12.2143 8.75C12.2143 9.16038 12.1311 9.56674 11.9696 9.94589C11.8081 10.325 11.5713 10.6695 11.2728 10.9597C10.9744 11.2499 10.62 11.4801 10.2301 11.6371C9.84008 11.7942 9.42211 11.875 9 11.875ZM9 0C6.61305 0 4.32387 0.921872 2.63604 2.56282C0.948211 4.20376 0 6.42936 0 8.75C0 15.3125 9 25 9 25C9 25 18 15.3125 18 8.75C18 6.42936 17.0518 4.20376 15.364 2.56282C13.6761 0.921872 11.3869 0 9 0Z" fill="#F7D102" />
                             </svg>
 
-                            <span dir="ltr" className="text-start">{content.address}</span>
+                            <span className="text-start whitespace-nowrap">{content.address}</span>
                         </div>
 
                         {/* Email */}
@@ -161,13 +161,13 @@ export const Footer = () => {
             </div>
 
             {/* Copyright Notice */}
-            <div className="text-center text-[20px] font-[400] mb-[60px]" dir="ltr">
+            <div className="text-center sm:text-[20px] text-[14px] font-[400] mb-[60px]">
                 {content.copyright}
             </div>
 
             {/* Bottom Wave Accent */}
             {/* <div className="w-full h-24 bg-[#FFD000] rounded-t-[50%] md:rounded-t-[100%]" /> */}
-            <div className="w-full h-[95px] bg-[#F7D102] rounded-t-full -mt-10 -z-10" />
+            <div className="w-full sm:h-[95px] h-[50px] bg-[#F7D102] rounded-t-full -mt-10 -z-10" />
         </footer>
     )
 }
