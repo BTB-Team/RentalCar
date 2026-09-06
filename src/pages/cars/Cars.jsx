@@ -4,6 +4,8 @@ import { CarFilter } from "../../components/cars/CarFilter";
 import { CarCard } from "../../components/cars/CarCard";
 import { CarSkeleton } from "../../components/cars/CarSkeleton";
 import { TravelBanner } from "../../components/common/TravelBanner";
+import CarHeroSkeleton from "../../components/cars/carHeroSkelton";
+import ServiceCtaSkeleton from "../../components/cars/ServiceCtaSkeleton";
 
 export const Cars = () => {
   const { t, lang, activeFilter } = useLangStore();
@@ -81,26 +83,30 @@ export const Cars = () => {
   return (
     <section className=" min-h-screen bg-white">
       {/* hero */}
-      <div className="overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
-        <div className="relative z-10 mx-auto max-w-4xl text-center">
-          <h1 className="text-3xl font-blackfont text-brand-black md:text-4xl">
-            {t.cars.title}
-          </h1>
+      {loading ? (
+        <CarHeroSkeleton />
+      ) : (
+        <div className="overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
+          <div className="relative z-10 mx-auto max-w-4xl text-center">
+            <h1 className="text-3xl font-blackfont text-brand-black md:text-4xl">
+              {t.cars.title}
+            </h1>
 
-          <p className="mx-auto mt-6  max-w-xl text-sm leading-10 font-bold text-brand-black md:text-base">
-            {t.cars.description}
-          </p>
+            <p className="mx-auto mt-6  max-w-xl text-sm leading-10 font-bold text-brand-black md:text-base">
+              {t.cars.description}
+            </p>
 
-          {/* filters */}
-          <CarFilter />
+            {/* filters */}
+            <CarFilter />
+          </div>
+
+          {/* decorative circle */}
+          <div className="absolute top-0 start-0 h-full w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
         </div>
-
-        {/* decorative circle */}
-        <div className="absolute top-0 start-0 h-full w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
-      </div>
+      )}
 
       {/* cars */}
-      <div className="mx-auto  max-w-7xl mt-20 px-4 pb-16 md:px-8 lg:px-12">
+      <div className="mx-auto max-w-7xl mt-20 px-4 pb-16 md:px-8 lg:px-12">
         {loading ? (
           <CarSkeleton />
         ) : filteredCars.length === 0 ? (
@@ -142,9 +148,12 @@ export const Cars = () => {
                 )}
               </div>
             )}
-            <TravelBanner />
           </>
         )}
+      </div>
+      {/* travel banner */}
+      <div className="mx-auto max-w-7xl mt-10 px-4 pb-16 md:px-8 lg:px-12">
+        {loading ? <ServiceCtaSkeleton /> : <TravelBanner />}
       </div>
     </section>
   );
