@@ -13,7 +13,6 @@ export const CarCard = ({ car }) => {
       {/* car image */}
       <div className="relative overflow-hidden">
         <img
-          // src="images/product-picture.png"
           src={image}
           alt={name}
           loading="lazy"
