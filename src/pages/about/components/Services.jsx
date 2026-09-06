@@ -72,7 +72,7 @@ export const Services = () => {
     ];
 
     return (
-        <section dir="rtl" className="w-full max-w-[1109px] mx-auto px-4 py-10 font-yekan select-none">
+        <section id="services" dir="rtl" className="w-full max-w-[1109px] mx-auto px-4 py-10 font-yekan select-none">
             <div className="flex items-center justify-center gap-4 mb-4">
                 <span className="w-[83px] h-[4px] bg-[#F7D102]" />
                 <h2 className="font-extrabold text-black text-[20px] md:text-[36px]">

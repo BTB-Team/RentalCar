@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLangStore } from '../../../store/useLangStore';
-import heroImage from '../../../../public/images/about-hero.png';
+import heroImage from '../../../../public/images/about-hero.jpg';
 
 export const HeroSection = () => {
     const { t } = useLangStore();

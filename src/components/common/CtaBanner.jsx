@@ -6,7 +6,7 @@ export const CtaBanner = () => {
     const { lang } = useLangStore()
 
     return (
-        <section className="max-w-[1200px] mx-auto my-10 px-4">
+        <section className="w-full xl:w-[1200px] mx-auto my-10 px-4">
             <div className="bg-[#EEEEEE] rounded-[20px] h-auto md:h-[210px] flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 px-6 md:px-10 py-8 md:py-0">
 
                 {/* Icon circle — 117x117, 3px yellow border */}
@@ -35,7 +35,7 @@ export const CtaBanner = () => {
 
                 {/* Contact button — 209x60, rounded-58 */}
                 <a
-                    href="tel:+93000000000"
+                    href="tel:+93 786377417"
                     className="w-full md:w-[209px] h-[60px] shrink-0 bg-brand-black text-white font-sans font-semibold text-[18px] md:text-[20px] rounded-[58px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity order-3"
                 >
                     <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
