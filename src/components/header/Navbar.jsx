@@ -29,12 +29,12 @@ export const Navbar = () => {
                     <Logo />
                     <HeaderNavLinks navLinks={navLinks} />
 
-                    <div className="flex items-center bg-white rounded-[20px] p-1.5 shadow-sm border border-gray-100 h-[48px] sm:h-[56px] gap-1">
+                    <div className="flex items-center bg-white sm:rounded-[20px] rounded-[10px] p-1.5 shadow-sm border border-gray-100 h-[48px] sm:h-[56px] gap-1">
                         {/* Language Toggle Button (Shows target language) */}
                         <button
                             type="button"
                             onClick={() => setLang(lang === 'dr' ? 'en' : 'dr')}
-                            className="flex items-center justify-center px-3 sm:px-4 h-full rounded-[16px] font-bold text-xs sm:text-sm text-brand-black bg-gray-100 hover:bg-brand-yellow transition-all duration-200 focus:outline-none"
+                            className="flex items-center justify-center px-3 sm:px-4 h-full sm:rounded-[16px] rounded-[8px] font-bold text-xs sm:text-sm text-brand-black bg-gray-100 transition-all duration-200 focus:outline-none"
                             aria-label="Switch language"
                         >
                             {lang === 'dr' ? 'EN' : 'دری'}
@@ -47,7 +47,7 @@ export const Navbar = () => {
                         <button
                             type="button"
                             onClick={() => setIsMobileOpen((prev) => !prev)}
-                            className="md:hidden flex items-center justify-center p-2 sm:p-2.5 h-full rounded-[16px] text-brand-black hover:bg-gray-100 transition-colors focus:outline-none"
+                            className="md:hidden flex items-center justify-center p-2 sm:p-2.5 h-full sm:rounded-[16px] rounded-[8px] text-brand-black hover:bg-gray-100 transition-colors focus:outline-none"
                             aria-label="Toggle menu"
                         >
                             {isMobileOpen ? (
