@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-screen bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[70vh] pt-4 sm:min-h-[75vh] md:min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Bottom gradient overlay */}
