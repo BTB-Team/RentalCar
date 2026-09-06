@@ -1,8 +1,8 @@
 import { useLangStore } from "../../store/useLangStore";
 import firstImage from "./images/four-n.jpeg";
 import fourImage from "./images/first-n.jpeg";
-import secondImage from "./images/second.png";
-import thirdImage from "./images/third.png";
+import secondImage from "./images/three-n.jpeg";
+import thirdImage from "./images/two-n.jpeg";
 
 const processSteps = [
   {
