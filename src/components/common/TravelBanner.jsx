@@ -6,7 +6,7 @@ export const TravelBanner = ({ cta }) => {
   return (
     <div className="relative w-full h-[250px] sm:h-[280px] md:h-[339px] mt-20 rounded-2xl flex items-center justify-center overflow-hidden opacity-2 select-none bg-gradient-to-r from-brand-yellow/10 via-brand-yellow/40 to-brand-yellow/90">
       {/* background car image overlay */}
-      <div className="absolute inset-0 bg-[url('/images/product-picture1.png')] w-full h-full bg-center bg-no-repeat bg-cover opacity-25 pointer-events-none mix-blend-multiply" />
+      <div className="absolute inset-0 bg-[url('/images/product-picture1.png')] w-full h-full bg-center bg-no-repeat bg-cover opacity-10 pointer-events-none mix-blend-multiply" />
 
       {/* foreground content container */}
       <div className="relative z-10 max-w-4xl px-6 text-center flex flex-col items-center gap-4 sm:gap-6">

@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLangStore } from "../../store/useLangStore";
-
 import { CarFilter } from "../../components/cars/CarFilter";
 import { CarCard } from "../../components/cars/CarCard";
 import { CarSkeleton } from "../../components/cars/CarSkeleton";
@@ -88,7 +87,7 @@ export const Cars = () => {
             {t.cars.title}
           </h1>
 
-          <p className="mx-auto mt-6  max-w-xl text-sm leading-10 font-bold  text-brand-black md:text-base">
+          <p className="mx-auto mt-6  max-w-xl text-sm leading-10 font-bold text-brand-black md:text-base">
             {t.cars.description}
           </p>
 
