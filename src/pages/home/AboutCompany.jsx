@@ -1,5 +1,5 @@
 import { useLangStore } from "../../store/useLangStore";
-import aboutUsImage from "../../assets/images/about-us-section.png";
+import aboutUsImage from "../../assets/images/aboutUSImage.jpeg";
 import vectorImage from "../../assets/images/Vector 1.svg";
 
 const AboutCompany = () => {
@@ -7,7 +7,7 @@ const AboutCompany = () => {
 
   return (
     <section
-      className="flex flex-col gap-8 bg-cover bg-center bg-no-repeat sm:gap-10 md:gap-12 lg:flex-row lg:items-center lg:gap-12"
+      className="flex flex-col  gap-8 bg-cover bg-center bg-no-repeat sm:gap-10 md:gap-12 lg:flex-row lg:items-center lg:gap-12"
       style={{ backgroundImage: `url(${vectorImage})` }}
       dir="ltr"
     >
@@ -49,13 +49,12 @@ const AboutCompany = () => {
           </svg>
         </button>
       </div>
-
       {/* Image */}
       <div className="order-2 flex w-full flex-1 justify-center lg:order-2 lg:justify-end ">
         <img
           src={aboutUsImage}
           alt=""
-          className="h-[240px] w-full max-w-[750px] rounded-[24px] object-cover sm:h-[300px] sm:rounded-[28px] md:h-[360px] md:rounded-[31px]"
+          className=" w-full max-w-[750px] rounded-[24px] object-cover  sm:rounded-[28px] md:h-[360px] md:rounded-[31px]"
           loading="lazy"
         />
       </div>
