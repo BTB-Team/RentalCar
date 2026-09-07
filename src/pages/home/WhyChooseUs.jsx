@@ -7,9 +7,9 @@ const WhyChooseUs = () => {
 
   return (
     <section
-      className="w-full bg-cover bg-center bg-no-repeat px-4 py-10 sm:px-6 sm:py-12 md:py-16"
+      className="bg-black w-full bg-cover bg-center bg-no-repeat px-4 py-10 sm:px-6 sm:py-12 md:py-16"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.84)), url(${bgWhyUs})`,
+        backgroundImage: ` url(${bgWhyUs})`,
       }}
     >
       <div className="mx-auto max-w-7xl">

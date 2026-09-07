@@ -44,8 +44,10 @@
     },
 
     "about": {
+      
       "title": "About Kabul Rental Car",
-      "description": "Kabul Rental Car is a leading provider of car rental and travel support services in Afghanistan. We provide safe, coordinated services for tourists, international guests, business travelers, organizations, and VIP clients.",
+      "companyName": "Kabul Rental Car",
+      "description": " is a leading provider of car rental and travel support services in Afghanistan. We provide safe, coordinated services for tourists, international guests, business travelers, organizations, and VIP clients.",
       "description_2": "With a fleet of luxury and armored vehicles and a wide range of travel services, we strive to be a single trusted source covering all our clients' needs from the start of their trip to the end.",
       "btnReadMore": "Read More"
     },
