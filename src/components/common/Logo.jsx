@@ -6,7 +6,7 @@ export const Logo = () => {
     const { lang } = useLangStore();
 
     return (
-        <NavLink to="/" className="flex items-center gap-2 shrink-0">
+        <NavLink to="/" className="flex items-center gap-2 shrink-0 focus:outline-none">
             <img
                 src={logoImage}
                 alt={lang === 'dr' ? 'کابل رینتال کار' : 'Kabul Rental Car'}

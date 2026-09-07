@@ -65,7 +65,7 @@ export const Navbar = () => {
                     </div>
 
                     <a
-                        href="tel:+93000000000"
+                        href="tel:+93 786377417"
                         className="hidden md:flex items-center gap-2 justify-center bg-white text-[16px] lg:text-[18px] px-4 lg:px-6 py-2.5 lg:py-3 rounded-[20px] shadow-sm hover:opacity-90"
                     >
                         {t.navbar.contact}
