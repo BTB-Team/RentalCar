@@ -47,11 +47,11 @@ export const MobileDrawer = ({ isOpen, onClose, navLinks, lang, contactText }) =
                         const isAboutActive = location.pathname === '/about' && location.hash !== '#services';
 
                         const getButtonClass = (isActive) =>
-                            `flex items-center justify-between px-5 py-3.5 rounded-2xl text-lg font-semibold transition-all duration-200 w-full ${isActive ? 'bg-brand-yellow text-brand-black shadow-sm font-bold' : 'text-brand-black hover:bg-gray-50'
+                            `flex items-center justify-between px-5 py-3.5 rounded-2xl text-lg font-semibold transition-all duration-200 w-full ${isActive ? 'bg-brand-yellow text-white shadow-sm font-bold' : 'text-brand-black hover:bg-gray-50'
                             }`;
 
                         return (
-                            <li key={link.label} className="w-full">
+                            <li key={link.label} className="w-full border border-gray-100 rounded-2xl">
                                 {link.isScroll ? (
                                     <button
                                         type="button"
@@ -66,7 +66,7 @@ export const MobileDrawer = ({ isOpen, onClose, navLinks, lang, contactText }) =
                                         to={link.to}
                                         onClick={onClose}
                                         end={link.to === '/'}
-                                        className={() => getButtonClass(link.to === '/about' ? isAboutActive : undefined)}
+                                        className={({ isActive }) => getButtonClass(link.to === '/about' ? isAboutActive : isActive)}
                                     >
                                         <span>{link.label}</span>
                                         <span className={`text-sm opacity-60 ${lang === 'dr' ? 'rotate-180' : ''}`}>➔</span>
