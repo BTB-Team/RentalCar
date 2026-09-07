@@ -55,6 +55,7 @@ export const CarCard = ({ car }) => {
     w-full
     overflow-hidden
     rounded-t-[20px]
+    group
   "
 >
         <img
@@ -65,6 +66,9 @@ export const CarCard = ({ car }) => {
           h-full
           w-full
           object-cover
+          transition-transform
+          duration-500 ease-out 
+          group-hover:scale-[1.05]
           "
         />  
       </div>
@@ -115,53 +119,27 @@ export const CarCard = ({ car }) => {
           "
         >
           {/* Security / Armored Tag */}
-          {securityTag && (
-            <span
-              className="
-                inline-flex
-                h-[26px]
-                items-center
-                justify-center
-                rounded-[20px]
-                bg-brand-yellow
-                px-[9px]
-                font-regular
-                text-[16px]
-                leading-none
-                text-brand-black
-              "
-            >
-              {securityTag}
-            </span>
-          )}
-
-          {/* Category + Security */}
-          <span
-            className="
-            inline-flex
-            min-h-[26px]
-            items-center
-            justify-center
-            rounded-[20px]
-            bg-brand-yellow
-            px-[12px]
-            font-[600]
-            text-[16px]
-            leading-[100%]
-            tracking-[0%]
-            text-brand-black
-          "
-          >
-            {categoryLabel}
-            {car.isArmored && (
-              <>
-                <span className="mx-[4px]">|</span>
-                <span>
-                  {isDari ? 'امنیت بالا' : 'High Security'}
-                </span>
-              </>
-            )}
-          </span>
+          {(isDari ? car.tags_dr : car.tags_en)?.map((tag, index) => (
+  <span
+    key={index}
+    className="
+      inline-flex
+      min-h-[26px]
+      items-center
+      justify-center
+      rounded-[20px]
+      bg-brand-yellow
+      px-[12px]
+      font-[600]
+      text-[16px]
+      leading-[100%]
+      tracking-[0%]
+      text-brand-black
+    "
+  >
+    {tag}
+  </span>
+))}
         </div>
 
         {/* =========================
@@ -188,11 +166,12 @@ export const CarCard = ({ car }) => {
 ========================== */}
 <div
   className="
-    mt-[20px]
+    mt-auto
     flex
+    shrink-0
     items-center
     justify-between
-    gap-[12px]
+    gap-[8px]
   "
 >
   {/* Passenger Capacity */}

@@ -1678,67 +1678,107 @@
 }
   ],
   "services": [
-    {
-      "id": "s1",
-      "title_dr": "کرایه موترهای زرهی و لوکس",
-      "title_en": "Armored & Luxury Car Rentals",
-      "desc_dr": "دسترسی به مدرن‌ترین ناوگان خودروهای ضدگلوله و لوکس همراه با رانندگان مجرب شهری.",
-      "desc_en": "Access to the most modern fleet of bulletproof and luxury vehicles with experienced city drivers.",
-      "icon": "ShieldCheckIcon"
-    },
-    {
-      "id": "s2",
-      "title_dr": "تیم محافظت و همراهی اسکورت",
-      "title_en": "Security & Escort Teams",
-      "desc_dr": "فراهم‌سازی محافظین مسطح حرفه‌ای جهت تامین امنیت کامل در مسیرهای ولایتی افغانستان.",
-      "desc_en": "Providing professional armed security guards to ensure absolute safety along provincial routes.",
-      "icon": "UsersIcon"
-    },
-    {
-      "id": "s3",
-      "title_dr": "خدمات ریزرف هوتل و مترجم",
-      "title_en": "Hotel Reservations & Translators",
-      "desc_dr": "هماهنگی کامل محل اقامت ایمن در کابل و ولایات به همراه مترجمین مسلط به زبان‌های محلی.",
-      "desc_en": "Full coordination of secure accommodation in Kabul and provinces with translators fluent in local languages.",
-      "icon": "GlobeAltIcon"
-    }
-  ],
-  "testimonials": [
-    {
-      "id": 1,
-      "name_dr": "احمد منصور",
-      "name_en": "Ahmad Mansoor",
-      "role_dr": "مدیر پروژه سازمان بین‌المللی",
-      "role_en": "International NGO Project Manager",
-      "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
-      "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
-      "stars": 5
-    },
-    {
-      "id": 2,
-      "name_dr": "سارا ویلیامز",
-      "name_en": "Sarah Williams",
-      "role_dr": "خبرنگار مستقل",
-      "role_en": "Independent Journalist",
-      "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
-      "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
-      "stars": 5
-    }
-  ],
-  "faqs": [
-    {
-      "id": 1,
-      "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
-      "question_en": "Do your services include a driver and a security team?",
-      "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
-      "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
-    },
-    {
-      "id": 2,
-      "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
-      "question_en": "What is the cancellation policy for car reservations?",
-      "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
-      "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
-    }
-  ]
+  {
+    "id": "s1",
+    "title_dr": "تور و راهنمای گردشگری",
+    "title_en": "Tours & Travel Guide",
+    "desc_dr": "برنامه‌ریزی سفر و همراهی راهنمایان محلی و چندزبانه",
+    "desc_en": "Travel planning with local and multilingual guides",
+    "icon": "streamline-block:travel-map"
+  },
+  {
+    "id": "s2",
+    "title_dr": "ریزرف هوتل",
+    "title_en": "Hotel Reservation",
+    "desc_dr": "هماهنگی محل اقامت ایمن و مناسب در کابل و ولایات",
+    "desc_en": "Secure and suitable accommodation coordination in Kabul and provinces",
+    "icon": "fontisto:hotel"
+  },
+  {
+    "id": "s3",
+    "title_dr": "راننده خصوصی",
+    "title_en": "Private Driver",
+    "desc_dr": "رانندگان حرفه‌ای و مجرب برای سفرهای شهری و بین‌شهری",
+    "desc_en": "Professional and experienced drivers for city and intercity travel",
+    "icon": "griddy-icons:private-driver-filled"
+  },
+  {
+    "id": "s4",
+    "title_dr": "کرایه موتر",
+    "title_en": "Car Rental",
+    "desc_dr": "دسترسی به موترهای لوکس، 4WD و زرهی برای مسیرهای مختلف",
+    "desc_en": "Access to luxury, 4WD and armored vehicles for different routes",
+    "icon": "lucide:car"
+  },
+  {
+    "id": "s5",
+    "title_dr": "عکاسی و ثبت خاطرات",
+    "title_en": "Photography",
+    "desc_dr": "ثبت لحظات سفر شما با خدمات حرفه‌ای عکاسی",
+    "desc_en": "Capture your travel moments with professional photography services",
+    "icon": "material-symbols-light:camera-rounded"
+  },
+  {
+    "id": "s6",
+    "title_dr": "خدمات صحی",
+    "title_en": "Healthcare Services",
+    "desc_dr": "هماهنگی خدمات صحی و پشتیبانی لازم در طول سفر",
+    "desc_en": "Healthcare coordination and necessary support throughout your journey",
+    "icon": "iconoir:healthcare"
+  },
+  {
+    "id": "s7",
+    "title_dr": "مترجم چندزبانه",
+    "title_en": "Multilingual Translator",
+    "desc_dr": "مترجمین مسلط به زبان‌های محلی و بین‌المللی",
+    "desc_en": "Translators fluent in local and international languages",
+    "icon": "carbon:ibm-watson-language-translator"
+  },
+  {
+    "id": "s8",
+    "title_dr": "ترانسفر میدان هوایی",
+    "title_en": "Airport Transfer",
+    "desc_dr": "ترانسفر امن و راحت از میدان هوایی به مقصد شما",
+    "desc_en": "Safe and comfortable airport transfers to your destination",
+    "icon": "mdi:local-airport"
+  }
+    ],
+    "testimonials": [
+      {
+        "id": 1,
+        "name_dr": "احمد منصور",
+        "name_en": "Ahmad Mansoor",
+        "role_dr": "مدیر پروژه سازمان بین‌المللی",
+        "role_en": "International NGO Project Manager",
+        "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
+        "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
+        "stars": 5
+      },
+      {
+        "id": 2,
+        "name_dr": "سارا ویلیامز",
+        "name_en": "Sarah Williams",
+        "role_dr": "خبرنگار مستقل",
+        "role_en": "Independent Journalist",
+        "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
+        "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
+        "stars": 5
+      }
+    ],
+    "faqs": [
+      {
+        "id": 1,
+        "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
+        "question_en": "Do your services include a driver and a security team?",
+        "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
+        "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
+      },
+      {
+        "id": 2,
+        "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
+        "question_en": "What is the cancellation policy for car reservations?",
+        "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
+        "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
+      }
+    ]
 }
