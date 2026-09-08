@@ -76,158 +76,49 @@ export const CarCard = ({ car }) => {
       {/* =========================
           Car Information
       ========================== */}
-      <div
-        className="
-            ms-[13px]
-            me-[13px]
-            mt-0
-            h-[222px]
-            rounded-[20px]
-            ps-[13px]
-            pe-[13px]
-            py-[16px]
-        "
-        >
-        {/* Car Name */}
-        <h2
-          dir="ltr"
-        className="
-          w-full
-          truncate
-          whitespace-nowrap
-          overflow-hidden
-          font-extrabold
-          text-[24px]
-          leading-[100%]
-          text-brand-black
-        "
-      >
-        {carName}
-      </h2>
-
-        {/* =========================
-            Tags
-        ========================== */}
-        <div
-          className="
-            mt-[20px]
-            flex
-            items-center
-            justify-start
-            gap-[7px]
-            flex-wrap
-          "
-        >
-          {/* Security / Armored Tag */}
-          {(isDari ? car.tags_dr : car.tags_en)?.map((tag, index) => (
-  <span
-    key={index}
-    className="
-      inline-flex
-      min-h-[26px]
-      items-center
-      justify-center
-      rounded-[20px]
-      bg-brand-yellow
-      px-[12px]
-      font-[600]
-      text-[16px]
-      leading-[100%]
-      tracking-[0%]
-      text-brand-black
-    "
+      <div className="relative ms-[13px] me-[13px] h-[222px] rounded-[20px] ps-[13px] pe-[13px] pt-[16px]">
+  {/* نام موتر */}
+  <h2
+    dir="ltr"
+    className="w-full truncate overflow-hidden whitespace-nowrap font-extrabold text-[24px] leading-[100%] text-brand-black"
   >
-    {tag}
-  </span>
-))}
-        </div>
+    {carName}
+  </h2>
 
-        {/* =========================
-            Description
-        ========================== */}
-        <p
-        dir={isDari ? 'rtl' : 'ltr'}
-        className="
-          mt-[18px]
-          min-h-[57px]
-          w-full
-          font-semibold
-          text-[16px]
-          leading-[100%]
-          tracking-[0%]
-          text-brand-black
-        "
+  {/* لیبل‌ها */}
+  <div className="mt-[20px] flex flex-wrap items-center justify-start gap-[7px]">
+    {(isDari ? car.tags_dr : car.tags_en)?.map((tag, index) => (
+      <span
+        key={index}
+        className="inline-flex min-h-[26px] items-center justify-center rounded-[20px] bg-brand-yellow px-[12px] font-[600] text-[16px] leading-[100%] tracking-[0%] text-brand-black"
       >
-        {carDescription}
-      </p>
+        {tag}
+      </span>
+    ))}
+  </div>
 
-        {/* =========================
-    Bottom Actions
-========================== */}
-<div
-  className="
-    mt-auto
-    flex
-    shrink-0
-    items-center
-    justify-between
-    gap-[8px]
-  "
->
-  {/* Passenger Capacity */}
-  <span
-  className="
-    flex
-    h-[36px]
-    min-w-[64px]
-    shrink-0
-    items-center
-    justify-center
-    whitespace-nowrap
-    rounded-[20px]
-    border
-    border-brand-yellow
-    px-[4px]
-    font-[600]
-    text-[16px]
-    leading-[100%]
-    tracking-[0%]
-    text-center
-    text-brand-black
-  "
->
-  {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
-</span>
+  {/* توضیحات */}
+  <p
+    dir={isDari ? 'rtl' : 'ltr'}
+    className="mt-[18px] h-[57px] min-h-[57px] w-full overflow-hidden text-ellipsis font-semibold text-[16px] leading-[28.5px] tracking-[0%] text-brand-black line-clamp-2"
+  >
+    {carDescription}
+  </p>
 
-  {/* View Details */}
- <Link
-  to={`/cars/${car.id}`}
-  className="
-    flex
-    h-[36px]
-    w-[135px]
-    shrink-0
-    items-center
-    justify-center
-    rounded-[20px]
-    bg-brand-yellow
-    px-[10px]
-    font-[600]
-    text-[16px]
-    leading-[100%]
-    tracking-[0%]
-    text-brand-black
-    transition-all
-    duration-300
-    ease-out
-    hover:scale-[1.04]
-    hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)]
-  "
->
-  {detailLabel}
-</Link>
+  {/* دکمه‌ها؛ همیشه ثابت در پایین */}
+  <div className="absolute top-[200px] start-[0px] end-[0px] flex h-[36px] items-center justify-between gap-[8px]">
+    <span className="flex h-[36px] min-w-[64px] shrink-0 items-center justify-center whitespace-nowrap rounded-[20px] border border-brand-yellow px-[4px] font-[600] text-[16px] leading-[100%] text-center text-brand-black">
+      {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
+    </span>
+
+    <Link
+      to={`/cars/${car.id}`}
+      className="flex h-[36px] w-[135px] shrink-0 items-center justify-center rounded-[20px] bg-brand-yellow px-[10px] font-[600] text-[16px] leading-[100%] tracking-[0%] text-brand-black transition-all duration-300 ease-out hover:scale-[1.04] hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)]"
+    >
+      {detailLabel}
+    </Link>
+  </div>
 </div>
-      </div>
     </article>
   );
 };
