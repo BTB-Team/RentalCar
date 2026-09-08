@@ -1,4 +1,3 @@
-import React from 'react';
 // فرض بر این است که هوک زبان را در پوشه store ساخته‌اید
 import { useLangStore } from '../../store/useLangStore'; 
 
@@ -24,7 +23,7 @@ export default function SampleGuide() {
             نکته: استفاده از کلاس‌های منطقی (text-start) به جای (text-right)
            ======================================================== */}
         <div className="space-y-4">
-          <span className="text-xs text-gray-400 block font-mono">// Display Title (Font Weight: 900)</span>
+          <span className="text-xs text-gray-400 block font-mono">Display Title (Font Weight: 900)</span>
           <h1 className="font-sans font-blackfont text-brand-black text-[48px] leading-tight text-start">
             {lang === 'dr' ? 'سفر امن و مطمئن در سراسر افغانستان' : 'Safe & Reliable Travel Across Afghanistan'}
           </h1>
@@ -35,7 +34,7 @@ export default function SampleGuide() {
             نکته: استفاده از leading-[37px] طبق مستندات تصویر فیگما
            ======================================================== */}
         <div className="space-y-2">
-          <span className="text-xs text-gray-400 block font-mono">// Body Text & Paragraphs (Font Weight: 400)</span>
+          <span className="text-xs text-gray-400 block font-mono">Body Text & Paragraphs (Font Weight: 400)</span>
           <p className="font-sans font-regular text-brand-black text-[20px] leading-[37px] text-start max-w-2xl">
             {lang === 'dr' 
               ? 'از موترهای لوکس و زرهی تا راننده، راهنمای سفر و پشتیبانی کامل؛ تمام نیازهای سفر شما در یک مجموعه.' 
@@ -48,7 +47,7 @@ export default function SampleGuide() {
             نکته: ترکیب فیلدها با زبان فعال جاری سیستم
            ======================================================== */}
         <div className="p-6 bg-gray-50 border border-gray-100 rounded-lg space-y-3">
-          <span className="text-xs text-gray-400 block font-mono">// Dynamic Admin Data Rendering Sample</span>
+          <span className="text-xs text-gray-400 block font-mono">Dynamic Admin Data Rendering Sample</span>
           <h3 className="font-sans font-extrabold text-brand-black text-[22px] text-start">
             {lang === 'dr' ? mockServiceData.title_dr : mockServiceData.title_en}
           </h3>
@@ -62,7 +61,7 @@ export default function SampleGuide() {
             نکته: استفاده از کلاس‌های متقارن (pe-6 به جای pr-6) برای پشتیبانی خودکار از جهت صفحه
            ======================================================== */}
         <div className="space-y-4">
-          <span className="text-xs text-gray-400 block font-mono">// Primary Action Button (Font Weight: 800)</span>
+          <span className="text-xs text-gray-400 block font-mono">Primary Action Button (Font Weight: 800)</span>
           <div className="flex justify-start">
             <button className="font-sans font-extrabold text-brand-black text-[20px] bg-brand-yellow h-[50px] px-8 rounded hover:opacity-90 transition-opacity active:scale-[0.98]">
               {lang === 'dr' ? 'بیشتر بدانید' : 'Read More'}

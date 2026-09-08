@@ -1742,43 +1742,44 @@
     "desc_en": "Safe and comfortable airport transfers to your destination",
     "icon": "mdi:local-airport"
   }
-    ],
-    "testimonials": [
-      {
-        "id": 1,
-        "name_dr": "احمد منصور",
-        "name_en": "Ahmad Mansoor",
-        "role_dr": "مدیر پروژه سازمان بین‌المللی",
-        "role_en": "International NGO Project Manager",
-        "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
-        "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
-        "stars": 5
-      },
-      {
-        "id": 2,
-        "name_dr": "سارا ویلیامز",
-        "name_en": "Sarah Williams",
-        "role_dr": "خبرنگار مستقل",
-        "role_en": "Independent Journalist",
-        "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
-        "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
-        "stars": 5
-      }
-    ],
-    "faqs": [
-      {
-        "id": 1,
-        "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
-        "question_en": "Do your services include a driver and a security team?",
-        "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
-        "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
-      },
-      {
-        "id": 2,
-        "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
-        "question_en": "What is the cancellation policy for car reservations?",
-        "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
-        "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
-      }
-    ]
+
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name_dr": "احمد منصور",
+      "name_en": "Ahmad Mansoor",
+      "role_dr": "مدیر پروژه سازمان بین‌المللی",
+      "role_en": "International NGO Project Manager",
+      "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
+      "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
+      "stars": 5
+    },
+    {
+      "id": 2,
+      "name_dr": "سارا ویلیامز",
+      "name_en": "Sarah Williams",
+      "role_dr": "خبرنگار مستقل",
+      "role_en": "Independent Journalist",
+      "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
+      "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
+      "stars": 5
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question_dr": "آیا خدمات شما شامل راننده و تیم امنیتی هم می‌شود؟",
+      "question_en": "Do your services include a driver and a security team?",
+      "answer_dr": "بله، تمام موترهای زرهی و لوکس ما همراه با رانندگان حرفه‌ای و آشنا به پروتکل‌های امنیتی ارائه می‌شوند. در صورت نیاز، محافظین مسلح رسمی نیز قابل تنظیم هستند.",
+      "answer_en": "Yes, all our armored and luxury cars come with professional drivers trained in security protocols. Official armed guards can also be arranged upon request."
+    },
+    {
+      "id": 2,
+      "question_dr": "شرایط کنسل کردن رزرو موتر چگونه است؟",
+      "question_en": "What is the cancellation policy for car reservations?",
+      "answer_dr": "شما می‌توانید تا ۲۴ ساعت قبل از شروع زمان کرایه، درخواست خود را بدون هیچ هزینه‌ای لغو یا تاریخ آن را جابه‌جا کنید.",
+      "answer_en": "You can cancel or reschedule your reservation up to 24 hours before the rental start time completely free of charge."
+    }
+  ]
 }

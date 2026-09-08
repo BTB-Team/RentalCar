@@ -28,13 +28,42 @@
   src: url('./assets/fonts/YekanBakh-ExtraBold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
 }
-
 
 @font-face {
   font-family: 'Yekan';
   src: url('./assets/fonts/YekanBakh-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* Team Expanded Fonts */
+
+@font-face {
+  font-family: 'Yekan Expanded';
+  src: url('./assets/fonts/YekanBakh-SemiBoldExpanded.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yekan Expanded';
+  src: url('./assets/fonts/YekanBakh-BoldExpanded.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yekan Expanded';
+  src: url('./assets/fonts/YekanBakh-ExtraBoldSemiExpanded.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yekan Expanded';
+  src: url('./assets/fonts/YekanBakh-BlackExpanded.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
