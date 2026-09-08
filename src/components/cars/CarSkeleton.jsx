@@ -8,7 +8,7 @@ export const CarSkeleton = () => {
             className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm"
           >
             {/* image */}
-            <div className="h-52 w-full animate-pulse bg-gray-200" />
+            <div className="h-56 w-full animate-pulse bg-gray-200" />
 
             <div className="space-y-4 p-4">
               {/* title */}
@@ -37,7 +37,7 @@ export const CarSkeleton = () => {
         ))}
       </div>
       <div className="flex justify-center items-center mt-10">
-        <div className="h-8 w-44 animate-pulse rounded-full bg-gray-200" />
+        <div className="h-10 w-52 animate-pulse rounded-2xl bg-gray-200" />
       </div>
     </div>
   );

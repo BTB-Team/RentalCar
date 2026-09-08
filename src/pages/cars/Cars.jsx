@@ -52,7 +52,7 @@ export const Cars = () => {
         return cars.filter((car) => car.type === "luxury");
 
       case "4wd":
-        return cars.filter((car) => car.category === "4WD");
+        return cars.filter((car) => car.category_en === "4WD");
 
       case "armored":
         return cars.filter((car) => car.isArmored === true);
@@ -131,9 +131,24 @@ export const Cars = () => {
                   <button
                     type="button"
                     onClick={handleViewMore}
-                    className="rounded-2xl bg-brand-yellow px-6 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
+                    className="flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-5 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
                   >
                     {t.cars.viewMore}
+                    <svg
+                      viewBox="0 0 10 23"
+                      fill="none"
+                      className={`h-[16px] w-7 ${
+                        lang === "dr" ? "" : "rotate-180"
+                      }`}
+                    >
+                      <path
+                        d="M30 11H5M11 3L3 11L11 19"
+                        stroke="currentColor"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </button>
                 )}
                 {/* view Less */}
@@ -141,9 +156,24 @@ export const Cars = () => {
                   <button
                     type="button"
                     onClick={handleViewLess}
-                    className="rounded-2xl bg-brand-yellow px-6 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
+                    className="flex gap-1.5 items-center justify-between rounded-2xl bg-brand-yellow px-5 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
                   >
                     {t.cars.viewLess}
+                    <svg
+                      viewBox="0 0 10 23"
+                      fill="none"
+                      className={`h-[16px] w-7 ${
+                        lang === "dr" ? "" : "rotate-180"
+                      }`}
+                    >
+                      <path
+                        d="M30 11H5M11 3L3 11L11 19"
+                        stroke="currentColor"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </button>
                 )}
               </div>
