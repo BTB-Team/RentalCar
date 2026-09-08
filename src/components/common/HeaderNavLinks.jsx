@@ -7,13 +7,21 @@ export const HeaderNavLinks = ({ navLinks }) => {
 
     const handleServicesClick = (e) => {
         e.preventDefault();
-        if (location.pathname !== '/about') {
-            navigate('/about');
-            setTimeout(() => {
-                document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-        } else {
+
+        const scrollToSection = () => {
             document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+        };
+
+        if (location.pathname !== '/about') {
+            navigate('/about#services');
+            // setTimeout(() => {
+            //     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+            // }, 100);
+            setTimeout(scrollToSection, 100);
+        } else {
+            navigate('/about#services', { replace: true });
+            scrollToSection();
+            // document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -40,7 +48,7 @@ export const HeaderNavLinks = ({ navLinks }) => {
                         ) : (
                             <NavLink
                                 to={link.to}
-                                className={() => getLinkClass(link.to === '/about' ? isAboutActive : undefined)}
+                                className={({ isActive }) => getLinkClass(link.to === '/about' ? isAboutActive : isActive)}
                                 end={link.to === '/'}
                             >
                                 {link.label}
