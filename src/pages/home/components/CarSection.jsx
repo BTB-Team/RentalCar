@@ -20,8 +20,8 @@ const CarSection = () => {
       "
     >
       <SectionHeader
-        title={t.cars?.cars_title}
-        description={t.cars?.cars_description}
+        title={t.cars?.title}
+        description={t.cars?.description}
       />
 
       <div className="mt-[77px]">
@@ -46,7 +46,6 @@ const CarSection = () => {
           font-[700]
           text-[20px]
           leading-[100%]
-          bg-brand-yellow
           tracking-[0%]
           text-brand-black
           transition-all
@@ -57,7 +56,7 @@ const CarSection = () => {
       "
       >
         <span className="whitespace-nowrap">
-          {t.cars?.view_more}
+          {t.cars?.viewMore}
         </span>
 
         <Icon

@@ -19,14 +19,18 @@
       "armored": "Armored"
     },
 
-    "viewMore": "View More Cars →",
-    "viewLess": "View Less →",
+    "viewMore": "View More Cars",
+    "viewLess": "View Less ",
 
     "passengers": "Passengers",
     "viewDetails": "View Details",
     "noCars": "No cars found",
     "loading": "Loading..."
   },
+
+  "services": {
+  "title": "All Your Travel Needs, In One Place"
+},
 
   "cta": {
     "yellow_title": "Ready for your next trip?",

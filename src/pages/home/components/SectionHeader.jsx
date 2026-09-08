@@ -1,28 +1,35 @@
 export const SectionHeader = ({ title, description }) => {
   return (
     <div
-      className="
-        mx-auto
-        mt-[50px]
-        flex
-        h-[129px]
-        w-full
-        max-w-[821px]
-        flex-col
-        items-center
-        text-center
-      "
+       className="
+    mx-auto
+    mt-[50px]
+    flex
+    h-[129px]
+    w-full
+    flex-col
+    items-center
+    text-center
+  "
     >
       {/* Section Title */}
       <h2
-        className="
-          h-[62px]
-          font-[900]
-          text-[40px]
-          leading-[100%]
-          tracking-[0%]
-          text-brand-black
-        "
+         className="
+    w-full
+    max-w-[821px]
+    px-[16px]
+    text-center
+    text-[28px]
+    sm:text-[32px]
+    lg:text-[40px]
+    font-[900]
+    leading-[130%]
+    lg:leading-[100%]
+    text-brand-black
+    whitespace-normal
+    break-words
+    lg:whitespace-nowrap
+  "
       >
         {title}
       </h2>
@@ -41,23 +48,23 @@ export const SectionHeader = ({ title, description }) => {
 
       {/* Section Description */}
       {description && (
-        <p
-        
-         className="
-          mt-[13px]
-          w-full
-          whitespace-nowrap
-          font-semibold
-          text-[24px]
-          leading-[100%]
-          tracking-[0%]
-          text-center
-          text-brand-black
-        "
-        >
-          {description}
-        </p>
-      )}
+  <p
+    className="
+    mt-[13px]
+    w-full
+    font-semibold
+    text-[24px]
+    leading-[100%]
+    tracking-[0%]
+    text-center
+    text-brand-black
+    whitespace-normal
+    lg:whitespace-nowrap
+  "
+  >
+    {description}
+  </p>
+  )}
     </div>
   );
 };

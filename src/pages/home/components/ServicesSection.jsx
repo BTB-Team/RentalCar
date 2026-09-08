@@ -26,16 +26,21 @@ const ServicesSection = () => {
       >
         <h2
           className="
-            whitespace-nowrap
-            w-[610px]
-            max-w-full
-            font-blackfont
-            text-[40px]
-            leading-[100%]
-            text-brand-black
-          "
+            w-full
+    max-w-[610px]
+    px-[20px]
+    text-[28px]
+    sm:text-[32px]
+    lg:text-[40px]
+    font-[900]
+    leading-[130%]
+    text-center
+    text-brand-black
+    whitespace-normal
+    lg:whitespace-nowrap
+  "
         >
-          {t.services?.services_title}
+          {t.services?.title}
         </h2>
 
         {/* Yellow Divider */}
