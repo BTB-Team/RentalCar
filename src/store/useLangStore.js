@@ -4,7 +4,7 @@ import drTranslations from "../locales/dr.json";
 import enTranslations from "../locales/en.json";
 
 export const useLangStore = create((set) => ({
-  lang: "en",
+  lang: "dr",
   // 't' به طور خودکار انبار کلمات زبان فعال را در خود نگه می‌دارد
   t: drTranslations,
   activeFilter: "all",

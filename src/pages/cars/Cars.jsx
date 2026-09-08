@@ -13,7 +13,7 @@ export const Cars = () => {
   const [loading, setLoading] = useState(true);
 
   // number of visible cars
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(9);
 
   // fetch cars
   useEffect(() => {
@@ -71,12 +71,12 @@ export const Cars = () => {
   };
   // view less
   const handleViewLess = () => {
-    setVisibleCount((current) => current - 3);
+    setVisibleCount(9);
   };
 
   // reset visible count when filter changes
   useEffect(() => {
-    setVisibleCount(6);
+    setVisibleCount(9);
   }, [activeFilter]);
 
   return (
@@ -84,11 +84,11 @@ export const Cars = () => {
       {/* hero */}
       <div className="overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
         <div className="relative z-10 mx-auto max-w-4xl text-center">
-          <h1 className="text-3xl font-blackfont text-brand-black md:text-5xl">
+          <h1 className="text-3xl font-blackfont text-brand-black md:text-4xl">
             {t.cars.title}
           </h1>
 
-          <p className="mx-auto mt-6  max-w-xl text-sm leading-10 font-extrabold  text-brand-black md:text-base">
+          <p className="mx-auto mt-6  max-w-xl text-sm leading-10 font-bold  text-brand-black md:text-base">
             {t.cars.description}
           </p>
 
@@ -120,27 +120,27 @@ export const Cars = () => {
             </div>
 
             {/* view more */}
-            {visibleCount < filteredCars.length && (
+            {filteredCars.length > 9 && (
               <div className="mt-10 flex justify-center">
-                <button
-                  type="button"
-                  onClick={handleViewMore}
-                  className="rounded-2xl bg-brand-yellow px-6 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
-                >
-                  {t.cars.viewMore}
-                </button>
-              </div>
-            )}
-            {/* view Less */}
-            {visibleCount > 6 && (
-              <div className="mt-12 flex justify-center">
-                <button
-                  type="button"
-                  onClick={handleViewLess}
-                  className="rounded-2xl bg-brand-yellow px-6 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
-                >
-                  {t.cars.viewLess}
-                </button>
+                {visibleCount < filteredCars.length && (
+                  <button
+                    type="button"
+                    onClick={handleViewMore}
+                    className="rounded-2xl bg-brand-yellow px-6 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
+                  >
+                    {t.cars.viewMore}
+                  </button>
+                )}
+                {/* view Less */}
+                {visibleCount >= filteredCars.length && (
+                  <button
+                    type="button"
+                    onClick={handleViewLess}
+                    className="rounded-2xl bg-brand-yellow px-6 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
+                  >
+                    {t.cars.viewLess}
+                  </button>
+                )}
               </div>
             )}
             <TravelBanner />

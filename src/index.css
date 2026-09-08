@@ -7,16 +7,29 @@
   src: url('./assets/fonts/YekanBakh-Regular.woff2') format('woff2');
   font-weight: 400;
 }
-/* @font-face {
+
+@font-face {
   font-family: 'Yekan';
-  src: url('./assets/fonts/YekanBakh-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/YekanBakh-SemiBoldExpanded.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Yekan';
+  src: url('./assets/fonts/YekanBakh-BoldExpanded.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Yekan';
+  src: url('./assets/fonts/YekanBakh-ExtraBoldSemiExpanded.woff2') format('woff2');
   font-weight: 800;
 }
 @font-face {
   font-family: 'Yekan';
-  src: url('./assets/fonts/YekanBakh-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/YekanBakh-BlackExpanded.woff2') format('woff2');
   font-weight: 900;
-} */
+} 
 
 body {
   font-family: 'Yekan', sans-serif;
