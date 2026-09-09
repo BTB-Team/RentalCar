@@ -1,4 +1,4 @@
-const CarHeroSkeleton = () => {
+export const CarHeroSkeleton = () => {
   return (
     <section
       className="
@@ -31,5 +31,3 @@ const CarHeroSkeleton = () => {
     </section>
   );
 };
-
-export default CarHeroSkeleton;
