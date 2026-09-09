@@ -4,7 +4,7 @@ import { CarFilter } from "../../components/cars/CarFilter";
 import { CarCard } from "../home/components/CarCard";
 import { CarSkeleton } from "../../components/cars/CarSkeleton";
 import { TravelBanner } from "../../components/common/TravelBanner";
-import { CarHeroSkeleton } from "../../components/cars/CarHeroSkelton";
+import { CarHeroSkeleton } from "../../components/cars/CarHeroSkeleton";
 import { ServiceCtaSkeleton } from "../../components/cars/ServiceCtaSkeleton";
 
 export const Cars = () => {
