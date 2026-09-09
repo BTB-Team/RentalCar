@@ -70,7 +70,7 @@ export const AboutDetails = () => {
                 </div>
 
                 {/* --- LEFT SIDE: HERO FLT MEDIA CONTAINER --- */}
-                <div className="relative order-2 w-full w-[590px] h-[401px] mx-auto rounded-[24px] overflow-hidden shadow-md">
+                <div className="relative order-2 w-full sm:w-[590px] h-[401px] mx-auto rounded-[24px] overflow-hidden shadow-md">
                     <img
                         src={aboutImage}
                         alt="Kabul Rental Car Fleet Lineup"
