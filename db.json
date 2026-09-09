@@ -1,5 +1,5 @@
 {
-  "cars1": [
+  "cars": [
     {
       "id": "1",
       "name_dr": "تویوتا لندکروزر ۲۰۱۵ VXR",
@@ -21,12 +21,10 @@
       "shortDesc_en": "The Toyota Land Cruiser VXR combines powerful performance and 4WD capability for city and challenging road travel.",
       "longDesc_dr": "تویوتا لندکروزر ۲۰۱۵ VXR با موتور V8، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های ایمنی مانند ABS، Airbags، VSC و HAC، گزینه‌ای قدرتمند و قابل اعتماد برای سفرهای شهری و ولایتی است. این موتر ظرفیت ۷ سرنشین دارد و فضای مناسبی برای حمل وسایل سفر فراهم می‌کند.",
       "longDesc_en": "The 2015 Toyota Land Cruiser VXR features a powerful V8 engine, four-wheel drive, and advanced safety systems including ABS, airbags, VSC, and HAC. With seating for seven passengers and generous luggage capacity, it is a reliable choice for city and provincial travel.",
-      "mainImage": "/images/cars/IMG_9321.JPG.jpeg",
+      "mainImage": "/images/cars/1788630324_tmp_IMG_9321.webp",
       "gallery": [
-        "/images/cars/IMG_9326.JPG.jpeg",
-        "/images/cars/IMG_9327.JPG.jpeg",
-        "/images/cars/IMG_9322.JPG.jpeg",
-        "/images/cars/IMG_9328.JPG.jpeg"
+        "/images/cars/1788630321_tmp_IMG_9326.webp",
+        "/images/cars/1788630319_tmp_IMG_9328.webp"
       ],
       "specs": {
         "fuelType_dr": "پترول",
@@ -66,12 +64,12 @@
       "shortDesc_en": "The 2025 Toyota 4Runner i-FORCE MAX combines hybrid power and 4WD capability for city and provincial travel.",
       "longDesc_dr": "تویوتا 4Runner مدل ۲۰۲۵ با سیستم i-FORCE MAX هایبرید، موتور توربو و قدرت ۳۲۶ اسب بخار، انتخابی قدرتمند و مدرن برای سفرهای خانوادگی و ولایتی است. این موتر با سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های ایمنی، ظرفیت ۷ سرنشین را فراهم می‌کند.",
       "longDesc_en": "The 2025 Toyota 4Runner i-FORCE MAX features a turbo hybrid powertrain producing 326 HP, combined with four-wheel drive and advanced safety systems. It offers seating for seven passengers and is well suited for family and provincial travel.",
-      "mainImage": "/images/cars/IMG_8917.JPG.jpeg",
+      "mainImage": "/images/cars/1788630302_tmp_IMG_8917.webp",
       "gallery": [
-        "/images/cars/IMG_8791.JPG.jpeg",
-        "/images/cars/IMG_8794.JPG.jpeg",
-        "/images/cars/IMG_8798.JPG.jpeg",
-        "/images/cars/IMG_8919.JPEG"
+        "/images/cars/1788630315_tmp_IMG_8791.webp",
+        "/images/cars/1788630319_tmp_IMG_9328.webp",
+        "/images/cars/1788630310_tmp_IMG_8794.webp",
+        "/images/cars/1788630299_tmp_IMG_8919.webp"
       ],
       "specs": {
         "fuelType_dr": "پترول",
@@ -111,12 +109,12 @@
       "shortDesc_en": "The Lexus LX 600 is a powerful luxury SUV designed for VIP city and intercity travel.",
       "longDesc_dr": "لکسوس LX 600 با موتور ۳.۵ لیتری V6 توین توربو، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های پیشرفته ایمنی، گزینه‌ای ممتاز برای مشتریان VIP و سفرهای رسمی و طولانی است. این موتر ظرفیت ۷ سرنشین و فضای مناسب برای وسایل سفر دارد.",
       "longDesc_en": "The Lexus LX 600 features a 3.5L V6 twin-turbo engine, four-wheel drive, and advanced safety technologies. It is an excellent choice for VIP guests, official trips, and long-distance travel, with seating for seven passengers.",
-      "mainImage": "/images/cars/IMG_9330.JPG.jpeg",
+      "mainImage": "/images/cars/1788630297_tmp_IMG_9330.webp",
       "gallery": [
-        "/images/cars/IMG_9334.JPG.jpeg",
-        "/images/cars/IMG_9332.JPG.jpeg",
-        "/images/cars/IMG_9333.JPG.jpeg",
-        "/images/cars/IMG_9331.JPG.jpeg"
+        "/images/cars/1788630293_tmp_IMG_9332.webp",
+        "/images/cars/1788630295_tmp_IMG_9334.webp",
+        "/images/cars/1788630291_tmp_IMG_9333.webp",
+        "/images/cars/1788630289_tmp_IMG_9331.webp"
       ],
       "specs": {
         "fuelType_dr": "پترول",
@@ -156,12 +154,12 @@
       "shortDesc_en": "The Mercedes-Benz G63 is a powerful luxury SUV designed for VIP and executive travel.",
       "longDesc_dr": "مرسدس بنز G-Class G63 با موتور V8 توین توربو، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های پیشرفته ایمنی و کمکی، ترکیبی از قدرت، لوکس بودن و عملکرد بالا را ارائه می‌دهد. این موتر ظرفیت ۵ سرنشین دارد.",
       "longDesc_en": "The Mercedes-Benz G-Class G63 combines a V8 twin-turbo engine, all-wheel drive, advanced safety systems, and premium luxury. With seating for five passengers, it is designed for VIP and executive travel.",
-      "mainImage": "/images/cars/IMG_9265.JPG.jpeg",
+      "mainImage": "/images/cars/1788630288_tmp_IMG_9265.webp",
       "gallery": [
-        "/images/cars/IMG_8181.JPG.jpeg",
-        "/images/cars/IMG_8174.JPG.jpeg",
-        "/images/cars/IMG_8172.JPG.jpeg",
-        "/images/cars/IMG_9336.JPG.jpeg"
+        "/images/cars/1788630285_tmp_IMG_8181.webp",
+        "/images/cars/1788630282_tmp_IMG_8174.webp",
+        "/images/cars/1788630280_tmp_IMG_8172.webp",
+        "/images/cars/1788630277_tmp_IMG_9336.webp"
       ],
       "specs": {
         "fuelType_dr": "پترول",
@@ -201,12 +199,12 @@
       "shortDesc_en": "The Jeep Wrangler Unlimited is a capable SUV built for adventure and challenging off-road travel.",
       "longDesc_dr": "جیپ رانگلر Unlimited مدل ۲۰۲۱ با موتور V6 توربو، سیستم چهارچرخ محرک و سیستم‌های ایمنی پیشرفته، برای مسیرهای دشوار و سفرهای ماجراجویانه طراحی شده است. این موتر ظرفیت ۵ سرنشین دارد و فضای مناسبی برای وسایل سفر فراهم می‌کند.",
       "longDesc_en": "The 2021 Jeep Wrangler Unlimited features a V6 turbo petrol engine, four-wheel drive, and advanced safety systems. It is designed for challenging roads, adventure trips, and off-road travel with seating for five passengers.",
-      "mainImage": "/images/cars/IMG_8310.PNG",
+      "mainImage": "/images/cars/1788630631_tmp_IMG_8310.webp",
       "gallery": [
-        "/images/cars/IMG_8309.JPG.jpeg",
-        "/images/cars/IMG_8308.JPG.jpeg",
-        "/images/cars/IMG_8296.JPG.jpeg",
-        "/images/cars/IMG_8294.JPG.jpeg"
+        "/images/cars/1788630636_tmp_IMG_8308.webp",
+        "/images/cars/1788630638_tmp_IMG_8309.webp",
+        "/images/cars/1788630634_tmp_IMG_8294.webp",
+        "/images/cars/1788630634_tmp_IMG_8296.webp"
       ],
       "specs": {
         "fuelType_dr": "پترول",
@@ -246,12 +244,12 @@
       "shortDesc_en": "The 2024 Lexus LX 600 offers powerful performance and advanced features for premium VIP travel.",
       "longDesc_dr": "لکسوس LX 600 مدل ۲۰۲۴ با موتور ۳.۵ لیتری V6 توین توربو، گیربکس ۱۰ سرعته اتوماتیک، سیستم چهارچرخ محرک و مجموعه‌ای از سیستم‌های پیشرفته ایمنی و کمکی، انتخابی ممتاز برای سفرهای VIP و رسمی است. این موتر ظرفیت ۷ سرنشین دارد.",
       "longDesc_en": "The 2024 Lexus LX 600 features a 3.5L V6 twin-turbo engine, 10-speed automatic transmission, four-wheel drive, and advanced safety and driver-assistance systems. It is an excellent choice for VIP and official travel with seating for seven passengers.",
-      "mainImage": "/images/cars/IMG_9338.JPG.jpeg",
+      "mainImage": "/images/cars/1788630614_tmp_IMG_9338.webp",
       "gallery": [
-        "/images/cars/IMG_9340.JPG.jpeg",
-        "/images/cars/IMG_9342.JPG.jpeg",
-        "/images/cars/IMG_9341.JPG.jpeg",
-        "/images/cars/IMG_9343.JPG.jpeg"
+        "/images/cars/1788630617_tmp_IMG_9341.webp",
+        "/images/cars/1788630618_tmp_IMG_9342.webp",
+        "/images/cars/1788630615_tmp_IMG_9340.webp",
+        "/images/cars/1788630613_tmp_IMG_9343.webp"
       ],
       "specs": {
         "fuelType_dr": "پترول",
@@ -291,8 +289,13 @@
       "shortDesc_en": "2015 Toyota Land Cruiser VXR with a V8 engine and 4WD system.",
       "longDesc_dr": "لندکروزر VXR مدل ۲۰۱۵ با موتور بنزینی V8، گیربکس اتوماتیک و سیستم چهارچرخ محرک، گزینه‌ای قدرتمند و مناسب برای سفرهای خانوادگی و مسیرهای مختلف است.",
       "longDesc_en": "The 2015 Land Cruiser VXR features a V8 petrol engine, automatic transmission and 4WD, making it a powerful choice for family trips and various road conditions.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630611_tmp_IMG_9413.webp",
+      "gallery": [
+        "/images/cars/1788630610_tmp_IMG_9405.webp",
+        "/images/cars/1788630607_tmp_IMG_9402.webp",
+        "/images/cars/1788630605_tmp_IMG_9404.webp",
+        "/images/cars/1788630603_tmp_IMG_9414.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -331,8 +334,13 @@
       "shortDesc_en": "2017 Toyota Land Cruiser VXR with a V8 engine and advanced safety features.",
       "longDesc_dr": "لندکروزر VXR مدل ۲۰۱۷ با موتور V8، گیربکس ۶ سرعته اتوماتیک و سیستم چهارچرخ محرک، برای سفرهای خانوادگی و مسیرهای طولانی مناسب است.",
       "longDesc_en": "The 2017 Land Cruiser VXR features a V8 engine, 6-speed automatic transmission and 4WD, making it suitable for family trips and long journeys.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630601_tmp_IMG_9439.webp",
+      "gallery": [
+        "/images/cars/1788630599_tmp_IMG_9437.webp",
+        "/images/cars/1788630597_tmp_IMG_9438.webp",
+        "/images/cars/1788630596_tmp_IMG_9436.webp",
+        "/images/cars/1788630593_tmp_IMG_9435.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -371,8 +379,13 @@
       "shortDesc_en": "2023 Land Cruiser ZX with a V6 twin-turbo engine and improved fuel efficiency.",
       "longDesc_dr": "لندکروزر ZX مدل ۲۰۲۳ با موتور ۳.۵ لیتری V6 توئین توربو، گیربکس ۱۰ سرعته اتوماتیک و سیستم چهارچرخ محرک، ترکیبی از قدرت و تکنولوژی مدرن است.",
       "longDesc_en": "The 2023 Land Cruiser ZX features a 3.5L V6 twin-turbo engine, 10-speed automatic transmission and 4WD, combining power with modern technology.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630840_tmp_IMG_9416.webp",
+      "gallery": [
+        "/images/cars/1788630842_tmp_IMG_9372.webp",
+        "/images/cars/1788630838_tmp_IMG_9382.webp",
+        "/images/cars/1788630835_tmp_IMG_9418.webp",
+        "/images/cars/1788630833_tmp_IMG_9417.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -411,8 +424,13 @@
       "shortDesc_en": "2021 Toyota 4Runner TRD with a V6 engine and 4WD.",
       "longDesc_dr": "4Runner TRD مدل ۲۰۲۱ با موتور ۴.۰ لیتری V6، گیربکس ۵ سرعته اتوماتیک و سیستم چهارچرخ محرک، برای سفر و مسیرهای مختلف مناسب است.",
       "longDesc_en": "The 2021 4Runner TRD features a 4.0L V6 engine, 5-speed automatic transmission and 4WD, suitable for travel and different road conditions.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630817_tmp_IMG_9455.webp",
+      "gallery": [
+        "/images/cars/1788630831_tmp_IMG_9456.webp",
+        "/images/cars/1788630823_tmp_IMG_9454.webp",
+        "/images/cars/1788630820_tmp_IMG_9452.webp",
+        "/images/cars/1788630828_tmp_IMG_9453.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -451,8 +469,13 @@
       "shortDesc_en": "2007 Toyota 4Runner Urban with a V6 engine and 4WD.",
       "longDesc_dr": "4Runner Urban مدل ۲۰۰۷ با موتور ۴.۰ لیتری V6 و گیربکس ۵ سرعته اتوماتیک، گزینه‌ای مناسب برای سفر و استفاده روزمره است.",
       "longDesc_en": "The 2007 4Runner Urban features a 4.0L V6 engine and 5-speed automatic transmission, suitable for travel and daily use.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630814_tmp_IMG_9473.webp",
+      "gallery": [
+        "/images/cars/1788630811_tmp_IMG_9451.webp",
+        "/images/cars/1788630807_tmp_IMG_9450.webp",
+        "/images/cars/1788630805_tmp_IMG_9449.webp",
+        "/images/cars/1788630802_tmp_IMG_9447.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -491,8 +514,13 @@
       "shortDesc_en": "2017 Toyota 4Runner Limited with a V6 engine and 4WD.",
       "longDesc_dr": "4Runner Limited مدل ۲۰۱۷ با موتور ۴.۰ لیتری V6، گیربکس ۵ سرعته اتوماتیک و سیستم چهارچرخ محرک، برای سفرهای خانوادگی مناسب است.",
       "longDesc_en": "The 2017 4Runner Limited features a 4.0L V6 engine, 5-speed automatic transmission and 4WD, suitable for family trips.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630799_tmp_IMG_9474.webp",
+      "gallery": [
+        "/images/cars/1788630797_tmp_IMG_9467.webp",
+        "/images/cars/1788630794_tmp_IMG_9469.webp",
+        "/images/cars/1788630790_tmp_IMG_9471.webp",
+        "/images/cars/1788630787_tmp_IMG_9470.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -531,8 +559,13 @@
       "shortDesc_en": "2023 Toyota Hilux GR with a V6 engine and 4WD.",
       "longDesc_dr": "هایلوکس GR مدل ۲۰۲۳ با موتور ۴.۰ لیتری V6، گیربکس اتوماتیک و دستی و سیستم چهارچرخ محرک، گزینه‌ای قدرتمند برای مسیرهای مختلف است.",
       "longDesc_en": "The 2023 Hilux GR features a 4.0L V6 engine, automatic/manual transmission and 4WD, making it a powerful option for different road conditions.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630977_tmp_IMG_9479.webp",
+      "gallery": [
+        "/images/cars/1788630978_tmp_IMG_9480.webp",
+        "/images/cars/1788630976_tmp_IMG_9478.webp",
+        "/images/cars/1788630975_tmp_IMG_9481.webp",
+        "/images/cars/1788630974_tmp_IMG_9482.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -571,8 +604,13 @@
       "shortDesc_en": "2020 Lexus ES Hybrid with low fuel consumption and advanced safety features.",
       "longDesc_dr": "لکسوس ES هیبرید مدل ۲۰۲۰ با موتور ۲.۵ لیتری چهار سیلندر هیبرید و گیربکس E-CVT، انتخابی راحت و کم‌مصرف برای سفرهای شهری و بین‌شهری است.",
       "longDesc_en": "The 2020 Lexus ES Hybrid features a 2.5L four-cylinder hybrid engine and E-CVT transmission, offering a comfortable and fuel-efficient option for city and long-distance travel.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630973_tmp_IMG_9492.webp",
+      "gallery": [
+        "/images/cars/1788630972_tmp_IMG_9493.webp",
+        "/images/cars/1788630970_tmp_IMG_9494.webp",
+        "/images/cars/1788630969_tmp_IMG_9495.webp",
+        "/images/cars/1788630967_tmp_IMG_9496.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی / هیبرید",
         "fuelType_en": "Petrol / Hybrid",
@@ -611,8 +649,13 @@
       "shortDesc_en": "2021 Toyota Corolla XSE with low fuel consumption and modern safety features.",
       "longDesc_dr": "کرولا XSE مدل ۲۰۲۱ با موتور ۱.۸ لیتری چهار سیلندر و گیربکس CVT، گزینه‌ای اقتصادی و مناسب برای سفرهای شهری است.",
       "longDesc_en": "The 2021 Corolla XSE features a 1.8L four-cylinder engine and CVT transmission, making it an economical option for city travel.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630966_tmp_IMG_9498.webp",
+      "gallery": [
+        "/images/cars/1788630963_tmp_IMG_8970.webp",
+        "/images/cars/1788630960_tmp_IMG_8976.webp",
+        "/images/cars/1788630957_tmp_IMG_8971.webp",
+        "/images/cars/1788630954_tmp_IMG_8978.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -651,8 +694,13 @@
       "shortDesc_en": "2007 Toyota Corolla S Class with a 1.8L engine and economical fuel consumption.",
       "longDesc_dr": "کرولا S Class مدل ۲۰۰۷ با موتور ۱.۸ لیتری چهار سیلندر و گیربکس اتوماتیک، گزینه‌ای اقتصادی و مناسب برای استفاده روزمره است.",
       "longDesc_en": "The 2007 Corolla S Class features a 1.8L four-cylinder engine and automatic transmission, suitable for economical daily use.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788630951_tmp_IMG_9463.webp",
+      "gallery": [
+        "/images/cars/1788630892_tmp_IMG_9465.webp",
+        "/images/cars/1788630890_tmp_IMG_9466.webp",
+        "/images/cars/1788630887_tmp_IMG_9464.webp",
+        "/images/cars/1788630885_tmp_IMG_9462.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -691,8 +739,12 @@
       "shortDesc_en": "2019 Toyota Crown Executive Hybrid with a V6 hybrid engine and advanced safety features.",
       "longDesc_dr": "تویوتا کراون Executive Hybrid مدل ۲۰۱۹ با موتور ۳.۵ لیتری V6 هیبرید، گیربکس E-CVT و سیستم‌های پیشرفته ایمنی، گزینه‌ای لوکس و راحت برای سفر است.",
       "longDesc_en": "The 2019 Toyota Crown Executive Hybrid features a 3.5L V6 hybrid engine, E-CVT transmission and advanced safety systems, offering a luxurious and comfortable travel experience.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631139_tmp_IMG_9525.webp",
+      "gallery": [
+        "/images/cars/1788631137_tmp_IMG_9527.webp",
+        "/images/cars/1788631133_tmp_IMG_9526.webp",
+        "/images/cars/1788631128_tmp_IMG_9529.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی + برقی هیبرید",
         "fuelType_en": "Petrol + Electric Hybrid",
@@ -731,8 +783,13 @@
       "shortDesc_en": "2016 Toyota Prius Hybrid with low fuel consumption and E-CVT transmission.",
       "longDesc_dr": "پریوس هیبرید مدل ۲۰۱۶ با موتور ۱.۸ لیتری چهار سیلندر هیبرید، گیربکس E-CVT و سیستم‌های ایمنی مدرن، انتخابی اقتصادی برای سفر است.",
       "longDesc_en": "The 2016 Prius Hybrid features a 1.8L four-cylinder hybrid engine, E-CVT transmission and modern safety systems, making it an economical travel option.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631106_tmp_IMG_9508.webp",
+      "gallery": [
+        "/images/cars/1788631088_tmp_IMG_9512.webp",
+        "/images/cars/1788631113_tmp_IMG_9509.webp",
+        "/images/cars/1788631118_tmp_IMG_9510.webp",
+        "/images/cars/1788631120_tmp_IMG_9511.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی + برقی هیبرید",
         "fuelType_en": "Petrol + Electric Hybrid",
@@ -771,8 +828,13 @@
       "shortDesc_en": "2009 Lexus Prado GXR with a V8 engine and 4WD.",
       "longDesc_dr": "لکسوس پرادو GXR مدل ۲۰۰۹ با موتور ۴.۷ لیتری V8، گیربکس اتوماتیک و دستی و سیستم چهارچرخ محرک، برای سفرهای خانوادگی و مسیرهای دشوار مناسب است.",
       "longDesc_en": "The 2009 Lexus Prado GXR features a 4.7L V8 engine, automatic/manual transmission and 4WD, suitable for family trips and challenging roads.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631077_tmp_IMG_9522.webp",
+      "gallery": [
+        "/images/cars/1788631080_tmp_IMG_9521.webp",
+        "/images/cars/1788631073_tmp_IMG_9523.webp",
+        "/images/cars/1788631083_tmp_IMG_9520.webp",
+        "/images/cars/1788631070_tmp_IMG_9524.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -811,8 +873,11 @@
       "shortDesc_en": "2016 Lexus Prado GX with a V8 engine and 4WD.",
       "longDesc_dr": "لکسوس پرادو GX مدل ۲۰۱۶ با موتور ۴.۶ لیتری V8، گیربکس اتوماتیک و دستی و سیستم چهارچرخ محرک، گزینه‌ای قدرتمند و مناسب سفر است.",
       "longDesc_en": "The 2016 Lexus Prado GX features a 4.6L V8 engine, automatic/manual transmission and 4WD, offering a powerful and capable travel option.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631064_tmp_IMG_9547.webp",
+      "gallery": [
+        "/images/cars/1788631061_tmp_IMG_9546.webp",
+        "/images/cars/1788631004_tmp_IMG_9545.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -851,8 +916,12 @@
       "shortDesc_en": "2018 Lexus RX Hybrid with a V6 hybrid engine and AWD.",
       "longDesc_dr": "لکسوس RX هیبرید مدل ۲۰۱۸ با موتور ۳.۵ لیتری V6 هیبرید، گیربکس E-CVT و سیستم AWD، ترکیبی از راحتی، قدرت و مصرف مناسب است.",
       "longDesc_en": "The 2018 Lexus RX Hybrid features a 3.5L V6 hybrid engine, E-CVT transmission and AWD, combining comfort, power and fuel efficiency.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631222_tmp_IMG_9550.webp",
+      "gallery": [
+        "/images/cars/1788631219_tmp_IMG_9553.webp",
+        "/images/cars/1788631217_tmp_IMG_9555.webp",
+        "/images/cars/1788631215_tmp_IMG_9554.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی + برقی هیبرید",
         "fuelType_en": "Petrol + Electric Hybrid",
@@ -891,8 +960,13 @@
       "shortDesc_en": "2011 Lexus LX 570 with a powerful V8 engine and 8-passenger capacity.",
       "longDesc_dr": "لکسوس LX 570 مدل ۲۰۱۱ با موتور ۵.۷ لیتری V8، گیربکس ۶ سرعته اتوماتیک و سیستم چهارچرخ محرک، خودرویی قدرتمند و مناسب برای سفرهای گروهی است.",
       "longDesc_en": "The 2011 Lexus LX 570 features a 5.7L V8 engine, 6-speed automatic transmission and 4WD, making it suitable for group travel.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631145_tmp_IMG_9561.webp",
+      "gallery": [
+        "/images/cars/1788631143_tmp_IMG_9560.webp",
+        "/images/cars/1788631148_tmp_IMG_9562.webp",
+        "/images/cars/1788631211_tmp_IMG_9563.webp",
+        "/images/cars/1788631213_tmp_IMG_9564.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -931,8 +1005,13 @@
       "shortDesc_en": "2020 Toyota 4Runner Limited with a V6 engine and 4WD.",
       "longDesc_dr": "4Runner Limited مدل ۲۰۲۰ با موتور ۴.۰ لیتری V6، گیربکس ۵ سرعته اتوماتیک و سیستم چهارچرخ محرک، برای سفر و مسیرهای مختلف مناسب است.",
       "longDesc_en": "The 2020 4Runner Limited features a 4.0L V6 engine, 5-speed automatic transmission and 4WD, suitable for travel and various road conditions.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631128_tmp_IMG_9570.webp",
+      "gallery": [
+        "/images/cars/1788631139_tmp_IMG_9573.webp",
+        "/images/cars/1788631141_tmp_IMG_9574.webp",
+        "/images/cars/1788631136_tmp_IMG_9571.webp",
+        "/images/cars/1788631132_tmp_IMG_9572.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -971,8 +1050,12 @@
       "shortDesc_en": "2020 Lexus LX 570 with a V8 engine and advanced safety features.",
       "longDesc_dr": "لکسوس LX 570 مدل ۲۰۲۰ با موتور ۵.۷ لیتری V8، گیربکس ۸ سرعته اتوماتیک و سیستم چهارچرخ محرک، گزینه‌ای قدرتمند و لوکس برای سفر است.",
       "longDesc_en": "The 2020 Lexus LX 570 features a 5.7L V8 engine, 8-speed automatic transmission and 4WD, offering a powerful and luxurious travel option.",
-      "mainImage": "",
-      "gallery": [],
+      "mainImage": "/images/cars/1788631116_tmp_IMG_9568.webp",
+      "gallery": [
+        "/images/cars/1788631112_tmp_IMG_9567.webp",
+        "/images/cars/1788631120_tmp_IMG_9569.webp",
+        "/images/cars/1788631123_tmp_IMG_9565.webp"
+      ],
       "specs": {
         "fuelType_dr": "بنزینی",
         "fuelType_en": "Petrol",
@@ -993,6 +1076,408 @@
 
     {
       "id": "25",
+      "name_dr": "رنج روور SE ۲۰۲۴",
+      "name_en": "Range Rover SE 2024",
+      "type": "luxury",
+      "category_dr": "تمام‌چرخ متحرک",
+      "category_en": "AWD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["AWD | تمام‌چرخ متحرک", "امنیت بالا"],
+      "tags_en": ["AWD | All-Wheel Drive", "High Security"],
+      "shortDesc_dr": "رنج روور SE مدل ۲۰۲۴ با سیستم تمام‌چرخ متحرک، موتور قدرتمند و مجموعه‌ای از سیستم‌های پیشرفته امنیتی و کمکی.",
+      "shortDesc_en": "The 2024 Range Rover SE features all-wheel drive, a powerful engine, and advanced safety and driver-assistance systems.",
+      "longDesc_dr": "رنج روور SE مدل ۲۰۲۴ با موتور 3.0L I6 Twin-Turbo، سیستم تمام‌چرخ متحرک و گیربکس اتوماتیک ۸ سرعته، یک موتر لوکس و قدرتمند برای سفرهای شهری و مسیرهای طولانی است. این موتر دارای سیستم‌های ABS، EBD، Airbags، دوربین 360 درجه، سنسورها، Radar و سیستم‌های کمکی رانندگی بوده و ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The 2024 Range Rover SE features a 3.0L I6 Twin-Turbo engine, all-wheel drive, and an 8-speed automatic transmission. It is a luxury and powerful vehicle suitable for city driving and long-distance travel. Safety features include ABS, EBD, airbags, a 360-degree camera, sensors, radar, and driver-assistance systems.",
+      "mainImage": "/images/cars/1788719952_tmp_IMG_9765.webp",
+      "gallery": [
+        "/images/cars/1788719952_tmp_IMG_9760.webp",
+        "/images/cars/1788719953_tmp_IMG_9763.webp",
+        "/images/cars/1788719953_tmp_IMG_9762.webp",
+        "/images/cars/1788719953_tmp_IMG_9764.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "پطرول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "3.0L I6 Twin-Turbo – 6 Cylinder",
+        "engine_en": "3.0L I6 Twin-Turbo – 6 Cylinder",
+        "gearbox_dr": "اتوماتیک ۸ سرعته + حالت دستی",
+        "gearbox_en": "8-Speed Automatic + Manual Mode",
+        "driveType_dr": "تمام‌چرخ محرک (AWD)",
+        "driveType_en": "All-Wheel Drive (AWD)",
+        "security_dr": "ABS، EBD، Airbags، دوربین 360 درجه، سنسورها، Radar و سیستم‌های کمکی",
+        "security_en": "ABS, EBD, Airbags, 360° Camera, Sensors, Radar and Driver-Assistance Systems",
+        "consumption_dr": "حدود ۱۰–۱۲ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 10–12 Liters per 100 KM",
+        "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
+        "luggage_en": "3 large bags + 2 hand luggage"
+      }
+    },
+    {
+      "id": "26",
+      "name_dr": "تویوتا کرولا فیلدر ۲۰۱۶",
+      "name_en": "Toyota Corolla Fielder 2016",
+      "type": "normal",
+      "category_dr": "دوچرخ متحرک",
+      "category_en": "2WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "سیستم‌های ایمنی",
+      "securityLabel_en": "Safety Systems",
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["2WD | دوچرخ متحرک", "سیستم‌های ایمنی"],
+      "tags_en": ["2WD | Two-Wheel Drive", "Safety Systems"],
+      "shortDesc_dr": "تویوتا کرولا فیلدر مدل ۲۰۱۶ با موتور ۱.۸ لیتری، مصرف مناسب و سیستم انتقال قدرت دوچرخ متحرک.",
+      "shortDesc_en": "The 2016 Toyota Corolla Fielder features a 1.8L engine, efficient fuel consumption, and two-wheel drive.",
+      "longDesc_dr": "تویوتا کرولا فیلدر مدل ۲۰۱۶ با موتور 1.8L چهار سیلندر و سیستم دوچرخ متحرک، گزینه‌ای اقتصادی و مناسب برای استفاده‌های شهری و سفرهای روزمره است. این موتر دارای سیستم‌های ABS، Airbags، VSC و سایر سیستم‌های ایمنی بوده و ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The 2016 Toyota Corolla Fielder features a 1.8L four-cylinder engine and two-wheel drive, making it an economical choice for city driving and daily travel. It includes ABS, airbags, VSC, and other safety systems and seats five passengers.",
+      "mainImage": "/images/cars/1788719950_tmp_IMG_9780.webp",
+      "gallery": [
+        "/images/cars/1788719951_tmp_IMG_9777.webp",
+        "/images/cars/1788719950_tmp_IMG_9779.webp",
+        "/images/cars/1788719952_tmp_IMG_9776.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "1.8L – 4 Cylinder – 1800cc",
+        "engine_en": "1.8L – 4 Cylinder – 1800cc",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "دوچرخ متحرک (2WD) / دیفرانسیل جلو",
+        "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
+        "security_dr": "ABS، Airbags، VSC و سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags, VSC and Safety Systems",
+        "consumption_dr": "حدود ۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 6–7 Liters per 100 KM",
+        "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
+        "luggage_en": "2 large bags + 1 hand luggage"
+      }
+    },
+    {
+      "id": "27",
+      "name_dr": "تویوتا فیلدر Touring ۲۰۲۱",
+      "name_en": "Toyota Fielder Touring 2021",
+      "type": "normal",
+      "category_dr": "دوچرخ متحرک",
+      "category_en": "2WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "سیستم‌های ایمنی",
+      "securityLabel_en": "Safety Systems",
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["2WD | دوچرخ متحرک", "سیستم‌های ایمنی"],
+      "tags_en": ["2WD | Two-Wheel Drive", "Safety Systems"],
+      "shortDesc_dr": "تویوتا فیلدر Touring مدل ۲۰۲۱ با موتور ۱.۸ لیتری، مصرف مناسب و سیستم دوچرخ متحرک.",
+      "shortDesc_en": "The 2021 Toyota Fielder Touring features a 1.8L engine, efficient fuel consumption, and two-wheel drive.",
+      "longDesc_dr": "تویوتا فیلدر Touring مدل ۲۰۲۱ با موتور 1.8L چهار سیلندر و سیستم دوچرخ متحرک، موتر مناسب برای استفاده شهری و سفرهای روزمره است. این موتر دارای سیستم‌های ABS، Airbags، VSC و سایر سیستم‌های ایمنی بوده و ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The 2021 Toyota Fielder Touring features a 1.8L four-cylinder engine and two-wheel drive, making it suitable for city driving and daily travel. It includes ABS, airbags, VSC, and other safety systems and seats five passengers.",
+      "mainImage": "/images/cars/1788719948_tmp_IMG_9786.webp",
+      "gallery": [
+        "/images/cars/1788719949_tmp_IMG_9783.webp",
+        "/images/cars/1788719949_tmp_IMG_9784.webp",
+        "/images/cars/1788719950_tmp_IMG_9781.webp",
+        "/images/cars/1788719948_tmp_IMG_9785.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "1.8L – 4 Cylinder – 1800cc",
+        "engine_en": "1.8L – 4 Cylinder – 1800cc",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "دوچرخ متحرک (2WD) / دیفرانسیل جلو",
+        "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
+        "security_dr": "ABS، Airbags، VSC و سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags, VSC and Safety Systems",
+        "consumption_dr": "حدود ۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 6–7 Liters per 100 KM",
+        "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
+        "luggage_en": "2 large bags + 1 hand luggage"
+      }
+    },
+    {
+      "id": "28",
+      "name_dr": "لکسوس پرادو GX ۲۰۱۱",
+      "name_en": "Lexus Prado GX 2011",
+      "type": "luxury",
+      "category_dr": "چهارچرخ متحرک",
+      "category_en": "4WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+      "passengerCapacity": 7,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["4WD | چهارچرخ متحرک", "امنیت بالا"],
+      "tags_en": ["4WD | Four-Wheel Drive", "High Security"],
+      "shortDesc_dr": "لکسوس پرادو GX مدل ۲۰۱۱ با موتور V8، سیستم چهارچرخ متحرک و ظرفیت ۷ سرنشین.",
+      "shortDesc_en": "The 2011 Lexus Prado GX features a V8 engine, four-wheel drive, and seating for seven passengers.",
+      "longDesc_dr": "لکسوس پرادو GX مدل ۲۰۱۱ با موتور 4.6L V8 و سیستم چهارچرخ متحرک، موتر قدرتمند و مناسب برای سفرهای شهری و مسیرهای دشوار است. این موتر دارای سیستم‌های ABS، EBD، Airbags، VSC، HAC و سایر سیستم‌های ایمنی بوده و ظرفیت ۷ سرنشین دارد.",
+      "longDesc_en": "The 2011 Lexus Prado GX features a 4.6L V8 engine and four-wheel drive, making it a powerful choice for city travel and challenging roads. It includes ABS, EBD, airbags, VSC, HAC, and other safety systems and seats seven passengers.",
+      "mainImage": "/images/cars/1788719954_tmp_IMG_9793.webp",
+      "gallery": [
+        "/images/cars/1788719954_tmp_IMG_9794.webp",
+        "/images/cars/1788719947_tmp_IMG_9792.webp",
+        "/images/cars/1788719947_tmp_IMG_9795.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.6L V8 – 8 Cylinder",
+        "engine_en": "4.6L V8 – 8 Cylinder",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "چهارچرخ متحرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "حدود ۱۴–۱۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 14–17 Liters per 100 KM",
+        "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
+        "luggage_en": "3 large bags + 2 hand luggage"
+      }
+    },
+    {
+      "id": "29",
+      "name_dr": "تویوتا کرولا Touring Hybrid ۲۰۲۴",
+      "name_en": "Toyota Corolla Touring Hybrid 2024",
+      "type": "normal",
+      "category_dr": "دوچرخ متحرک",
+      "category_en": "2WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "سیستم‌های ایمنی",
+      "securityLabel_en": "Safety Systems",
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["2WD | دوچرخ متحرک", "هایبرید", "سیستم‌های ایمنی"],
+      "tags_en": ["2WD | Two-Wheel Drive", "Hybrid", "Safety Systems"],
+      "shortDesc_dr": "تویوتا کرولا Touring Hybrid مدل ۲۰۲۴ با سیستم هایبرید و مصرف پایین سوخت.",
+      "shortDesc_en": "The 2024 Toyota Corolla Touring Hybrid combines hybrid technology with low fuel consumption.",
+      "longDesc_dr": "تویوتا کرولا Touring Hybrid مدل ۲۰۲۴ با موتور 1.8L Hybrid چهار سیلندر و سیستم دوچرخ متحرک، گزینه‌ای اقتصادی با مصرف پایین سوخت است. این موتر دارای سیستم‌های ABS، EBD، ۸ ایربگ، دوربین عقب، TV و سایر سیستم‌های ایمنی بوده و ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The 2024 Toyota Corolla Touring Hybrid features a 1.8L hybrid four-cylinder engine and two-wheel drive, providing an economical driving experience with low fuel consumption. It includes ABS, EBD, eight airbags, a rear camera, TV, and other safety systems and seats five passengers.",
+      "mainImage": "/images/cars/1788719920_tmp_IMG_9788.webp",
+      "gallery": [
+        "/images/cars/1788719922_tmp_IMG_9787.webp",
+        "/images/cars/1788719924_tmp_IMG_9790.webp",
+        "/images/cars/1788719915_tmp_IMG_9789.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "هایبرید (پترول + برقی)",
+        "fuelType_en": "Hybrid (Petrol + Electric)",
+        "engine_dr": "1.8L Hybrid – 4 Cylinder – 1800cc",
+        "engine_en": "1.8L Hybrid – 4 Cylinder – 1800cc",
+        "gearbox_dr": "اتوماتیک E-CVT",
+        "gearbox_en": "Automatic E-CVT",
+        "driveType_dr": "دوچرخ متحرک (2WD) / دیفرانسیل جلو",
+        "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
+        "security_dr": "ABS، EBD، ۸ Airbags، دوربین عقب، TV و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, 8 Airbags, Rear Camera, TV and Safety Systems",
+        "consumption_dr": "حدود ۴–۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 4–5 Liters per 100 KM",
+        "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
+        "luggage_en": "2 large bags + 1 hand luggage"
+      }
+    },
+    {
+      "id": "30",
+      "name_dr": "تویوتا هایلوکس GR ۲۰۲۳",
+      "name_en": "Toyota Hilux GR 2023",
+      "type": "4WD",
+      "category_dr": "چهارچرخ متحرک",
+      "category_en": "4WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["4WD | چهارچرخ متحرک", "امنیت بالا"],
+      "tags_en": ["4WD | Four-Wheel Drive", "High Security"],
+      "shortDesc_dr": "تویوتا هایلوکس GR مدل ۲۰۲۳ با موتور V6 و سیستم چهارچرخ متحرک، مناسب مسیرهای دشوار و سفر.",
+      "shortDesc_en": "The 2023 Toyota Hilux GR features a V6 engine and four-wheel drive, making it suitable for challenging roads and travel.",
+      "longDesc_dr": "تویوتا هایلوکس GR مدل ۲۰۲۳ با موتور 4.0L V6 و سیستم چهارچرخ متحرک، موتر قدرتمند و مناسب برای سفر و مسیرهای دشوار است. این موتر دارای ABS، EBD، Airbags، VSC، HAC، Camera و سنسورها بوده و ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The 2023 Toyota Hilux GR features a 4.0L V6 engine and four-wheel drive, making it a powerful vehicle for travel and challenging roads. It includes ABS, EBD, airbags, VSC, HAC, camera, and sensors and seats five passengers.",
+      "mainImage": "/images/cars/1788719905_tmp_IMG_9805.webp",
+      "gallery": [
+        "/images/cars/1788719910_tmp_IMG_9809.webp",
+        "/images/cars/1788719917_tmp_IMG_9803.webp",
+        "/images/cars/1788719908_tmp_IMG_9808.webp",
+        "/images/cars/1788719901_tmp_IMG_9806.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.0L V6 – 6 Cylinder – 4000cc",
+        "engine_en": "4.0L V6 – 6 Cylinder – 4000cc",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "چهارچرخ متحرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC، دوربین و سنسورها",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC, Camera and Sensors",
+        "consumption_dr": "حدود ۱۲–۱۴ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 12–14 Liters per 100 KM",
+        "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
+        "luggage_en": "3 large bags + 2 hand luggage"
+      }
+    },
+    {
+      "id": "31",
+      "name_dr": "تویوتا لندکروزر ۲۰۱۸",
+      "name_en": "Toyota Land Cruiser 2018",
+      "type": "4WD",
+      "category_dr": "چهارچرخ متحرک",
+      "category_en": "4WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "امنیت بالا",
+      "securityLabel_en": "High Security",
+      "passengerCapacity": 7,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["4WD | چهارچرخ متحرک", "امنیت بالا"],
+      "tags_en": ["4WD | Four-Wheel Drive", "High Security"],
+      "shortDesc_dr": "تویوتا لندکروزر مدل ۲۰۱۸ با موتور V6، سیستم چهارچرخ متحرک و ظرفیت ۷ سرنشین.",
+      "shortDesc_en": "The 2018 Toyota Land Cruiser features a V6 engine, four-wheel drive, and seating for seven passengers.",
+      "longDesc_dr": "تویوتا لندکروزر مدل ۲۰۱۸ با موتور 4.0L V6 و سیستم چهارچرخ متحرک، موتر قدرتمند و قابل اعتماد برای سفرهای شهری و مسیرهای دشوار است. این موتر دارای سیستم‌های ABS، EBD، Airbags، VSC، HAC و سایر سیستم‌های ایمنی بوده و ظرفیت ۷ سرنشین دارد.",
+      "longDesc_en": "The 2018 Toyota Land Cruiser features a 4.0L V6 engine and four-wheel drive, making it a powerful and reliable vehicle for city travel and challenging roads. It includes ABS, EBD, airbags, VSC, HAC, and other safety systems and seats seven passengers.",
+      "mainImage": "/images/cars/1788719895_tmp_IMG_9815.webp",
+      "gallery": [
+        "/images/cars/1788719903_tmp_IMG_9813.webp",
+        "/images/cars/1788719889_tmp_IMG_9817.webp",
+        "/images/cars/1788719883_tmp_IMG_9812.webp",
+        "/images/cars/1788719873_tmp_IMG_9816.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "4.0L V6 – 6 Cylinder",
+        "engine_en": "4.0L V6 – 6 Cylinder",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "چهارچرخ متحرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, Airbags, VSC, HAC and Safety Systems",
+        "consumption_dr": "حدود ۱۳–۱۶ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 13–16 Liters per 100 KM",
+        "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
+        "luggage_en": "3 large bags + 2 hand luggage"
+      }
+    },
+    {
+      "id": "32",
+      "name_dr": "تویوتا کرولا S Class ۲۰۱۷",
+      "name_en": "Toyota Corolla S Class 2017",
+      "type": "normal",
+      "category_dr": "دوچرخ متحرک",
+      "category_en": "2WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "سیستم‌های ایمنی",
+      "securityLabel_en": "Safety Systems",
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["2WD | دوچرخ متحرک", "سیستم‌های ایمنی"],
+      "tags_en": ["2WD | Two-Wheel Drive", "Safety Systems"],
+      "shortDesc_dr": "تویوتا کرولا S Class مدل ۲۰۱۷ با موتور ۱.۸ لیتری و سیستم دوچرخ متحرک، مناسب استفاده شهری.",
+      "shortDesc_en": "The 2017 Toyota Corolla S Class features a 1.8L engine and two-wheel drive, making it suitable for city use.",
+      "longDesc_dr": "تویوتا کرولا S Class مدل ۲۰۱۷ با موتور 1.8L چهار سیلندر و سیستم دوچرخ متحرک، موتر مناسب برای استفاده شهری و سفرهای روزمره است. این موتر دارای ABS، EBD، Airbags، VSC و سایر سیستم‌های ایمنی بوده و ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The 2017 Toyota Corolla S Class features a 1.8L four-cylinder engine and two-wheel drive, making it suitable for city driving and daily travel. It includes ABS, EBD, airbags, VSC, and other safety systems and seats five passengers.",
+      "mainImage": "/images/cars/1788719790_tmp_IMG_9825.webp",
+      "gallery": [
+        "/images/cars/1788719821_tmp_IMG_9826.webp",
+        "/images/cars/1788719849_tmp_IMG_9827.webp",
+        "/images/cars/1788719858_tmp_IMG_9828.webp",
+        "/images/cars/1788719863_tmp_IMG_9824.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "پترول",
+        "fuelType_en": "Petrol",
+        "engine_dr": "1.8L – 4 Cylinder – 1800cc",
+        "engine_en": "1.8L – 4 Cylinder – 1800cc",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "دوچرخ متحرک (2WD) / دیفرانسیل جلو",
+        "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
+        "security_dr": "ABS، EBD، Airbags، VSC و سیستم‌های ایمنی",
+        "security_en": "ABS, EBD, Airbags, VSC and Safety Systems",
+        "consumption_dr": "حدود ۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 6–7 Liters per 100 KM",
+        "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
+        "luggage_en": "2 large bags + 1 hand luggage"
+      }
+    },
+    {
+      "id": "33",
+      "name_dr": "تویوتا هایلوکس ۲۰۱۰",
+      "name_en": "Toyota Hilux 2010",
+      "type": "4WD",
+      "category_dr": "چهارچرخ متحرک",
+      "category_en": "4WD",
+      "isArmored": false,
+      "armoredLabel_dr": null,
+      "armoredLabel_en": null,
+      "securityLabel_dr": "سیستم‌های ایمنی",
+      "securityLabel_en": "Safety Systems",
+      "passengerCapacity": 5,
+      "passengerLabel_dr": "نفر",
+      "passengerLabel_en": "People",
+      "tags_dr": ["4WD | چهارچرخ متحرک", "سیستم‌های ایمنی"],
+      "tags_en": ["4WD | Four-Wheel Drive", "Safety Systems"],
+      "shortDesc_dr": "تویوتا هایلوکس مدل ۲۰۱۰ با موتور دیزل، سیستم چهارچرخ متحرک و مصرف سوخت مناسب.",
+      "shortDesc_en": "The 2010 Toyota Hilux features a diesel engine, four-wheel drive, and reasonable fuel consumption.",
+      "longDesc_dr": "تویوتا هایلوکس مدل ۲۰۱۰ با موتور 2.7L چهار سیلندر دیزل و سیستم چهارچرخ متحرک، موتر مناسب برای سفر و مسیرهای دشوار است. این موتر دارای سیستم‌های ABS، Airbags، VSC و سایر سیستم‌های ایمنی بوده و ظرفیت ۵ سرنشین دارد.",
+      "longDesc_en": "The 2010 Toyota Hilux features a 2.7L four-cylinder diesel engine and four-wheel drive, making it suitable for travel and challenging roads. It includes ABS, airbags, VSC, and other safety systems and seats five passengers.",
+      "mainImage": "/images/cars/1788795917_tmp_IMG_9832.webp",
+      "gallery": [
+        "/images/cars/1788719864_tmp_IMG_9836.webp",
+        "/images/cars/1788719885_tmp_IMG_9834.webp",
+        "/images/cars/1788719889_tmp_IMG_9833.webp",
+        "/images/cars/1788719855_tmp_IMG_9832.webp"
+      ],
+      "specs": {
+        "fuelType_dr": "دیزل",
+        "fuelType_en": "Diesel",
+        "engine_dr": "2.7L – 4 Cylinder – 2700cc",
+        "engine_en": "2.7L – 4 Cylinder – 2700cc",
+        "gearbox_dr": "اتوماتیک + حالت دستی",
+        "gearbox_en": "Automatic + Manual Mode",
+        "driveType_dr": "چهارچرخ متحرک (4WD)",
+        "driveType_en": "Four-Wheel Drive (4WD)",
+        "security_dr": "ABS، Airbags، VSC و سیستم‌های ایمنی",
+        "security_en": "ABS, Airbags, VSC and Safety Systems",
+        "consumption_dr": "حدود ۸–۱۰ لیتر در ۱۰۰ کیلومتر",
+        "consumption_en": "Approximately 8–10 Liters per 100 KM",
+        "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
+        "luggage_en": "3 large bags + 2 hand luggage"
+      }
+    },
+    {
+      "id": "34",
       "name_dr": "لکسس زرهی B6 مدل ۲۰۱۷",
       "name_en": "Armored Lexus B6 2017",
       "type": "luxury",
@@ -1012,7 +1497,7 @@
       "shortDesc_en": "The 2017 B6 armored Lexus features a V8 diesel engine and 4WD system, suitable for secure travel and challenging roads.",
       "longDesc_dr": "لکسس زرهی سطح B6 مدل ۲۰۱۷ مجهز به سیستم زرهی B6، ABS، Airbags، کمره 360 درجه و سیستم‌های ایمنی است. این موتر دارای موتور V8 هشت سیلندر دیزل، گیربکس اتوماتیک با حالت دستی و سیستم چهارچرخ محرک می‌باشد. ظرفیت آن ۵ سرنشین است.",
       "longDesc_en": "The 2017 B6 armored Lexus is equipped with B6 armor, ABS, airbags, a 360-degree camera and safety systems. It features a V8 eight-cylinder diesel engine, automatic transmission with manual mode and 4WD. It can accommodate five passengers.",
-      "mainImage": "/images/cars/armored-lexus-b6-2017.jpg",
+      "mainImage": "/images/cars/armored-lexus-b6-2017.webp",
       "gallery": [],
       "specs": {
         "fuelType_dr": "دیزل",
@@ -1033,7 +1518,7 @@
     },
 
     {
-      "id": "26",
+      "id": "35",
       "name_dr": "تویوتا لندکروزر زرهی B6 مدل ۲۰۱۵",
       "name_en": "Armored Toyota Land Cruiser B6 2015",
       "type": "luxury",
@@ -1053,7 +1538,7 @@
       "shortDesc_en": "The 2015 B6 armored Toyota Land Cruiser features a V8 diesel engine and 4WD system.",
       "longDesc_dr": "تویوتا لندکروزر زرهی سطح B6 مدل ۲۰۱۵ مجهز به سیستم زرهی B6، ABS، Airbags و سیستم‌های ایمنی است. این موتر دارای موتور V8 هشت سیلندر دیزل، گیربکس اتوماتیک با حالت دستی و سیستم چهارچرخ محرک می‌باشد. ظرفیت آن ۵ سرنشین است.",
       "longDesc_en": "The 2015 B6 armored Toyota Land Cruiser features B6 armor, ABS, airbags and safety systems. It has a V8 eight-cylinder diesel engine, automatic transmission with manual mode and 4WD. It accommodates five passengers.",
-      "mainImage": "/images/cars/armored-land-cruiser-b6-2015.jpg",
+      "mainImage": "/images/cars/armored-land-cruiser-b6-2015.webp",
       "gallery": [],
       "specs": {
         "fuelType_dr": "دیزل",
@@ -1074,7 +1559,7 @@
     },
 
     {
-      "id": "27",
+      "id": "36",
       "name_dr": "لکسس LX 570 زرهی B7 مدل ۲۰۲۰",
       "name_en": "Armored Lexus LX 570 B7 2020",
       "type": "luxury",
@@ -1094,7 +1579,7 @@
       "shortDesc_en": "The 2020 B7 armored Lexus LX 570 features a V8 diesel engine and advanced security and safety systems.",
       "longDesc_dr": "لکسس LX 570 زرهی سطح B7 مدل ۲۰۲۰ مجهز به زره B7، کمره 360 درجه، ABS، EBD، Airbags، VSC و HAC است. این موتر دارای موتور V8 هشت سیلندر دیزل، گیربکس اتوماتیک با حالت دستی و سیستم چهارچرخ محرک می‌باشد.",
       "longDesc_en": "The 2020 B7 armored Lexus LX 570 features B7 armor, a 360-degree camera, ABS, EBD, airbags, VSC and HAC. It has a V8 eight-cylinder diesel engine, automatic transmission with manual mode and 4WD.",
-      "mainImage": "/images/cars/armored-lexus-lx570-b7-2020.jpg",
+      "mainImage": "/images/cars/armored-lexus-lx570-b7-2020.webp",
       "gallery": [],
       "specs": {
         "fuelType_dr": "دیزل",
@@ -1115,7 +1600,7 @@
     },
 
     {
-      "id": "28",
+      "id": "37",
       "name_dr": "تویوتا لندکروزر زرهی B7 مدل ۲۰۲۴",
       "name_en": "Armored Toyota Land Cruiser B7 2024",
       "type": "luxury",
@@ -1135,7 +1620,7 @@
       "shortDesc_en": "The 2024 B7 armored Toyota Land Cruiser features a 3.5L V6 Twin-Turbo engine and 4WD.",
       "longDesc_dr": "تویوتا لندکروزر زرهی سطح B7 مدل ۲۰۲۴ مجهز به زره B7، کمره 360 درجه، سیستم‌های ایمنی و سنسورها است. این موتر دارای موتور 3.5L V6 Twin-Turbo، گیربکس اتوماتیک ۱۰ سرعته با حالت دستی و سیستم چهارچرخ محرک می‌باشد. ظرفیت آن ۷ سرنشین است.",
       "longDesc_en": "The 2024 B7 armored Toyota Land Cruiser features B7 armor, a 360-degree camera, safety systems and sensors. It has a 3.5L V6 Twin-Turbo engine, 10-speed automatic transmission with manual mode and 4WD. It accommodates seven passengers.",
-      "mainImage": "/images/cars/armored-land-cruiser-b7-2024.jpg",
+      "mainImage": "/images/cars/armored-land-cruiser-b7-2024.webp",
       "gallery": [],
       "specs": {
         "fuelType_dr": "دیزل",
@@ -1156,7 +1641,7 @@
     },
 
     {
-      "id": "29",
+      "id": "38",
       "name_dr": "تویوتا لندکروزر زرهی B6 مدل ۲۰۱۵",
       "name_en": "Armored Toyota Land Cruiser B6 2015",
       "type": "luxury",
@@ -1176,7 +1661,7 @@
       "shortDesc_en": "The 2015 B6 armored Toyota Land Cruiser features a V8 diesel engine and 4WD system.",
       "longDesc_dr": "تویوتا لندکروزر زرهی B6 مدل ۲۰۱۵ مجهز به زره B6، ABS، EBD، Airbags، VSC و HAC است. این موتر دارای موتور V8 هشت سیلندر دیزل، گیربکس اتوماتیک با حالت دستی و سیستم چهارچرخ محرک می‌باشد. ظرفیت سرنشین بسته به طراحی زرهی است.",
       "longDesc_en": "The 2015 B6 armored Toyota Land Cruiser features B6 armor, ABS, EBD, airbags, VSC and HAC. It has a V8 eight-cylinder diesel engine, automatic transmission with manual mode and 4WD. Passenger capacity depends on the armored configuration.",
-      "mainImage": "/images/cars/armored-land-cruiser-b6-2015-2.jpg",
+      "mainImage": "/images/cars/armored-land-cruiser-b6-2015-2.webp",
       "gallery": [],
       "specs": {
         "fuelType_dr": "دیزل",
@@ -1197,7 +1682,7 @@
     },
 
     {
-      "id": "30",
+      "id": "39",
       "name_dr": "تویوتا لندکروزر زرهی B7 مدل ۲۰۲۴",
       "name_en": "Armored Toyota Land Cruiser B7 2024",
       "type": "luxury",
@@ -1217,7 +1702,7 @@
       "shortDesc_en": "The 2024 B7 armored Toyota Land Cruiser features a 3.5L V6 Twin-Turbo engine and 4WD.",
       "longDesc_dr": "تویوتا لندکروزر زرهی سطح B7 مدل ۲۰۲۴ مجهز به زره B7، کمره 360 درجه، سیستم‌های ایمنی و سنسورها است. این موتر دارای موتور 3.5L V6 Twin-Turbo، گیربکس اتوماتیک ۱۰ سرعته با حالت دستی و سیستم چهارچرخ محرک می‌باشد. ظرفیت آن ۷ سرنشین است.",
       "longDesc_en": "The 2024 B7 armored Toyota Land Cruiser features B7 armor, a 360-degree camera, safety systems and sensors. It has a 3.5L V6 Twin-Turbo engine, 10-speed automatic transmission with manual mode and 4WD. It accommodates seven passengers.",
-      "mainImage": "/images/cars/armored-land-cruiser-b7-2024-2.jpg",
+      "mainImage": "/images/cars/armored-land-cruiser-b7-2024-2.webp",
       "gallery": [],
       "specs": {
         "fuelType_dr": "دیزل",
@@ -1240,27 +1725,67 @@
   "services": [
     {
       "id": "s1",
-      "title_dr": "کرایه موترهای زرهی و لوکس",
-      "title_en": "Armored & Luxury Car Rentals",
-      "desc_dr": "دسترسی به مدرن‌ترین ناوگان خودروهای ضدگلوله و لوکس همراه با رانندگان مجرب شهری.",
-      "desc_en": "Access to the most modern fleet of bulletproof and luxury vehicles with experienced city drivers.",
-      "icon": "ShieldCheckIcon"
+      "title_dr": "تور و راهنمای گردشگری",
+      "title_en": "Tours & Travel Guide",
+      "desc_dr": "برنامه‌ریزی سفر و همراهی راهنمایان محلی و چندزبانه",
+      "desc_en": "Travel planning with local and multilingual guides",
+      "icon": "streamline-block:travel-map"
     },
     {
       "id": "s2",
-      "title_dr": "تیم محافظت و همراهی اسکورت",
-      "title_en": "Security & Escort Teams",
-      "desc_dr": "فراهم‌سازی محافظین مسطح حرفه‌ای جهت تامین امنیت کامل در مسیرهای ولایتی افغانستان.",
-      "desc_en": "Providing professional armed security guards to ensure absolute safety along provincial routes.",
-      "icon": "UsersIcon"
+      "title_dr": "ریزرف هوتل",
+      "title_en": "Hotel Reservation",
+      "desc_dr": "هماهنگی محل اقامت ایمن و مناسب در کابل و ولایات",
+      "desc_en": "Secure and suitable accommodation coordination in Kabul and provinces",
+      "icon": "fontisto:hotel"
     },
     {
       "id": "s3",
-      "title_dr": "خدمات ریزرف هوتل و مترجم",
-      "title_en": "Hotel Reservations & Translators",
-      "desc_dr": "هماهنگی کامل محل اقامت ایمن در کابل و ولایات به همراه مترجمین مسلط به زبان‌های محلی.",
-      "desc_en": "Full coordination of secure accommodation in Kabul and provinces with translators fluent in local languages.",
-      "icon": "GlobeAltIcon"
+      "title_dr": "راننده خصوصی",
+      "title_en": "Private Driver",
+      "desc_dr": "رانندگان حرفه‌ای و مجرب برای سفرهای شهری و بین‌شهری",
+      "desc_en": "Professional and experienced drivers for city and intercity travel",
+      "icon": "griddy-icons:private-driver-filled"
+    },
+    {
+      "id": "s4",
+      "title_dr": "کرایه موتر",
+      "title_en": "Car Rental",
+      "desc_dr": "دسترسی به موترهای لوکس، 4WD و زرهی برای مسیرهای مختلف",
+      "desc_en": "Access to luxury, 4WD and armored vehicles for different routes",
+      "icon": "lucide:car"
+    },
+    {
+      "id": "s5",
+      "title_dr": "عکاسی و ثبت خاطرات",
+      "title_en": "Photography",
+      "desc_dr": "ثبت لحظات سفر شما با خدمات حرفه‌ای عکاسی",
+      "desc_en": "Capture your travel moments with professional photography services",
+      "icon": "material-symbols-light:camera-rounded"
+    },
+    {
+      "id": "s6",
+      "title_dr": "خدمات صحی",
+      "title_en": "Healthcare Services",
+      "desc_dr": "هماهنگی خدمات صحی و پشتیبانی لازم در طول سفر",
+      "desc_en": "Healthcare coordination and necessary support throughout your journey",
+      "icon": "iconoir:healthcare"
+    },
+    {
+      "id": "s7",
+      "title_dr": "مترجم چندزبانه",
+      "title_en": "Multilingual Translator",
+      "desc_dr": "مترجمین مسلط به زبان‌های محلی و بین‌المللی",
+      "desc_en": "Translators fluent in local and international languages",
+      "icon": "carbon:ibm-watson-language-translator"
+    },
+    {
+      "id": "s8",
+      "title_dr": "ترانسفر میدان هوایی",
+      "title_en": "Airport Transfer",
+      "desc_dr": "ترانسفر امن و راحت از میدان هوایی به مقصد شما",
+      "desc_en": "Safe and comfortable airport transfers to your destination",
+      "icon": "mdi:local-airport"
     }
   ],
   "testimonials": [

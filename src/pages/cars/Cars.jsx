@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLangStore } from "../../store/useLangStore";
 import { CarFilter } from "../../components/cars/CarFilter";
-import { CarCard } from "../../components/cars/CarCard";
+import { CarCard } from "../home/components/CarCard";
 import { CarSkeleton } from "../../components/cars/CarSkeleton";
 import { TravelBanner } from "../../components/common/TravelBanner";
 import CarHeroSkeleton from "../../components/cars/carHeroSkelton";
@@ -131,7 +131,7 @@ export const Cars = () => {
                   <button
                     type="button"
                     onClick={handleViewMore}
-                    className="flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-5 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
+                    className="flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-5 py-4 font-extrabold text-brand-black transition hover:scale-105"
                   >
                     {t.cars.viewMore}
                     <svg
@@ -156,7 +156,7 @@ export const Cars = () => {
                   <button
                     type="button"
                     onClick={handleViewLess}
-                    className="flex gap-1.5 items-center justify-between rounded-2xl bg-brand-yellow px-5 py-3 text-sm font-extrabold text-brand-black transition hover:scale-105"
+                    className="flex gap-1.5 items-center justify-between rounded-2xl bg-brand-yellow px-5 py-4 font-extrabold text-brand-black transition hover:scale-105"
                   >
                     {t.cars.viewLess}
                     <svg
