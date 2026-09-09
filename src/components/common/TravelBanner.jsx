@@ -10,18 +10,21 @@ export const TravelBanner = ({ cta }) => {
 
       {/* foreground content container */}
       <div className="relative z-10 max-w-4xl px-6 text-center flex flex-col items-center gap-4 sm:gap-6">
-        <h1 className="text-xl sm:text-2xl font-blackfont text-black tracking-tight leading-tight">
+        <h1 className="text-xl sm:text-4xl font-blackfont text-brand-black tracking-tight leading-tight">
           {lang === "dr" ? t.cta.yellow_title : t.cta.yellow_title}
         </h1>
-        <p className="text-sm sm:text-base font-bold text-brand-black leading-relaxed max-w-2xl">
+        <p className="mt-2 text-sm sm:text-2xl font-semibold text-brand-black leading-relaxed max-w-2xl">
           {lang === "dr" ? t.cta.dark_title : t.cta.dark_title}
         </p>
-        <Link
-          to="/services"
-          className="mt-1 sm:mt-2 px-8 py-3.5 bg-white text-black font-bold text-sm sm:text-base  rounded-2xl shadow-md transition-all duration-200 ease-in-out hover:bg-neutral-50 hover:shadow-lg active:scale-98"
+        {/* connect to KRental Car whatsapp */}
+        <a
+          href="https://wa.me/93786377417"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3.5 bg-white text-brand-black font-semibold text-sm sm:text-2xl  rounded-2xl shadow-md transition-all duration-200 ease-in-out hover:bg-neutral-50 hover:shadow-lg active:scale-98"
         >
           {lang === "dr" ? t.cta.btn_request : t.cta.btn_request}
-        </Link>
+        </a>
       </div>
     </div>
   );

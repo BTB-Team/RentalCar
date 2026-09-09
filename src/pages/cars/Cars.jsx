@@ -88,11 +88,11 @@ export const Cars = () => {
       ) : (
         <div className="overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
           <div className="relative z-10 mx-auto max-w-4xl text-center">
-            <h1 className="text-3xl font-blackfont text-brand-black md:text-4xl">
+            <h1 className="text-3xl font-blackfont text-brand-black md:text-5xl">
               {t.cars.title}
             </h1>
 
-            <p className="mx-auto mt-6  max-w-xl text-sm leading-10 font-bold text-brand-black md:text-base">
+            <p className="mx-auto mt-10  max-w-xl text-sm leading-10 font-bold text-brand-black md:text-2xl">
               {t.cars.description}
             </p>
 
@@ -106,7 +106,7 @@ export const Cars = () => {
       )}
 
       {/* cars */}
-      <div className="mx-auto max-w-7xl mt-20 px-4 pb-16 md:px-8 lg:px-12">
+      <div className="mx-auto max-w-7xl mt-10 px-4 pb-16 md:px-8 lg:px-12">
         {loading ? (
           <CarSkeleton />
         ) : filteredCars.length === 0 ? (
