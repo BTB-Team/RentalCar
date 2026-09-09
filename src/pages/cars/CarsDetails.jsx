@@ -1,4 +1,5 @@
 
+import db from "../../../db.json";
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useLangStore } from '../../store/useLangStore';
@@ -24,15 +25,13 @@ export const CarsDetails = () => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch(
-          `http://localhost:5000/cars/${id}`
+        const data = db.cars.find(
+        (car) => String(car.id) === String(id)
         );
 
-        if (!response.ok) {
+        if (!data) {
           throw new Error('Car not found');
         }
-
-        const data = await response.json();
 
         setCar(data);
         setSelectedImage(data.mainImage);

@@ -1,3 +1,5 @@
+import db from "../../../db.json";
+
 import { useEffect, useMemo, useState } from "react";
 import { useLangStore } from "../../store/useLangStore";
 import { CarFilter } from "../../components/cars/CarFilter";
@@ -10,40 +12,12 @@ import { CarHeroSkeleton } from "../../components/cars/CarHeroSkeleton";
 export const Cars = () => {
   const { t, lang, activeFilter } = useLangStore();
 
-  const [cars, setCars] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const cars = db.cars;
+  const loading = false;
 
   // number of visible cars
   const [visibleCount, setVisibleCount] = useState(9);
 
-  // fetch cars
-  useEffect(() => {
-    const fetchCars = async () => {
-      try {
-        setLoading(true);
-
-        // const response = await fetch("http://localhost:5000/cars");
-        const response = await fetch(`${import.meta.env.BASE_URL}db.json`);
-        // check HTTP status
-        if (!response.ok) {
-          throw new Error(`HTTP error: ${response.status}`);
-        }
-
-        // convert response to JSON
-        const data = await response.json();
-
-        console.log("Cars API:", data);
-
-        setCars(data.cars);
-      } catch (error) {
-        console.error("Failed to fetch cars:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchCars();
-  }, []);
 
   // filter cars based on global Zustand filter
   const filteredCars = useMemo(() => {
