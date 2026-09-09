@@ -4,8 +4,8 @@ import { CarFilter } from "../../components/cars/CarFilter";
 import { CarCard } from "../home/components/CarCard";
 import { CarSkeleton } from "../../components/cars/CarSkeleton";
 import { TravelBanner } from "../../components/common/TravelBanner";
-import { CarHeroSkeleton } from "../../components/cars/CarHeroSkeleton";
 import { ServiceCtaSkeleton } from "../../components/cars/ServiceCtaSkeleton";
+import { CarHeroSkeleton } from "../../components/cars/CarHeroSkeleton";
 
 export const Cars = () => {
   const { t, lang, activeFilter } = useLangStore();
