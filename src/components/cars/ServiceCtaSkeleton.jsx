@@ -1,4 +1,4 @@
-const ServiceCtaSkeleton = () => {
+export const ServiceCtaSkeleton = () => {
   return (
     <section
       className="
@@ -33,4 +33,3 @@ const ServiceCtaSkeleton = () => {
   );
 };
 
-export default ServiceCtaSkeleton;
