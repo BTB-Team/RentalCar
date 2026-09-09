@@ -22,8 +22,8 @@ export const Cars = () => {
       try {
         setLoading(true);
 
-        const response = await fetch("http://localhost:5000/cars");
-
+        // const response = await fetch("http://localhost:5000/cars");
+        const response = await fetch(`${import.meta.env.BASE_URL}db.json`);
         // check HTTP status
         if (!response.ok) {
           throw new Error(`HTTP error: ${response.status}`);
@@ -34,7 +34,7 @@ export const Cars = () => {
 
         console.log("Cars API:", data);
 
-        setCars(data);
+        setCars(data.cars);
       } catch (error) {
         console.error("Failed to fetch cars:", error);
       } finally {
