@@ -1,9 +1,13 @@
-import CarSection from './components/CarSection';
-import ServicesSection from './components/ServicesSection';
-import HeroSection from './HeroSection';
-import AboutCompany from './AboutCompany';
-import MissionVision from './MissionVision';
-import WhyChooseUs from './WhyChooseUs';
+import CarSection from "./components/CarSection";
+import ServicesSection from "./components/ServicesSection";
+import HeroSection from "./HeroSection";
+import AboutCompany from "./AboutCompany";
+import MissionVision from "./MissionVision";
+import WhyChooseUs from "./WhyChooseUs";
+import ProcessSection from "../../components/home/ProcessSection";
+import TestimonialsSection from "../../components/home/TestimonialsSection";
+import { TravelBanner } from "../../components/common/TravelBanner";
+import FaqSection from "../../components/home/FaqSection";
 
 export const Home = () => {
   return (
@@ -12,6 +16,10 @@ export const Home = () => {
       <AboutCompany />
       <MissionVision />
       <WhyChooseUs />
+      <ProcessSection />
+      <TestimonialsSection />
+      <TravelBanner />
+      <FaqSection />
       <CarSection />
       <ServicesSection />
     </>
