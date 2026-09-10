@@ -1,73 +1,84 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import { useParams } from "react-router-dom";
+
+import db from "../../../db.json";
+
 import { useLangStore } from "../../store/useLangStore";
+
 import { CarDetailsHero } from "./components/CarDetailsHero";
+
 import TechnicalSpecsList from "../../components/cars/TechnicalSpecsList";
+
 import { RelatedCars } from "./components/RelatedCars";
+
 import { CtaBanner } from "../../components/common/CtaBanner";
- export const CarDetails = () => {
- const { t, lang } = useLangStore();
- const { id } = useParams();
 
- const [car, setCar] = useState(null);
- const [relatedCars, setRelatedCars] = useState([]);
- const [isLoading, setIsLoading] = useState(false);
+export const CarDetails = () => {
+  const { lang } = useLangStore();
+  const { id } = useParams();
 
- useEffect(() => {
-  const fetchCars = async () => {
-   try {
-    setIsLoading(true);
+  const [car, setCar] = useState(null);
+  const [relatedCars, setRelatedCars] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-    const [carResponse, carsResponse] = await Promise.all([
-     fetch(`http://localhost:5000/cars/${id}`),
-     fetch("http://localhost:5000/cars"),
-    ]);
+  useEffect(() => {
+    const fetchCarData = () => {
+      try {
+        setIsLoading(true);
 
-    if (!carResponse.ok || !carsResponse.ok) {
-     throw new Error("Failed to fetch cars");
-    }
+        const cars = db.cars;
 
-    const currentCar = await carResponse.json();
-    const allCars = await carsResponse.json();
+        // Find current car
+        const currentCar = cars.find((item) => String(item.id) === String(id));
 
-    setCar(currentCar);
+        if (!currentCar) {
+          setCar(null);
+          setRelatedCars([]);
+          return;
+        }
 
-    const getRelatedCars = (cars, currentCar) => {
-     const words = currentCar.name_en.split(" ");
+        setCar(currentCar);
 
-     // فقط یک کلمه برای فیلتر
-     const filterWord = words[0];
+        // Find related cars using the first word of the English name
+        const filterWord = currentCar.name_en?.split(" ")[0];
 
-     return cars.filter(
-      (item) =>
-       item.id !== currentCar.id &&
-       item.name_en.includes(filterWord),
-     );
+        const filteredCars = cars.filter(
+          (item) =>
+            String(item.id) !== String(currentCar.id) &&
+            item.name_en?.includes(filterWord),
+        );
+
+        setRelatedCars(filteredCars);
+      } catch (error) {
+        console.error("Failed to load car data:", error);
+        setCar(null);
+        setRelatedCars([]);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
-    const filteredCars = getRelatedCars(allCars, currentCar);
+    fetchCarData();
+  }, [id]);
 
-    setRelatedCars(filteredCars);
-   } catch (error) {
-    console.error(error);
-   } finally {
-    setIsLoading(false);
-   }
-  };
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
 
-  fetchCars();
- }, [id]);
+  if (!car) {
+    return <p>Car not found.</p>;
+  }
 
- if (isLoading) return <p>Loading...</p>;
+  return (
+    <>
+      <CarDetailsHero car={car} lang={lang} />
 
- if (!car) return <p>Car not found.</p>;
+      <TechnicalSpecsList specs={car.specs} lang={lang} />
 
- return (
-  <>
-   <CarDetailsHero car={car} lang={lang} />
-   <TechnicalSpecsList specs={car.specs} lang={lang} />
-   <RelatedCars cars={relatedCars} lang={lang} />
-   <CtaBanner/>
-  </>
- );
+      <RelatedCars cars={relatedCars} lang={lang} />
+
+      <CtaBanner />
+    </>
+  );
 };
