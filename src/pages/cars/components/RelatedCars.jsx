@@ -21,10 +21,7 @@ const getVisibleCards = () => {
 
 export const RelatedCars = ({ cars = [], lang }) => {
   const [visibleCards, setVisibleCards] = useState(getVisibleCards);
-  const [currentIndex, setCurrentIndex] = useState(
-    getVisibleCards()
-  );
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(getVisibleCards());
   const [cardStep, setCardStep] = useState(0);
 
   const containerRef = useRef(null);
@@ -109,24 +106,14 @@ export const RelatedCars = ({ cars = [], lang }) => {
    * Reset position when responsive breakpoint changes.
    */
   useEffect(() => {
-    setIsTransitioning(false);
-
-    setCurrentIndex(
-      shouldCarousel ? visibleCards : 0
-    );
-
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        setIsTransitioning(true);
-      });
-    });
+    setCurrentIndex(shouldCarousel ? visibleCards : 0);
   }, [visibleCards, totalCars, shouldCarousel]);
 
   /*
    * Next.
    */
   const handleNext = () => {
-    if (!shouldCarousel || !isTransitioning) {
+    if (!shouldCarousel) {
       return;
     }
 
@@ -137,7 +124,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
    * Previous.
    */
   const handlePrevious = () => {
-    if (!shouldCarousel || !isTransitioning) {
+    if (!shouldCarousel) {
       return;
     }
 
@@ -146,46 +133,20 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
   /*
    * Infinite carousel reset.
+   *
+   * No animation is used here.
    */
   useEffect(() => {
     if (!shouldCarousel) {
       return;
     }
 
-    if (currentIndex === totalCars + visibleCards) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false);
-
-        setCurrentIndex(visibleCards);
-
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            setIsTransitioning(true);
-          });
-        });
-      }, 500);
-
-      return () => {
-        clearTimeout(timeout);
-      };
+    if (currentIndex >= totalCars + visibleCards) {
+      setCurrentIndex(visibleCards);
     }
 
-    if (currentIndex === 0) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false);
-
-        setCurrentIndex(totalCars);
-
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            setIsTransitioning(true);
-          });
-        });
-      }, 500);
-
-      return () => {
-        clearTimeout(timeout);
-      };
+    if (currentIndex <= 0) {
+      setCurrentIndex(totalCars);
     }
   }, [
     currentIndex,
@@ -195,23 +156,6 @@ export const RelatedCars = ({ cars = [], lang }) => {
   ]);
 
   /*
-   * Auto play.
-   */
-  useEffect(() => {
-    if (!shouldCarousel) {
-      return;
-    }
-
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => prev + 1);
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [shouldCarousel]);
-
-  /*
    * Swipe support.
    */
   const touchStartX = useRef(0);
@@ -219,6 +163,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
   const handleTouchStart = (event) => {
     touchStartX.current = event.touches[0].clientX;
+    touchEndX.current = event.touches[0].clientX;
   };
 
   const handleTouchMove = (event) => {
@@ -249,14 +194,14 @@ export const RelatedCars = ({ cars = [], lang }) => {
   return (
     <section
       dir={isPersian ? "rtl" : "ltr"}
-      className="mx-auto mb-20 mt-11 w-fullpx-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24"
+      className="mx-auto mb-20 mt-11 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24"
     >
       {/* ================= HEADER ================= */}
 
       <div className="mb-4 flex w-full items-center justify-between">
         {/* Title */}
 
-        <h2 className="text-5  font-bold text-black">
+        <h2 className="text-5 font-bold text-black">
           {isPersian ? "موتر های مرتبط" : "Related Cars"}
         </h2>
 
@@ -316,11 +261,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
       >
         <div
           dir="ltr"
-          className={`flex gap-5 ${
-            isTransitioning
-              ? "transition-transform duration-500 ease-in-out"
-              : ""
-          }`}
+          className="flex gap-5"
           style={{
             transform: `translate3d(-${
               currentIndex * cardStep
@@ -379,9 +320,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
                   {/* Tags */}
 
-                  <div
-                    className={`mt-4 flex min-h-[22px] justify-start flex-wrap gap-1`}
-                  >
+                  <div className="mt-4 flex min-h-[22px] flex-wrap justify-start gap-1">
                     {tags?.map((tag) => (
                       <span
                         key={tag}
@@ -395,11 +334,11 @@ export const RelatedCars = ({ cars = [], lang }) => {
                   {/* Description */}
 
                   <p
-                    className={`mt-3 h-[58px] overflow-hidden text-[10px] leading-[1.9] text-[#333] ${
+                    className={`mt-3 h-[58px] overflow-hidden text-[10px] leading-[1.9] ${
                       isPersian
                         ? "text-right"
                         : "text-left"
-                    }`}
+                    } text-[#333]`}
                   >
                     {description}
                   </p>
