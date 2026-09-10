@@ -16,12 +16,12 @@ export const Home = () => {
       <AboutCompany />
       <MissionVision />
       <WhyChooseUs />
+      <CarSection />
+      <ServicesSection />
       <ProcessSection />
       <TestimonialsSection />
       <CtaBanner />
       <FaqSection />
-      <CarSection />
-      <ServicesSection />
     </>
   );
 };
