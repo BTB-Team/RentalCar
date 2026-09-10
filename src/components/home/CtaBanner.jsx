@@ -1,4 +1,5 @@
 import { useLangStore } from "../../store/useLangStore";
+import ctaBackground from "./images/cta.png";
 
 // eslint-disable-next-line react/prop-types
 const CtaBanner = ({ onRequestService }) => {
@@ -18,8 +19,8 @@ const CtaBanner = ({ onRequestService }) => {
         <div
           className="relative mx-auto flex h-[339px] w-full max-w-[1200px]
             items-center justify-center overflow-hidden rounded-[20px]
-            bg-[url('src/components/home/images/cta.png')] bg-cover bg-center
-            px-4 py-10 text-center sm:px-10"
+            bg-cover bg-center px-4 py-10 text-center sm:px-10"
+          style={{ backgroundImage: `url(${ctaBackground})` }}
         >
           {/* Background overlay */}
           <div className="absolute inset-0 bg-white/20" />

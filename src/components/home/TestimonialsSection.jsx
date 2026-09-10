@@ -10,19 +10,22 @@ const TestimonialsSection = () => {
   useEffect(() => {
     const getTestimonials = async () => {
       try {
-        const response = await fetch("http://localhost:5000/testimonials");
+        const baseUrl = `${window.location.origin}${import.meta.env.BASE_URL}`;
+        const response = await fetch(new URL("db.json", baseUrl).toString());
 
         if (!response.ok) {
           throw new Error("Failed to fetch testimonials");
         }
 
         const data = await response.json();
+        const list = Array.isArray(data)
+          ? data
+          : data.testimonials || data.data || [];
 
-        setTestimonials(
-          Array.isArray(data) ? data : data.testimonials || data.data || [],
-        );
+        setTestimonials(Array.isArray(list) ? list : []);
       } catch (error) {
         console.error("Error fetching testimonials:", error);
+        setTestimonials([]);
       } finally {
         setLoading(false);
       }
