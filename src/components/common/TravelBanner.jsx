@@ -1,4 +1,5 @@
 import { useLangStore } from "../../store/useLangStore";
+import ctaBackground from "../home/images/cta.png";
 
 export const TravelBanner = () => {
   const { lang, t } = useLangStore();
@@ -9,7 +10,10 @@ export const TravelBanner = () => {
       dir={lang === "dr" ? "rtl" : "ltr"}
     >
       <div className="mx-auto max-w-[1200px]">
-        <div className="relative mx-auto flex h-[339px] w-[1200px] max-w-full items-center justify-center overflow-hidden rounded-[20px] bg-[url('src/components/home/images/cta.png')] bg-cover bg-center px-4 py-10 text-center sm:px-10">
+        <div
+          className="relative mx-auto flex h-[339px] w-[1200px] max-w-full items-center justify-center overflow-hidden rounded-[20px] bg-cover bg-center px-4 py-10 text-center sm:px-10"
+          style={{ backgroundImage: `url(${ctaBackground})` }}
+        >
           <div className="absolute inset-0 bg-white/20" />
 
           <div className="relative z-10 flex h-[199px] w-full max-w-[544px] flex-col items-center justify-center rounded-[20px]">
