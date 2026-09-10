@@ -11,7 +11,7 @@ import AdminLayout from './layouts/AdminLayout';
 import { Home } from './pages/home/Home';
 import { About } from './pages/about/About';
 import { Cars } from './pages/cars/Cars';
-import { CarsDetails } from './pages/cars/CarsDetails';
+import { CarDetails } from './pages/cars/CarDetails';
 import { Contact } from './pages/contact/Contact';
 import { Services } from './pages/services/Services';
 // وارد کردن صفحات ادمین
@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="cars" element={<Cars />} />
-        <Route path="cars/:id" element={<CarsDetails />} />
+        <Route path="cars/:id" element={<CarDetails />} />
         {/* <Route path="services" element={<Services />} /> */}
         <Route path="contact" element={<Contact />} />
       </Route>
