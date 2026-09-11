@@ -30,7 +30,7 @@ const CtaBanner = ({ onRequestService }) => {
               flex-col items-center justify-center rounded-[20px]"
           >
             <h2
-              className="h-auto w-full max-w-[427px] text-right text-[28px]
+              className="h-auto w-full max-w-[427px] text-center text-[28px]
                 font-black leading-none tracking-[0] text-black
                 sm:text-[32px]
                 md:h-[56px] md:w-[427px] md:text-[36px]"
