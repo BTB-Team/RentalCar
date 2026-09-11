@@ -359,7 +359,7 @@ Please change the parent <Route path="${p}"> to <Route path="${p==="/"?"*":`${p}
                     `,children:(n?i.comment_dr:i.comment_en)||i.review||i.comment})]}),o.jsx("div",{className:"mt-[30px] flex h-[21px] items-center gap-[3px] [direction:ltr]",children:Array.from({length:5}).map((c,d)=>o.jsx("span",{className:"text-[20px] leading-[21px] text-[#F7D102]",children:d<(i.stars||i.rating||5)?"★":"☆"},d))})]},i.id||u)),r.length===0&&o.jsx("div",{className:"col-span-full py-8 text-center text-sm text-gray-500",children:e.home.no_testimonials})]})]})})},L1="/RentalCar/assets/cta-BSTRIpVM.png",Fm=({onRequestService:e})=>{const{t,lang:n}=F();return o.jsx("section",{className:"px-3 py-8 sm:px-6 lg:px-8",dir:n==="dr"?"rtl":"ltr",children:o.jsx("div",{className:"mx-auto max-w-7xl",children:o.jsxs("div",{className:`relative mx-auto flex h-[339px] w-full max-w-[1200px]
             items-center justify-center overflow-hidden rounded-[20px]
             bg-cover bg-center px-4 py-10 text-center sm:px-10`,style:{backgroundImage:`url(${L1})`},children:[o.jsx("div",{className:"absolute inset-0 bg-white/20"}),o.jsxs("div",{className:`relative z-10 flex h-[199px] w-full max-w-[544px]
-              flex-col items-center justify-center rounded-[20px]`,children:[o.jsx("h2",{className:`h-auto w-full max-w-[427px] text-right text-[28px]
+              flex-col items-center justify-center rounded-[20px]`,children:[o.jsx("h2",{className:`h-auto w-full max-w-[427px] text-center text-[28px]
                 font-black leading-none tracking-[0] text-black
                 sm:text-[32px]
                 md:h-[56px] md:w-[427px] md:text-[36px]`,children:t.cta.yellow_title}),o.jsx("p",{className:`mt-3 h-auto w-full max-w-[544px] text-center text-[19px]
