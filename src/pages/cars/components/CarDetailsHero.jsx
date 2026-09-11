@@ -281,7 +281,7 @@ export const CarDetailsHero = ({ car }) => {
               {/* Contact */}
 
               <a
-                href="https://wa.me/+93786377417"
+                href="tel:+93 786377417"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-black px-4 text-[12px] font-bold text-white transition hover:bg-[#151515] active:scale-[0.98] sm:flex-1 sm:text-[13px]"
