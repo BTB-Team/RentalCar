@@ -39,7 +39,7 @@ const CtaBanner = ({ onRequestService }) => {
             </h2>
 
             <p
-              className="mt-3 h-auto w-full max-w-[544px] text-right text-[19px]
+              className="mt-3 h-auto w-full max-w-[544px] text-center text-[19px]
                 font-semibold leading-[1.4] tracking-[0] text-black
                 sm:text-[21px]
                 md:h-[37px] md:w-[544px] md:whitespace-nowrap md:text-[24px] md:leading-none"
