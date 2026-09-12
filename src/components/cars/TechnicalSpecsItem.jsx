@@ -2,15 +2,15 @@ const TechnicalSpecsItem = ({spec}) => {
   return (
     <div
       key={spec.label}
-      className="flex h-[43px] items-center justify-between rounded-[12px] border border-[#E5E5E5] px-3"
+      className="flex h-[43px] items-center justify-between rounded-[15px] border border-[#D9D9D9] px-3"
     >
       <div className="flex items-center gap-2">
-        <img src={spec.icon} alt="home icon" className="h-auto w-[15px]" />
-        <span className="text-[11px] font-medium text-[#222]">
+        <img src={spec.icon} alt="home icon" className="size-5 md:size-7" />
+        <span className="text-sm md:text-base font-semibold text-brand-black">
           {spec.label}
         </span>
       </div>
-      <span className="text-[10px] font-medium text-[#222]">{spec.value}</span>
+      <span className="text-sm md:text-base font-semibold text-brand-black">{spec.value}</span>
     </div>
   );
 };

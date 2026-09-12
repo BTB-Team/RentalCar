@@ -194,14 +194,14 @@ export const RelatedCars = ({ cars = [], lang }) => {
   return (
     <section
       dir={isPersian ? "rtl" : "ltr"}
-      className="mx-auto mb-20 mt-11 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24"
+      className="mx-auto mb-18  mt-16 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24"
     >
       {/* ================= HEADER ================= */}
 
       <div className="mb-4 flex w-full items-center justify-between">
         {/* Title */}
 
-        <h2 className="text-5 font-bold text-black">
+        <h2 className="text-lg md:text-[28px] font-bold text-black">
           {isPersian ? "موتر های مرتبط" : "Related Cars"}
         </h2>
 
@@ -219,7 +219,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
                 ? "موترهای قبلی"
                 : "Previous cars"
             }
-            className="flex h-[27px] w-[27px] shrink-0 items-center justify-center rounded-full bg-brand-yellow transition-opacity disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex transition-opacity disabled:cursor-not-allowed disabled:opacity-50 lex h-8 md:h-10 w-8 md:w-10 shrink-0 items-center justify-center rounded-full bg-brand-yellow"
           >
             <img
               src="/RentalCar/images/icons/left_arrow_icon.png"
@@ -239,7 +239,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
                 ? "موترهای بعدی"
                 : "Next cars"
             }
-            className="flex h-[27px] w-[27px] shrink-0 items-center justify-center rounded-full bg-brand-yellow transition-opacity disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex transition-opacity disabled:cursor-not-allowed disabled:opacity-50 lex h-8 md:h-10 w-8 md:w-10 shrink-0 items-center justify-center rounded-full bg-brand-yellow"
           >
             <img
               src="/RentalCar/images/icons/right_arrow_icon.png"
@@ -254,7 +254,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
       <div
         ref={containerRef}
-        className="w-full overflow-hidden"
+        className="w-full overflow-hidden "
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -289,7 +289,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
               <article
                 key={`${car.id}-${index}`}
                 dir={isPersian ? "rtl" : "ltr"}
-                className="shrink-0 overflow-hidden rounded-[14px] border border-[#D9D9D9] bg-white"
+                className=" shrink-0 overflow-hidden rounded-[14px] border border-[#D9D9D9] bg-white"
                 style={{
                   width:
                     cardStep > 0
@@ -314,17 +314,17 @@ export const RelatedCars = ({ cars = [], lang }) => {
                 <div className="flex min-h-[178px] flex-col px-2 pb-3 pt-3">
                   {/* Name */}
 
-                  <h3 className="min-h-[21px] text-start text-[14px] font-bold leading-[1.5] text-[#111]">
+                  <h3 className="mt-3 md:mt-5 text-start text-lg md:text-2xl font-semibold">
                     {carName}
                   </h3>
 
                   {/* Tags */}
 
-                  <div className="mt-4 flex min-h-[22px] flex-wrap justify-start gap-1">
+                  <div className="mt-3 md:mt-5 flex min-h-[22px] flex-wrap justify-start gap-1">
                     {tags?.map((tag) => (
                       <span
                         key={tag}
-                        className="whitespace-nowrap rounded-full bg-brand-yellow px-2 py-[5px] text-[9px] font-bold leading-none text-black"
+                        className="whitespace-nowrap rounded-full bg-brand-yellow px-2 items-center text-sm md:text-base font-semibold leading-none text-black"
                       >
                         {tag}
                       </span>
@@ -332,9 +332,8 @@ export const RelatedCars = ({ cars = [], lang }) => {
                   </div>
 
                   {/* Description */}
-
                   <p
-                    className={`mt-3 h-[58px] overflow-hidden text-[10px] leading-[1.9] ${
+                    className={`mt-3 md:mt-5 overflow-hidden font-semibold text-base leading-[1.9] ${
                       isPersian
                         ? "text-right"
                         : "text-left"
@@ -345,24 +344,23 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
                   {/* Bottom */}
 
-                  <div className="mt-auto flex items-center justify-between gap-2 pt-3">
+                  <div className="mt-6 md:mt-8 flex items-center justify-between gap-2 pt-3">
                     {/* Details */}
 
-                    <Link
+                    <span className="shrink-0 rounded-full border border-brand-yellow px-3 py-[5px] text-sm md:text-base font-semibold leading-none text-black">
+                      {car.passengerCapacity}{" "}
+                      {passengerLabel}
+                    </span>
+
+                    {/* Passengers */}
+                     <Link
                       to={`/cars/${car.id}`}
-                      className="shrink-0 rounded-full bg-brand-yellow px-3 py-[6px] text-[9px] font-bold leading-none text-black"
+                      className="shrink-0 rounded-full bg-brand-yellow px-3 py-[6px] text-sm md:text-base font-semibold leading-none text-black"
                     >
                       {isPersian
                         ? "مشاهده جزئیات"
                         : "View Details"}
                     </Link>
-
-                    {/* Passengers */}
-
-                    <span className="shrink-0 rounded-full border border-brand-yellow px-3 py-[5px] text-[9px] font-medium leading-none text-black">
-                      {car.passengerCapacity}{" "}
-                      {passengerLabel}
-                    </span>
                   </div>
                 </div>
               </article>
