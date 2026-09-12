@@ -113,6 +113,15 @@ export const Footer = () => {
               </svg>
 
             </a>
+
+            <a href="https://share.google/rLyBD7EhRnQtmFX1W" target="_blank" rel="noopener noreferrer"
+              className="w-[41px] h-[41px] bg-[#F7D102] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2.66663C10.1089 2.66663 5.33331 7.44222 5.33331 13.3333C5.33331 21.3333 16 29.3333 16 29.3333C16 29.3333 26.6666 21.3333 26.6666 13.3333C26.6666 7.44222 21.891 2.66663 16 2.66663ZM16 17.3333C13.7909 17.3333 12 15.5424 12 13.3333C12 11.1242 13.7909 9.33329 16 9.33329C18.2091 9.33329 20 11.1242 20 13.3333C20 15.5424 18.2091 17.3333 16 17.3333Z" fill="black" />
+              </svg>
+
+            </a>
           </div>
         </div>
 
@@ -134,7 +143,7 @@ export const Footer = () => {
 
           <div className="space-y-4 sm:text-[20px] text-[16px] font-[400]">
             {/* Address */}
-            <div className="flex items-center gap-3">
+            <a href="https://share.google/rLyBD7EhRnQtmFX1W" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
               <svg
                 width="18"
                 height="25"
@@ -151,7 +160,7 @@ export const Footer = () => {
               <span className="text-start whitespace-nowrap">
                 {content.address}
               </span>
-            </div>
+            </a>
 
             {/* Email */}
             <div className="flex items-center gap-3">
