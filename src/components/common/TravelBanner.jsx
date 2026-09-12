@@ -1,4 +1,5 @@
 import { useLangStore } from "../../store/useLangStore";
+import ctaBackground from "../home/images/cta.png";
 
 export const TravelBanner = () => {
   const { lang, t } = useLangStore();
@@ -9,7 +10,10 @@ export const TravelBanner = () => {
       dir={lang === "dr" ? "rtl" : "ltr"}
     >
       <div className="mx-auto max-w-[1200px]">
-        <div className="relative mx-auto flex h-[339px] w-[1200px] max-w-full items-center justify-center overflow-hidden rounded-[20px] bg-[url('src/components/home/images/cta.png')] bg-cover bg-center px-4 py-10 text-center sm:px-10">
+        <div
+          className="relative mx-auto flex h-[339px] w-[1200px] max-w-full items-center justify-center overflow-hidden rounded-[20px] bg-cover bg-center px-4 py-10 text-center sm:px-10"
+          style={{ backgroundImage: `url(${ctaBackground})` }}
+        >
           <div className="absolute inset-0 bg-white/20" />
 
           <div className="relative z-10 flex h-[199px] w-full max-w-[544px] flex-col items-center justify-center rounded-[20px]">
@@ -18,7 +22,7 @@ export const TravelBanner = () => {
             </h2>
 
             <p className="mt-3 h-auto w-full max-w-[544px] text-center text-[19px] font-semibold leading-[1.4] tracking-[0] text-black sm:text-[21px] md:h-[37px] md:w-[544px] md:whitespace-nowrap md:text-[24px] md:leading-none">
-              {t.cta.dark_title}
+              {t.cta.description}
             </p>
 
             <a

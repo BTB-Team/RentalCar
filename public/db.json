@@ -1821,22 +1821,35 @@
   "testimonials": [
     {
       "id": 1,
-      "name_dr": "احمد منصور",
+      "name_dr": "رحمت الله کریمی",
       "name_en": "Ahmad Mansoor",
-      "role_dr": "مدیر پروژه سازمان بین‌المللی",
-      "role_en": "International NGO Project Manager",
-      "comment_dr": "یک تجربه کاملاً حرفه‌ای! موتر لندکروزر زرهی بسیار پاک و مجهز بود. راننده آشنایی کامل به راه‌ها داشت و تیم پشتیبانی در تمام طول سفر با ما در ارتباط بودند.",
-      "comment_en": "A completely professional experience! The armored Land Cruiser was spotless and well-equipped. The driver knew the routes perfectly, and the support team stayed in touch throughout.",
+      "role_dr": "توریست",
+      "role_en": "Tourist",
+      "avatar": "/RentalCar/images/customer.webp",
+      "comment_dr": "به‌عنوان یک گردشگر، خدمات کابل رینتال کار واقعاً عالی بود. تیم پشتیبانی همیشه پاسخ‌گو بود و همه چیز به‌موقع و مطابق برنامه انجام شد. تجربه‌ای بسیار خوب و مطمئن در افغانستان داشتم.",
+      "comment_en": "As a tourist, the services of Kabul Rental Car were truly excellent. The support team was always responsive, and everything was executed on time and as planned. I had a very good and secure experience in Afghanistan.",
       "stars": 5
     },
     {
       "id": 2,
-      "name_dr": "سارا ویلیامز",
-      "name_en": "Sarah Williams",
-      "role_dr": "خبرنگار مستقل",
-      "role_en": "Independent Journalist",
-      "comment_dr": "امنیت و وقت‌شناسی برای کار من حیاتی است. این شرکت بهترین خدمات اسکورت و کرایه موتر را در کابل ارائه داد. من با خیال راحت تمام تمرکزم را روی کارم گذاشتم.",
-      "comment_en": "Security and punctuality are vital for my work. This company provided the best escort and rental services in Kabul. I could focus entirely on my assignment with peace of mind.",
+      "name_dr": "مریم یوسفی",
+      "name_en": "Maryam Yousufi",
+      "role_dr": "مسافر خانوادگی",
+      "role_en": "Family Traveler",
+      "avatar": "/RentalCar/images/customer.webp",
+      "comment_dr": "سفر خانوادگی ما بسیار لذت‌بخش بود. موتر تمیز و راحت، راننده باتجربه و برخورد تیم کاملاً حرفه‌ای بود. در تمام مسیر احساس امنیت و آرامش داشتیم.",
+      "comment_en": "Family travel was very enjoyable. The car was clean and comfortable, the driver was experienced and the team's conduct was completely professional. We felt safe and relaxed throughout the journey.",
+      "stars": 5
+    },
+    {
+      "id": 3,
+      "name_dr": "سید احمدی",
+      "name_en": "Sayed Ahmadi",
+      "role_dr": "مسافر تجاری",
+      "role_en": "Business Traveler",
+      "avatar": "/RentalCar/images/customer.webp",
+      "comment_dr": "خدمات بسیار منظم و حرفه‌ای بود. موتر تمیز و راحت و راننده خوش‌رفتار و وقت‌شناس بود. برای سفرهای کاری در کابل، کابل رینتال کار انتخاب مطمئنی است.",
+      "comment_en": "As a tourist, the services of Kabul Rental Car were truly excellent. The support team was always responsive, and everything was executed on time and as planned. I had a very good and secure experience in Afghanistan.",
       "stars": 5
     }
   ],

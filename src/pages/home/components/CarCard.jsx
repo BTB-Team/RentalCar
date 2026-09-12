@@ -65,7 +65,7 @@ export const CarCard = ({ car }) => {
           className="
           h-full
           w-full
-          object-cover
+          object-fit: contain
           transition-transform
           duration-500 ease-out 
           group-hover:scale-[1.05]

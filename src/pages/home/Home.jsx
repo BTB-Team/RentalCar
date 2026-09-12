@@ -6,7 +6,7 @@ import MissionVision from "./MissionVision";
 import WhyChooseUs from "./WhyChooseUs";
 import ProcessSection from "../../components/home/ProcessSection";
 import TestimonialsSection from "../../components/home/TestimonialsSection";
-import { TravelBanner } from "../../components/common/TravelBanner";
+import CtaBanner from "../../components/home/CtaBanner";
 import FaqSection from "../../components/home/FaqSection";
 
 export const Home = () => {
@@ -16,12 +16,12 @@ export const Home = () => {
       <AboutCompany />
       <MissionVision />
       <WhyChooseUs />
-      <ProcessSection />
-      <TestimonialsSection />
-      <TravelBanner />
-      <FaqSection />
       <CarSection />
       <ServicesSection />
+      <ProcessSection />
+      <TestimonialsSection />
+      <CtaBanner />
+      <FaqSection />
     </>
   );
 };
