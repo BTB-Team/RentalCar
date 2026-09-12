@@ -20,10 +20,12 @@ const FaqSection = () => {
           <h2
             className="m-0 text-black"
             style={{
-              fontFamily: "'Yekan Bakh VF', sans-serif",
+              fontFamily: "'Yekan', sans-serif",
               fontSize: "36px",
               fontWeight: 800,
-              lineHeight: "56px",
+              fontStyle: "normal",
+              lineHeight: "100%",
+              letterSpacing: "0",
               textAlign: "center",
             }}
           >
@@ -78,10 +80,12 @@ const FaqSection = () => {
                         text-black
                       `}
                       style={{
-                        fontFamily: "'Yekan Bakh VF', sans-serif",
+                        fontFamily: "'Yekan', sans-serif",
                         fontSize: "22px",
                         fontWeight: 600,
-                        lineHeight: "34px",
+                        fontStyle: "normal",
+                        lineHeight: "100%",
+                        letterSpacing: "0",
                         textAlign: lang === "dr" ? "right" : "left",
                       }}
                     >
@@ -89,28 +93,15 @@ const FaqSection = () => {
                     </span>
 
                     {/* Plus / Minus icon */}
-                    <span
-                      className="
-                        mr-4
-                        flex
-                        h-[30px]
-                        w-[30px]
-                        shrink-0
-                        items-center
-                        justify-center
-                        rounded-full
-                        bg-[#F7D102]
-                        text-black
-                      "
-                      style={{
-                        fontFamily: "Arial, sans-serif",
-                        fontSize: "20px",
-                        fontWeight: 400,
-                        lineHeight: "30px",
-                      }}
-                    >
-                      {isOpen ? "−" : "+"}
-                    </span>
+                    <img
+                      src={
+                        isOpen
+                          ? `${import.meta.env.BASE_URL}images/minus-icon.png`
+                          : `${import.meta.env.BASE_URL}images/plus-icon.png`
+                      }
+                      alt={isOpen ? "Minus" : "Plus"}
+                      className="h-[30px] w-[30px] object-contain"
+                    />
                   </button>
 
                   <div

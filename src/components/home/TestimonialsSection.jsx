@@ -6,6 +6,13 @@ const TestimonialsSection = () => {
   const isDari = lang === "dr";
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
+  const avatarFallback = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+      <rect width="45" height="45" rx="22.5" fill="#E5E7EB"/>
+      <circle cx="22.5" cy="17" r="8" fill="#D1D5DB"/>
+      <path d="M9 35c3-6 9-9 13.5-9S33 29 36 35" fill="#D1D5DB"/>
+    </svg>
+  `)}`;
 
   useEffect(() => {
     const getTestimonials = async () => {
@@ -86,12 +93,14 @@ const TestimonialsSection = () => {
               md:grid-cols-3
             "
           >
-            {testimonials.slice(0, 3).map((testimonial, index) => (
+            {testimonials.slice(0, 6).map((testimonial, index) => (
               <article
                 key={testimonial.id || index}
                 className="
+                  flex
                   h-[237px]
                   w-full
+                  flex-col
                   rounded-[20px]
                   border
                   border-[#D9D9D9]
@@ -100,12 +109,9 @@ const TestimonialsSection = () => {
                   py-[28px]
                 "
               >
-                <div className="relative h-[143px] w-full">
-                  {/* Quote */}
+                <div className="flex w-full items-start gap-[12px]">
                   <span
                     className={`
-                      absolute
-                      top-[7px]
                       flex
                       h-[29px]
                       w-[35px]
@@ -115,119 +121,101 @@ const TestimonialsSection = () => {
                       font-bold
                       leading-none
                       text-[#F7D102]
-                      ${isDari ? "left-0" : "right-0"}
+                      ${isDari ? "order-1" : "order-2"}
                     `}
                   >
                     “
                   </span>
 
-                  {/* Avatar */}
-                  {testimonial.avatar ? (
-                    <img
-                      src={testimonial.avatar}
-                      alt={
-                        (isDari ? testimonial.name_dr : testimonial.name_en) ||
-                        testimonial.name ||
-                        "Customer"
-                      }
-                      className={`
-                        absolute
-                        top-0
-                        h-[45px]
-                        w-[45px]
-                        rounded-full
-                        object-cover
-                        ${isDari ? "right-0" : "left-0"}
-                      `}
-                    />
-                  ) : (
-                    <div
-                      className={`
-                        absolute
-                        top-0
-                        flex
-                        h-[45px]
-                        w-[45px]
-                        items-center
-                        justify-center
-                        rounded-full
-                        bg-gray-200
-                        text-sm
-                        font-bold
-                        text-gray-600
-                        ${isDari ? "right-0" : "left-0"}
-                      `}
-                    >
-                      {(
-                        (isDari ? testimonial.name_dr : testimonial.name_en) ||
-                        testimonial.name ||
-                        "?"
-                      ).charAt(0)}
-                    </div>
-                  )}
-
-                  {/* Name */}
-                  <h3
+                  <div
                     className={`
-                      absolute
-                      ${isDari ? "right-[71px]" : "left-[71px]"}
-                      top-[3px]
-                      m-0
-                      w-[111px]
-                      ${isDari ? "text-right" : "text-left w-[117px]"}
-                      text-black
-                      text-[16px]
-                      font-semibold
-                      leading-[25px]
-                    `}
-                  >
-                    {(isDari ? testimonial.name_dr : testimonial.name_en) ||
-                      testimonial.name}
-                  </h3>
-
-                  {/* Role */}
-                  <p
-                    className={`
-                      absolute
-                      ${isDari ? "right-[71px]" : "left-[71px]"}
-                      top-[27px]
-                      m-0
-                      w-auto
-                      whitespace-nowrap
+                      flex
+                      min-w-0
+                      flex-1
+                      items-center
+                      gap-[12px]
                       ${isDari ? "text-right" : "text-left"}
-                      text-black
-                      text-[13px]
-                      font-light
-                      leading-[20px]
                     `}
                   >
-                    {(isDari ? testimonial.role_dr : testimonial.role_en) ||
-                      testimonial.role}
-                  </p>
+                    {testimonial.avatar ? (
+                      <img
+                        src={testimonial.avatar}
+                        onError={(event) => {
+                          event.currentTarget.onerror = null;
+                          event.currentTarget.src = avatarFallback;
+                        }}
+                        alt={
+                          (isDari
+                            ? testimonial.name_dr
+                            : testimonial.name_en) ||
+                          testimonial.name ||
+                          "Customer"
+                        }
+                        className="h-[45px] w-[45px] rounded-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-[45px] w-[45px] items-center justify-center rounded-full bg-gray-200 text-sm font-bold text-gray-600">
+                        {(
+                          (isDari
+                            ? testimonial.name_dr
+                            : testimonial.name_en) ||
+                          testimonial.name ||
+                          "?"
+                        ).charAt(0)}
+                      </div>
+                    )}
 
-                  <p
-                    className="
-                      absolute
-                      bottom-0
-                      right-0
-                      m-0
-                      w-full
-                      text-black
-                      text-[13px]
-                      font-normal
-                      leading-[20px]
-                      text-justify
-                    "
-                  >
-                    {(isDari
-                      ? testimonial.comment_dr
-                      : testimonial.comment_en) ||
-                      testimonial.review ||
-                      testimonial.comment}
-                  </p>
+                    <div className="min-w-0 flex-1">
+                      <h3
+                        className={`
+                          m-0
+                          text-[16px]
+                          font-semibold
+                          leading-[25px]
+                          text-black
+                          ${isDari ? "text-right" : "text-left"}
+                        `}
+                      >
+                        {(isDari ? testimonial.name_dr : testimonial.name_en) ||
+                          testimonial.name}
+                      </h3>
+
+                      <p
+                        className={`
+                          m-0
+                          text-[13px]
+                          font-light
+                          leading-[20px]
+                          text-black
+                          ${isDari ? "text-right" : "text-left"}
+                        `}
+                      >
+                        {(isDari ? testimonial.role_dr : testimonial.role_en) ||
+                          testimonial.role}
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="mt-[30px] flex h-[21px] items-center gap-[3px] [direction:ltr]">
+                <p
+                  className={`
+                    mt-[16px]
+                    m-0
+                    flex-1
+                    overflow-hidden
+                    text-[13px]
+                    font-normal
+                    leading-[20px]
+                    text-black
+                    ${isDari ? "text-right" : "text-left"}
+                  `}
+                >
+                  {(isDari ? testimonial.comment_dr : testimonial.comment_en) ||
+                    testimonial.review ||
+                    testimonial.comment}
+                </p>
+
+                <div className="mt-[18px] flex h-[21px] items-center gap-[3px] [direction:ltr]">
                   {Array.from({ length: 5 }).map((_, starIndex) => (
                     <span
                       key={starIndex}
