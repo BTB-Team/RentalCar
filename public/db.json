@@ -1821,35 +1821,56 @@
   "testimonials": [
     {
       "id": 1,
-      "name_dr": "رحمت الله کریمی",
-      "name_en": "Ahmad Mansoor",
-      "role_dr": "توریست",
-      "role_en": "Tourist",
-      "avatar": "/RentalCar/images/customer.webp",
-      "comment_dr": "به‌عنوان یک گردشگر، خدمات کابل رینتال کار واقعاً عالی بود. تیم پشتیبانی همیشه پاسخ‌گو بود و همه چیز به‌موقع و مطابق برنامه انجام شد. تجربه‌ای بسیار خوب و مطمئن در افغانستان داشتم.",
-      "comment_en": "As a tourist, the services of Kabul Rental Car were truly excellent. The support team was always responsive, and everything was executed on time and as planned. I had a very good and secure experience in Afghanistan.",
+      "name_dr": "کریستوفر دانیل",
+      "name_en": "Christopher Daniel",
+      "avatar": "/RentalCar/images/first-customer.png",
+      "comment_dr": "من از خدمات این شرکت کرایه موتر بسیار راضی هستم. موترها همیشه به موقع می‌رسند و رانندگان محترم و مسئولیت‌پذیر هستند. خدمات ترانسفر برای پناهندگان نیز به خوبی سازماندهی شده و ایمن است. به نظر من، این شرکت خدمات قابل اعتماد و با کیفیت ارائه می‌دهد و من آن را به دیگران توصیه می‌کنم. 👍🤗❤️",
+      "comment_en": "I am very satisfied with the services of this car rental company. The vehicles always arrive on time and the drivers are respectful and responsible. Their transportation service for refugees is well organized and safe. In my opinion, this company provides reliable and quality service, and I would recommend it to others. 👍🤗❤️",
       "stars": 5
     },
     {
       "id": 2,
-      "name_dr": "مریم یوسفی",
-      "name_en": "Maryam Yousufi",
-      "role_dr": "مسافر خانوادگی",
-      "role_en": "Family Traveler",
-      "avatar": "/RentalCar/images/customer.webp",
-      "comment_dr": "سفر خانوادگی ما بسیار لذت‌بخش بود. موتر تمیز و راحت، راننده باتجربه و برخورد تیم کاملاً حرفه‌ای بود. در تمام مسیر احساس امنیت و آرامش داشتیم.",
-      "comment_en": "Family travel was very enjoyable. The car was clean and comfortable, the driver was experienced and the team's conduct was completely professional. We felt safe and relaxed throughout the journey.",
+      "name_dr": "Z Jamali",
+      "name_en": "Z Jamali",
+      "avatar": "/RentalCar/images/second-customer.png",
+      "comment_dr": "این یک کسب و کار کرایه موتر عالی و کارکنان بسیار خوبی دارد. ما 4 موتر 4-رانر را برای 5 روز کرایه کردیم و خدمات آن‌ها عالی بود. من به شدت این شرکت را به دیگران توصیه می‌کنم.",
+      "comment_en": "This is a great rental business and great staff.  Rented 4-runners for 5 days and their service was great.  I highly recommend for others.",
       "stars": 5
     },
     {
       "id": 3,
-      "name_dr": "سید احمدی",
-      "name_en": "Sayed Ahmadi",
-      "role_dr": "مسافر تجاری",
-      "role_en": "Business Traveler",
+      "name_dr": "Rony Dema",
+      "name_en": "Rony Dema",
+      "avatar": "/RentalCar/images/forth-customer.png",
+      "comment_dr": "من از خدمات شما امشب راضی بودم، تنها مشکلی که وجود داشت این بود که وقتی موتر به من تحویل داده شد، به من گفته نشد که آیا دیزل است یا پترول و نوع سوخت در قرارداد نیز ذکر نشده بود. بهتر است این موضوع برای مشتریان روشن شود و در قرارداد گنجانده شود. غیر از این، از خدمات خوب شما و داشتن شماره فعال برای تماس با شما تشکر می‌کنم.",
+      "comment_en": "I was happy with your service tonight the only issue was that when car was handed over to me I wasn't told whether it was diesel or petrol and the fuel type wasn't mentioned in the conterct either it would be better to make this clear to customer and include it in the conterct  other than  that thank you for the good service and for having active number to contact you.",
+      "stars": 5
+    },
+    {
+      "id": 4,
+      "name_dr": "دامان خان",
+      "name_en": "DAMAN KHAN",
       "avatar": "/RentalCar/images/customer.webp",
-      "comment_dr": "خدمات بسیار منظم و حرفه‌ای بود. موتر تمیز و راحت و راننده خوش‌رفتار و وقت‌شناس بود. برای سفرهای کاری در کابل، کابل رینتال کار انتخاب مطمئنی است.",
-      "comment_en": "As a tourist, the services of Kabul Rental Car were truly excellent. The support team was always responsive, and everything was executed on time and as planned. I had a very good and secure experience in Afghanistan.",
+      "comment_dr": "همه چیز عالی بود، تیم بسیار خوش‌برخورد و حرفه‌ای بود.",
+      "comment_en": "everything fine , very nice staff",
+      "stars": 5
+    },
+    {
+      "id": 5,
+      "name_dr": "Mr Gift",
+      "name_en": "Mr Gift",
+      "avatar": "/RentalCar/images/customer.webp",
+      "comment_dr": "من می‌خواهم تجربه خود را با این شرکت به اشتراک بگذارم. خدمات آن‌ها عالی است، بهترین و دارای خدمات بسیار عالی است. ما موتر را در میدان هوایی تحویل دادیم. ما وقت خوبی داشتیم. این یکی از بهترین شرکت‌هایی بود که در طول سفرمان داشتیم. از آکی که با هموطنان شما بود، تشکر می‌کنم.",
+      "comment_en": "I would like to express my experience with this company. It is excellent, the best and has very excellent services. We dropped off the car at the airport. We had a great time. It was one of the best companies we had during our trip. Thank you to Aki who was with your compatriots.",
+      "stars": 5
+    },
+    {
+      "id": 6,
+      "name_dr": "صدیق ناص",
+      "name_en": "Sidiq Nas",
+      "avatar": "/RentalCar/images/customer.webp",
+      "comment_dr": "این شرکت بهترین شرکت کرایه موتر با قیمت‌های عادی است. هر کسی که علاقه‌مند است، یک بار امتحان کند. متشکرم",
+      "comment_en": "It’s the best company normal prices for rental anyone interested try once. thanks",
       "stars": 5
     }
   ],
