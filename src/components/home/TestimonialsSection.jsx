@@ -83,11 +83,13 @@ const TestimonialsSection = () => {
         )}
 
         {!loading && (
-          <div className="mt-[22px] flex gap-5 overflow-x-auto px-5 pb-2 scroll-smooth">
+          <div className="testimonial-track hide-scrollbar mt-[22px] flex gap-5 overflow-x-auto px-5 pb-2 scroll-smooth">
             {testimonials.map((testimonial, index) => (
               <article
                 key={testimonial.id || index}
+                style={{ "--delay": index }}
                 className="
+                  testimonial-card
                   flex
                   h-auto
                   min-h-[237px]
@@ -101,6 +103,13 @@ const TestimonialsSection = () => {
                   bg-white
                   px-[19px]
                   py-[28px]
+                  shadow-[0_8px_20px_rgba(15,23,42,0.04)]
+                  transition-all
+                  duration-300
+                  ease-out
+                  hover:-translate-y-1
+                  hover:border-[#F7D102]
+                  hover:shadow-[0_18px_35px_rgba(247,209,2,0.15)]
                 "
               >
                 <div className="flex w-full items-start gap-[12px]">
