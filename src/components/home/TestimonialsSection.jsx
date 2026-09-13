@@ -83,13 +83,14 @@ const TestimonialsSection = () => {
         )}
 
         {!loading && (
-          <div className="mt-[22px] flex gap-5 overflow-x-auto px-5 pb-2">
-            {testimonials.slice(0, 6).map((testimonial, index) => (
+          <div className="mt-[22px] flex gap-5 overflow-x-auto px-5 pb-2 scroll-smooth">
+            {testimonials.map((testimonial, index) => (
               <article
                 key={testimonial.id || index}
                 className="
                   flex
-                  h-[237px]
+                  h-auto
+                  min-h-[237px]
                   w-[380px]
                   min-w-[280px]
                   shrink-0
@@ -195,7 +196,7 @@ const TestimonialsSection = () => {
                     mt-[16px]
                     m-0
                     flex-1
-                    overflow-hidden
+                    break-words
                     text-[13px]
                     font-normal
                     leading-[20px]
