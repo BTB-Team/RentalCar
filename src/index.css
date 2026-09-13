@@ -71,3 +71,86 @@
 body {
   font-family: 'Yekan', sans-serif;
 }
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-track {
+  perspective: 1200px;
+  scroll-snap-type: x proximity;
+}
+
+@keyframes testimonialReveal {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 32px, -12px) rotateX(16deg) scale(0.96);
+  }
+
+  58% {
+    opacity: 1;
+    transform: translate3d(0, -8px, 0) rotateX(-2deg) scale(1.02);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotateX(0deg) scale(1);
+  }
+}
+
+.testimonial-card {
+  position: relative;
+  opacity: 0;
+  transform-origin: center;
+  animation:
+    testimonialReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+    testimonialFloat 5s ease-in-out infinite;
+  animation-delay: calc(var(--delay, 0) * 100ms), calc(var(--delay, 0) * 100ms + 0.9s);
+  will-change: transform, opacity;
+  scroll-snap-align: start;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg,
+      rgba(247, 209, 2, 0.12),
+      rgba(255, 255, 255, 0) 35%,
+      rgba(255, 255, 255, 0.28) 100%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 22px 44px rgba(15, 23, 42, 0.12);
+}
+
+.testimonial-card:hover::before {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    animation-delay: 0s;
+  }
+
+  .testimonial-card:hover {
+    transform: none;
+  }
+}
