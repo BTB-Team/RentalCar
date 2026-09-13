@@ -83,23 +83,17 @@ const TestimonialsSection = () => {
         )}
 
         {!loading && (
-          <div
-            className="
-              mt-[22px]
-              grid
-              grid-cols-1
-              gap-5
-              px-5
-              md:grid-cols-3
-            "
-          >
-            {testimonials.slice(0, 6).map((testimonial, index) => (
+          <div className="mt-[22px] flex gap-5 overflow-x-auto px-5 pb-2 scroll-smooth">
+            {testimonials.map((testimonial, index) => (
               <article
                 key={testimonial.id || index}
                 className="
                   flex
-                  h-[237px]
-                  w-full
+                  h-auto
+                  min-h-[237px]
+                  w-[380px]
+                  min-w-[280px]
+                  shrink-0
                   flex-col
                   rounded-[20px]
                   border
@@ -202,7 +196,7 @@ const TestimonialsSection = () => {
                     mt-[16px]
                     m-0
                     flex-1
-                    overflow-hidden
+                    break-words
                     text-[13px]
                     font-normal
                     leading-[20px]
@@ -231,9 +225,8 @@ const TestimonialsSection = () => {
               </article>
             ))}
 
-            {/* No testimonials */}
             {testimonials.length === 0 && (
-              <div className="col-span-full py-8 text-center text-sm text-gray-500">
+              <div className="w-full py-8 text-center text-sm text-gray-500">
                 {t.home.no_testimonials}
               </div>
             )}
