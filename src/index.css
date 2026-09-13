@@ -106,40 +106,81 @@ body {
   }
 }
 
+@keyframes testimonialFloat {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(0.4deg);
+  }
+}
+
+@keyframes testimonialShimmer {
+  0% {
+    transform: translateX(-130%) skewX(-18deg);
+    opacity: 0;
+  }
+
+  18%,
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(130%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
 .testimonial-card {
   position: relative;
+  overflow: hidden;
   opacity: 0;
   transform-origin: center;
   animation:
     testimonialReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards,
-    testimonialFloat 5s ease-in-out infinite;
+    testimonialFloat 6s ease-in-out infinite;
   animation-delay: calc(var(--delay, 0) * 100ms), calc(var(--delay, 0) * 100ms + 0.9s);
   will-change: transform, opacity;
   scroll-snap-align: start;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
 }
 
 .testimonial-card::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: -20% -10%;
   border-radius: inherit;
-  background: linear-gradient(135deg,
-      rgba(247, 209, 2, 0.12),
-      rgba(255, 255, 255, 0) 35%,
-      rgba(255, 255, 255, 0.28) 100%);
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0.7) 45%,
+      rgba(255, 255, 255, 0) 70%);
+  transform: translateX(-130%) skewX(-18deg);
   opacity: 0;
-  transition: opacity 0.35s ease;
+  animation: testimonialShimmer 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 0 18px;
+  height: 1px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg,
+      rgba(247, 209, 2, 0),
+      rgba(247, 209, 2, 0.7),
+      rgba(247, 209, 2, 0));
+  opacity: 0.7;
   pointer-events: none;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-8px) scale(1.01);
   box-shadow: 0 22px 44px rgba(15, 23, 42, 0.12);
-}
-
-.testimonial-card:hover::before {
-  opacity: 1;
+  border-color: rgba(247, 209, 2, 0.7);
 }
 
 @media (prefers-reduced-motion: reduce) {
