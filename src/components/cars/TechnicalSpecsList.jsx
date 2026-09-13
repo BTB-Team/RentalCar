@@ -43,13 +43,13 @@ const TechnicalSpecsList = ({ specs, lang }) => {
   ];
 
   return (
-    <section className="mx-auto mt-[58px] w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24">
-      <div className="rounded-[15px] border border-[#E5E5E5] px-6 py-5">
-        <h2 className="mb-5 text-start text-[20px] font-bold text-black">
+    <section className="mx-auto mt-20 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24">
+      <div className="rounded-[20px] border border-[#D9D9D9] p-8">
+        <h2 className="mb-5 text-start text-[28px] font-bold text-black">
           {lang === "dr" ? "مشخصات تخنیکی" : "Technical Specifications"}
         </h2>
 
-        <div className="grid grid-cols-1 gap-[7px] md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-[11px] md:grid-cols-2">
           {specItems.map((spec) => (
             <TechnicalSpecsItem key={spec.label} spec={spec} />
           ))}
