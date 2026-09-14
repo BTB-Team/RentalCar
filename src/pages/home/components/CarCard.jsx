@@ -65,7 +65,7 @@ export const CarCard = ({ car }) => {
           className="
           h-full
           w-full
-          object-cover
+           object-cover
           transition-transform
           duration-500 ease-out 
           group-hover:scale-[1.05]
@@ -79,8 +79,8 @@ export const CarCard = ({ car }) => {
       <div className="relative ms-[13px] me-[13px] h-[222px] rounded-[20px] ps-[13px] pe-[13px] pt-[16px]">
   {/* نام موتر */}
   <h2
-    dir="ltr"
-    className="w-full truncate overflow-hidden whitespace-nowrap font-extrabold text-[24px] leading-[100%] text-brand-black"
+      dir="ltr"
+    className="w-full truncate overflow-hidden whitespace-nowrap text-right font-extrabold text-[24px] leading-[100%] text-brand-black"
   >
     {carName}
   </h2>

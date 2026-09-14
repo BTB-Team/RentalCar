@@ -75,7 +75,7 @@ const ProcessSection = () => {
               >
                 <div className="mb-2 flex items-center gap-2">
                   <div className="flex h-[27px] w-[27px] shrink-0 items-center justify-center rounded-full bg-[#F7D102] text-center font-yekan text-[20px] font-bold leading-none tracking-[0%] text-black">
-                    <span className="relative top-[1px]">
+                    <span className="relative top-[2px]">
                       {processSteps[index].number}
                     </span>
                   </div>
