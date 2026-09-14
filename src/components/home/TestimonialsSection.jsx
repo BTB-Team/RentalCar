@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
     let position = 0;
     let animationFrame;
     const move = () => {
-      position += 0.5;
+      position += 2;
       const firstCard = track.children[0];
       if (firstCard) {
         const cardWidth = firstCard.offsetWidth;

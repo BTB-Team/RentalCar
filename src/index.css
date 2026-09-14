@@ -68,6 +68,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Yekan Bakh VF";
+  src: url("/fonts/YekanBakh-VF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: 'Yekan', sans-serif;
 }
