@@ -10,7 +10,7 @@ const ServicesSection = () => {
         mx-auto
         w-full
         max-w-[1200px]
-        pt-[80px]
+        pt-0 sm:pt-[80px]
         pb-[64px]
       "
     >
@@ -26,19 +26,20 @@ const ServicesSection = () => {
       >
         <h2
           className="
-            w-full
-    max-w-[610px]
-    px-[20px]
-    text-[28px]
-    sm:text-[32px]
-    lg:text-[40px]
-    font-[900]
-    leading-[130%]
-    text-center
-    text-brand-black
-    whitespace-normal
-    lg:whitespace-nowrap
-  "
+          w-80
+          sm:w-full
+          max-w-[610px]
+          px-[20px]
+          text-[28px]
+          sm:text-[32px]
+          lg:text-[40px]
+          font-[900]
+          leading-[130%]
+          text-center
+          text-brand-black
+          whitespace-normal
+          lg:whitespace-nowrap
+        "
         >
           {t.services?.title}
         </h2>
@@ -48,7 +49,8 @@ const ServicesSection = () => {
           className="
             mt-[13px]
             h-[4px]
-            w-[514px]
+            w-80
+            sm:w-[514px]
             max-w-full
             bg-brand-yellow
           "
