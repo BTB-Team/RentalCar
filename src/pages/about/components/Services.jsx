@@ -72,7 +72,7 @@ export const Services = () => {
     ];
 
     return (
-        <section id="services" dir="rtl" className="w-full max-w-[1109px] mx-auto px-4 py-10 font-yekan select-none">
+        <section id="services" className="w-full max-w-[1149px] mx-auto px-4 py-10 font-yekan select-none">
             <div className="flex items-center justify-center gap-4 mb-4">
                 <span className="w-[83px] h-[4px] bg-[#F7D102]" />
                 <h2 className="font-extrabold text-black text-[20px] md:text-[36px]">
@@ -89,14 +89,14 @@ export const Services = () => {
                 {services.map((service) => (
                     <div
                         key={service.key}
-                        className="bg-white border border-gray-300 rounded-[20px] p-5 flex items-center gap-4 transition-all duration-200 hover:shadow-md"
+                        className="bg-white lg:w-[361px] lg:h-[106px] border border-gray-300 rounded-[20px] p-5 flex items-center gap-2 transition-all duration-200 hover:shadow-md"
                     >
                         <div
                             className="w-[50px] h-[50px] shrink-0 text-[#F7D102]"
                             dangerouslySetInnerHTML={{ __html: service.icon }}
                         />
                         <div className="text-start">
-                            <h3 className="font-semibold text-black text-[16px] mb-1">
+                            <h3 className="font-semibold text-black text-[16px]">
                                 {service.title}
                             </h3>
                             <p className="font-normal text-black text-[12px] leading-[21px]">

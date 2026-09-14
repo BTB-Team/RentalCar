@@ -25,7 +25,7 @@ export const FooterLinks = ({ content }) => {
     };
 
     return (
-        <ul className="space-y-3 text-[15px] font-[600]">
+        <ul className="space-y-3 md:text-[15px] text-[13px] font-[600]">
             {content.links.map((link) => (
                 <li key={link.label}>
                     <NavLink
