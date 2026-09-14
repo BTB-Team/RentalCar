@@ -1,0 +1,8 @@
+{
+  "tailwindCSS.experimental.classRegex": [],
+  "tailwindCSS.classAttributes": ["class", "className"],
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.lint.suggestCanonicalClasses": "warning"
+}

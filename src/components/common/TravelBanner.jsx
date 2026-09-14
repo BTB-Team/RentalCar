@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useLangStore } from "../../store/useLangStore";
 
 export const TravelBanner = ({ cta }) => {
