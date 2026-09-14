@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLangStore } from "../../store/useLangStore";
 
 const TestimonialsSection = () => {
   const { t, lang } = useLangStore();
   const isDari = lang === "dr";
+  const trackRef = useRef(null);
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
+
   const avatarFallback = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
       <rect width="45" height="45" rx="22.5" fill="#E5E7EB"/>
@@ -41,31 +43,48 @@ const TestimonialsSection = () => {
     getTestimonials();
   }, []);
 
+  useEffect(() => {
+    if (!trackRef.current || testimonials.length < 2) return;
+
+    const slider = trackRef.current;
+    const card = slider.querySelector("article");
+    if (!card) return;
+
+    const gap = 20;
+    const cardWidth = card.getBoundingClientRect().width + gap;
+
+    const scrollTestimonials = () => {
+      const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+      if (slider.matches(":hover")) return;
+
+      if (slider.scrollLeft >= maxScroll - 1) {
+        slider.scrollTo({ left: 0, behavior: "smooth" });
+        return;
+      }
+
+      slider.scrollBy({
+        left: cardWidth,
+        behavior: "smooth",
+      });
+    };
+
+    const intervalId = setInterval(scrollTestimonials, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [testimonials]);
+
   return (
     <section
       dir={isDari ? "rtl" : "ltr"}
       className="w-full bg-white px-4 py-10"
     >
-      <div
-        className="
-          mx-auto
-          w-full
-          max-w-[1200px]
-        "
-      >
+      <div className="mx-auto w-full max-w-[1200px]">
         <div className="flex flex-col items-center">
           <h2 className="m-0 text-center text-[40px] font-black leading-[62px] text-black">
             {t.home.testimonials_title}
           </h2>
-          <div
-            className="
-              mt-[14px]
-              h-[4px]
-              w-full
-              max-w-[514px]
-              bg-[#F7D102]
-            "
-          />
+          <div className="mt-[14px] h-[4px] w-full max-w-[514px] bg-[#F7D102]" />
           <p className="m-0 mt-[25px] w-full max-w-[777px] text-center text-[32px] font-semibold leading-[50px] text-black">
             {t.home.testimonials_description}
           </p>
@@ -83,7 +102,10 @@ const TestimonialsSection = () => {
         )}
 
         {!loading && (
-          <div className="testimonial-track hide-scrollbar mt-[22px] flex gap-5 overflow-x-auto px-5 pb-2 scroll-smooth">
+          <div
+            ref={trackRef}
+            className="testimonial-track hide-scrollbar mt-[22px] flex gap-5 overflow-x-auto px-5 pb-2 scroll-smooth"
+          >
             {testimonials.map((testimonial, index) => (
               <article
                 key={testimonial.id || index}
@@ -114,31 +136,17 @@ const TestimonialsSection = () => {
               >
                 <div className="flex w-full items-start gap-[12px]">
                   <span
-                    className={`
-                      flex
-                      h-[29px]
-                      w-[35px]
-                      items-center
-                      justify-center
-                      text-[34px]
-                      font-bold
-                      leading-none
-                      text-[#F7D102]
-                      ${isDari ? "order-1" : "order-2"}
-                    `}
+                    className={`flex h-[29px] w-[35px] items-center justify-center text-[34px] font-bold leading-none text-[#F7D102] ${
+                      isDari ? "order-1" : "order-2"
+                    }`}
                   >
                     “
                   </span>
 
                   <div
-                    className={`
-                      flex
-                      min-w-0
-                      flex-1
-                      items-center
-                      gap-[12px]
-                      ${isDari ? "text-right" : "text-left"}
-                    `}
+                    className={`flex min-w-0 flex-1 items-center gap-[12px] ${
+                      isDari ? "text-right" : "text-left"
+                    }`}
                   >
                     {testimonial.avatar ? (
                       <img
@@ -170,28 +178,18 @@ const TestimonialsSection = () => {
 
                     <div className="min-w-0 flex-1">
                       <h3
-                        className={`
-                          m-0
-                          text-[16px]
-                          font-semibold
-                          leading-[25px]
-                          text-black
-                          ${isDari ? "text-right" : "text-left"}
-                        `}
+                        className={`m-0 text-[16px] font-semibold leading-[25px] text-black ${
+                          isDari ? "text-right" : "text-left"
+                        }`}
                       >
                         {(isDari ? testimonial.name_dr : testimonial.name_en) ||
                           testimonial.name}
                       </h3>
 
                       <p
-                        className={`
-                          m-0
-                          text-[13px]
-                          font-light
-                          leading-[20px]
-                          text-black
-                          ${isDari ? "text-right" : "text-left"}
-                        `}
+                        className={`m-0 text-[13px] font-light leading-[20px] text-black ${
+                          isDari ? "text-right" : "text-left"
+                        }`}
                       >
                         {(isDari ? testimonial.role_dr : testimonial.role_en) ||
                           testimonial.role}
@@ -201,17 +199,9 @@ const TestimonialsSection = () => {
                 </div>
 
                 <p
-                  className={`
-                    mt-[16px]
-                    m-0
-                    flex-1
-                    break-words
-                    text-[13px]
-                    font-normal
-                    leading-[20px]
-                    text-black
-                    ${isDari ? "text-right" : "text-left"}
-                  `}
+                  className={`mt-[16px] m-0 flex-1 break-words text-[13px] font-normal leading-[20px] text-black ${
+                    isDari ? "text-right" : "text-left"
+                  }`}
                 >
                   {(isDari ? testimonial.comment_dr : testimonial.comment_en) ||
                     testimonial.review ||

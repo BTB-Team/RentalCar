@@ -32,118 +32,110 @@ const FaqSection = () => {
             {t.home.faq_title}
           </h2>
         </div>
+        <div className="mx-auto h-[810px] w-[857px] max-w-full rounded-[20px] border border-[#E7E7E7] bg-[#F8F8F8] p-[36px]">
+          <div className="mx-auto h-[637px] w-[745px] max-w-full">
+            <div className="mx-auto h-full w-full px-[16px] py-[16px] sm:px-[56px]">
+              <div className="mx-auto h-full max-w-[745px]">
+                {t.home.faqs.map((faq, index) => {
+                  const isOpen = openIndex === index;
 
-        <div
-          className="
-            mt-[32px]
-            min-h-[710px]
-            w-full
-            rounded-[20px]
-            bg-[#F8F8F8]
-            px-[28px]
-            py-[37px]
-            sm:px-[56px]
-          "
-        >
-          <div className="mx-auto w-full max-w-[745px]">
-            {t.home.faqs.map((faq, index) => {
-              const isOpen = openIndex === index;
-
-              return (
-                <div key={faq.question}>
-                  <button
-                    type="button"
-                    onClick={() => toggleFaq(index)}
-                    aria-expanded={isOpen}
-                    className={`
-                      flex
-                      h-[66px]
-                      w-full
-                      flex-row
-                      items-center
-                      justify-between
-                      border-0
-                      border-b-2
-                      border-solid
-                      border-[#F7D102]
-                      bg-transparent
-                      p-0
-                      ${lang === "dr" ? "text-right" : "text-left"}
-                      outline-none
-                    `}
-                  >
-                    {/* Question text */}
-                    <span
-                      className={`
-                        flex-1
-                        ${lang === "dr" ? "text-right" : "text-left"}
-                        text-black
-                      `}
-                      style={{
-                        fontFamily: "'Yekan', sans-serif",
-                        fontSize: "22px",
-                        fontWeight: 600,
-                        fontStyle: "normal",
-                        lineHeight: "100%",
-                        letterSpacing: "0",
-                        textAlign: lang === "dr" ? "right" : "left",
-                      }}
-                    >
-                      {faq.question}
-                    </span>
-
-                    {/* Plus / Minus icon */}
-                    <img
-                      src={
-                        isOpen
-                          ? `${import.meta.env.BASE_URL}images/minus-icon.png`
-                          : `${import.meta.env.BASE_URL}images/plus-icon.png`
-                      }
-                      alt={isOpen ? "Minus" : "Plus"}
-                      className="h-[30px] w-[30px] object-contain"
-                    />
-                  </button>
-
-                  <div
-                    className={`
-                      grid
-                      transition-all
-                      duration-300
-                      ease-in-out
-                      ${
-                        isOpen
-                          ? "grid-rows-[1fr] opacity-100"
-                          : "grid-rows-[0fr] opacity-0"
-                      }
-                    `}
-                  >
-                    <div className="overflow-hidden">
-                      <div className="flex min-h-[70px] items-center">
-                        <p
+                  return (
+                    <div key={faq.question}>
+                      <button
+                        type="button"
+                        onClick={() => toggleFaq(index)}
+                        aria-expanded={isOpen}
+                        className={`
+                          flex
+                          h-[66px]
+                          w-full
+                          flex-row
+                          items-center
+                          justify-between
+                          border-0
+                          border-b-2
+                          border-solid
+                          border-[#F7D102]
+                          bg-transparent
+                          p-0
+                          ${lang === "dr" ? "text-right" : "text-left"}
+                          outline-none
+                        `}
+                      >
+                        <span
                           className={`
-                          w-[653px]
-                            pb-4
-                            pt-3
+                            flex-1
                             ${lang === "dr" ? "text-right" : "text-left"}
                             text-black
                           `}
                           style={{
-                            fontFamily: "'Yekan Bakh VF', sans-serif",
-                            fontSize: "20px",
-                            fontWeight: 400,
-                            lineHeight: "32px",
+                            fontFamily: "'Yekan', sans-serif",
+                            fontSize: "22px",
+                            fontWeight: 600,
+                            fontStyle: "normal",
+                            lineHeight: "100%",
+                            letterSpacing: "0",
                             textAlign: lang === "dr" ? "right" : "left",
-                            opacity: 0.64,
                           }}
                         >
-                          {faq.answer}
-                        </p>
+                          {faq.question}
+                        </span>
+
+                        <img
+                          src={
+                            isOpen
+                              ? `${import.meta.env.BASE_URL}images/minus-icon.png`
+                              : `${import.meta.env.BASE_URL}images/plus-icon.png`
+                          }
+                          alt={isOpen ? "Minus" : "Plus"}
+                          className="h-[30px] w-[30px] object-contain"
+                        />
+                      </button>
+
+                      <div
+                        className={`
+                          grid
+                          transition-all
+                          duration-300
+                          ease-in-out
+                          ${
+                            isOpen
+                              ? "grid-rows-[1fr] opacity-100"
+                              : "grid-rows-[0fr] opacity-0"
+                          }
+                        `}
+                      >
+                        <div className="overflow-hidden">
+                          <div className="flex min-h-[70px] items-center">
+                            <p
+                              className={`
+                                max-w-[653px]
+                                pb-4
+                                pt-3
+                                ${lang === "dr" ? "text-right" : "text-left"}
+                                text-black
+                              `}
+                              style={{
+                                fontFamily: "'Yekan Bakh VF', sans-serif",
+                                fontSize: "20px",
+                                fontStyle: "normal",
+                                letterSpacing: "0%",
+                                fontWeight: 400,
+                                lineHeight: "32px",
+                                textAlign: lang === "dr" ? "right" : "left",
+                                color: "rgba(0,0,0,0.64)",
+                              }}
+                            >
+                              {faq.answer}
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              );
-            })}
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
