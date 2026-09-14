@@ -8,16 +8,17 @@ import { CarSkeleton } from "../../components/cars/CarSkeleton";
 import { TravelBanner } from "../../components/common/TravelBanner";
 import { ServiceCtaSkeleton } from "../../components/cars/ServiceCtaSkeleton";
 import { CarHeroSkeleton } from "../../components/cars/CarHeroSkeleton";
+import { useCarFilterStore } from "../../store/useCarFilterStore";
 
 export const Cars = () => {
-  const { t, lang, activeFilter } = useLangStore();
+  const { t, lang } = useLangStore();
+  const { activeFilter } = useCarFilterStore();
 
   const cars = db.cars;
   const loading = false;
 
   // number of visible cars
   const [visibleCount, setVisibleCount] = useState(9);
-
 
   // filter cars based on global Zustand filter
   const filteredCars = useMemo(() => {

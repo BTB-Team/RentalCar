@@ -1,9 +1,9 @@
+import { useCarFilterStore } from "../../store/useCarFilterStore";
 import { useLangStore } from "../../store/useLangStore";
 
-
 export const CarFilter = () => {
-
-  const { t, activeFilter, setActiveFilter } = useLangStore();
+  const { t } = useLangStore();
+  const { activeFilter, setActiveFilter } = useCarFilterStore();
 
   const filters = [
     {
