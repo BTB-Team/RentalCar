@@ -20,7 +20,7 @@ export const TravelBanner = ({ cta }) => {
           href="https://wa.me/93786377417"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex justify-center items-center px-8 py-3.5 bg-white text-brand-black font-semibold text-sm sm:text-2xl  rounded-2xl shadow-md transition-all duration-200 ease-in-out hover:bg-neutral-50 hover:shadow-lg active:scale-98"
+          className="flex justify-center items-center px-8 py-2 sm:py-3 bg-white text-brand-black font-semibold text-sm sm:text-2xl  rounded-2xl shadow-md transition-all duration-200 ease-in-out hover:bg-neutral-50 hover:shadow-lg active:scale-98"
         >
           {lang === "dr" ? t.cta.btn_request : t.cta.btn_request}
         </a>
