@@ -53,7 +53,7 @@ const CtaBanner = ({ onRequestService }) => {
               rel="noopener noreferrer"
               className="mt-5 flex h-[66px] w-[219px] shrink-0 items-center justify-center rounded-[20px] bg-white text-gray-900 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md"
             >
-              <span className="whitespace-nowrap text-[20px] font-semibold leading-[37px] tracking-[0] text-black sm:text-[22px] md:h-[37px] md:w-[171px] md:text-[24px] md:leading-none">
+              <span className="whitespace-nowrap text-[20px] font-semibold tracking-[0] text-black sm:text-[22px] md:h-[30px] md:w-[171px] md:text-[24px] md:leading-none">
                 {t.cta.btn_request}
               </span>
             </a>

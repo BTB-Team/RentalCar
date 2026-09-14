@@ -58,7 +58,7 @@ const ProcessSection = () => {
           {t.home.process_steps.map((step, index) => (
             <div
               key={processSteps[index].number}
-              className="group relative h-[285px] w-full overflow-hidden rounded-[20px] xl:w-[285px]"
+              className="group relative h-[285px] w-full justify-center overflow-hidden rounded-[20px] xl:w-[285px]"
             >
               <img
                 src={processSteps[index].image}
