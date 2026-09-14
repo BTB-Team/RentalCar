@@ -115,7 +115,7 @@ Please change the parent <Route path="${d}"> to <Route path="${d==="/"?"*":`${d}
   `,children:i.jsx("img",{src:o,alt:l,loading:"lazy",className:`
           h-full
           w-full
-           object-cover
+          object-cover
           transition-transform
           duration-500 ease-out 
           group-hover:scale-[1.05]
