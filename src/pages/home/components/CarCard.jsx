@@ -80,7 +80,7 @@ export const CarCard = ({ car }) => {
   {/* نام موتر */}
   <h2
     dir="ltr"
-    className="w-full truncate overflow-hidden whitespace-nowrap font-extrabold text-[24px] leading-[100%] text-brand-black"
+    className="w-full truncate overflow-hidden whitespace-nowrap text-right font-extrabold text-[24px] leading-[100%] text-brand-black"
   >
     {carName}
   </h2>
