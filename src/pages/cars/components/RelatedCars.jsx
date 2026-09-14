@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+
 import { Link } from "react-router-dom";
 
 const GAP = 20;
@@ -20,18 +21,43 @@ const getVisibleCards = () => {
 };
 
 export const RelatedCars = ({ cars = [], lang }) => {
+  const isPersian = lang === "dr";
+
   const [visibleCards, setVisibleCards] = useState(getVisibleCards);
-  const [currentIndex, setCurrentIndex] = useState(getVisibleCards());
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [cardStep, setCardStep] = useState(0);
 
   const containerRef = useRef(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const totalCars = cars.length;
   const shouldCarousel = totalCars > visibleCards;
 
   /*
-   * Calculate the exact width of one card + gap.
+   * --------------------------------------------------
+   * Responsive visible cards
+   * --------------------------------------------------
    */
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleCards(getVisibleCards());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  /*
+   * --------------------------------------------------
+   * Calculate card width
+   * --------------------------------------------------
+   */
+
   useEffect(() => {
     const updateCardSize = () => {
       if (!containerRef.current) {
@@ -40,18 +66,19 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
       const containerWidth = containerRef.current.offsetWidth;
 
+      if (!containerWidth) {
+        return;
+      }
+
       const cardWidth =
-        (containerWidth - GAP * (visibleCards - 1)) /
-        visibleCards;
+        (containerWidth - GAP * (visibleCards - 1)) / visibleCards;
 
       setCardStep(cardWidth + GAP);
     };
 
     updateCardSize();
 
-    const resizeObserver = new ResizeObserver(() => {
-      updateCardSize();
-    });
+    const resizeObserver = new ResizeObserver(updateCardSize);
 
     if (containerRef.current) {
       resizeObserver.observe(containerRef.current);
@@ -66,31 +93,13 @@ export const RelatedCars = ({ cars = [], lang }) => {
   }, [visibleCards]);
 
   /*
-   * Responsive breakpoint.
+   * --------------------------------------------------
+   * Infinite carousel clones
+   *
+   * [last cards] [real cards] [first cards]
+   * --------------------------------------------------
    */
-  useEffect(() => {
-    const handleResize = () => {
-      const newVisibleCards = getVisibleCards();
 
-      setVisibleCards((prev) => {
-        if (prev !== newVisibleCards) {
-          return newVisibleCards;
-        }
-
-        return prev;
-      });
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  /*
-   * Clone cards for infinite carousel.
-   */
   const carouselCars = useMemo(() => {
     if (!shouldCarousel) {
       return cars;
@@ -103,63 +112,88 @@ export const RelatedCars = ({ cars = [], lang }) => {
   }, [cars, visibleCards, shouldCarousel]);
 
   /*
-   * Reset position when responsive breakpoint changes.
+   * --------------------------------------------------
+   * Start from first real card
+   * --------------------------------------------------
    */
+
   useEffect(() => {
-    setCurrentIndex(shouldCarousel ? visibleCards : 0);
+    if (shouldCarousel) {
+      setCurrentIndex(visibleCards);
+    } else {
+      setCurrentIndex(0);
+    }
   }, [visibleCards, totalCars, shouldCarousel]);
 
   /*
-   * Next.
-   */
-  const handleNext = () => {
-    if (!shouldCarousel) {
-      return;
-    }
-
-    setCurrentIndex((prev) => prev + 1);
-  };
-
-  /*
-   * Previous.
-   */
-  const handlePrevious = () => {
-    if (!shouldCarousel) {
-      return;
-    }
-
-    setCurrentIndex((prev) => prev - 1);
-  };
-
-  /*
-   * Infinite carousel reset.
+   * --------------------------------------------------
+   * MOVE LEFT
    *
-   * No animation is used here.
+   * ← button
+   *
+   * Cards physically move LEFT.
+   * --------------------------------------------------
    */
+
+  const moveLeft = () => {
+    if (!shouldCarousel) {
+      return;
+    }
+
+    setCurrentIndex((previous) => previous + 1);
+  };
+
+  /*
+   * --------------------------------------------------
+   * MOVE RIGHT
+   *
+   * → button
+   *
+   * Cards physically move RIGHT.
+   * --------------------------------------------------
+   */
+
+  const moveRight = () => {
+    if (!shouldCarousel) {
+      return;
+    }
+
+    setCurrentIndex((previous) => previous - 1);
+  };
+
+  /*
+   * --------------------------------------------------
+   * Infinite loop
+   * --------------------------------------------------
+   */
+
   useEffect(() => {
     if (!shouldCarousel) {
       return;
     }
 
-    if (currentIndex >= totalCars + visibleCards) {
-      setCurrentIndex(visibleCards);
+    const firstRealIndex = visibleCards;
+    const lastRealIndex = visibleCards + totalCars - 1;
+
+    if (currentIndex > lastRealIndex) {
+      setCurrentIndex(firstRealIndex);
     }
 
-    if (currentIndex <= 0) {
-      setCurrentIndex(totalCars);
+    if (currentIndex < firstRealIndex) {
+      setCurrentIndex(lastRealIndex);
     }
-  }, [
-    currentIndex,
-    shouldCarousel,
-    totalCars,
-    visibleCards,
-  ]);
+  }, [currentIndex, shouldCarousel, totalCars, visibleCards]);
 
   /*
-   * Swipe support.
+   * --------------------------------------------------
+   * Swipe
+   *
+   * Swipe LEFT  -> cards move LEFT
+   * Swipe RIGHT -> cards move RIGHT
+   *
+   * Same physical behavior in both languages.
+   * --------------------------------------------------
    */
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
 
   const handleTouchStart = (event) => {
     touchStartX.current = event.touches[0].clientX;
@@ -171,82 +205,144 @@ export const RelatedCars = ({ cars = [], lang }) => {
   };
 
   const handleTouchEnd = () => {
-    const distance =
-      touchStartX.current - touchEndX.current;
+    const distance = touchStartX.current - touchEndX.current;
 
     if (Math.abs(distance) < 50) {
       return;
     }
 
+    /*
+     * Finger moved LEFT
+     * Cards move LEFT
+     */
+
     if (distance > 0) {
-      handleNext();
-    } else {
-      handlePrevious();
+      moveLeft();
+      return;
     }
+
+    /*
+     * Finger moved RIGHT
+     * Cards move RIGHT
+     */
+
+    moveRight();
   };
+
+  /*
+   * --------------------------------------------------
+   * No cars
+   * --------------------------------------------------
+   */
 
   if (totalCars === 0) {
     return null;
   }
 
-  const isPersian = lang === "dr";
+  /*
+   * --------------------------------------------------
+   * Track position
+   *
+   * currentIndex increases -> translate becomes
+   * more negative -> cards move LEFT.
+   *
+   * currentIndex decreases -> translate becomes
+   * less negative -> cards move RIGHT.
+   * --------------------------------------------------
+   */
+
+  const translateX = currentIndex * cardStep;
 
   return (
     <section
       dir={isPersian ? "rtl" : "ltr"}
-      className="mx-auto mb-18  mt-16 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24"
+      className="mx-auto mb-18 mt-16 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24"
     >
       {/* ================= HEADER ================= */}
 
       <div className="mb-4 flex w-full items-center justify-between">
-        {/* Title */}
+        {/* ================= TITLE ================= */}
 
-        <h2 className="text-lg md:text-[28px] font-bold text-black">
+        <h2 className="text-lg font-bold text-black md:text-[28px]">
           {isPersian ? "موتر های مرتبط" : "Related Cars"}
         </h2>
 
-        {/* Buttons */}
+        {/* ================= BUTTONS ================= */}
 
         <div className="flex items-center gap-2">
-          {/* Previous */}
+          {isPersian ? (
+            <>
+              {/* RIGHT ARROW
+                  Cards move RIGHT */}
 
-          <button
-            type="button"
-            onClick={handlePrevious}
-            disabled={!shouldCarousel}
-            aria-label={
-              isPersian
-                ? "موترهای قبلی"
-                : "Previous cars"
-            }
-            className="flex transition-opacity disabled:cursor-not-allowed disabled:opacity-50 lex h-8 md:h-10 w-8 md:w-10 shrink-0 items-center justify-center rounded-full bg-brand-yellow"
-          >
-            <img
-              src="/RentalCar/images/icons/left_arrow_icon.png"
-              alt=""
-              className="h-auto w-[15px]"
-            />
-          </button>
+              <button
+                type="button"
+                onClick={moveRight}
+                disabled={!shouldCarousel}
+                aria-label="حرکت به راست"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow transition-opacity disabled:cursor-not-allowed disabled:opacity-50 md:h-10 md:w-10"
+              >
+                <img
+                  src="/RentalCar/images/icons/right_arrow_icon.png"
+                  alt="حرکت به راست"
+                  className="h-auto w-[15px]"
+                />
+              </button>
 
-          {/* Next */}
+              {/* LEFT ARROW
+                  Cards move LEFT */}
 
-          <button
-            type="button"
-            onClick={handleNext}
-            disabled={!shouldCarousel}
-            aria-label={
-              isPersian
-                ? "موترهای بعدی"
-                : "Next cars"
-            }
-            className="flex transition-opacity disabled:cursor-not-allowed disabled:opacity-50 lex h-8 md:h-10 w-8 md:w-10 shrink-0 items-center justify-center rounded-full bg-brand-yellow"
-          >
-            <img
-              src="/RentalCar/images/icons/right_arrow_icon.png"
-              alt=""
-              className="h-auto w-[15px]"
-            />
-          </button>
+              <button
+                type="button"
+                onClick={moveLeft}
+                disabled={!shouldCarousel}
+                aria-label="حرکت به چپ"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow transition-opacity disabled:cursor-not-allowed disabled:opacity-50 md:h-10 md:w-10"
+              >
+                <img
+                  src="/RentalCar/images/icons/left_arrow_icon.png"
+                  alt="حرکت به چپ"
+                  className="h-auto w-[15px]"
+                />
+              </button>
+            </>
+          ) : (
+            <>
+              {/* LEFT ARROW
+                  Cards move LEFT */}
+
+              <button
+                type="button"
+                onClick={moveLeft}
+                disabled={!shouldCarousel}
+                aria-label="Move left"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow transition-opacity disabled:cursor-not-allowed disabled:opacity-50 md:h-10 md:w-10"
+              >
+                <img
+                  src="/RentalCar/images/icons/left_arrow_icon.png"
+                  alt="Move left"
+                  className="h-auto w-[15px]"
+                />
+              </button>
+
+              {/* RIGHT ARROW
+                  Cards move RIGHT */}
+
+              <button
+                type="button"
+                onClick={moveRight}
+                disabled={!shouldCarousel}
+                aria-label="Move right"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow transition-opacity disabled:cursor-not-allowed disabled:opacity-50 md:h-10 md:w-10"
+              >
+                <img
+                  src="/RentalCar/images/icons/right_arrow_icon.png"
+                  alt="Move right"
+                  className="h-auto w-[15px]"
+                />
+              </button>
+            </>
+          )}
         </div>
       </div>
 
@@ -254,28 +350,22 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
       <div
         ref={containerRef}
-        className="w-full overflow-hidden "
+        className="w-full overflow-hidden"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
         <div
           dir="ltr"
-          className="flex gap-5"
+          className="flex gap-5 transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translate3d(-${
-              currentIndex * cardStep
-            }px, 0, 0)`,
+            transform: `translate3d(-${translateX}px, 0, 0)`,
           }}
         >
           {carouselCars.map((car, index) => {
-            const carName = isPersian
-              ? car.name_dr
-              : car.name_en;
+            const carName = isPersian ? car.name_dr : car.name_en;
 
-            const tags = isPersian
-              ? car.tags_dr
-              : car.tags_en;
+            const tags = isPersian ? car.tags_dr : car.tags_en;
 
             const description = isPersian
               ? car.shortDesc_dr
@@ -289,14 +379,12 @@ export const RelatedCars = ({ cars = [], lang }) => {
               <article
                 key={`${car.id}-${index}`}
                 dir={isPersian ? "rtl" : "ltr"}
-                className=" shrink-0 overflow-hidden rounded-[14px] border border-[#D9D9D9] bg-white"
+                className="shrink-0 overflow-hidden rounded-[14px] border border-[#D9D9D9] bg-white"
                 style={{
                   width:
                     cardStep > 0
                       ? `${cardStep - GAP}px`
-                      : `calc((100% - ${
-                          GAP * (visibleCards - 1)
-                        }px) / ${visibleCards})`,
+                      : `calc((100% - ${GAP * (visibleCards - 1)}px) / ${visibleCards})`,
                 }}
               >
                 {/* ================= IMAGE ================= */}
@@ -312,54 +400,47 @@ export const RelatedCars = ({ cars = [], lang }) => {
                 {/* ================= CONTENT ================= */}
 
                 <div className="flex min-h-[178px] flex-col px-2 pb-3 pt-3">
-                  {/* Name */}
+                  {/* NAME */}
 
-                  <h3 className="mt-3 md:mt-5 text-start text-lg md:text-2xl font-semibold">
+                  <h3 className="mt-3 text-start text-lg font-semibold md:mt-5 md:text-2xl">
                     {carName}
                   </h3>
 
-                  {/* Tags */}
+                  {/* TAGS */}
 
-                  <div className="mt-3 md:mt-5 flex min-h-[22px] flex-wrap justify-start gap-1">
+                  <div className="mt-3 flex min-h-[22px] flex-wrap items-center justify-start gap-1 md:mt-5">
                     {tags?.map((tag) => (
                       <span
                         key={tag}
-                        className="whitespace-nowrap rounded-full bg-brand-yellow px-2 items-center text-sm md:text-base font-semibold leading-none text-black"
+                        className="whitespace-nowrap rounded-full bg-brand-yellow px-2 py-1 text-sm font-semibold leading-none text-black md:text-base"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  {/* Description */}
-                  <p
-                    className={`mt-3 md:mt-5 overflow-hidden font-semibold text-base leading-[1.9] ${
-                      isPersian
-                        ? "text-right"
-                        : "text-left"
-                    } text-[#333]`}
-                  >
+                  {/* DESCRIPTION */}
+
+                  <p className="mt-3 overflow-hidden text-base font-semibold leading-[1.9] text-[#333] md:mt-5">
                     {description}
                   </p>
 
-                  {/* Bottom */}
+                  {/* BOTTOM */}
 
-                  <div className="mt-6 md:mt-8 flex items-center justify-between gap-2 pt-3">
-                    {/* Details */}
+                  <div className="mt-6 flex items-center justify-between gap-2 pt-3 md:mt-8">
+                    {/* PASSENGER */}
 
-                    <span className="shrink-0 rounded-full border border-brand-yellow px-3 py-[5px] text-sm md:text-base font-semibold leading-none text-black">
-                      {car.passengerCapacity}{" "}
-                      {passengerLabel}
+                    <span className="shrink-0 rounded-full border border-brand-yellow px-3 py-[5px] text-sm font-semibold leading-none text-black md:text-base">
+                      {car.passengerCapacity} {passengerLabel}
                     </span>
 
-                    {/* Passengers */}
-                     <Link
+                    {/* VIEW DETAILS */}
+
+                    <Link
                       to={`/cars/${car.id}`}
-                      className="shrink-0 rounded-full bg-brand-yellow px-3 py-[6px] text-sm md:text-base font-semibold leading-none text-black"
+                      className="shrink-0 rounded-full bg-brand-yellow px-3 py-[6px] text-sm font-semibold leading-none text-black md:text-base"
                     >
-                      {isPersian
-                        ? "مشاهده جزئیات"
-                        : "View Details"}
+                      {isPersian ? "مشاهده جزئیات" : "View Details"}
                     </Link>
                   </div>
                 </div>
@@ -371,3 +452,4 @@ export const RelatedCars = ({ cars = [], lang }) => {
     </section>
   );
 };
+
