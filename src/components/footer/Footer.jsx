@@ -46,22 +46,20 @@ export const Footer = () => {
   }[lang];
   return (
     <footer
-      className="relative w-full bg-white text-black font-yekan pt-12 relative overflow-hidden text-center"
+      className="relative w-full bg-white text-black font-yekan pt-12 overflow-hidden text-center"
       dir={isRtl ? "rtl" : "ltr"}
     >
       {/* Top Main Section */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 sm:gap-3 gap-5 items-start">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr] sm:gap-3 gap-5 items-start">
         {/* Column 1: Brand & Bio */}
 
-        <div className="flex flex-col gap-4 items-start w-[307px]">
+        <div className="flex flex-col gap-4 items-start">
           <div className="-mt-7 pt-0">
             <Logo />
           </div>
-          {/* Dynamic accent border switching sides */}
-          <div
-            className={`${isRtl ? "border-r-[6px] pr-3" : "border-l-[6px] pl-3"} border-[#FFD000]`}
-          >
-            <h3 className="sm:text-[24px] text-[20px] font-[800] leading-tight text-black">
+          {/* Dynamic accent border (Native RTL Support via border-s and ps) */}
+          <div className="border-s-[6px] ps-3 border-[#FFD000] text-start">
+            <h3 className="lg:text-[36px] text-[20px] font-[800] leading-tight text-black">
               {content.tagline}
             </h3>
             <p className="sm:text-[20px] text-[11px] font-[400] mt-1 leading-relaxed">
@@ -204,7 +202,7 @@ export const Footer = () => {
       </div>
 
       {/* Horizontal Divider */}
-      <div className="w-[1200px] mx-auto h-[2px] mt-12 mb-8">
+      <div className="max-w-7xl w-full px-6 mx-auto h-[2px] mt-12 mb-8">
         <hr className="border-t border-[#FFD000]" />
       </div>
 

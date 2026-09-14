@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-[70vh] pt-4 sm:min-h-[75vh] md:min-h-screen bg-cover bg-center bg-no-repeat"
+      className=" relative min-h-[70vh] pt-4 sm:min-h-[75vh] md:min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Bottom gradient overlay */}
@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:pt-20 md:pt-32 lg:pt-40">
         <div className="text-center">
-          <h1 className="mx-auto max-w-5xl font-sans text-2xl leading-tight font-blackfont text-brand-black sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="pt-3  mx-auto max-w-5xl font-sans text-2xl leading-tight font-blackfont text-brand-black sm:pt-0 sm:text-3xl md:text-4xl lg:text-5xl">
             {t.home.hero.titleStart}
             {t.home.hero.titleStart ? " " : ""}
 

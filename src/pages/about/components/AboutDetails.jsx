@@ -5,7 +5,6 @@ import aboutImage from '../../../../public/images/about-detail.png';
 export const AboutDetails = () => {
     const { t } = useLangStore();
 
-    console.log(t)
 
     return (
         <section className="w-full max-w-[1240px] mx-auto px-4 py-16 font-yekan select-none bg-white">

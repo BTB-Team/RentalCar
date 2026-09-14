@@ -32,7 +32,7 @@ const AboutCompany = () => {
         dir={lang === "dr" ? "rtl" : "ltr"}
       >
         <div>
-          <h2 className="font-sans text-xl  font-[800] text-brand-black sm:text-2xl ">
+          <h2 className="font-sans text-xl  font-[800] text-brand-black sm:text-4xl ">
             {t.home.about.title}
           </h2>
 
