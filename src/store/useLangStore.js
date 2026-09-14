@@ -7,7 +7,6 @@ export const useLangStore = create((set) => ({
   lang: "dr",
   // 't' به طور خودکار انبار کلمات زبان فعال را در خود نگه می‌دارد
   t: drTranslations,
-  activeFilter: "all",
 
   setLang: (newLang) => {
     set({
@@ -25,11 +24,5 @@ export const useLangStore = create((set) => ({
       htmlElement.setAttribute("dir", "ltr");
       htmlElement.setAttribute("lang", "en");
     }
-  },
-  // Change car filter globally
-  setActiveFilter: (filter) => {
-    set({
-      activeFilter: filter,
-    });
   },
 }));

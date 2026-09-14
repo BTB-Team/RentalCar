@@ -8,16 +8,17 @@ import { CarSkeleton } from "../../components/cars/CarSkeleton";
 import { TravelBanner } from "../../components/common/TravelBanner";
 import { ServiceCtaSkeleton } from "../../components/cars/ServiceCtaSkeleton";
 import { CarHeroSkeleton } from "../../components/cars/CarHeroSkeleton";
+import { useCarFilterStore } from "../../store/useCarFilterStore";
 
 export const Cars = () => {
-  const { t, lang, activeFilter } = useLangStore();
+  const { t, lang } = useLangStore();
+  const { activeFilter } = useCarFilterStore();
 
   const cars = db.cars;
   const loading = false;
 
   // number of visible cars
   const [visibleCount, setVisibleCount] = useState(9);
-
 
   // filter cars based on global Zustand filter
   const filteredCars = useMemo(() => {
@@ -62,11 +63,11 @@ export const Cars = () => {
       ) : (
         <div className="overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
           <div className="relative z-10 mx-auto max-w-4xl text-center">
-            <h1 className="text-3xl font-blackfont text-brand-black md:text-5xl">
+            <h1 className="text-3xl font-blackfont text-brand-black sm:text-5xl">
               {t.cars.title}
             </h1>
 
-            <p className="mx-auto mt-10  max-w-xl text-sm leading-10 font-bold text-brand-black md:text-2xl">
+            <p className="mx-auto mt-10 max-w-xl font-semibold leading-8 text-base text-brand-black sm:leading-10 sm:text-2xl">
               {t.cars.description}
             </p>
 
@@ -105,13 +106,13 @@ export const Cars = () => {
                   <button
                     type="button"
                     onClick={handleViewMore}
-                    className="flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-5 py-4 font-extrabold text-brand-black transition hover:scale-105"
+                    className="w-[200px] sm:w-[280px] flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-2 py-3 sm:py-4 font-bold text-sm sm:text-xl text-brand-black transition hover:scale-105"
                   >
                     {t.cars.viewMore}
                     <svg
                       viewBox="0 0 10 23"
                       fill="none"
-                      className={`h-[16px] w-7 ${
+                      className={`h-[18px] sm:h-[20px] w-8 ${
                         lang === "dr" ? "" : "rotate-180"
                       }`}
                     >
@@ -130,13 +131,13 @@ export const Cars = () => {
                   <button
                     type="button"
                     onClick={handleViewLess}
-                    className="flex gap-1.5 items-center justify-between rounded-2xl bg-brand-yellow px-5 py-4 font-extrabold text-brand-black transition hover:scale-105"
+                    className="w-[200px] sm:w-[280px] flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-2 py-3 sm:py-4 font-bold text-sm sm:text-xl text-brand-black transition hover:scale-105"
                   >
                     {t.cars.viewLess}
                     <svg
                       viewBox="0 0 10 23"
                       fill="none"
-                      className={`h-[16px] w-7 ${
+                      className={`h-[18px] sm:h-[20px] w-8 ${
                         lang === "dr" ? "" : "rotate-180"
                       }`}
                     >
