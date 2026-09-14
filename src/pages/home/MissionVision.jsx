@@ -51,17 +51,17 @@ function MissionVision() {
                 <img
                   src={card.icon}
                   alt=""
-                  className="h-7 w-7 shrink-0 sm:h-8 sm:w-8"
+                  className="h-8 w-8 shrink-0 sm:h-8 sm:w-8"
                   loading="lazy"
                 />
 
-                <h2 className="font-sans text-lg leading-tight font-blackfont text-brand-black sm:text-xl md:text-2xl">
+                <h2 className="font-sans text-xl leading-tight font-blackfont text-brand-black sm:text-2xl md:text-3xl">
                   {card.title}
                 </h2>
               </div>
 
               {/* Description */}
-              <p className="text-start font-sans text-sm leading-7 font-regular text-brand-black/80 sm:text-base sm:leading-8 md:text-lg md:leading-[2]">
+              <p className="text-start font-sans text-base leading-7 font-regular text-brand-black/80  sm:leading-8  md:leading-[2]">
                 {card.description}
               </p>
             </div>

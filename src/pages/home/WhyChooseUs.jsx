@@ -33,14 +33,14 @@ const WhyChooseUs = () => {
             >
               {/* Card title */}
               <div className="flex min-h-[52px] items-center justify-center rounded-[20px] bg-brand-yellow px-3 py-3 sm:min-h-[56px]">
-                <h3 className="text-center font-sans text-sm font-[700] leading-6 text-brand-black sm:text-base sm:leading-7">
+                <h3 className="text-center font-sans text-lg font-[700] leading-6 text-brand-black sm:text-xl sm:leading-7">
                   {card.title}
                 </h3>
               </div>
 
               {/* Card description */}
               <div className="px-4 py-6 sm:px-5 sm:py-7">
-                <p className="text-center font-sans text-xs font-[600] leading-6 text-brand-black/70 sm:text-sm sm:leading-7 md:text-base md:leading-8">
+                <p className="text-center font-sans text-base font-[600] leading-6 text-brand-black/70  sm:leading-7  md:leading-8">
                   {card.description}
                 </p>
               </div>
