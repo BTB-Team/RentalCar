@@ -42,14 +42,13 @@ export const HeaderNavLinks = ({ navLinks }) => {
   };
 
   const getLinkClass = (isActive) =>
-    `font-[400] text-[18px] pb-1 border-b-2 transition-colors focus:outline-none ${
-      isActive
-        ? "text-brand-black border-brand-yellow"
-        : "text-brand-black border-transparent"
+    `font-[400] text-[18px] pb-1 border-b-2 transition-colors focus:outline-none ${isActive
+      ? "text-brand-black border-brand-yellow"
+      : "text-brand-black border-transparent"
     }`;
 
   return (
-    <ul className="hidden md:flex items-center gap-x-6 lg:gap-x-10 bg-white rounded-[20px] px-4 lg:px-6 py-2 shadow-sm h-[56px]">
+    <ul className="hidden xl:flex items-center gap-x-4 xl:gap-x-8 bg-white rounded-[20px] px-4 xl:px-6 py-2 shadow-sm h-[48px] xl:h-[56px] whitespace-nowrap">
       {navLinks?.map((link) => {
         const isServicesActive =
           location.pathname === "/about" && location.hash === "#services";
