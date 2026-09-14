@@ -6,6 +6,10 @@ const TestimonialsSection = () => {
   const trackRef = useRef(null);
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const startPosition = useRef(0);
+  const currentPosition = useRef(0);
   const avatarFallback = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(` <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"> <rect width="45" height="45" rx="22.5" fill="#E5E7EB"/> <circle cx="22.5" cy="17" r="8" fill="#D1D5DB"/> <path d="M9 35c3-6 9-9 13.5-9S33 29 36 35" fill="#D1D5DB"/> </svg> `)}`;
   useEffect(() => {
     const getTestimonials = async () => {
@@ -34,17 +38,23 @@ const TestimonialsSection = () => {
     const track = trackRef.current;
     let position = 0;
     let animationFrame;
+    currentPosition.current = position;
     const move = () => {
-      position += 2;
-      const firstCard = track.children[0];
-      if (firstCard) {
-        const cardWidth = firstCard.offsetWidth;
-        const gap = 20;
-        const moveDistance = cardWidth + gap;
-        if (position >= moveDistance) {
-          position = 0;
-          track.appendChild(firstCard);
+      if (!isDragging.current) {
+        position += 2;
+        const firstCard = track.children[0];
+        if (firstCard) {
+          const cardWidth = firstCard.offsetWidth;
+          const gap = 20;
+          const moveDistance = cardWidth + gap;
+          if (position >= moveDistance) {
+            position = 0;
+            track.appendChild(firstCard);
+          }
         }
+        currentPosition.current = position;
+      } else {
+        position = currentPosition.current;
       }
       track.style.transform = `translateX(${isDari ? position : -position}px)`;
       animationFrame = requestAnimationFrame(move);
@@ -52,6 +62,33 @@ const TestimonialsSection = () => {
     animationFrame = requestAnimationFrame(move);
     return () => cancelAnimationFrame(animationFrame);
   }, [testimonials, isDari]);
+  const handlePointerDown = (event) => {
+    if (!trackRef.current || testimonials.length <= 3) return;
+    isDragging.current = true;
+    startX.current = event.clientX;
+    startPosition.current = currentPosition.current;
+    trackRef.current.style.cursor = "grabbing";
+  };
+  const handlePointerMove = (event) => {
+    if (!isDragging.current || !trackRef.current) return;
+    const difference = event.clientX - startX.current;
+    let newPosition;
+    if (isDari) {
+      newPosition = startPosition.current + difference;
+    } else {
+      newPosition = startPosition.current - difference;
+    }
+    if (newPosition < 0) {
+      newPosition = 0;
+    }
+    currentPosition.current = newPosition;
+    trackRef.current.style.transform = `translateX(${isDari ? newPosition : -newPosition}px)`;
+  };
+  const handlePointerUp = () => {
+    if (!isDragging.current || !trackRef.current) return;
+    isDragging.current = false;
+    trackRef.current.style.cursor = "grab";
+  };
   const carouselTestimonials =
     testimonials.length > 3 ? [...testimonials, ...testimonials] : testimonials;
   return (
@@ -89,12 +126,21 @@ const TestimonialsSection = () => {
           <div className="mt-[22px] overflow-hidden px-5">
             {" "}
             {carouselTestimonials.length > 0 ? (
-              <div ref={trackRef} className="flex w-max gap-5">
+              <div
+                ref={trackRef}
+                className="flex w-max cursor-grab gap-5 select-none"
+                onPointerDown={handlePointerDown}
+                onPointerMove={handlePointerMove}
+                onPointerUp={handlePointerUp}
+                onPointerCancel={handlePointerUp}
+                onPointerLeave={handlePointerUp}
+                style={{ touchAction: "pan-y" }}
+              >
                 {" "}
                 {carouselTestimonials.map((testimonial, index) => (
                   <article
                     key={`${testimonial.id || index}-${index}`}
-                    className=" testimonial-card flex min-h-[237px] w-[calc((1200px-40px)/3)] min-w-[280px] flex-shrink-0 flex-col rounded-[20px] border border-[#D9D9D9] bg-white px-[19px] py-[28px] shadow-[0_8px_20px_rgba(15,23,42,0.04)] transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#F7D102] hover:shadow-[0_18px_35px_rgba(247,209,2,0.15)] "
+                    className="testimonial-card flex min-h-[237px] w-[calc((1200px-40px)/3)] min-w-[280px] flex-shrink-0 flex-col rounded-[20px] border border-[#D9D9D9] bg-white px-[19px] py-[28px] shadow-[0_8px_20px_rgba(15,23,42,0.04)] transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#F7D102] hover:shadow-[0_18px_35px_rgba(247,209,2,0.15)]"
                   >
                     {" "}
                     <div className="flex w-full items-start gap-[12px]">
