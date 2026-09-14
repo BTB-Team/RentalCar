@@ -167,7 +167,7 @@ export const CarDetailsHero = ({ car }) => {
 
   return (
     <section
-      className="mx-auto min-h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat px-4 pb-12 pt-28 sm:px-6 sm:pt-32 md:px-8 lg:px-12 lg:pt-36 xl:px-20 2xl:px-24"
+      className="mx-auto min-h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat px-4 pt-28 sm:px-6 sm:pt-32 md:px-8 lg:px-12 lg:pt-36 xl:px-20 2xl:px-24"
       style={{
         backgroundImage: "url(/RentalCar/images/Ellipse.png)",
       }}
@@ -250,7 +250,7 @@ export const CarDetailsHero = ({ car }) => {
                 >
                   <img
                     src="/RentalCar/images/icons/left_arrow_icon.png"
-                    alt="Previous"
+                    alt="Previous image"
                     className="w-4 md:w-5 h-8 md:h-10"
                   />
                 </button>
@@ -294,13 +294,13 @@ export const CarDetailsHero = ({ car }) => {
               {hasMultipleImages && (
                 <button
                   type="button"
-                  onClick={previousThumbnail}
-                  aria-label="Previous images"
+                  onClick={nextThumbnail}
+                  aria-label="Next images"
                   className="flex h-8 md:h-10 w-8 md:w-10 shrink-0 items-center justify-center rounded-full bg-brand-yellow"
                 >
                   <img
                     src="/RentalCar/images/icons/right_arrow_icon.png"
-                    alt="Previous"
+                    alt="Next image"
                     className="w-4 md:w-5 h-8 md:h-10"
                   />
                 </button>
