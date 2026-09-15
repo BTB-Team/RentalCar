@@ -161,9 +161,10 @@ const FaqSection = () => {
                             ${lang === "dr" ? "text-right" : "text-left"}
                             
                             md:w-[638px]
+                            font-sans
                           `}
                           style={{
-                            fontFamily: "'Yekan Bakh VF', sans-serif",
+                            
                             fontSize: "clamp(16px, 2.5vw, 20px)",
                             fontWeight: 400,
                             lineHeight: "32px",
