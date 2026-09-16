@@ -367,9 +367,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
             const tags = isPersian ? car.tags_dr : car.tags_en;
 
-            const description = isPersian
-              ? car.shortDesc_dr
-              : car.shortDesc_en;
+            const description = isPersian ? car.shortDesc_dr : car.shortDesc_en;
 
             const passengerLabel = isPersian
               ? car.passengerLabel_dr
@@ -399,15 +397,13 @@ export const RelatedCars = ({ cars = [], lang }) => {
 
                 {/* ================= CONTENT ================= */}
 
-                <div className="flex min-h-[178px] flex-col px-2 pb-3 pt-3">
+                <div className="flex min-h-[178px] flex-1 flex-col px-4 pt-3">
                   {/* NAME */}
-
                   <h3 className="mt-3 text-start text-lg font-semibold md:mt-5 md:text-2xl">
                     {carName}
                   </h3>
 
                   {/* TAGS */}
-
                   <div className="mt-3 flex min-h-[22px] flex-wrap items-center justify-start gap-1 md:mt-5">
                     {tags?.map((tag) => (
                       <span
@@ -420,22 +416,18 @@ export const RelatedCars = ({ cars = [], lang }) => {
                   </div>
 
                   {/* DESCRIPTION */}
-
-                  <p className="mt-3 overflow-hidden text-base font-semibold leading-[1.9] text-[#333] md:mt-5">
+                  <p className="mt-3 flex-1 overflow-hidden text-base font-semibold leading-[1.9] text-[#333] md:mt-5">
                     {description}
                   </p>
 
                   {/* BOTTOM */}
-
-                  <div className="mt-6 flex items-center justify-between gap-2 pt-3 md:mt-8">
+                  <div className="mt-6 flex items-center justify-between gap-2 md:mt-8">
                     {/* PASSENGER */}
-
                     <span className="shrink-0 rounded-full border border-brand-yellow px-3 py-[5px] text-sm font-semibold leading-none text-black md:text-base">
                       {car.passengerCapacity} {passengerLabel}
                     </span>
 
                     {/* VIEW DETAILS */}
-
                     <Link
                       to={`/cars/${car.id}`}
                       className="shrink-0 rounded-full bg-brand-yellow px-3 py-[6px] text-sm font-semibold leading-none text-black md:text-base"
@@ -452,4 +444,3 @@ export const RelatedCars = ({ cars = [], lang }) => {
     </section>
   );
 };
-

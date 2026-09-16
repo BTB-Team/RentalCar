@@ -164,21 +164,20 @@ export const CarDetailsHero = ({ car }) => {
   if (!car || totalImages === 0) {
     return null;
   }
-
   return (
     <section
-      className="mx-auto min-h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat px-4 pt-28 sm:px-6 sm:pt-32 md:px-8 lg:px-12 lg:pt-36 xl:px-20 2xl:px-24"
+      className="mx-auto min-h-screen w-full overflow-hidden  bg-cover bg-center bg-no-repeat px-4 pt-28 sm:px-6 sm:pt-32 md:px-8 lg:px-12 lg:pt-36 xl:px-20 2xl:px-24"
       style={{
         backgroundImage: "url(/RentalCar/images/Ellipse.png)",
       }}
     >
-      <div className="mx-auto w-full max-w-[1440px]">
+      <div className="mx-auto w-full">
         {/* ==========================================
-            BREADCRUMB
-        ========================================== */}
+          BREADCRUMB
+      ========================================== */}
         <div
           dir={isPersian ? "rtl" : "ltr"}
-          className={`mb-6 flex w-full flex-wrap items-center gap-x-2 gap-y-1 font-semibold text-sm md:text-lg text-brand-black sm:mb-8  ${
+          className={`mb-6 flex w-full flex-wrap items-center gap-x-2 gap-y-1 text-sm font-semibold text-brand-black sm:mb-8 md:text-lg ${
             isPersian ? "justify-start text-right" : "justify-start text-left"
           }`}
         >
@@ -188,7 +187,7 @@ export const CarDetailsHero = ({ car }) => {
             className="h-6 w-[26px] shrink-0 sm:w-[15px]"
           />
 
-          <Link to="/" className="hover:underline  ">
+          <Link to="/" className="hover:underline">
             {isPersian ? "خانه" : "Home"}
           </Link>
 
@@ -206,16 +205,15 @@ export const CarDetailsHero = ({ car }) => {
         </div>
 
         {/* ==========================================
-            MAIN CONTENT
-        ========================================== */}
-
+          MAIN CONTENT
+      ========================================== */}
         <div
           dir="ltr"
-          className=" grid w-full grid-cols-1 gap-5 md:grid-cols-2 md:items-start"
+          className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 md:items-start"
         >
-          {/* ========================================
-              IMAGE SECTION
-          ======================================== */}
+          {/* ==========================================
+            IMAGE SECTION
+        ========================================== */}
           <div
             className={`flex w-full min-w-0 flex-col ${
               isPersian ? "order-1" : "order-2"
@@ -223,7 +221,7 @@ export const CarDetailsHero = ({ car }) => {
           >
             {/* Main Image */}
             <div
-              className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px]  sm:aspect-[16/10] md:aspect-[4/3] lg:aspect-[16/10]"
+              className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px] sm:aspect-[16/10] md:aspect-[4/3] lg:aspect-[16/10]"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
@@ -236,9 +234,9 @@ export const CarDetailsHero = ({ car }) => {
               />
             </div>
 
-            {/* ========================================
-                THUMBNAILS
-            ======================================== */}
+            {/* ==========================================
+              THUMBNAILS
+          ========================================== */}
             <div className="mt-3 flex w-full items-center justify-center gap-1">
               {/* Previous */}
               {hasMultipleImages && (
@@ -246,12 +244,12 @@ export const CarDetailsHero = ({ car }) => {
                   type="button"
                   onClick={previousThumbnail}
                   aria-label="Previous images"
-                  className="flex h-8 md:h-10 w-8 md:w-10 shrink-0 items-center justify-center rounded-full bg-brand-yellow"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow md:h-10 md:w-10"
                 >
                   <img
                     src="/RentalCar/images/icons/left_arrow_icon.png"
                     alt="Previous image"
-                    className="w-4 md:w-5 h-8 md:h-10"
+                    className="h-8 w-4 md:h-10 md:w-5"
                   />
                 </button>
               )}
@@ -296,22 +294,21 @@ export const CarDetailsHero = ({ car }) => {
                   type="button"
                   onClick={nextThumbnail}
                   aria-label="Next images"
-                  className="flex h-8 md:h-10 w-8 md:w-10 shrink-0 items-center justify-center rounded-full bg-brand-yellow"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow md:h-10 md:w-10"
                 >
                   <img
                     src="/RentalCar/images/icons/right_arrow_icon.png"
                     alt="Next image"
-                    className="w-4 md:w-5 h-8 md:h-10"
+                    className="h-8 w-4 md:h-10 md:w-5"
                   />
                 </button>
               )}
             </div>
           </div>
 
-          {/* ========================================
-              INFORMATION SECTION
-          ======================================== */}
-
+          {/* ==========================================
+            INFORMATION SECTION
+        ========================================== */}
           <div
             dir={isPersian ? "rtl" : "ltr"}
             className={`flex w-full min-w-0 flex-col ${
@@ -321,21 +318,18 @@ export const CarDetailsHero = ({ car }) => {
             } md:pt-2 lg:pt-4`}
           >
             {/* Car Name */}
-
-            <h1 className="w-full break-words font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
+            <h1 className="w-full break-words text-2xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl">
               {isPersian ? car.name_dr : car.name_en}
             </h1>
 
             {/* Short Description */}
-
-            <h2 className="mt-2 w-full break-words font-semibold text-sm md:text-lg lg:text-xl">
+            <h2 className="mt-2 w-full break-words text-sm font-semibold md:text-lg lg:text-xl">
               {isPersian ? car.shortDesc_dr : car.shortDesc_en}
             </h2>
 
-            {/* ========================================
-                TAGS
-            ======================================== */}
-
+            {/* ==========================================
+              TAGS
+          ========================================== */}
             <div className="mt-7 flex w-full flex-wrap justify-start gap-1.5 sm:gap-2">
               {(isPersian ? car.tags_dr : car.tags_en)?.map((tag) => (
                 <span
@@ -347,28 +341,26 @@ export const CarDetailsHero = ({ car }) => {
               ))}
             </div>
 
-            {/* ========================================
-                DESCRIPTION
-            ======================================== */}
-
-            <p className="mt-7 w-full break-words font-normal text-sm leading-[29px] text-[#535353] md:text-base">
+            {/* ==========================================
+              DESCRIPTION
+          ========================================== */}
+            <p className="mt-7 w-full break-words text-sm font-normal leading-[29px] text-[#535353] md:text-base">
               {isPersian ? car.longDesc_dr : car.longDesc_en}
             </p>
 
-            {/* ========================================
-                BUTTONS
-            ======================================== */}
-
+            {/* ==========================================
+              BUTTONS
+          ========================================== */}
             <div
               dir="ltr"
-              className="mt-12 flex w-full flex-col sm:flex-row gap-3 md:gap-5"
+              className="mt-12 flex w-full flex-col gap-3 sm:flex-row md:gap-5"
             >
               {/* Request Car */}
               <a
                 href="https://wa.me/+93786377417"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-brand-yellow font-semibold text-base lg:text-xl px-4 text-black transition hover:opacity-90 active:scale-[0.98] sm:flex-1"
+                className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-brand-yellow px-4 text-base font-semibold text-black transition hover:opacity-90 active:scale-[0.98] sm:flex-1 lg:text-xl"
               >
                 <span dir={isPersian ? "rtl" : "ltr"}>
                   {isPersian ? "درخواست موتر" : "Request a car"}
@@ -377,14 +369,14 @@ export const CarDetailsHero = ({ car }) => {
                 <img
                   src="/RentalCar/images/icons/car_icon.png"
                   alt="car icon"
-                  className="h-auto size-5 md:size-7 shrink-0"
+                  className="size-5 shrink-0 md:size-7"
                 />
               </a>
 
               {/* Contact */}
               <a
                 href="tel:+93786377417"
-                className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-black px-4 text-base font-semibold text-white lg:text-xl transition active:scale-[0.98] sm:flex-1 sm:text-[13px]"
+                className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-black px-4 text-base font-semibold text-white transition active:scale-[0.98] sm:flex-1 sm:text-[13px] lg:text-xl"
               >
                 <span dir={isPersian ? "rtl" : "ltr"}>
                   {isPersian ? "تماس فوری" : "Contact Us Now"}
@@ -393,7 +385,7 @@ export const CarDetailsHero = ({ car }) => {
                 <img
                   src="/RentalCar/images/icons/call_icon.png"
                   alt="call icon"
-                  className="h-auto size-5 md:size-7 shrink-0"
+                  className="size-5 shrink-0 md:size-7"
                 />
               </a>
             </div>
