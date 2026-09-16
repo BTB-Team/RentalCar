@@ -43,7 +43,7 @@ const TechnicalSpecsList = ({ specs, lang }) => {
   ];
 
   return (
-    <section className="mx-auto mt-20 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24">
+    <section className=" mx-auto mt-20 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24">
       <div className="rounded-[20px] border border-[#D9D9D9] p-8">
         <h2 className="mb-5 text-start text-[28px] font-bold text-black">
           {lang === "dr" ? "مشخصات تخنیکی" : "Technical Specifications"}
