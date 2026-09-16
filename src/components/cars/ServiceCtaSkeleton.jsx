@@ -4,7 +4,7 @@ export const ServiceCtaSkeleton = () => {
       className="
         mx-auto
         w-full
-        h-[250px]
+        h-[220px]
         sm:h-[280px]
         md:h-[339px]
         flex
@@ -15,7 +15,6 @@ export const ServiceCtaSkeleton = () => {
         rounded-2xl
         bg-gray-100
         mt-20 
-        px-6
         py-8
         text-center
         animate-pulse
@@ -32,4 +31,3 @@ export const ServiceCtaSkeleton = () => {
     </section>
   );
 };
-

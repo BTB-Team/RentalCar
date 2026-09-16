@@ -22,7 +22,7 @@ export const CarHeroSkeleton = () => {
       <div className="mx-auto mt-4 h-5 w-64 rounded-md bg-gray-300 sm:w-96" />
 
       {/* filter buttons skeleton */}
-      <div className="mt-10 flex flex-wrap justify-center gap-1.5 sm:gap-4">
+      <div className="mt-10 flex flex-nowrap justify-center gap-1.5 sm:gap-4">
         <div className="h-11 w-28 rounded-2xl bg-gray-300" />
         <div className="h-11 w-28 rounded-2xl bg-gray-300" />
         <div className="h-11 w-28 rounded-2xl bg-gray-300" />
