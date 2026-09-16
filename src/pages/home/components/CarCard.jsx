@@ -30,8 +30,9 @@ export const CarCard = ({ car }) => {
     <article
        className="
     group
-    w-full
+    w-[calc(100%-32px)]
     max-w-[380px]
+    sm:w-full
     h-[455px]
     overflow-hidden
     rounded-[20px]
@@ -51,8 +52,9 @@ export const CarCard = ({ car }) => {
       <div
   className="
     relative
-    h-[200px]
-    w-full
+    h-[170px]
+    sm:h-[200px]
+    w-full 
     overflow-hidden
     rounded-t-[20px]
     group
@@ -80,19 +82,16 @@ export const CarCard = ({ car }) => {
   {/* نام موتر */}
   <h2
     dir="ltr"
-    className="w-full truncate overflow-hidden whitespace-nowrap font-extrabold text-[24px] leading-[100%] text-brand-black"
+    className="w-full truncate overflow-hidden whitespace-nowrap text-right font-extrabold text-[20px] sm:text-[24px] leading-[100%] text-brand-black"
   >
     {carName}
   </h2>
 
   {/* لیبل‌ها */}
-  <div className="mt-[20px] flex flex-wrap items-center justify-start gap-[7px]">
-    {(isDari ? car.tags_dr : car.tags_en)?.map((tag, index) => (
+<div className="mt-[14px] flex sm:flex-nowrap flex-wrap items-center justify-start gap-[5px] sm:mt-[20px] sm:gap-[7px]">    {(isDari ? car.tags_dr : car.tags_en)?.map((tag, index) => (
       <span
         key={index}
-        className="inline-flex min-h-[26px] items-center justify-center rounded-[20px] bg-brand-yellow px-[12px] font-[600] text-[16px] leading-[100%] tracking-[0%] text-brand-black"
-      >
-        {tag}
+className="inline-flex h-[26px] shrink-0 items-center justify-center whitespace-nowrap rounded-[20px] bg-brand-yellow px-[12px] py-0 font-[600] text-[16px] leading-[26px] tracking-[0%] text-brand-black">        {tag}
       </span>
     ))}
   </div>
@@ -100,21 +99,19 @@ export const CarCard = ({ car }) => {
   {/* توضیحات */}
   <p
     dir={isDari ? 'rtl' : 'ltr'}
-    className="mt-[18px] h-[57px] min-h-[57px] w-full overflow-hidden text-ellipsis font-semibold text-[16px] leading-[28.5px] tracking-[0%] text-brand-black line-clamp-2"
-  >
+className="mt-[14px] h-[52px] min-h-[52px] w-full overflow-hidden text-ellipsis font-semibold text-[14px] leading-[26px] tracking-[0%] text-brand-black line-clamp-2 sm:mt-[18px] sm:h-[57px] sm:min-h-[57px] sm:text-[16px] sm:leading-[28.5px]"  >
     {carDescription}
   </p>
 
   {/* دکمه‌ها؛ همیشه ثابت در پایین */}
-  <div className="absolute top-[200px] start-[0px] end-[0px] flex h-[36px] items-center justify-between gap-[8px]">
-    <span className="flex h-[36px] min-w-[64px] shrink-0 items-center justify-center whitespace-nowrap rounded-[20px] border border-brand-yellow px-[4px] font-[600] text-[16px] leading-[100%] text-center text-brand-black">
-      {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
-    </span>
+<div className="absolute top-[230px] sm:top-[200px] start-[0px] end-[0px] flex h-[36px] items-center justify-between gap-[6px] sm:gap-[8px]">   
+   <span className={`flex h-[36px] min-w-[64px] shrink-0 items-center justify-center whitespace-nowrap rounded-[20px] border border-brand-yellow ${isDari ? 'px-[4px]' : 'px-[8px]'} font-[600] text-[16px] py-0 leading-[36px] text-center text-brand-black`}>
+    {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
+  </span>
 
     <Link
       to={`/cars/${car.id}`}
-      className="flex h-[36px] w-[135px] shrink-0 items-center justify-center rounded-[20px] bg-brand-yellow px-[10px] font-[600] text-[16px] leading-[100%] tracking-[0%] text-brand-black transition-all duration-300 ease-out hover:scale-[1.04] hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)]"
-    >
+className="flex h-[36px] w-[125px] shrink-0 items-center justify-center rounded-[20px] bg-brand-yellow px-[8px] py-0 font-[600] text-[14px] leading-[36px] tracking-[0%] text-brand-black transition-all duration-300 ease-out hover:scale-[1.04] hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)] sm:w-[135px] sm:px-[10px] sm:text-[16px]"    >
       {detailLabel}
     </Link>
   </div>

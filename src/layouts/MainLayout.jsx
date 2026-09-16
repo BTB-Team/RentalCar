@@ -4,12 +4,18 @@ import { Navbar } from "../components/header/Navbar";
 
 export default function MainLayout() {
   return (
-    <>
-      <Navbar />
-      <main className="flex-grow">
+    <div className="relative w-full min-h-screen flex flex-col overflow-x-hidden">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+
+        <Navbar />
+      </div>
+      <main className="flex-grow w-full relative z-10">
         <Outlet />
       </main>
-      <Footer />
-    </>
+
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 z-20 ">
+        <Footer />
+      </div>
+    </div>
   );
 }

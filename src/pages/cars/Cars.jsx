@@ -56,109 +56,111 @@ export const Cars = () => {
   }, [activeFilter]);
 
   return (
-    <section className=" min-h-screen bg-white">
-      {/* hero */}
-      {loading ? (
-        <CarHeroSkeleton />
-      ) : (
-        <div className="overflow-hidden px-4 pb-20 pt-32 sm:pt-52 md:px-8 lg:px-16">
-          <div className="relative z-10 mx-auto max-w-4xl text-center">
-            <h1 className="text-3xl font-blackfont text-brand-black sm:text-5xl">
-              {t.cars.title}
-            </h1>
+    <section className=" mx-auto w-full min-h-screen bg-white ">
+      <div className="max-w-7xl w-full mx-auto px-0 sm:px-6 lg:px-8">
+        {/* hero */}
+        <div className="relative overflow-hidden px-4 pb-20 pt-36 sm:pt-52 md:px-8 lg:px-16">
+          {loading ? (
+            <CarHeroSkeleton />
+          ) : (
+            <div className="relative z-10 mx-auto max-w-4xl text-center">
+              <h1 className="text-3xl font-blackfont text-brand-black sm:text-5xl">
+                {t.cars.title}
+              </h1>
 
-            <p className="mx-auto mt-6 sm:mt-10 max-w-xl font-semibold leading-8 text-base text-brand-black sm:leading-10 sm:text-2xl">
-              {t.cars.description}
-            </p>
+              <p className="mx-auto mt-6 sm:mt-10 max-w-xl font-semibold leading-8 text-base text-brand-black sm:leading-10 sm:text-2xl">
+                {t.cars.description}
+              </p>
 
-            {/* filters */}
-            <CarFilter />
-          </div>
+              {/* filters */}
+              <CarFilter />
+            </div>
+          )}
 
           {/* decorative circle */}
           <div className="absolute top-0 start-0 h-full w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
         </div>
-      )}
 
-      {/* cars */}
-      <div className="mx-auto max-w-7xl mt-10 px-4 pb-16 md:px-8 lg:px-12">
-        {loading ? (
-          <CarSkeleton />
-        ) : filteredCars.length === 0 ? (
-          <div className="py-20 text-center">
-            <p className="text-lg font-extrabold text-brand-black">
-              {t.cars.noCars}
-            </p>
-          </div>
-        ) : (
-          <>
-            {/* 3 column grid */}
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {visibleCars.map((car) => (
-                <CarCard key={car.id} car={car} lang={lang} t={t} />
-              ))}
+        {/* cars */}
+        <div className="mx-auto mt-10 pb-16">
+          {loading ? (
+            <CarSkeleton />
+          ) : filteredCars.length === 0 ? (
+            <div className="py-20 text-center">
+              <p className="text-lg font-extrabold text-brand-black">
+                {t.cars.noCars}
+              </p>
             </div>
-
-            {/* view more */}
-            {filteredCars.length > 9 && (
-              <div className="mt-10 flex justify-center">
-                {visibleCount < filteredCars.length && (
-                  <button
-                    type="button"
-                    onClick={handleViewMore}
-                    className="w-[200px] sm:w-[280px] flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-2 py-3 sm:py-4 font-bold text-sm sm:text-xl text-brand-black transition hover:scale-105"
-                  >
-                    {t.cars.viewMore}
-                    <svg
-                      viewBox="0 0 10 23"
-                      fill="none"
-                      className={`h-[18px] sm:h-[20px] w-8 ${
-                        lang === "dr" ? "" : "rotate-180"
-                      }`}
-                    >
-                      <path
-                        d="M30 11H5M11 3L3 11L11 19"
-                        stroke="currentColor"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                )}
-                {/* view Less */}
-                {visibleCount >= filteredCars.length && (
-                  <button
-                    type="button"
-                    onClick={handleViewLess}
-                    className="w-[200px] sm:w-[280px] flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-2 py-3 sm:py-4 font-bold text-sm sm:text-xl text-brand-black transition hover:scale-105"
-                  >
-                    {t.cars.viewLess}
-                    <svg
-                      viewBox="0 0 10 23"
-                      fill="none"
-                      className={`h-[18px] sm:h-[20px] w-8 ${
-                        lang === "dr" ? "" : "rotate-180"
-                      }`}
-                    >
-                      <path
-                        d="M30 11H5M11 3L3 11L11 19"
-                        stroke="currentColor"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                )}
+          ) : (
+            <>
+              {/* 3 column grid */}
+              <div className=" grid justify-items-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {visibleCars.map((car) => (
+                  <CarCard key={car.id} car={car} lang={lang} t={t} />
+                ))}
               </div>
-            )}
-          </>
-        )}
-      </div>
-      {/* travel banner */}
-      <div className="mx-auto max-w-7xl mt-10 px-4 pb-16 md:px-8 lg:px-12">
-        {loading ? <ServiceCtaSkeleton /> : <TravelBanner />}
+
+              {/* view more */}
+              {filteredCars.length > 9 && (
+                <div className="mt-10 flex justify-center items-center">
+                  {visibleCount < filteredCars.length && (
+                    <button
+                      type="button"
+                      onClick={handleViewMore}
+                      className="w-[200px] sm:w-[280px] flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-2 py-3 sm:py-4 text-center font-bold text-sm sm:text-xl text-brand-black transition hover:scale-105"
+                    >
+                      {t.cars.viewMore}
+                      <svg
+                        viewBox="0 0 10 23"
+                        fill="none"
+                        className={`h-[14px] sm:h-[20px] w-6 sm:w-8 ${
+                          lang === "dr" ? "" : "rotate-180"
+                        }`}
+                      >
+                        <path
+                          d="M30 11H5M11 3L3 11L11 19"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  )}
+                  {/* view Less */}
+                  {visibleCount >= filteredCars.length && (
+                    <button
+                      type="button"
+                      onClick={handleViewLess}
+                      className="w-[200px] sm:w-[280px] flex gap-1.5 items-center justify-center rounded-2xl bg-brand-yellow px-2 py-3 sm:py-4 text-center font-bold text-sm sm:text-xl text-brand-black transition hover:scale-105"
+                    >
+                      {t.cars.viewLess}
+                      <svg
+                        viewBox="0 0 10 23"
+                        fill="none"
+                        className={`h-[14px] sm:h-[20px] w-6 sm:w-8 ${
+                          lang === "dr" ? "" : "rotate-180"
+                        }`}
+                      >
+                        <path
+                          d="M30 11H5M11 3L3 11L11 19"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  )}
+                </div>
+              )}
+            </>
+          )}
+        </div>
+        {/* travel banner */}
+        <div className="w-full mx-auto mt-10 pb-16 px-4">
+          {loading ? <ServiceCtaSkeleton /> : <TravelBanner />}
+        </div>
       </div>
     </section>
   );

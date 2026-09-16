@@ -18,12 +18,15 @@ export const ServiceCard = ({ service }) => {
 
   return (
     <article
+      dir={isDari ? 'rtl' : 'ltr'}
       className="
         group
         flex
         h-[224px]
-        w-full
-        max-w-[285px]
+        w-[calc(100%-32px)]
+        sm:w-full
+        max-w-[calc(100%-32px)]
+        sm:max-w-[285px]
         flex-col
         rounded-[20px]
         bg-gradient-to-br
