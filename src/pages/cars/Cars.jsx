@@ -61,13 +61,13 @@ export const Cars = () => {
       {loading ? (
         <CarHeroSkeleton />
       ) : (
-        <div className="overflow-hidden px-4 pb-20 pt-52 md:px-8 lg:px-16">
+        <div className="overflow-hidden px-4 pb-20 pt-32 sm:pt-52 md:px-8 lg:px-16">
           <div className="relative z-10 mx-auto max-w-4xl text-center">
             <h1 className="text-3xl font-blackfont text-brand-black sm:text-5xl">
               {t.cars.title}
             </h1>
 
-            <p className="mx-auto mt-10 max-w-xl font-semibold leading-8 text-base text-brand-black sm:leading-10 sm:text-2xl">
+            <p className="mx-auto mt-6 sm:mt-10 max-w-xl font-semibold leading-8 text-base text-brand-black sm:leading-10 sm:text-2xl">
               {t.cars.description}
             </p>
 
