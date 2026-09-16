@@ -78,7 +78,7 @@ export const Cars = () => {
           )}
 
           {/* decorative circle */}
-          <div className="absolute top-0 start-0 h-[80vh] sm:h-screen w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
+          <div className="absolute top-0 start-0 h-[70vh] sm:h-screen w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
         </div>
 
         {/* cars */}
