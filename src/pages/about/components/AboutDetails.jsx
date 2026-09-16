@@ -18,10 +18,10 @@ export const AboutDetails = () => {
                     </h2>
 
                     <div className="space-y-2">
-                        <p className="md:text-[20px] text-[16px] font-[600] leading-[41px] tracking-normal text-justify">
+                        <p className="md:text-[20px] text-[16px] font-[600] md:leading-[41px]  tracking-normal text-justify">
                             {t?.about?.details_desc_1}
                         </p>
-                        <p className="md:text-[20px] text-[16px] font-[600] leading-[41px] tracking-normal text-justify">
+                        <p className="md:text-[20px] text-[16px] font-[600] md:leading-[41px] tracking-normal text-justify">
                             {t?.about?.details_desc_2}
                         </p>
                     </div>
