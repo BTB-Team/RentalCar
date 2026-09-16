@@ -7,12 +7,12 @@ const WhyChooseUs = () => {
 
   return (
     <section
-      className="bg-black w-full bg-cover bg-center bg-no-repeat px-4 py-10 sm:px-6 sm:py-12 md:py-16"
+      className="m-auto max-w-[1440px] bg-black w-full bg-cover bg-center bg-no-repeat px-4 py-10 sm:px-6 sm:py-12 md:py-16"
       style={{
         backgroundImage: ` url(${bgWhyUs})`,
       }}
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-[1200px]">
         {/* Title */}
         <div className="flex w-full items-center justify-center gap-2 sm:gap-4">
           <span className="h-1 flex-1 bg-brand-yellow" />
