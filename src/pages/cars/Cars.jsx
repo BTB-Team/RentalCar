@@ -56,10 +56,10 @@ export const Cars = () => {
   }, [activeFilter]);
 
   return (
-    <section className=" mx-auto w-full min-h-screen bg-white ">
-      <div className="max-w-7xl w-full mx-auto px-0 sm:px-6 lg:px-8">
+    <section className=" relative mx-auto w-full min-h-screen bg-white ">
+      <div className="max-w-7xl  w-full mx-auto px-0 sm:px-6 lg:px-8">
         {/* hero */}
-        <div className="relative overflow-hidden px-4 pb-20 pt-36 sm:pt-52 md:px-8 lg:px-16">
+        <div className=" overflow-hidden px-4 pb-20 pt-36 sm:pt-52 md:px-8 lg:px-16">
           {loading ? (
             <CarHeroSkeleton />
           ) : (
@@ -78,11 +78,11 @@ export const Cars = () => {
           )}
 
           {/* decorative circle */}
-          <div className="absolute top-0 start-0 h-full w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
+          <div className="absolute top-0 start-0 h-screen w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
         </div>
 
         {/* cars */}
-        <div className="mx-auto mt-10 pb-16">
+        <div className="mx-auto mt-6 sm:mt-10 pb-16">
           {loading ? (
             <CarSkeleton />
           ) : filteredCars.length === 0 ? (
@@ -94,7 +94,7 @@ export const Cars = () => {
           ) : (
             <>
               {/* 3 column grid */}
-              <div className=" grid justify-items-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className=" grid justify-items-center grid-cols-1 gap-6 xl:gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {visibleCars.map((car) => (
                   <CarCard key={car.id} car={car} lang={lang} t={t} />
                 ))}
@@ -158,7 +158,7 @@ export const Cars = () => {
           )}
         </div>
         {/* travel banner */}
-        <div className="w-full mx-auto mt-10 pb-16 px-4">
+        <div className="w-full mx-auto mt-10 pb-16 px-4 sm:px-0">
           {loading ? <ServiceCtaSkeleton /> : <TravelBanner />}
         </div>
       </div>
