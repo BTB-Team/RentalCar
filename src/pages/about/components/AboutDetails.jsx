@@ -13,7 +13,7 @@ export const AboutDetails = () => {
                 {/* --- RIGHT SIDE: CONTENT AREA --- */}
                 <div className="flex flex-col text-start gap-6 w-full max-w-none lg:max-w-[600px] xl:max-w-none">
 
-                    <h2 className="font-extrabold text-[36px] leading-[41px] tracking-normal text-justify text-black mb-5">
+                    <h2 className="font-extrabold md:text-[36px] text-[24px] leading-[41px] tracking-normal text-justify text-black mb-5">
                         {t?.about?.details_title}
                     </h2>
 
