@@ -8,7 +8,7 @@ const AboutCompany = () => {
 
   return (
     <section
-      className="relative px-5  flex flex-col  gap-16   md:items-between lg:flex-row lg:px-0 lg:ps-[150px] "
+      className="m-auto max-w-[1470px] relative px-5 md:px-0  flex flex-col  gap-16   md:items-between lg:flex-row lg:px-0 lg:ps-[150px] "
       dir="ltr"
     >
       {/* Image */}
@@ -16,13 +16,13 @@ const AboutCompany = () => {
         <img
           src={aboutUsImage}
           alt=""
-          className=" rounded-3xl object-cover md:w-auto lg:w-full  lg:h-[430px] lg:rounded-e-none  lg:rounded-s-[40px]"
+          className=" rounded-3xl object-cover object-top md:w-auto lg:w-full  lg:h-[420px] lg:rounded-e-none  lg:rounded-s-[40px]"
           loading="lazy"
         />
       </div>
       {/* Vector Image */}
       <img
-        className="absolute  object-cover h-[300px] z-[-1] top-[70rem] sm:-top-[20px] md:top-[60px]  left-0 "
+        className="absolute  object-cover h-[300px] z-[-1] top-[70rem] sm:-top-[20px] md:top-[20px]  left-0 "
         src={vectorImage}
         alt=""
       />
@@ -39,12 +39,12 @@ const AboutCompany = () => {
           <span className=" block h-1  rounded bg-brand-yellow  sm:w-[190px] sm:mb-4" />
         </div>
         <div>
-          <p className="pt-3 text-justify text-lg   font-sans   font-regular  text-brand-black/80 sm:text-xl sm:pt-0 sm:leading-[2.5rem]">
+          <p className="pt-3 text-justify text-lg   font-sans   font-regular  text-brand-black/90 sm:text-[19px] sm:pt-0 sm:leading-[2.5rem]">
             <span className="font-[800] ">{t.home.about.companyName} </span>
             {t.home.about.description}
           </p>
 
-          <p className="text-justify text-lg pt-3   font-sans   font-regular text-brand-black/80 sm:text-xl sm:leading-[2.5rem] ">
+          <p className="text-justify text-lg pt-3   font-sans   font-regular text-brand-black/90 sm:text-[19px] sm:leading-[2.5rem] ">
             {t.home.about.description_2}
           </p>
         </div>
