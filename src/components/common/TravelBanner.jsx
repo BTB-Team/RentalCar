@@ -3,7 +3,7 @@ import { useLangStore } from "../../store/useLangStore";
 export const TravelBanner = ({ cta }) => {
   const { lang, t } = useLangStore();
   return (
-    <div className="relative w-full h-[250px] sm:h-[280px] md:h-[339px] rounded-2xl flex items-center justify-center overflow-hidden opacity-2 select-none bg-gradient-to-r from-brand-yellow/10 via-brand-yellow/40 to-brand-yellow/90">
+    <div className="relative w-full h-[220px] sm:h-[280px] md:h-[339px] rounded-2xl flex items-center justify-center overflow-hidden opacity-2 select-none bg-gradient-to-r from-brand-yellow/10 via-brand-yellow/40 to-brand-yellow/90">
       {/* background car image overlay */}
       <div className="absolute inset-0 bg-[url('/images/product-picture1.png')] w-full h-full bg-center bg-no-repeat bg-cover opacity-10 pointer-events-none mix-blend-multiply" />
 
