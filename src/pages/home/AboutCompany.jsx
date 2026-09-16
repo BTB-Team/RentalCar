@@ -8,7 +8,7 @@ const AboutCompany = () => {
 
   return (
     <section
-      className="m-auto max-w-[1470px] relative px-5 md:px-0  flex flex-col  gap-16   md:items-between lg:flex-row lg:px-0 lg:ps-[150px] "
+      className="m-auto max-w-[1510px] relative px-5 md:px-5  flex flex-col  gap-16   md:items-between lg:flex-row lg:px-0 lg:ps-[150px]  overflow-hidden"
       dir="ltr"
     >
       {/* Image */}
@@ -16,13 +16,13 @@ const AboutCompany = () => {
         <img
           src={aboutUsImage}
           alt=""
-          className=" rounded-3xl object-cover object-top md:w-auto lg:w-full  lg:h-[420px] lg:rounded-e-none  lg:rounded-s-[40px]"
+          className=" rounded-3xl object-cover object-top md:w-full lg:w-[613px]  lg:h-[420px] lg:rounded-e-none  lg:rounded-s-[40px] "
           loading="lazy"
         />
       </div>
       {/* Vector Image */}
       <img
-        className="absolute  object-cover h-[300px] z-[-1] top-[70rem] sm:-top-[20px] md:top-[20px]  left-0 "
+        className=" m-auto max-w-[1440px] absolute  object-cover h-[300px] z-[-1] -top-[60px] sm:-top-[20px] md:-top-[20px]  left-0 2xl:left-9"
         src={vectorImage}
         alt=""
       />
