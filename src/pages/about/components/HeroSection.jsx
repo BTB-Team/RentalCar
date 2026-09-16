@@ -19,11 +19,14 @@ export const HeroSection = () => {
             </div>
 
             {/* --- 2. TYPOGRAPHY CONTENT BLOCK --- */}
-            <div className="relative z-10 flex flex-col items-center text-center mt-12 px-4 max-w-[900px] mx-auto">
-                <h2 className="font-extrabold text-[48px] leading-none tracking-normal text-black mb-6">
+            <div className="relative z-10 flex flex-col items-center text-center mt-6 sm:mt-8 md:mt-12 px-4 sm:px-6 max-w-[900px] mx-auto">
+                {/* Title */}
+                <h2 className="font-extrabold text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] leading-tight sm:leading-snug md:leading-none tracking-normal text-black mb-3 sm:mb-4 md:mb-6">
                     {t?.about?.hero_title}
                 </h2>
-                <p className="text-[24px] font-[400] leading-[41px] tracking-normal text-black max-w-[820px]">
+
+                {/* Description */}
+                <p className="text-[15px] sm:text-[18px] md:text-[22px] lg:text-[24px] font-normal leading-relaxed sm:leading-[36px] md:leading-[41px] tracking-normal text-black max-w-[820px]">
                     {t?.about?.hero_desc}
                 </p>
             </div>
