@@ -10,7 +10,7 @@ export const HeroSection = () => {
             className="relative w-full mx-auto overflow-hidden font-yekan select-none pb-20"
         >
             {/* --- 1. HERO IMAGE CONTAINER --- */}
-            <div className="relative z-10 mx-auto mt-[146px] md:w-[1200px] w-full h-[324px] rounded-[20px] overflow-hidden opacity-100 shadow-md">
+            <div className="relative z-10 mx-auto mt-[146px]  w-full h-[324px] rounded-[20px] overflow-hidden opacity-100 shadow-md">
                 <img
                     src={heroImage}
                     alt="Toyota SUV Land Cruiser"
