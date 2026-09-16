@@ -105,9 +105,9 @@ className="mt-[14px] h-[52px] min-h-[52px] w-full overflow-hidden text-ellipsis 
 
   {/* دکمه‌ها؛ همیشه ثابت در پایین */}
 <div className="absolute top-[230px] sm:top-[200px] start-[0px] end-[0px] flex h-[36px] items-center justify-between gap-[6px] sm:gap-[8px]">   
-   <span className="flex h-[36px] min-w-[64px] shrink-0 items-center justify-center whitespace-nowrap rounded-[20px] border border-brand-yellow px-[4px] font-[600] text-[16px] py-0  leading-[36px] text-center text-brand-black">
-      {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
-    </span>
+   <span className={`flex h-[36px] min-w-[64px] shrink-0 items-center justify-center whitespace-nowrap rounded-[20px] border border-brand-yellow ${isDari ? 'px-[4px]' : 'px-[8px]'} font-[600] text-[16px] py-0 leading-[36px] text-center text-brand-black`}>
+    {car.passengerCapacity} {isDari ? 'نفر' : 'People'}
+  </span>
 
     <Link
       to={`/cars/${car.id}`}

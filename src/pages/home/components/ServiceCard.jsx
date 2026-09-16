@@ -18,6 +18,7 @@ export const ServiceCard = ({ service }) => {
 
   return (
     <article
+      dir={isDari ? 'rtl' : 'ltr'}
       className="
         group
         flex

@@ -7,6 +7,8 @@ export const ServicesGrid = () => {
   // Services
   return (
     <div
+        dir="ltr"
+
       className="
         grid
         grid-cols-1
