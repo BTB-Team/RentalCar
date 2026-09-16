@@ -9,7 +9,7 @@ export const About = () => {
         <div className="relative min-h-screen w-full overflow-x-hidden">
 
             <div
-                className="absolute left-1/2 -translate-x-1/2 top-[-968px] w-[1640px] h-[1640px] rounded-full bg-[#F7D1022E] pointer-events-none z-0"
+                className="absolute left-1/2 -translate-x-1/2 md:top-[-968px] w-[1640px] top-[-1020px] h-[1640px] rounded-full bg-[#F7D1022E] pointer-events-none z-0"
             />
 
             <div className="relative z-10 flex flex-col max-w-[1280px] mx-auto px-4 ">
