@@ -123,6 +123,7 @@ Please change the parent <Route path="${d}"> to <Route path="${d==="/"?"*":`${d}
           h-full
           w-full
           object-cover
+          object-top
           transition-transform
           duration-500 ease-out 
           group-hover:scale-[1.05]
