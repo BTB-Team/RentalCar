@@ -68,6 +68,7 @@ export const CarCard = ({ car }) => {
           h-full
           w-full
           object-cover
+          object-top
           transition-transform
           duration-500 ease-out 
           group-hover:scale-[1.05]
