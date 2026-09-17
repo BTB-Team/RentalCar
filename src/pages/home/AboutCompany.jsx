@@ -8,7 +8,7 @@ const AboutCompany = () => {
 
   return (
     <section
-      className="m-auto max-w-[1470px] relative px-5 sm:px-0  flex flex-col  gap-16   md:items-between lg:flex-row lg:px-0 lg:ps-[150px] "
+      className="m-auto max-w-[1470px] relative px-5 md:px-0  flex flex-col  gap-16   md:items-between lg:flex-row lg:px-0 lg:ps-[150px] "
       dir="ltr"
     >
       {/* Image */}

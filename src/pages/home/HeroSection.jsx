@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:pt-20 md:pt-32 lg:pt-[156px]">
         <div className="text-center">
-          <h1 className="pt-8  mx-auto max-w-5xl font-sans text-2xl leading-tight font-blackfont text-brand-black sm:pt-0 sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="pt-8  mx-auto max-w-5xl font-sans text-2xl leading-tight font-blackfont text-brand-black sm:pt-8 md:pt-0 sm:text-3xl md:text-4xl lg:text-5xl">
             {t.home.hero.titleStart}
             {t.home.hero.titleStart ? " " : ""}
 
