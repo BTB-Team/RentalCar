@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
         backgroundImage: ` url(${bgWhyUs})`,
       }}
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-6xl">
         {/* Title */}
         <div className="flex w-full items-center justify-center gap-2 sm:gap-4">
           <span className="h-1 flex-1 bg-brand-yellow" />

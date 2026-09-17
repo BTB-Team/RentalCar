@@ -25,13 +25,11 @@ function MissionVision() {
 
   return (
     <section className="w-full px-4 py-10 sm:px-6 sm:py-14 md:py-16">
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+      <div className="mx-auto grid  max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-10">
         {cards.map((card) => (
           <article
             key={card.id}
             className="
-              relative
-              overflow-hidden
               rounded-[16px]
               border
               bg-white
@@ -45,13 +43,13 @@ function MissionVision() {
             "
           >
             {/* Card content */}
-            <div className="flex flex-col justify-end px-4 py-5 sm:px-5 sm:py-6 md:px-6 md:py-7">
+            <div className=" flex flex-col justify-end px-4 py-5 sm:px-5 sm:py-6 md:px-3 md:ml-[3rem]  md:py-3">
               {/* Title + Icon */}
               <div className="mb-3 flex items-center gap-2 sm:gap-3">
                 <img
                   src={card.icon}
                   alt=""
-                  className="h-8 w-8 shrink-0 sm:h-8 sm:w-8"
+                  className="h-10 w-10 shrink-0 sm:h-12 sm:w-12"
                   loading="lazy"
                 />
 
@@ -61,7 +59,7 @@ function MissionVision() {
               </div>
 
               {/* Description */}
-              <p className="text-start font-sans text-base leading-7 font-regular text-brand-black/80  sm:leading-8  md:leading-[2]">
+              <p className="text-start  font-sans text-base leading-7 font-regular text-brand-black/80  sm:leading-8  md:leading-[2] ">
                 {card.description}
               </p>
             </div>
