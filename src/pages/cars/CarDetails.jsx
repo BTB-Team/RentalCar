@@ -74,8 +74,14 @@ export const CarDetails = () => {
     <>
       <CarDetailsHero car={car} lang={lang} />
 
-      <TechnicalSpecsList specs={car.specs} lang={lang} />
-
+      {/* <TechnicalSpecsList specs={car.specs} lang={lang} /> */}
+      <TechnicalSpecsList 
+        specs={car.specs} 
+        lang={lang} 
+        passengerCapacity={car.passengerCapacity}
+        passengerLabel_dr={car.passengerLabel_dr}
+        passengerLabel_en={car.passengerLabel_en}
+      />
       <RelatedCars cars={relatedCars} lang={lang} />
 
       <CtaBanner />
