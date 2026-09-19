@@ -78,7 +78,8 @@ export const Cars = () => {
           )}
 
           {/* decorative circle */}
-          <div className="absolute top-0 start-0 h-[70vh] sm:h-screen w-full bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat" />
+          {/* decorative circle (اصلاح تمام‌عرض پس‌زمینه بدون تداخل با متون و فیلترها) */}
+          <div className="absolute top-0 left-1/2 right-1/2 -mx-[50vw] w-screen h-[70vh] sm:h-[85vh] bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat z-0 " />
         </div>
 
         {/* cars */}

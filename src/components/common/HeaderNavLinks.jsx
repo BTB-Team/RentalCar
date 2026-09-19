@@ -48,7 +48,7 @@ export const HeaderNavLinks = ({ navLinks }) => {
     }`;
 
   return (
-    <ul className="hidden xl:flex items-center gap-x-4 xl:gap-x-8 bg-white rounded-[20px] px-4 xl:px-6 py-2 shadow-sm h-[48px] xl:h-[56px] whitespace-nowrap">
+    <ul className="hidden xl:flex items-center gap-x-4 xl:gap-x-16 bg-white rounded-[20px] px-4 xl:px-6 py-2 shadow-sm h-[48px] xl:h-[56px] whitespace-nowrap">
       {navLinks?.map((link) => {
         const isServicesActive =
           location.pathname === "/about" && location.hash === "#services";

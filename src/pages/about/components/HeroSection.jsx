@@ -14,7 +14,7 @@ export const HeroSection = () => {
                 <img
                     src={heroImage}
                     alt="Toyota SUV Land Cruiser"
-                    className="w-full h-full object-cover object-center"
+                    className="w-screen h-full object-cover object-center"
                 />
             </div>
 
