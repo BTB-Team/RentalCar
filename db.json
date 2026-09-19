@@ -35,9 +35,9 @@
         "gearbox_en": "Automatic",
         "driveType_dr": "چهارچرخ محرک (4WD)",
         "driveType_en": "Four-Wheel Drive (4WD)",
-        "security_dr": "ABS، Airbags، VSC، HAC و سایر سیستم‌های ایمنی",
+        "security_dr": "ABS، Airbags، VSC، HAC ",
         "security_en": "ABS, Airbags, VSC, HAC and other safety systems",
-        "consumption_dr": "حدود ۱۴–۱۶ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۴–۱۶ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 14–16 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -82,7 +82,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "ABS، Airbags، VSC، HAC",
         "security_en": "ABS, Airbags, VSC, HAC",
-        "consumption_dr": "حدود ۱۰–۱۱ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۰–۱۱ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 10–11 Liters per 100 KM",
         "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
         "luggage_en": "2 large bags + 1 hand luggage"
@@ -125,9 +125,9 @@
         "gearbox_en": "Automatic + Manual Mode",
         "driveType_dr": "چهارچرخ محرک (4WD)",
         "driveType_en": "Four-Wheel Drive (4WD)",
-        "security_dr": "ABS، Airbags، Auto Brake، Radar Cruise و سایر سیستم‌های ایمنی",
+        "security_dr": "ABS، Airbags، Auto Brake، Radar Cruise",
         "security_en": "ABS, Airbags, Auto Brake, Radar Cruise and other safety systems",
-        "consumption_dr": "حدود ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 13–15 Liters per 100 KM",
         "luggage_dr": "مناسب برای بکس‌های سفری",
         "luggage_en": "Suitable for travel luggage"
@@ -172,7 +172,7 @@
         "driveType_en": "All-Wheel Drive (AWD)",
         "security_dr": "Airbags، ABS، سنسورها، Radar و سیستم‌های کمکی",
         "security_en": "Airbags, ABS, sensors, radar and driver assistance systems",
-        "consumption_dr": "حدود ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 13–15 Liters per 100 KM",
         "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
         "luggage_en": "2 large bags + 1 hand luggage"
@@ -215,9 +215,9 @@
         "gearbox_en": "Automatic",
         "driveType_dr": "چهارچرخ محرک (4WD)",
         "driveType_en": "Four-Wheel Drive (4WD)",
-        "security_dr": "Airbags، ABS، Radar System و سایر سیستم‌های ایمنی",
+        "security_dr": "Airbags، ABS، Radar System ",
         "security_en": "Airbags, ABS, Radar System and other safety systems",
-        "consumption_dr": "حدود ۱۲–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۲–۱۵ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 12–15 Liters per 100 KM",
         "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
         "luggage_en": "2 large bags + 1 hand luggage"
@@ -262,7 +262,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "ABS، Airbags، Auto Brake، Radar Cruise Control و سیستم‌های کمکی",
         "security_en": "ABS, Airbags, Auto Brake, Radar Cruise Control and driver assistance systems",
-        "consumption_dr": "حدود ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۳–۱۵ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 13–15 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1113,7 +1113,7 @@
         "driveType_en": "All-Wheel Drive (AWD)",
         "security_dr": "ABS، EBD، Airbags، دوربین 360 درجه، سنسورها، Radar و سیستم‌های کمکی",
         "security_en": "ABS, EBD, Airbags, 360° Camera, Sensors, Radar and Driver-Assistance Systems",
-        "consumption_dr": "حدود ۱۰–۱۲ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۰–۱۲ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 10–12 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1157,7 +1157,7 @@
         "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
         "security_dr": "ABS، Airbags، VSC و سیستم‌های ایمنی",
         "security_en": "ABS, Airbags, VSC and Safety Systems",
-        "consumption_dr": "حدود ۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۶–۷ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 6–7 Liters per 100 KM",
         "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
         "luggage_en": "2 large bags + 1 hand luggage"
@@ -1202,7 +1202,7 @@
         "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
         "security_dr": "ABS، Airbags، VSC و سیستم‌های ایمنی",
         "security_en": "ABS, Airbags, VSC and Safety Systems",
-        "consumption_dr": "حدود ۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۶–۷ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 6–7 Liters per 100 KM",
         "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
         "luggage_en": "2 large bags + 1 hand luggage"
@@ -1246,7 +1246,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های ایمنی",
         "security_en": "ABS, EBD, Airbags, VSC, HAC and Safety Systems",
-        "consumption_dr": "حدود ۱۴–۱۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۴–۱۷ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 14–17 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1290,7 +1290,7 @@
         "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
         "security_dr": "ABS، EBD، ۸ Airbags، دوربین عقب، TV و سیستم‌های ایمنی",
         "security_en": "ABS, EBD, 8 Airbags, Rear Camera, TV and Safety Systems",
-        "consumption_dr": "حدود ۴–۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۴–۵ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 4–5 Liters per 100 KM",
         "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
         "luggage_en": "2 large bags + 1 hand luggage"
@@ -1335,7 +1335,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "ABS، EBD، Airbags، VSC، HAC، دوربین و سنسورها",
         "security_en": "ABS, EBD, Airbags, VSC, HAC, Camera and Sensors",
-        "consumption_dr": "حدود ۱۲–۱۴ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۲–۱۴ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 12–14 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1380,7 +1380,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "ABS، EBD، Airbags، VSC، HAC و سیستم‌های ایمنی",
         "security_en": "ABS, EBD, Airbags, VSC, HAC and Safety Systems",
-        "consumption_dr": "حدود ۱۳–۱۶ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۳–۱۶ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 13–16 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1425,7 +1425,7 @@
         "driveType_en": "Two-Wheel Drive (2WD) / Front-Wheel Drive",
         "security_dr": "ABS، EBD، Airbags، VSC و سیستم‌های ایمنی",
         "security_en": "ABS, EBD, Airbags, VSC and Safety Systems",
-        "consumption_dr": "حدود ۶–۷ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۶–۷ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 6–7 Liters per 100 KM",
         "luggage_dr": "۲ بکس بزرگ + ۱ بکس دستی",
         "luggage_en": "2 large bags + 1 hand luggage"
@@ -1470,7 +1470,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "ABS، Airbags، VSC و سیستم‌های ایمنی",
         "security_en": "ABS, Airbags, VSC and Safety Systems",
-        "consumption_dr": "حدود ۸–۱۰ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۸–۱۰ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 8–10 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1515,7 +1515,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "سیستم زرهی B6، ABS، Airbags، کمره 360° و سیستم‌های ایمنی",
         "security_en": "B6 armor, ABS, airbags, 360° camera and safety systems",
-        "consumption_dr": "حدود ۱۲–۱۵ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۲–۱۵ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 12–15 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1561,7 +1561,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "زرهی B6، ABS، Airbags و سیستم‌های ایمنی",
         "security_en": "B6 armor, ABS, airbags and safety systems",
-        "consumption_dr": "حدود ۱۰–۱۳ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۰–۱۳ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 10–13 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1607,7 +1607,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "زرهی B7، کمره 360°، ABS، EBD، Airbags، VSC، HAC",
         "security_en": "B7 armor, 360° camera, ABS, EBD, airbags, VSC and HAC",
-        "consumption_dr": "حدود ۱۵–۲۰ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۵–۲۰ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 15–20 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1653,7 +1653,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "زرهی B7، کمره 360°، سیستم‌های ایمنی و سنسورها",
         "security_en": "B7 armor, 360° camera, safety systems and sensors",
-        "consumption_dr": "حدود ۱۵–۱۸ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۵–۱۸ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 15–18 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1699,7 +1699,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "زرهی B6، ABS، EBD، Airbags، VSC، HAC",
         "security_en": "B6 armor, ABS, EBD, airbags, VSC and HAC",
-        "consumption_dr": "حدود ۱۲–۱۶ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۲–۱۶ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 12–16 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
@@ -1745,7 +1745,7 @@
         "driveType_en": "Four-Wheel Drive (4WD)",
         "security_dr": "زرهی B7، کمره 360°، سیستم‌های ایمنی و سنسورها",
         "security_en": "B7 armor, 360° camera, safety systems and sensors",
-        "consumption_dr": "حدود ۱۵–۱۸ لیتر در ۱۰۰ کیلومتر",
+        "consumption_dr": " ۱۵–۱۸ لیتر در ۱۰۰ کیلومتر",
         "consumption_en": "Approximately 15–18 Liters per 100 KM",
         "luggage_dr": "۳ بکس بزرگ + ۲ بکس دستی",
         "luggage_en": "3 large bags + 2 hand luggage"
