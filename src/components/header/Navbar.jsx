@@ -29,7 +29,7 @@ export const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-[15px] left-0 w-full z-50 h-auto transition-transform duration-500 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-[calc(100%+20px)]"
+        className={`fixed top-[15px] md:top-[39px] left-0 w-full z-50 h-auto transition-transform duration-500 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-[calc(100%+20px)]"
           }`}
       >
         <nav className="max-w-7xl w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">

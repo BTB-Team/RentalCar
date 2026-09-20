@@ -17,7 +17,11 @@ export const TrustCard = ({ title, children, desc }) => {
     return (
         <div className="relative">
             <div className="absolute inset-0 rtl:-translate-x-3 ltr:translate-x-3 translate-y-3 bg-brand-yellow rounded-[20px]" />
-            <div className="relative bg-white rounded-[20px] shadow-md p-5 h-[164px] overflow-hidden text-start space-y-2">
+            <div className="relative bg-white rounded-[20px] shadow-md p-5 h-[164px] overflow-hidden text-start space-y-2"
+                style={{
+                    boxShadow: "5px 5px 21.3px -4px rgba(0, 0, 0, 0.25)",
+                }}
+            >
                 <div className="flex items-center gap-2">
 
                     {children}

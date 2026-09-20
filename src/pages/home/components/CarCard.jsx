@@ -28,22 +28,7 @@ export const CarCard = ({ car }) => {
 
   return (
     <article
-       className="
-    group
-    w-[calc(100%-32px)]
-    max-w-[380px]
-    sm:w-full
-    h-[455px]
-    overflow-hidden
-    rounded-[20px]
-    border
-    border-black/[0.10]
-    bg-white
-    transition-all
-    duration-300
-    ease-out
-    hover:-translate-y-[6px]
-    hover:shadow-[0_14px_35px_rgba(0,0,0,0.16)]
+       className=" group w-[calc(100%-32px)] max-w-[380px] sm:w-full h-[455px] overflow-hidden rounded-[20px] border border-black/[0.10] bg-white transition-all duration-300 ease-out hover:-translate-y-[6px] hover:shadow-[0_14px_35px_rgba(0,0,0,0.16)]
   "
     >
       {/* =========================
@@ -51,28 +36,14 @@ export const CarCard = ({ car }) => {
       ========================== */}
       <div
   className="
-    relative
-    h-[170px]
-    sm:h-[200px]
-    w-full 
-    overflow-hidden
-    rounded-t-[20px]
-    group
+    relative h-[170px] sm:h-[200px] w-full  overflow-hidden rounded-t-[20px] group
   "
 >
         <img
           src={imageSrc}
           alt={carName}
           loading="lazy"
-          className="
-          h-full
-          w-full
-          object-cover
-          object-top
-          transition-transform
-          duration-500 ease-out 
-          group-hover:scale-[1.05]
-          "
+          className=" h-full w-full object-cover object-top transition-transform duration-500 ease-out  group-hover:scale-[1.05] "
         />  
       </div>
 
@@ -83,7 +54,7 @@ export const CarCard = ({ car }) => {
   {/* نام موتر */}
   <h2
     dir="ltr"
-    className="w-full truncate overflow-hidden whitespace-nowrap text-right font-extrabold text-[20px] sm:text-[24px] leading-[100%] text-brand-black"
+    className="w-full truncate overflow-hidden whitespace-nowrap text-right font-semibold text-[20px] sm:text-[24px] leading-[100%] text-brand-black"
   >
     {carName}
   </h2>

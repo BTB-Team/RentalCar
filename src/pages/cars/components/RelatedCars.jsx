@@ -255,7 +255,7 @@ export const RelatedCars = ({ cars = [], lang }) => {
     return (
       <section
         dir={isPersian ? "rtl" : "ltr"}
-        className="mx-auto mb-12 mt-12 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24 max-w-[1400px]"
+        className="mx-auto my-16 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24 max-w-[1400px]"
       >
         {/* ================= HEADER ================= */}
         <div className="mb-6 flex w-full items-center justify-between">

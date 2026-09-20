@@ -15,16 +15,10 @@ const FaqSection = () => {
     <section
       id="faq"
       dir={isDari ? "rtl" : "ltr"}
-      className="w-full scroll-mt-8 bg-white px-4 py-10"
+      className="w-full scroll-mt-8 bg-white px-4 mt-8 mb-24"
     >
       <div
-        className="
-          mx-auto
-          box-border
-          h-auto
-          w-full
-          max-w-[857px]
-          md:h-[870px]
+        className=" mx-auto box-border h-auto w-full max-w-[857px] md:h-[870px]
         "
       >
         {/* FAQ Title */}
@@ -47,29 +41,12 @@ const FaqSection = () => {
 
         {/* FAQ Main Container */}
         <div
-          className="
-            mx-auto
-            mt-[32px]
-            box-border
-            h-auto
-            w-full
-            max-w-[857px]
-            rounded-[20px]
-            bg-[#F8F8F8]
-            px-3
-            py-4
-            md:h-[790px]
-            md:px-[28px]
-            md:py-[37px]
+          className=" mx-auto mt-[32px] box-border h-auto w-full max-w-[857px] rounded-[20px] bg-[#F8F8F8] px-3 py-4 md:h-[790px] md:px-[28px] md:py-[37px]
           "
         >
           {/* FAQ Questions Container */}
           <div
-            className="
-              mx-auto
-              box-border
-              w-full
-              max-w-[745px]
+            className=" mx-auto box-border w-full max-w-[745px]
             "
           >
             {t.home.faqs.map((faq, index) => {
@@ -82,22 +59,7 @@ const FaqSection = () => {
                     type="button"
                     onClick={() => toggleFaq(index)}
                     aria-expanded={isOpen}
-                    className={`
-                      flex
-                      min-h-[66px]
-                      w-full
-                      flex-row
-                      items-center
-                      justify-between
-                      border-0
-                      border-b-2
-                      border-solid
-                      border-[#F7D102]
-                      bg-transparent
-                      p-0
-                      ${lang === "dr" ? "text-right" : "text-left"}
-                      outline-none
-                      md:h-[66px]
+                    className={` flex min-h-[66px] w-full flex-row items-center justify-between border-0 border-b-2 border-solid border-[#F7D102] bg-transparent p-0 ${lang === "dr" ? "text-right" : "text-left"} outline-none md:h-[66px]
                     `}
                   >
                     {/* Question */}
@@ -129,35 +91,22 @@ const FaqSection = () => {
                           : `${import.meta.env.BASE_URL}images/plus-icon.png`
                       }
                       alt={isOpen ? "Minus" : "Plus"}
-                      className="
-                        left-[7px]
-                        h-[24px]
-                        w-[24px]
-                        object-contain
-                        md:h-[30px]
-                        md:w-[30px]
+                      className=" left-[7px] h-[24px] w-[24px] object-contain md:h-[30px] md:w-[30px]
                       "
                     />
                   </button>
 
                   {/* Answer */}
                   <div
-                    className={`
-                      grid
-                      transition-all
-                      duration-300
-                       ease-in-out
-    ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
-    ${isOpen ? "border-0 border-b-2 border-solid border-[#F7D102]" : ""}
-  `}
+                    className={` grid transition-all duration-300  ease-in-out
+                      ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
+                      ${isOpen ? "border-0 border-b-2 border-solid border-[#F7D102]" : ""}
+                    `}
                   >
                     <div className="overflow-hidden">
                       <div className="flex min-h-[70px] items-center">
                         <p
-                          className={`
-                            w-full
-                            pb-4
-                            pt-3
+                          className={` w-full pb-4 pt-3
                             ${lang === "dr" ? "text-right" : "text-left"}
                             
                             md:w-[638px]

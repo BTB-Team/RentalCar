@@ -57,6 +57,21 @@ export const Cars = () => {
 
   return (
     <section className=" relative mx-auto w-full min-h-screen bg-white ">
+                    
+      {/* 💡 تبدیل باکس SVG به لایه مطلق (absolute top-0) و تمام‌عرض مستقل تا بدون اشغال فضای مرده، به پس‌زمینه قفل شود */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-screen  h-[672px] z-0 pointer-events-none flex justify-center overflow-hidden">
+        <svg 
+          width="1440" 
+          height="672" 
+          viewBox="0 0 1440 672" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full object-fill opacity-100"
+        >
+          {/* اصلاح فضای نامی زنده طبق استانداردهای W3C برای نمایش شفاف دایره زرد */}
+          <circle cx="727" cy="-148" r="820" fill="#F7D102" fillOpacity="0.18" />
+        </svg>    
+      </div>
       <div className="max-w-7xl  w-full mx-auto px-0 sm:px-6 lg:px-8">
         {/* hero */}
         <div className=" overflow-hidden px-4 pb-20 pt-36 sm:pt-52 md:px-8 lg:px-16">
@@ -76,10 +91,6 @@ export const Cars = () => {
               <CarFilter />
             </div>
           )}
-
-          {/* decorative circle */}
-          {/* decorative circle (اصلاح تمام‌عرض پس‌زمینه بدون تداخل با متون و فیلترها) */}
-          <div className="absolute top-0 left-1/2 right-1/2 -mx-[50vw] w-screen h-[70vh] sm:h-[85vh] bg-[url('/images/Ellipse.png')] bg-cover bg-center bg-no-repeat z-0 " />
         </div>
 
         {/* cars */}

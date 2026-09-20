@@ -61,7 +61,7 @@ export const Footer = () => {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-black leading-snug">
               {content.tagline}
             </h3>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-[270px]">
+            <p className="text-[20px] text-black leading-normal max-w-[270px]">
               {content.subtext}
             </p>
           </div>
@@ -227,12 +227,11 @@ export const Footer = () => {
       </div>
 
       {/* Divider */}
-      <div className="max-w-7xl w-full px-5 sm:px-8 mx-auto mt-10 mb-6">
-        <hr className="border-t border-[#FFD000]/60" />
+      <div className="max-w-7xl w-full h-[2px] bg-[#F7D102] px-5 sm:px-8 mx-auto mt-24 mb-6">
       </div>
 
       {/* Copyright Notice */}
-      <div className="text-center text-xs sm:text-sm text-gray-700 font-normal px-4 mb-12">
+      <div className="text-center font-normal text-[20px] leading-normal  sm:text-sm text-black px-4 mb-12">
         {content.copyright}
       </div>
 

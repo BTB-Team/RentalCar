@@ -7,14 +7,14 @@ const WhyChooseUs = () => {
 
   return (
     <section
-      className="m-auto max-w-[1440px] bg-black w-full bg-cover bg-center bg-no-repeat px-4 py-10 sm:px-6 sm:py-12 md:py-16"
+      className="m-auto max-w-[1440px] bg-black w-full bg-cover bg-center bg-no-repeat px-4  sm:px-6 py-16"
       style={{
         backgroundImage: ` url(${bgWhyUs})`,
       }}
     >
       <div className="mx-auto max-w-[1200px]">
         {/* Title */}
-        <div className="flex w-full items-center justify-center gap-2 sm:gap-4">
+        <div className="flex w-full items-center justify-center gap-2 sm:gap-4 lg:mb-16">
           <span className="h-1 flex-1 bg-brand-yellow" />
 
           <h2 className="shrink-0 text-center font-sans text-2xl font-[900] leading-tight text-white sm:text-3xl md:text-[40px]">
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
 
               {/* Card description */}
               <div className="px-4 py-6 sm:px-5 sm:py-7">
-                <p className="text-center font-sans text-base font-[600] leading-6 text-brand-black/70  sm:leading-7  md:leading-8">
+                <p className="text-center font-sans text-base font-[600] text-black sm:leading-7  md:leading-6">
                   {card.description}
                 </p>
               </div>
