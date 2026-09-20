@@ -134,13 +134,8 @@ export const CarDetailsHero = ({ car }) => {
   return (
     <section
       // 💡 حذف استایل پس‌زمینه از این تگ و تبدیل آن به یک پوشش سراسریِ تمام‌عرض
-      className="relative w-screen left-1/2 right-1/2 -mx-[50vw] overflow-hidden pt-28 sm:pt-32 lg:pt-36"
+      className="relative w-screen mt-4 left-1/2 right-1/2 -mx-[50vw] overflow-hidden pt-28 sm:pt-32 lg:pt-36"
     >
-      <img 
-        src="/RentalCar/images/Ellipse.png" 
-        alt="" 
-        className="absolute top-0 left-0 w-full h-full object-fill pointer-events-none select-none z-0"
-      />
       <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24 lg:mt-8">
         {/* BREADCRUMB */}
         <div
@@ -336,14 +331,14 @@ export const CarDetailsHero = ({ car }) => {
               href="tel:+93786377417"
               className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-black px-6 text-base font-bold text-white transition hover:opacity-90 active:scale-[0.98] sm:flex-1 lg:text-lg"
             >
-              <span>
-                {isPersian ? "تماس فوری" : "Contact Us Now"}
-              </span>
               <img
                 src="/RentalCar/images/icons/call_icon.png"
                 alt="call icon"
                 className="h-5 w-5 shrink-0"
               />
+              <span>
+                {isPersian ? "تماس فوری" : "Contact Us Now"}
+              </span>
             </a>
 
             {/* Request Car Button */}
@@ -353,14 +348,14 @@ export const CarDetailsHero = ({ car }) => {
               rel="noopener noreferrer"
               className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-brand-yellow px-6 text-base font-bold text-black transition hover:opacity-90 active:scale-[0.98] sm:flex-1 lg:text-lg"
             >
-              <span>
-                {isPersian ? "درخواست موتر" : "Request a car"}
-              </span>
               <img
                 src="/RentalCar/images/icons/car_icon.png"
                 alt="car icon"
                 className="h-5 w-[26px] shrink-0"
               />
+              <span>
+                {isPersian ? "درخواست موتر" : "Request a car"}
+              </span>
             </a>
           </div>
         </div>

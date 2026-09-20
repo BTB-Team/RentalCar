@@ -1763,58 +1763,58 @@
     },
     {
       "id": "s2",
-      "title_dr": "ریزرف هوتل",
+      "title_dr": "رزرو هوتل",
       "title_en": "Hotel Reservation",
-      "desc_dr": "هماهنگی محل اقامت ایمن و مناسب در کابل و ولایات",
+      "desc_dr": "رزرو هوتل‌های پنج‌ستاره در کابل و شهرهای مهم افغانستان",
       "desc_en": "Secure and suitable accommodation coordination in Kabul and provinces",
       "icon": "fontisto:hotel"
     },
     {
       "id": "s3",
-      "title_dr": "راننده خصوصی",
+      "title_dr": "راننده و خدمات امنیتی",
       "title_en": "Private Driver",
-      "desc_dr": "رانندگان حرفه‌ای و مجرب برای سفرهای شهری و بین‌شهری",
-      "desc_en": "Professional and experienced drivers for city and intercity travel",
+      "desc_dr":"راننده، محافظ، گارد، اسکورت امنیتی و ارزیابی مسیر بر اساس نیاز مشتری",
+      "desc_en": "Driver, bodyguard, guard, security escort, and route assessment based on customer needs.",
       "icon": "griddy-icons:private-driver-filled"
     },
     {
       "id": "s4",
       "title_dr": "کرایه موتر",
       "title_en": "Car Rental",
-      "desc_dr": "دسترسی به موترهای لوکس، 4WD و زرهی برای مسیرهای مختلف",
-      "desc_en": "Access to luxury, 4WD and armored vehicles for different routes",
+      "desc_dr": "موترهای مدل بالا، لوکس و زرهی برای سفرهای شهری، ولایتی، تجارتی و گردشگری",
+      "desc_en": "High-end, luxury, and armored vehicles for city, provincial, business, and tourism travel.",
       "icon": "lucide:car"
     },
     {
       "id": "s5",
-      "title_dr": "عکاسی و ثبت خاطرات",
+      "title_dr": "ثبت حرفه یی خاطرات ",
       "title_en": "Photography",
-      "desc_dr": "ثبت لحظات سفر شما با خدمات حرفه‌ای عکاسی",
-      "desc_en": "Capture your travel moments with professional photography services",
+      "desc_dr":"عکاسی، فیلم‌برداری، تصویربرداری هوایی با درون و ایدیت حرفه‌ای محتوای سفر",
+      "desc_en": "Photography, videography, drone aerial filming, and professional editing of your travel content.",
       "icon": "material-symbols-light:camera-rounded"
     },
     {
       "id": "s6",
-      "title_dr": "خدمات صحی",
+      "title_dr": "پشتیبانی صحی و طبی",
       "title_en": "Healthcare Services",
-      "desc_dr": "هماهنگی خدمات صحی و پشتیبانی لازم در طول سفر",
-      "desc_en": "Healthcare coordination and necessary support throughout your journey",
+      "desc_dr":"همراهی تیم صحی و ارائه کمک‌های اولیه در جریان سفر",
+      "desc_en": "Medical team accompaniment and first aid provision during the trip.",
       "icon": "iconoir:healthcare"
     },
     {
       "id": "s7",
-      "title_dr": "مترجم چندزبانه",
+      "title_dr": "ترجمان و پشتیبانی زبان",
       "title_en": "Multilingual Translator",
-      "desc_dr": "مترجمین مسلط به زبان‌های محلی و بین‌المللی",
-      "desc_en": "Translators fluent in local and international languages",
+      "desc_dr":"خدمات ترجمانی برای سفر، جلسات کاری و ارتباطات روزمره",
+      "desc_en":"Interpretation services for travel, business meetings, and everyday communication.",
       "icon": "carbon:ibm-watson-language-translator"
     },
     {
       "id": "s8",
-      "title_dr": "ترانسفر میدان هوایی",
+      "title_dr": "استقبال از میدان هوایی",
       "title_en": "Airport Transfer",
-      "desc_dr": "ترانسفر امن و راحت از میدان هوایی به مقصد شما",
-      "desc_en": "Safe and comfortable airport transfers to your destination",
+      "desc_dr": "استقبال، موتر و راننده آماده، کمک با وسایل و انتقال مستقیم به مقصد",
+      "desc_en": "Meet and greet, vehicle and driver ready, luggage assistance, and direct transfer to the destination.",
       "icon": "mdi:local-airport"
     }
   ],

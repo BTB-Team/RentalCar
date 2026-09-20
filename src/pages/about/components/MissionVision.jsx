@@ -6,7 +6,7 @@ export const MissionVision = () => {
     const { t } = useLangStore();
 
     return (
-        <section className="w-full max-w-[1109px] mx-auto px-4 py-10">
+        <section className="w-full max-w-[1109px] mx-auto px-4 py-32">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {/* Mission card */}
                 <TrustCard
@@ -34,3 +34,4 @@ export const MissionVision = () => {
         </section>
     );
 }
+

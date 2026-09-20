@@ -51,8 +51,8 @@ const TechnicalSpecsList = ({ specs, lang, passengerCapacity, passengerLabel_dr,
   ];
 
   return (
-    <section className="mx-auto mt-12 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24">
-      <div className="rounded-[20px] border border-[#D9D9D9] p-4 sm:p-8">
+    <section className="mx-auto mt-20 w-full max-w-[1400px] sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-24">
+      <div className="rounded-[20px] border border-[#D9D9D9]  p-4 sm:p-8">
         <h2 className="mb-5 text-start text-xl sm:text-2xl font-bold text-black">
           {lang === "dr" ? "مشخصات تخنیکی" : "Technical Specifications"}
         </h2>

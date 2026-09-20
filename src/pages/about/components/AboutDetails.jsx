@@ -7,7 +7,7 @@ export const AboutDetails = () => {
 
 
     return (
-        <section className="w-full max-w-[1240px] mx-auto px-4 py-16 font-yekan select-none bg-white">
+        <section className="w-full max-w-[1240px] mx-auto px-4 font-yekan select-none bg-white">
             <div className="grid lg:grid-cols-2 grid-cols-1  gap-8 items-center">
 
                 {/* --- RIGHT SIDE: CONTENT AREA --- */}
@@ -18,13 +18,21 @@ export const AboutDetails = () => {
                     </h2>
 
                     <div className="space-y-2">
-                        <p className="md:text-[20px] text-[16px] font-[600] md:leading-[41px]  tracking-normal text-justify">
+                        {/* 💡 Safely using the existing t object to check for Persian text layout without needing 'lang' */}
+                        <p className={`md:text-[20px] text-[16px] font-normal md:leading-[41px] ${
+                          t?.about?.details_title?.includes("درباره") ? "text-justify tracking-[-2px]" : "text-left tracking-normal"
+                        }`}>
                             {t?.about?.details_desc_1}
                         </p>
-                        <p className="md:text-[20px] text-[16px] font-[600] md:leading-[41px] tracking-normal text-justify">
+                        
+                        <p className={`md:text-[20px] text-[16px] font-normal md:leading-[41px] ${
+                          t?.about?.details_title?.includes("درباره") ? "text-justify tracking-[-2px]" : "text-left tracking-normal"
+                        }`}>
                             {t?.about?.details_desc_2}
                         </p>
                     </div>
+
+
                     {/* Card */}
                     <div className="bg-white border border-[#D9D9D9] rounded-[20px] min-h-[110px] flex flex-wrap lg:flex-nowrap gap-4 lg:gap-3 w-full items-center justify-between sm:justify-start py-4 px-4">
 

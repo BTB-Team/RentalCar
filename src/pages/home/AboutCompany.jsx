@@ -8,49 +8,56 @@ const AboutCompany = () => {
 
   return (
     <section
-      className="m-auto max-w-[1510px] relative px-5 md:px-5  flex flex-col  gap-16   md:items-between lg:flex-row lg:px-0 lg:ps-[150px]  overflow-hidden"
+      className="m-auto max-w-[1510px] relative px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:ps-[150px] flex flex-col gap-10 xl:flex-row items-center xl:items-stretch overflow-hidden pb-12"
       dir="ltr"
     >
-      {/* Image */}
-      <div className="order-2  flex-1 ">
+      {/* 💡 اعمال مارجین منفی اختصاصی راست (xl:-me-16) برای چسباندن قطعی تصویر به لبه سمت راست صفحه */}
+      <div className="order-2 flex-1 w-full max-w-[1440px] right-0 xl:w-auto flex justify-center xl:justify-end xl:-me-16 2xl:-me-0">
         <img
           src={aboutUsImage}
           alt=""
-          className=" rounded-3xl object-cover object-top md:w-full lg:w-[613px]  lg:h-[420px] lg:rounded-e-none  lg:rounded-s-[40px] "
+          className="rounded-3xl object-cover object-top w-full max-w-[550px] xl:max-w-none lg:w-[613px] lg:h-[420px] xl:rounded-e-none xl:rounded-s-[40px] shadow-sm"
           loading="lazy"
         />
       </div>
+
       {/* Vector Image */}
       <img
-        className=" m-auto max-w-[1440px] absolute  object-cover h-[300px] z-[-1] -top-[60px] sm:-top-[20px] md:-top-[20px]  left-0 2xl:left-9"
+        className="m-auto max-w-[1440px] absolute object-cover h-[300px] z-[-1] -top-[60px] sm:-top-[20px] md:-top-[20px] left-0 2xl:left-9"
         src={vectorImage}
         alt=""
       />
-      {/* Text */}
+
+      {/* Text (ستون متن) */}
       <div
-        className="relative flex  flex-1 flex-col justify-between items-start"
+        // 💡 منعطف کردن عرض متن تا در حالت تک‌ستونه کاملاً پهن و در دو ستونه مهار شود
+        className="relative w-full max-w-[666px] flex flex-1 flex-col justify-between items-start z-10"
         dir={lang === "dr" ? "rtl" : "ltr"}
       >
-        <div>
-          <h2 className="font-sans text-xl  font-[800] text-brand-black sm:text-4xl ">
+        <div className="w-full">
+          {/* 💡 تنظیم سایز فونت واکنش‌گرا تا در اسکرین‌های متوسط مچاله نشود */}
+          <h2 className="font-sans text-xl font-black text-brand-black sm:text-2xl md:text-[34px] xl:text-[38px] py-4 text-start leading-tight">
             {t.home.about.title}
           </h2>
 
-          <span className=" block h-1  rounded bg-brand-yellow  sm:w-[190px] sm:mb-4" />
+          <span className="block h-1 rounded bg-brand-yellow w-[120px] sm:w-[190px] mb-4" />
         </div>
-        <div>
-          <p className="pt-3 text-justify text-lg   font-sans   font-regular  text-brand-black/90 sm:text-[19px] sm:pt-0 sm:leading-[2.5rem]">
-            <span className="font-[800] ">{t.home.about.companyName} </span>
+
+        <div className="w-full space-y-4">
+          {/* 💡 حذف قطعی text-justify و تنظیم فونت خوانا بدون فاصله بین کلمات */}
+          <p className="text-start text-sm sm:text-base md:text-[17px] xl:text-[18px] font-sans font-medium text-brand-black/90 leading-[32px] sm:leading-[42px] tracking-normal">
+            <span className="font-black text-black">{t.home.about.companyName} </span>
             {t.home.about.description}
           </p>
 
-          <p className="text-justify text-lg pt-3   font-sans   font-regular text-brand-black/90 sm:text-[19px] sm:leading-[2.5rem] ">
+          <p className="text-start text-sm sm:text-base md:text-[17px] xl:text-[18px] font-sans font-medium text-brand-black/90 kneeling-[32px] sm:leading-[42px] tracking-normal">
             {t.home.about.description_2}
           </p>
         </div>
+
         <Link
           to="/About"
-          className=" mt-5 inline-flex h-12 items-center gap-2 rounded-[16px] bg-brand-yellow px-4 font-sans text-sm font-extrabold text-brand-black transition-opacity hover:opacity-90 active:scale-[0.98] sm:mt-6 sm:h-[60px] sm:rounded-[20px] sm:text-base"
+          className="mt-6 inline-flex h-12 items-center gap-2 rounded-[16px] bg-brand-yellow px-5 font-sans text-sm font-extrabold text-brand-black transition-all hover:opacity-90 active:scale-[0.98] sm:h-[60px] sm:rounded-[20px] sm:text-base shrink-0"
         >
           {t.home.about.btnReadMore}
 
@@ -71,6 +78,8 @@ const AboutCompany = () => {
       </div>
     </section>
   );
+
+
 };
 
 export default AboutCompany;
