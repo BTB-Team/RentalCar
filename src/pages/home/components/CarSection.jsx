@@ -24,7 +24,7 @@ const CarSection = () => {
         description={t.cars?.description}
       />
 
-      <div className="mt-[77px]">
+      <div className="sm:mt-[24px] md:mt-[77px]">
         <CarGrid />
       </div>
 

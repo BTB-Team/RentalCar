@@ -41,7 +41,7 @@ const ProcessSection = () => {
     >
       <div className="mx-auto max-w-7xl">
         {/* Title */}
-        <div className="mb-8 text-center">
+        <div className="mt-4 text-center">
           <h2
             className={`mx-auto min-h-[62px] w-full max-w-[653px] font-yekan text-[28px] font-black leading-[120%] tracking-[0px] text-black sm:text-[34px] sm:leading-[110%] lg:h-[62px] lg:text-[40px] lg:leading-[100%] ${
               lang === "dr" ? "text-center" : "text-left max-w-[700px]"
@@ -50,7 +50,7 @@ const ProcessSection = () => {
             {t.home.process_title}
           </h2>
 
-          <div className="mx-auto mt-3 h-[4px] w-full max-w-[514px] rounded-full bg-[#F7D102]" />
+          <div className="mx-auto mb-8 h-[4px] w-full max-w-[514px] rounded-full bg-[#F7D102]" />
         </div>
 
         {/* Travel Steps */}

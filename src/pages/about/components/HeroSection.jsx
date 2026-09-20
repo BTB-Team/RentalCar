@@ -26,9 +26,10 @@ export const HeroSection = () => {
                 </h2>
 
                 {/* Description */}
-                <p className="text-[15px] sm:text-[18px] md:text-[22px] lg:text-[24px] font-normal leading-relaxed sm:leading-[36px] md:leading-[41px] tracking-normal text-black max-w-[820px]">
+                <p className="font-yekan font-normal text-center text-[15px] sm:text-[18px] md:text-[22px] lg:text-[24px] lg:leading-[41px] tracking-[-2px] text-black max-w-[820px] mx-auto">
                     {t?.about?.hero_desc}
                 </p>
+
             </div>
 
             <div className='flex items-center justify-center mt-5 gap-5'>

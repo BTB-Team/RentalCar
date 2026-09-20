@@ -23,7 +23,7 @@ const CtaBanner = ({ onRequestService }) => {
           style={{ backgroundImage: `url(${ctaBackground})` }}
         >
           {/* Background overlay */}
-          <div className="absolute inset-0 bg-white/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/91 to-[#F7D102]/91" />
 
           <div
             className="relative z-10 flex h-[199px] w-full max-w-[544px]
