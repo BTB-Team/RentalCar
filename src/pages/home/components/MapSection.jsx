@@ -20,12 +20,12 @@ export const MapSection = () => {
             <path d="M26.1869 18.585L26.1687 18.6328L26.1846 18.5891L26.1869 18.585ZM12.9223 26.2416C7.55439 27.0001 3.79999 28.8146 3.79999 31.4856C3.79999 35.0834 10.073 37.9999 19 37.9999C27.9269 37.9999 34.2 35.0834 34.2 31.4856C34.2 28.8146 30.446 27.0001 25.0785 26.2416L24.3348 27.5077C28.3803 28.069 31.16 29.2485 31.16 30.6173C31.16 32.5363 25.7157 34.0916 19 34.0916C12.2842 34.0916 6.83999 32.5363 6.83999 30.6173C6.83961 29.2531 9.60107 28.0747 13.6591 27.5112L12.9223 26.2416Z" fill="#F7D102"/>
         </svg>
 
-          <h2 className="font-sans font-black text-[28px] sm:text-[32px] md:text-[36px] text-black leading-[100%] tracking-normal text-right">
+          <h2 className="font-sans font-black text-[28px] sm:text-[32px] md:text-[36px] text-black leading-[100%] tracking-normal text-center">
             {t.home?.map?.title || "موقعیت ما"}
           </h2>
         </div>
 
-        <p className="font-sans font-semibold text-[16px] sm:text-[20px] md:text-[24px] text-black max-w-[820px] leading-[130%] md:leading-[100%] tracking-normal text-right">
+        <p className="font-sans font-semibold text-[16px] sm:text-[20px] md:text-[24px] text-black max-w-[820px] leading-[130%] md:leading-[100%] tracking-normal text-center">
           {t.home?.map?.description || "به‌راحتی ما را پیدا کنید و از خدمات کرایه موتر ما بهره‌مند شوید."}
         </p>
       </div>
