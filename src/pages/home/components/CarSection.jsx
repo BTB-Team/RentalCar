@@ -31,42 +31,23 @@ const CarSection = () => {
       {/* View More Vehicles */}
       <div className="mt-[48px] flex justify-center">
         <Link
-        to="/cars"
-        className="
-          flex
-          h-[60px]
-          w-[280px]
-          shrink-0
-          items-center
-          justify-center
-          gap-[12px]
-          rounded-[20px]
-          bg-brand-yellow
-          px-[20px]
-          font-[700]
-          text-[20px]
-          leading-[100%]
-          tracking-[0%]
-          text-brand-black
-          transition-all
-          duration-300
-          ease-out
-          hover:scale-[1.04]
-          hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)]
-      "
-      >
-        <span className="whitespace-nowrap">
-          {t.cars?.viewMore}
-        </span>
+          to="/cars"
+          // 💡 اضافه شدن رویداد onClick برای پرتاب آنی مرورگر به بالاترین نقطه صفحه جدید
+          onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
+          className="flex h-[60px] w-[280px] shrink-0 items-center justify-center gap-[12px] rounded-[20px] bg-brand-yellow px-[20px] font-[700] text-[20px] leading-[100%] tracking-[0%] text-brand-black transition-all duration-300 ease-out hover:scale-[1.04] hover:shadow-[0_5px_12px_rgba(0,0,0,0.12)]"
+        >
+          <span className="whitespace-nowrap">
+            {t.cars?.viewMore}
+          </span>
 
-        <Icon
-          icon="humbleicons:arrow-up"
-          width="32"
-          height="32"
-          className={`shrink-0 ${isDari ? '-rotate-90' : 'rotate-90'}`}
-          aria-hidden="true"
-        />
-      </Link>
+          <Icon
+            icon="humbleicons:arrow-up"
+            width="32"
+            height="32"
+            className={`shrink-0 ${isDari ? '-rotate-90' : 'rotate-90'}`}
+            aria-hidden="true"
+          />
+        </Link>
       </div>
     </section>
   );

@@ -57,8 +57,6 @@ export const Cars = () => {
 
   return (
     <section className=" relative mx-auto w-full min-h-screen bg-white ">
-                    
-      {/* 💡 تبدیل باکس SVG به لایه مطلق (absolute top-0) و تمام‌عرض مستقل تا بدون اشغال فضای مرده، به پس‌زمینه قفل شود */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-screen  h-[672px] z-0 pointer-events-none flex justify-center overflow-hidden">
         <svg 
           width="1440" 
@@ -68,7 +66,6 @@ export const Cars = () => {
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-full object-fill opacity-100"
         >
-          {/* اصلاح فضای نامی زنده طبق استانداردهای W3C برای نمایش شفاف دایره زرد */}
           <circle cx="727" cy="-148" r="820" fill="#F7D102" fillOpacity="0.18" />
         </svg>    
       </div>
@@ -94,7 +91,7 @@ export const Cars = () => {
         </div>
 
         {/* cars */}
-        <div className="mx-auto mt-6 sm:mt-10 pb-16">
+        <div className="mx-auto mt-6 sm:mt-10 pb-16" >
           {loading ? (
             <CarSkeleton />
           ) : filteredCars.length === 0 ? (

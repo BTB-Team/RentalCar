@@ -1,4 +1,3 @@
-// components/navbar/NavLinks.jsx
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 export const HeaderNavLinks = ({ navLinks }) => {
