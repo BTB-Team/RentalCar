@@ -7,12 +7,6 @@ const HeroSection = () => {
 
   return (
     <section
-      /* 
-        💡 PRODUCTION LAYOUT FIXES:
-        1. Swapped !w-screen with w-full to permanently eliminate the vertical scrollbar gap artifact.
-        2. Set background position to bg-[center_bottom_20%] on mobile and md:bg-center on desktop 
-           to keep the visual focus perfectly centered on the cars across all viewports.
-      */
       className="w-full relative h-[100dvh] md:h-screen lg:h-[840px] bg-cover bg-[center_bottom_20%] md:bg-center bg-no-repeat overflow-hidden"
       style={{
         "--bg-desktop": `url(${heroBg})`,
@@ -20,7 +14,6 @@ const HeroSection = () => {
         backgroundImage: `var(--bg-mobile)`
       }}
     >
-      {/* Dynamic CSS Variable Injection for safe production bundling */}
       <style>{`
         @media (min-width: 768px) {
           section { background-image: var(--bg-desktop) !important; }
@@ -36,7 +29,8 @@ const HeroSection = () => {
       {/* Content Area */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 pt-44 sm:pt-52 md:pt-24 lg:pt-[132px]">
         <div className="text-center md:mt-16">
-          <h1 className="mx-auto max-w-5xl font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-blackfont text-brand-black">
+          {/* 💡 PRODUCTION FIX: Changed text-2xl to text-[36px] to force title size exactly to 36px on mobile viewports */}
+          <h1 className="mx-auto max-w-5xl font-sans text-[36px] sm:text-3xl md:text-4xl lg:text-5xl leading-normal tracking-normal font-blackfont text-brand-black">
             {t.home.hero.titleStart}
             {t.home.hero.titleStart ? " " : ""}
 
@@ -53,9 +47,12 @@ const HeroSection = () => {
             {t.home.hero.titleEnd}
           </h1>
 
-          <p className="mx-auto mt-4 max-w-3xl font-sans text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed text-brand-black/90">
-            {t.home.hero.description}
-          </p>
+
+ {/* 💡 PRODUCTION FIX: Swapped text-sm with text-[16px] to lock the mobile description precisely at 16px */}
+<p className="mx-auto mt-4 max-w-3xl font-sans text-[16px] sm:text-base md:text-lg lg:text-[20px] leading-[37px] text-brand-black/90">
+  {t.home.hero.description}
+</p>
+
         </div>
       </div>
     </section>
