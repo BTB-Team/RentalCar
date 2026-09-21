@@ -12,7 +12,7 @@ const AboutCompany = () => {
       dir="ltr"
     >
       {/* 💡 اعمال مارجین منفی اختصاصی راست (xl:-me-16) برای چسباندن قطعی تصویر به لبه سمت راست صفحه */}
-      <div className="order-2 flex-1 w-full max-w-[1440px] right-0 xl:w-auto flex justify-center xl:justify-end xl:-me-16 2xl:-me-0">
+      <div className="order-2 flex-1 w-full max-w-[1510px] right-0 xl:w-auto flex justify-center xl:justify-end xl:-me-16 2xl:-me-0">
         <img
           src={aboutUsImage}
           alt=""
