@@ -48,10 +48,10 @@ const HeroSection = () => {
           </h1>
 
 
- {/* 💡 PRODUCTION FIX: Swapped text-sm with text-[16px] to lock the mobile description precisely at 16px */}
-<p className="mx-auto mt-4 max-w-3xl font-sans text-[16px] sm:text-base md:text-lg lg:text-[20px] leading-[37px] text-brand-black/90">
-  {t.home.hero.description}
-</p>
+           {/* 💡 PRODUCTION FIX: Swapped text-sm with text-[16px] to lock the mobile description precisely at 16px */}
+          <p className="mx-auto mt-4 max-w-3xl font-sans text-[16px] sm:text-base md:text-lg lg:text-[20px] leading-[37px] text-brand-black/90">
+            {t.home.hero.description}
+          </p>
 
         </div>
       </div>
