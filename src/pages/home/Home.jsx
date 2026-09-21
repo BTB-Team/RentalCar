@@ -8,6 +8,7 @@ import TestimonialsSection from "../../components/home/TestimonialsSection";
 import CtaBanner from "../../components/home/CtaBanner";
 import FaqSection from "../../components/home/FaqSection";
 import { MissionVision } from "../about/components/MissionVision";
+import  {MapSection } from "./components/MapSection";
 
 export const Home = () => {
   return (
@@ -21,6 +22,7 @@ export const Home = () => {
       <ProcessSection />
       <TestimonialsSection />
       <CtaBanner />
+      <MapSection/>
       <FaqSection />
     </>
   );

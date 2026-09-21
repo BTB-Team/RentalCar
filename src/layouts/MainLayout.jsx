@@ -4,21 +4,25 @@ import { Navbar } from "../components/header/Navbar";
 
 export default function MainLayout() {
   return (
-    // 💡 تغییر w-screen به w-full برای ریشه‌کن کردن قطعی اسکرول افقی ناشی از نوار مرورگر
-    <div className="relative w-full min-h-screen bg-cover bg-center flex flex-col overflow-x-hidden">
+    // 💡 The main layout framework must be completely unconstrained (w-full overflow-x-hidden)
+    <div className="relative w-full min-h-screen bg-white flex flex-col overflow-x-hidden">
       
-      {/* هدر سایت */}
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Centered Website Header bar */}
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 z-50">
         <Navbar />
       </div>
 
-      {/* محتوای اصلی صفحات (Outlet) */}
-      <main className="flex-grow w-full max-w-[1440px] mx-auto relative z-10">
+      {/* 
+        💡 PRODUCTION FIX: Removed max-w-[1440px] from the main tag.
+        Now the canvas wrapper is wide open. Full-width backdrops (like Hero Section) 
+        can natively fill up 100% of any wide-screen monitor.
+      */}
+      <main className="flex-grow w-full relative z-10">
         <Outlet />
       </main>
 
-      {/* فوتر سایت */}
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 z-20">
+      {/* Centered Website Footer bar */}
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 z-20 mt-auto">
         <Footer />
       </div>
 
