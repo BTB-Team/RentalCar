@@ -74,6 +74,10 @@
         "description": "Begin your trip with comfort and confidence, supported by our services."
       }
     ],
+    "map": {
+      "title": "Our Location",
+      "description": "Find us easily and enjoy our premier car rental services."
+    },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
       {
