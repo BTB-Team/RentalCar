@@ -4,10 +4,10 @@ export const MapSection = () => {
   const { t } = useLangStore();
 
   // 💡 لایو فیکس قطعی: استفاده از API رسمی گوگل مپ برای باز شدن مستقیم، بدون ارور و ۱۰۰٪ تضمینی لوکیشن شما در برنامه گوگل مپ
-  const googleMapExternalUrl = "https://share.google/rLyBD7EhRnQtmFX1W";
+  const googleMapExternalUrl =  "https://maps.app.goo.gl/K7Rqkts86rJ7Z2Mi6";
 
   // آدرس نقشه زنده برای رندر شدن داخلی کامپوننت سایت
-  const googleMapEmbedUrl = "https://maps.app.goo.gl/K7Rqkts86rJ7Z2Mi6";
+  const googleMapEmbedUrl ="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3286.573302748255!2d69.1702874!3d34.5390371!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1790032021380!5m2!1sen!2s"; 
 
   return (
     <section className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-16 select-none bg-white">
@@ -39,7 +39,7 @@ export const MapSection = () => {
         className="block w-full max-w-[1200px] mx-auto rounded-[20px] overflow-hidden shadow-sm h-[260px] sm:h-[300px] relative z-10 transition-all duration-300 group cursor-pointer"
       >
         {/* لایه شفاف محافظ زنده برای مهار کلیک‌های روی آی‌فریم و اجرای لینک بیرونی */}
-        <div className="absolute inset-0 z-20 bg-black/0 group-hover:bg-black/[0.02] transition-colors" />
+        <div className="absolute inset-0 z-20 bg-black/0 group-hover:bg-black/[0.02] border-2 border-yellow transition-colors" />
         
         <iframe
           src={googleMapEmbedUrl}
