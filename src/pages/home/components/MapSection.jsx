@@ -7,7 +7,7 @@ export const MapSection = () => {
   const googleMapExternalUrl =  "https://maps.app.goo.gl/K7Rqkts86rJ7Z2Mi6";
 
   // آدرس نقشه زنده برای رندر شدن داخلی کامپوننت سایت
-  const googleMapEmbedUrl ="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3286.573302748255!2d69.1702874!3d34.5390371!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1790032021380!5m2!1sen!2s"; 
+  const googleMapEmbedUrl ="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3286.573302748255!2d69.1702874!3d34.5390371!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1790032878586!5m2!1sen!2s"; 
 
   return (
     <section className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-16 select-none bg-white">
